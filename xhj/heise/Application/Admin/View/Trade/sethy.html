@@ -1,0 +1,130 @@
+<include file="Public:header" />
+
+<div id="main-content">
+    <div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">秒合约参数设置</span>
+		</div>
+
+		<div class="tab-wrap">
+			<div class="tab-content">
+				<form id="form" action="{:U('Trade/sethy')}" method="post" class="form-horizontal" >
+					<div id="tab" class="tab-pane in tab">
+						<div class="form-item cf">
+							<table>
+                                
+                                <tr class="controls">
+									<td class="item-label" style="width:100px;">交易手续费 :</td>
+									<td style="width:300px;">
+									    <p><input type="text" class="form-control input-10x" name="hy_sxf" value="{$info['hy_sxf']}"></p>
+									    <p style="color:red;">注意：交易的手续费，如：10%；写成10；</p>
+									</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label" style="width:100px;">合约结单时间 :</td>
+									<td style="width:300px;">
+									    <p><input type="text" class="form-control input-10x" name="hy_time" value="{$info['hy_time']}"></p>
+									    <p style="color:red;">注意： 如时间为：1分钟、3分钟、5分钟、30分钟，则请用字母逗号将时间分开，如输入：1,3,5,8。如没有此玩法则留空。必须为四个</p>
+									</td>
+								</tr>
+								<tr class="controls">
+									<td class="item-label" style="width:100px;">合约盈亏比例 :</td>
+									<td style="width:300px;">
+									    <p><input type="text" class="form-control input-10x" name="hy_ykbl" value="{$info['hy_ykbl']}"></p>
+									    <p style="color:red;">注意： 如比例为：75%、77%，80%、85%，则请用字母逗号将比例分开，如输入：75,77,80,85。必须为四个，且不得为空</p>
+									</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label" style="width:100px;">投资额度 :</td>
+									<td style="width:300px;">
+									    <p><input type="text" class="form-control input-10x" name="hy_tzed" value="{$info['hy_tzed']}"></p>
+									    <p style="color:red;">注意： 如额度为：10USDT、50USDT，100USDT、1000USDT，则请用字母逗号将比例分开，如输入：10,50,100,1000。</p>
+									</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label" style="width:100px;">合约开市时间 :</td>
+									<td style="width:300px;">
+									    <p><input type="text" class="form-control input-10x" name="hy_kstime" value="{$info['hy_kstime']}"></p>
+									    <p style="color:red;">填写格式如：00:00~24:00</p>
+									</td>
+
+								</tr>
+								<tr class="controls">
+									<td class="item-label" style="width:100px;">指定亏损ID :</td>
+									<td style="width:300px;">
+									    <p><input type="text" class="form-control input-10x" name="hy_ksid" value="{$info['hy_ksid']}"></p>
+									    <p style="color:red;">说明： 此处设置会员ID（如：8888），多个用户用|符号分开（如：8888|9999）设置之后该会员所有订单都会亏损，请谨慎操作。如停止该功能请在上面留空或者填0，并提交。</p>
+									</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label" style="width:100px;">指定盈利ID :</td>
+									<td style="width:300px;">
+									    <p><input type="text" class="form-control input-10x" name="hy_ylid" value="{$info['hy_ylid']}"></p>
+									    <p style="color:red;">说明： 此处设置会员ID（如：8888），多个用户用|符号分开（如：8888|9999）设置之后该会员所有订单都会亏损，请谨慎操作。如停止该功能请在上面留空或者填0，并提交。</p>
+									</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label" style="width:100px;">风控概率 :</td>
+									<td style="width:300px;">
+									    <p><input type="text" class="form-control input-10x" name="hy_fkgl" value="{$info['hy_fkgl']}"></p>
+									    <p style="color:red;">表示总盈利比例，填写20表示20%订单盈利，例 如同时结算10单，其中只有2单盈利</p>
+									</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label" style="width:100px;">投资最低额度 :</td>
+									<td style="width:300px;">
+									    <p><input type="text" class="form-control input-10x" name="hy_min" value="{$info['hy_min']}"></p>
+									    <p style="color:red;">每单最低投资额度</p>
+									</td>
+								</tr>
+
+                                <input type="hidden" name="hy_id" value="{$info['id']}" />
+
+
+								<tr class="controls">
+									<td class="item-label"></td>
+									<td>
+										<div class="form-item cf">
+											<button class= "btn submit-btn ajax-post"  target-form="form-horizontal" id="submit" type="submit">提交</button>
+											<a class="btn btn-return" href="{$Think.server.HTTP_REFERER}">返 回</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</form>
+
+				<script type="text/javascript">
+					//提交表单
+					$('#submit').click(function(){
+						$('#form').submit();
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$(function(){
+		//主导航高亮
+		$('.config-box').addClass('current');
+		//边导航高亮
+		$('.config-contact').addClass('current');
+	});
+</script>
+
+<include file="Public:footer" />

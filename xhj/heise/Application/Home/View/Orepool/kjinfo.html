@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <title>{$webname}</title>
+	    <style>
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+            }
+            .css-1odg5z2 {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                height: 260px;
+                background-color: #1E2329;
+                position: -webkit-sticky;
+                position: sticky;
+                top: -256px;
+                z-index: 1;
+                padding: 0;
+            }
+            .css-1odg5z2::before {
+                content: "";
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(/Public/Home/static/imgs/bannerissue.png);
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+            }
+            .css-1xrgo9z {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                font-size: 26px;
+                color: white;
+                z-index: 1;
+                height: 100%;
+                padding-bottom: 48px;
+            }.css-1xrgo9z {
+                -webkit-box-pack: start;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                font-size: 40px;
+                padding-bottom: 64px;
+            }
+            .css-1xrgo9z {
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+            .css-uliqdc {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+            .progress-bar {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -ms-flex-pack: center;
+                justify-content: center;
+                overflow: hidden;
+                color: #fff;
+                text-align: center;
+                white-space: nowrap;
+                background-color: #007bff;
+                transition: width .6s ease;
+            }
+            .progress-bar {
+                color: #000;
+                background-color: #f3c420;
+            }
+            ::-webkit-input-placeholder {color: #b5b5b5;font-size: 12px;}
+	        ::-moz-placeholder {color: #b5b5b5;font-size: 12px;}
+	        input:focus{background:#f5f5f5;outline: 1px solid #f5f5f5;}
+	        .allbtn {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                background: #ccc;
+                border-radius: 5px;
+                background: linear-gradient(to left,#eeb80d,#ffe35b);
+                margin-top: 20px;
+            }
+            .css-bhso1m {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: inline-block;
+                border-radius: 4px;
+                padding-left: 8px;
+                padding-right: 8px;
+                font-size: 14px;
+                background-color: rgba(240, 185, 11, 0.19);
+                color: rgb(240, 185, 11);
+            }
+            .css-6ul7zn {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+                flex-direction: column;
+                width: 100%;
+                padding: 32px;
+            }
+            .css-joa6mv {
+                box-sizing: border-box;
+                margin: 0px 0px 24px;
+                min-width: 0px;
+            }
+            .css-1868gi1 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .css-1h690ep {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+            }
+            .css-jjjwcg {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .css-15owl46 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: relative;
+            }
+            .btitle{width:100%;height:40px;background:#f5f5f5;}
+            .btitleop{height:40px;line-height:40px;text-align:center;float:left;}
+            .bcontentop{height:60px;line-height:60px;text-align:center;float:left;}
+            .css-1lzksdc {
+                box-sizing: border-box;
+                min-width: 0px;
+                color: rgb(132, 142, 156);
+                fill: rgb(132, 142, 156);
+                margin: 16px;
+                width: 96px;
+                height: 96px;
+                font-size: 96px;
+            }
+            .infobox{width:100%;background:#fff;border-top:1px solid #f5f5f5;}
+	        .infobox_1{width:100%;min-height:40px;}
+	        .infobox_1l{width:30%;float:left;}
+	        .infobox_1r{width:70%;float:right;}
+	        .festyle{width:80px;height:30px;line-height:30px;text-align:center;border-radius:5px;float:left;}
+	        .feactive{border:1px solid #FCD535;}
+	        .fenc{border:1px solid #000000;}
+	        .copyurl{background: linear-gradient(to left,#eeb80d,#ffe35b);padding:5px 10px;border-radius:5px;}
+	        .buybtn{width:90%;height:40px;line-height:40px;background: linear-gradient(to left,#eeb80d,#ffe35b);margin-top:30px;text-align:center;border-radius:5px;}
+            
+	    </style>
+	</head>
+	<body>
+	    <div class="App">
+	        <div class="css-tq0shg">
+	            <include file="Public:header"/>
+	            <div class="css-ogtd7z">
+	                <div class="css-jrzkh7">
+	                    <div id="header_global_js_wxgy34nj" class="css-1aac2e"></div>
+	                 </div>
+	            </div>
+	            <main class="css-1wr4jig" style="background: #fff;">
+                    <div class="css-1odg5z2">
+                        <div class="css-1xrgo9z">{:L('矿机详情')}</div>
+                    </div>
+                    <div class="css-uliqdc">
+                        <div style="width:100%;min-height:min-280px;background:#f5f5f5;padding:20px 50px;">
+                            <div style="width:100%;height:280px;background:#fff;margin-bottom:20px;box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);border-radius:5px;">
+                                <div style="width:100%;height:240px;">
+                                    <div style="width:35%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;background:#fff;">
+                                            <div style="width:100%;height:230px;">
+                                                <div style="width:25%;heigth:230px;line-height:150px;text-align:center;float:left;">
+                                                    <img src="/Upload/public/{$info.imgs}" style="width:80%;">
+                                                </div>
+                                                <div style="width:75%;padding:10px 0px 10px 10px;float:right;">
+                                                    <div style="width:100%;min-height:30px;">
+                                                        <span class="f16 fch">{$info.title}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('上市时间')}：{$info.addtime}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('产出币种')}：<?php echo strtoupper($info['outcoin']);?></span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('矿机产权')}：{$info.cycle} {:L('天')}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('矿机类型')}：
+                                                        <if condition="$info.type eq 1">
+                                                        <span class="f16 fcy fw">{:L('独资矿机')}</span>    
+                                                        <elseif condition="$info.type eq 2" />
+                                                        <span class="f16 fcy fw">{:L('共享矿机')}</span>
+                                                        </if>
+                                                        </span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;margin-top:30px;">
+                                                        <div style="width:80%;height:30px;">
+                                                            <div class="progress">
+					                                            <div class="progress-bar" role="progressbar" style="width:<?php echo ($info['ycnum'] + $info['sellnum']) / $info['allnum'] * 100;?>%;" aria-valuenow="<?php echo ($info['ycnum'] + $info['sellnum']) / $info['allnum'] * 100;?>" aria-valuemin="0" aria-valuemax="100"><?php echo ($info['ycnum'] + $info['sellnum']) / $info['allnum'] * 100;?>%</div>
+					                                        </div>    
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                
+                                    <div style="width:30%;height:280px;float:left;padding:5px;">
+                                        <div style="width:100%;height:280px;">
+                                            <div style="width:100%;height:280px;padding:10px 0px 10px 10px;">
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f16 fch">{:L('项目说明')}</span>
+                                                </div>
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('购买条件')} ：
+                                                    <if condition="$info.buyask eq 1">
+                                                    {:L('最低持仓')}{$info.asknum}{:L('平台币')}   
+                                                    <elseif condition="$info.buyask eq 2" />
+                                                    {:L('要求直推')}{$info.asknum}{:L('人')}
+                                                    </if>
+                                                    </span>
+                                                </div>
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('产币冻结')} ：
+                                                    <if condition="$info.djout eq 1">
+                                                    {:L('否')}    
+                                                    <elseif condition="$info.djout eq 2" />
+                                                    {$info.djday}{:L('天')}
+                                                    </if>
+                                                    </span>
+                                                </div>
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('结算说明')} ：{:L('定期自动结算')}</span>
+                                                </div>
+                                                <div style="width:100%;min-height:60px;max-height: 100px;overflow:auto;">
+                                                    <span class="f14 fcc">{$info.content}</span>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="width:35%;height:280px;float:right;padding:5px;">
+                                        <div style="width:100%;height:280px;">
+                                            <div style="width:100%;height:280px;padding:10px 0px 10px 10px;">
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f18 fch fw">{:L('我要购买')}</span>
+                                                </div>
+                                                <div style="width:100%;height:30px;margin-top:30px;">
+                                                    <if condition="$info.type eq 2">
+				                                    <div class="infobox_1">
+				                                        <div class="infobox_1l">
+				                                            <span class="f14 fcc">{:L('选择份额')}：</span>
+				                                        </div>
+				                                        <div class="infobox_1r">
+				                                            <div class="festyle feactive" id="fe1btn" style="cursor: pointer;">
+				                                                <input type="hidden" id="fe1box" value="{$info.fe1}" />
+				                                                <span class="f14 fcy" id="fe1span">{$info.fe1}%</span>
+				                                            </div>
+				                                            <div class="festyle fenc" style="margin-left:15px;cursor: pointer;"  id="fe2btn">
+				                                                <input type="hidden" id="fe2box" value="{$info.fe2}" />
+				                                                <span class="f14 fcc"  id="fe2span">{$info.fe2}%</span>
+				                                            </div>
+				                                        </div>
+				                                    </div>
+				                                    
+				                                    <div class="infobox_1">
+				                                        <div class="infobox_1l">
+				                                            <span class="f14 fcc">{:L('共享链接')}：</span>
+				                                        </div>
+				                                        <div class="infobox_1r">
+				                                            <div style="width:70%;float:left;">
+				                                                <span class="f12 fcy">{:L('修改份额后需重新复制链接')}</span>
+				                                            </div>
+				                                            
+				                                            <input type="hidden" value="" id="qrcode_url">
+				                                            <div style="width:20%;float:left;cursor:pointer;">
+				                                                <span class="copyurl f12"  onclick="copyUrl()">{:L('复制')}</span>
+				                                            </div>
+				                                        </div>
+				                                    </div>
+				                                    </if>
+                                                
+                                                <input type="hidden" value="{$info.fe1}" id="cfebox" />
+				                                <input type="hidden" value="{$info.id}" id="kjid" />
+				                                
+				                                <input type="hidden" id="flag" value="1" />
+				                                <input type="hidden" id="sharbltxt" value="" />
+                                                
+                                                <div  class="infobox_1" style="margin-top:30px;">
+                                                    <if condition="$uid elt 0">
+				                                    <div class="buybtn">
+				                                        <span class="fzmm fch">{:L('请先登陆')}</span>
+				                                    </div>   
+				                                    <else />
+				                                    <if condition="$info.type eq 1">
+				                                    <div class="buybtn" style="cursor:pointer;" onclick="dzbuynow({$info.id});">
+				                                        <span class="fzmm fch">{:L('购买')}</span>
+				                                    </div>
+				                                    <elseif condition="$info.type eq 2" />
+				                                    <div class="buybtn"  style="cursor:pointer;"  onclick="gxbuynow({$info.id});">
+				                                        <span class="fzmm fch">{:L('购买')}</span>
+				                                    </div>
+				                                    </if>
+				                                    </if>
+                                                <div>
+                                                
+                                                
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+   
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+	            </main>
+
+	            <include file="Public:footer"/>
+	        </div>   
+	    </div>
+	    
+	</body>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
+    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript">
+    $(function(){
+        var fetxt2 = $("#fe2box").val();
+        var oid = $("#kjid").val();
+        var domain = "http://" + window.location.host + "/Orepool/kjshare?oid="+ oid +"&fe=" + fetxt2;
+        $("#qrcode_url").val(domain);
+    });
+</script>
+<script type="text/javascript">
+    function gxbuynow(id){
+        var flag = $("#flag").val();
+        if(flag == 2){
+            return false;
+        }
+        
+        var kid = id;
+        if(kid <= 0 || kid == null){
+            layer.msg("{:L('缺少重要参数')}");return false;
+        }
+        var gxfe = $("#cfebox").val();
+        if(gxfe <= 0 || gxfe == null){
+            layer.msg("{:L('请选择份额')}");return false;
+        }
+        var sharbltxt = $("#sharbltxt").val();
+        if(sharbltxt <= 0 || sharbltxt == null){
+            layer.msg("{:L('请选择份额')}");return false;
+        }
+        $("#flag").val(2);
+        $.post("{:U('Orepool/buygxmining')}",
+        {'kid':kid,'gxfe':gxfe,'st':8,"sharbltxt":sharbltxt},
+        function(data){
+            if(data.code == 1){
+                layer.msg(data.msg);
+                setTimeout(function(){
+                    window.location.href="{:U('Orepool/index')}";
+                },2000);
+            }else{
+                layer.msg(data.msg);
+                setTimeout(function(){
+                    window.location.reload();
+                },2000);
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    function dzbuynow(id){
+        
+        var flag = $("#flag").val();
+        if(flag == 2){
+            return false;
+        }
+        
+        
+        var kid = id;
+        if(kid <= 0 || kid == null){
+            layer.msg("{:L('缺少重要参数')}");return false;
+        }
+        $("#flag").val(2);
+        $.post("{:U('Orepool/buydzmining')}",
+        {'kid':kid,'st':7},
+        function(data){
+            if(data.code == 1){
+                layer.msg(data.msg);
+                setTimeout(function(){
+                    window.location.href="{:U('Orepool/index')}";
+                },2000);
+            }else{
+                layer.msg(data.msg);
+                setTimeout(function(){
+                    window.location.reload();
+                },2000);
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    function createRand(){
+        var x = 100000;
+        var y = 1;
+        var randnum = parseInt(Math.random() * (x - y + 1) + y);
+        return randnum;
+    }
+    $("#fe1btn").click(function(){
+        $("#fe1btn").addClass("feactive");
+        $("#fe1btn").removeClass("fenc");
+        $("#fe1span").addClass("fcy");
+        $("#fe1span").removeClass("fcc");
+        
+        $("#fe2btn").removeClass("feactive");
+        $("#fe2btn").addClass("fenc");
+        $("#fe2span").removeClass("fcy");
+        $("#fe2span").addClass("fcc");
+        var fetxt1 = $("#fe1box").val();
+        var fetxt2 = $("#fe2box").val();
+        var oid = $("#kjid").val();
+        $("#cfebox").val(fetxt1);
+        var randnum = createRand();
+        $("#sharbltxt").val(randnum);
+        var domain = "https://" + window.location.host + "/Orepool/kjshare?oid="+ oid +"&fe="+fetxt2 + "&sharbltxt=" + randnum;
+        $("#qrcode_url").val(domain);
+    });
+    $("#fe2btn").click(function(){
+        $("#fe2btn").addClass("feactive");
+        $("#fe2btn").removeClass("fenc");
+        $("#fe2span").addClass("fcy");
+        $("#fe2span").removeClass("fcc");
+        
+        $("#fe1btn").removeClass("feactive");
+        $("#fe1btn").addClass("fenc");
+        $("#fe1span").removeClass("fcy");
+        $("#fe1span").addClass("fcc");
+        var fetxt1 = $("#fe1box").val();
+        var fetxt2 = $("#fe2box").val();
+        var oid = $("#kjid").val();
+        $("#cfebox").val(fetxt2);
+        var randnum = createRand();
+        $("#sharbltxt").val(randnum);
+        var domain = "https://" + window.location.host + "/Orepool/kjshare?oid="+ oid +"&fe="+fetxt1 + "&sharbltxt=" + randnum;
+        $("#qrcode_url").val(domain);
+        
+    });
+</script>
+<script type="text/javascript">
+    function copyUrl(){
+        var qrcode_url=$("#qrcode_url").val();
+        copy(qrcode_url);
+    }
+
+    function copy(message) {
+        var input = document.createElement("input");
+        input.value = message;
+        document.body.appendChild(input);
+        input.select();
+        input.setSelectionRange(0, input.value.length), document.execCommand('Copy');
+        document.body.removeChild(input);
+        layer.msg("{:L('复制成功')}");
+    }
+</script>
+    <script type="text/javascript">
+		$("#nav").slide({ 
+			type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell:".nLi", //鼠标触发对象
+			targetCell:".sub", //titCell里面包含的要显示/消失的对象
+			effect:"slideDown", //targetCell下拉效果
+			delayTime:300 , //效果时间
+			triggerTime:0, //鼠标延迟触发时间（默认150）
+			returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+
+    
+</html>

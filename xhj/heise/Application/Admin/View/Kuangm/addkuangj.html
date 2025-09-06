@@ -1,0 +1,319 @@
+<include file="Public:header"/>
+<style>
+	.hoh td.item-label,.hoh td.item-note{
+		height:80px;line-height:80px;
+	}
+	.gezibg {
+		padding:5px;width:168px;background:url('/Public/Admin/ecshe_img/imgbg.png');
+	}
+</style>
+
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">添加矿机/编辑矿机</span>
+		</div>
+		<div class="tab-wrap">
+			<div class="tab-content">
+				<form id="form" action="{:U('Kuangm/addkj')}" method="post" class="form-horizontal" enctype="multipart/form-data">
+					<div id="tab" class="tab-pane in tab">
+						<div class="form-item cf">
+							<table>
+
+								<tr class="controls">
+									<td class="item-label">矿机名称 :</td>
+									<td style="width:300px;">
+										<input type="text" class="form-control"  style="width:300px;" name="title" value="{$data['title']}">
+									</td>
+									<td class="item-note" style="color:red;">*矿机名称</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">购买类型 :</td>
+									<td style="width:300px;">
+										<select type="text" class="form-control" style="width:300px;" name="rtype">
+										    <option value="1" <if condition="$data.rtype eq 1">selected</if>>出售矿机</option>
+										    <option value="2" <if condition="$data.rtype eq 2">selected</if>>赠送矿机</option>
+										</select>
+									</td>
+									<td class="item-note"  style="color:red;">*表示购买和收益都共享</td>
+								</tr>
+								
+								
+								<tr class="controls">
+									<td class="item-label">矿机类型 :</td>
+									<td style="width:300px;">
+										<select type="text" class="form-control" style="width:300px;" name="type">
+										    <option value="1" <if condition="$data.type eq 1">selected</if>>独资</option>
+										    <option value="2" <if condition="$data.type eq 2">selected</if>>共享</option>
+										</select>
+									</td>
+									<td class="item-note"  style="color:red;">*表示购买和收益都共享</td>
+								</tr>
+								
+								
+								<tr class="controls">
+									<td class="item-label">分享比例 :</td>
+									<td style="width:300px;">
+										<input type="text" class="form-control"  style="width:300px;" name="sharebl" value="{$data['sharebl']}">
+									</td>
+									<td class="item-note" style="color:red;">*独资请留空，共享请填写分享比例，如：50|50，表示各50%；</td>
+								</tr>
+
+								<if condition="$data.type eq 2">
+								<tr class="controls">
+									<td class="item-label">共享识别码 :</td>
+									<td style="width:300px;">
+										<input type="text" class="form-control"  style="width:300px;" readonly="readonly" value="{$data['sharecode']}">
+									</td>
+									<td class="item-note" style="color:red;">*共享机购买，复制识别码给好友购买</td>
+								</tr>    
+								</if>
+
+								
+								<tr class="controls">
+									<td class="item-label">矿机详情 :</td>
+									<td>
+										<textarea class="form-control" rows="3" cols="26" name="content" style="border: 1px solid #dedede;width: 300px;">{$data['content']}</textarea>
+									</td>
+									<td class="item-note"></td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">矿机图片 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.imgs">
+												<img id="up_img" onclick="getElementById('inputfile').click()" style="cursor:pointer;max-height:62px;" title="点击添加图片" alt="点击添加图片" src="/Upload/public/{$data.imgs}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img" onclick="getElementById('inputfile').click()" style="cursor:pointer;max-height:62px;" title="点击添加图片" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="img" name="imgs" value="{$data.imgs}">
+											<input type="file" id="inputfile" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">产出币种 :</td>
+									<td style="width:300px;">
+										<select type="text" class="form-control" style="width:300px;" name="outcoin">
+										    {$data.outcoin}
+										    <foreach name="coind" item="vo">
+										    <option value="{$vo.name}" <?php if(trim($data['outcoin']) == $vo['name']){?>selected<?php }?>>{$vo.name}{$vo.title}</option>
+										    </foreach>
+										</select>
+									</td>
+									<td class="item-note" style="color:red;">*产出币种,如是平台币，请选择按币量产出</td>
+								</tr>
+
+								<tr class="controls">
+									<td class="item-label">日产量 :</td>
+									<td style="width:300px;">
+										<select type="text" class="form-control" style="width:140px;float:left;" name="outtype" >
+										    <option value="1" <if condition="$data.outtype eq 1">selected</if>>按产值</option>
+										    <option value="2" <if condition="$data.outtype eq 2">selected</if>>按币量</option>
+										</select>
+										<input type="text" class="form-control" style="width:140px;float:left;margin-left:20px;" name="dayoutnum" value="{$data['dayoutnum']}">
+									</td>
+									<td class="item-note" style="color:red;">*按产值是按USDT折合产值，产出币量随价格波动，按币量则是定量</td>
+								</tr>
+								
+								
+								<tr class="controls">
+									<td class="item-label">矿机单价 :</td>
+									<td style="width:300px;">
+									    <input type="text" class="form-control" style="width:140px;float:left;;" name="pricenum" value="{$data['pricenum']}">
+										<select type="text" class="form-control" style="width:140px;float:left;margin-left:20px" name="pricecoin">
+										    <foreach name="coind" item="vo">
+										    <option value="{$vo.name}"<?php if(trim($data['pricecoin']) == $vo['name']){?>selected<?php }?>>{$vo.name}{$vo.title}</option>
+										    </foreach>
+										</select>
+									</td>
+									<td class="item-note" style="color:red;">*矿机购买单价</td>
+								</tr>
+
+								<tr class="controls">
+									<td class="item-label">购买上限 :</td>
+									<td style="width:300px;">
+										<input type="text" class="form-control"  style="width:300px;" name="buymax" value="{$data['buymax']}">
+									</td>
+									<td class="item-note" style="color:red;">*每个账号购买的上限</td>
+								</tr>
+								
+								
+								<tr class="controls">
+									<td class="item-label">矿机周期 :</td>
+									<td style="width:300px;">
+										<input type="text" class="form-control"  style="width:300px;" name="cycle" value="{$data['cycle']}">
+									</td>
+									<td class="item-note" style="color:red;">*矿机到期周期</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">矿机算力 :</td>
+									<td style="width:300px;">
+										<input type="text" class="form-control" style="width:300px;" name="suanl" value="{$data['suanl']}">
+									</td>
+									<td class="item-note" style="color:red;">*矿机算力</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">矿机库存总量 :</td>
+									<td style="width:300px;">
+										<input type="text" class="form-control"  style="width:300px;" name="allnum" value="{$data['allnum']}">
+									</td>
+									<td class="item-note"></td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">预设出售量 :</td>
+									<td style="width:300px;">
+										<input type="text" class="form-control" style="width:300px;" name="ycnum" value="{$data['ycnum']}">
+									</td>
+									<td class="item-note"></td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">参与奖励币种 :</td>
+									<td style="width:300px;">
+										<select type="text" class="form-control" style="width:300px;" name="jlcoin">
+										    <foreach name="coind" item="vo">
+										    <option value="{$vo.name}" <?php if(trim($data['jlcoin']) == $vo['name']){?>selected<?php }?>>{$vo.name}{$vo.title}</option>
+										    </foreach>
+										</select>
+									</td>
+									<td class="item-note"></td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">参与奖励币量 :</td>
+									<td style="width:300px;">
+										<input type="text" class="form-control" style="width:300px;" name="jlnum" value="{$data['jlnum']}">
+									</td>
+									<td class="item-note"></td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">矿机状态 :</td>
+									<td style="width:300px;">
+										<select type="text" class="form-control" style="width:300px;" name="status" value="{$data['status']}">
+										    <option value="1" <if condition="$data.status eq 1">selected</if>>可用</option>
+										    <option value="2" <if condition="$data.status eq 2">selected</if>>禁用</option>
+										</select>
+									</td>
+									<td class="item-note"></td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">产币冻结 :</td>
+									<td style="width:300px;">
+										<select type="text" class="form-control" style="width:300px;" name="djout" value="{$data['djout']}">
+										    <option value="1" <if condition="$data.djout eq 1">selected</if>>否</option>
+										    <option value="2" <if condition="$data.djout eq 2">selected</if>>是</option>
+										</select>
+									</td>
+									<td class="item-note"></td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">产币冻结时间 :</td>
+									<td style="width:300px;">
+										<input type="text" class="form-control" style="width:300px;" name="djday" value="{$data['djday']}">
+									</td>
+									<td class="item-note" style="color:red;">*不冻结请留空，输入纯数字，表示天数！</td>
+								</tr>
+								
+								
+								<tr class="controls">
+									<td class="item-label">申购要求 :</td>
+									<td style="width:300px;">
+										<select type="text" class="form-control" style="width:140px;float:left;" name="buyask" >
+										    <option value="1" <if condition="$data.buyask eq 1">selected</if>>按持币</option>
+										    <option value="2" <if condition="$data.buyask eq 2">selected</if>>按团队</option>
+										</select>
+										<input type="text" class="form-control" style="width:140px;float:left;margin-left:20px;" name="asknum" value="{$data['asknum']}">
+									</td>
+									<td class="item-note" style="color:red;">*按持币表示持有多少平台币，按团队表示推荐多会员</td>
+								</tr>
+								
+
+	                            <input type="hidden" id="kid" name="kid" value="{$data['id']}"  />
+
+
+								<tr class="controls">
+									<td class="item-label"></td>
+									<td>
+										<div class="form-item cf">
+											<button class="btn submit-btn ajax-post" target-form="form-horizontal" id="submit" type="submit">提交</button>
+											<a class="btn btn-return" href="{$Think.server.HTTP_REFERER}">返 回</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</form>
+				<script type="text/javascript">
+					//提交表单
+					$('#submit').click(function () {
+						$('#form').submit();
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	/** 主LOGO上传 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#inputfile").change(function () {
+
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#inputfile')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+
+			//发送数据
+			$.ajax({
+				url: '/Admin/Kuangm/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img').attr("src", '/Upload/public/' + $.trim(data));
+						$('#img').val($.trim(data));
+						$('#up_img').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	});
+	
+
+</script>
+
+<include file="Public:footer"/>
+<block name="script">
+	<script type="text/javascript" charset="utf-8">
+		//导航高亮
+		highlight_subnav("{:U('Kuangm/index')}");
+	</script>
+</block>

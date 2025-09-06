@@ -1,0 +1,73 @@
+<include file="Public:header"/>
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display:none;">
+		<button class="close fixed" style="margin-top:4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">认购配置</span>
+		</div>
+		<div class="cf">
+			<div class="fl">
+				<a class="btn  btn-success" href="{:U('Issue/edit')}" style="    padding: 6px 30px;">新 增</a>
+			</div>
+		</div>
+		<div class="data-table table-striped">
+			<table class="">
+				<thead>
+					<tr>
+						<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+						<th class="">ID</th>
+						<th class="">项目名称</th>
+						<th class="">认购币种</th>
+						<th class="">发行总量</th>
+						<th class="">预设认购</th>
+						<th class="">实际认购</th>
+						<th class="">认购价格</th>
+						<th class="">认购限量</th>
+						<th class="">锁仓天数</th>
+						<th class="">认购时间</th>
+						<th class="">状态</th>
+						<th class="">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<notempty name="list">
+						<volist name="list" id="vo">
+							<tr>
+								<td><input class="ids" type="checkbox" name="id[]" value="{$vo.id}"/></td>
+								<td>{$vo.id}</td>
+								<td>{$vo.name}</td>
+								<td><?php echo strtoupper($vo['coinname']);?></td>
+								<td>{$vo['num']*1}</td>
+								<td>{$vo['ysnum']*1 }</td>
+								<td>{$vo['sellnum']*1 }</td>
+								<td>{$vo['price']*1} {$vo.buycoin}</td>
+								<td>{$vo['allmax']*1}</td>
+								<td>{$vo['lockday']}天</td>
+								<td>开启时间：{$vo['starttime']}<br>结束时间：{$vo['finishtime']}</td>
+								<td><eq name="vo.status" value="1">显示<else/>隐藏</eq></td>
+								<td><a href="{:U('Issue/edit?id='.$vo['id'])}" class="btn btn-primary btn-xs">编辑</a></td>
+							</tr>
+						</volist>
+					<else/>
+						<td colspan="14" class="text-center empty-info">
+							<i class="glyphicon glyphicon-exclamation-sign"></i>暂无数据
+						</td>
+					</notempty>
+				</tbody>
+			</table>
+			<div class="page">
+				<div>{$page}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Public:footer"/>
+<block name="script">
+	<script type="text/javascript" charset="utf-8">
+		//导航高亮
+		highlight_subnav("{:U('Issue/index')}");
+	</script>
+</block>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2560px" height="493px" viewBox="0 0 2560 493" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="77.3366044%" id="linearGradient-1">
+            <stop stop-color="#210989" offset="0%"></stop>
+            <stop stop-color="#131C5F" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="2560" height="492"></rect>
+        <linearGradient x1="13.1153752%" y1="51.6666052%" x2="85.7869839%" y2="51.6666052%" id="linearGradient-4">
+            <stop stop-color="#0C1767" offset="0%"></stop>
+            <stop stop-color="#0066ED" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="3.08141094%" y1="51.6666052%" x2="87.6676502%" y2="51.6666052%" id="linearGradient-5">
+            <stop stop-color="#0C1767" offset="0%"></stop>
+            <stop stop-color="#07A1A3" offset="59.3372181%"></stop>
+            <stop stop-color="#0066ED" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="32.7190485%" y1="27.4757811%" x2="32.7190485%" y2="85.9948305%" id="linearGradient-6">
+            <stop stop-color="#0C1767" offset="0%"></stop>
+            <stop stop-color="#8F4AFF" offset="67.0242946%"></stop>
+            <stop stop-color="#0066ED" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="32.7190485%" y1="27.4757811%" x2="32.7190485%" y2="67.6448142%" id="linearGradient-7">
+            <stop stop-color="#0C1767" offset="0%"></stop>
+            <stop stop-color="#0066ED" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="32.7190485%" y1="29.871468%" x2="32.7190485%" y2="95.8240626%" id="linearGradient-8">
+            <stop stop-color="#0C1767" offset="0%"></stop>
+            <stop stop-color="#6C17EC" offset="69.1230279%"></stop>
+            <stop stop-color="#044CC0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="96.6452085%" y1="51.6666052%" x2="4.89954726%" y2="51.6666052%" id="linearGradient-9">
+            <stop stop-color="#131C5F" offset="0%"></stop>
+            <stop stop-color="#0066ED" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="23.4512463%" y1="69.348877%" x2="96.578881%" y2="69.348877%" id="linearGradient-10">
+            <stop stop-color="#1A1178" offset="0%"></stop>
+            <stop stop-color="#0066ED" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="29.3421247%" y1="51.6666052%" x2="93.7287603%" y2="51.6666052%" id="linearGradient-11">
+            <stop stop-color="#191470" offset="0%"></stop>
+            <stop stop-color="#B258F5" stop-opacity="0.526518639" offset="39.975331%"></stop>
+            <stop stop-color="#004BAE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="25.4122406%" y1="51.6666052%" x2="93.7287603%" y2="51.6666052%" id="linearGradient-12">
+            <stop stop-color="#131B5F" offset="0%"></stop>
+            <stop stop-color="#004BAE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="13.1153752%" y1="51.6666052%" x2="85.7869839%" y2="51.6666052%" id="linearGradient-13">
+            <stop stop-color="#0C1767" offset="0%"></stop>
+            <stop stop-color="#0066ED" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-18">
+            <g id="路径-7">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            </g>
+            <g id="编组-19" opacity="0.200000003" transform="translate(0.000000, 1.000000)">
+                <rect id="矩形备份-2" fill="url(#linearGradient-4)" x="1073" y="0" width="285" height="124"></rect>
+                <rect id="矩形备份-9" fill="url(#linearGradient-4)" x="0" y="0" width="285" height="124"></rect>
+                <rect id="矩形" fill="url(#linearGradient-5)" x="417" y="0" width="233" height="343"></rect>
+                <rect id="矩形备份-3" fill="url(#linearGradient-6)" x="1416" y="33" width="233" height="402"></rect>
+                <rect id="矩形备份-7" fill="url(#linearGradient-7)" x="2089" y="67" width="151" height="424"></rect>
+                <rect id="矩形备份-4" fill="url(#linearGradient-8)" x="1649" y="0" width="336" height="406"></rect>
+                <rect id="矩形备份-10" fill="url(#linearGradient-8)" x="2350" y="86" width="336" height="406"></rect>
+                <rect id="矩形备份-5" fill="url(#linearGradient-9)" x="1240" y="435" width="849" height="57"></rect>
+                <rect id="矩形备份-6" fill="url(#linearGradient-10)" x="1800" y="44" width="440" height="124"></rect>
+                <rect id="矩形备份" fill="url(#linearGradient-11)" x="650" y="0" width="423" height="424"></rect>
+                <rect id="矩形备份-8" fill="url(#linearGradient-12)" x="9" y="149" width="151" height="343"></rect>
+                <rect id="矩形" fill="url(#linearGradient-13)" x="320" y="424" width="753" height="68"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

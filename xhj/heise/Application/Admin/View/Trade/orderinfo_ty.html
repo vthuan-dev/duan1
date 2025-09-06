@@ -1,0 +1,137 @@
+<include file="Public:header" />
+
+<div id="main-content">
+    <div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">合约订单详情</span>
+		</div>
+
+		<div class="tab-wrap">
+			<div class="tab-content">
+					<div id="tab" class="tab-pane in tab">
+						<div class="form-item cf">
+							<table>
+							    
+							    <tr class="controls" style="height: 40px;line-height:40px;">
+									<td class="item-label" style="width:100px;">会员账号 :</td>
+									<td style="width:200px;">
+									    <span>{$info.username}</span>
+									</td>
+								</tr>
+                                
+                                <tr class="controls" style="height: 40px;line-height:40px;">
+									<td class="item-label" style="width:100px;">合约交易对 :</td>
+									<td style="width:200px;">
+									    <span>{$info.coinname}</span>
+									</td>
+								</tr>
+								
+								<tr class="controls" style="height: 40px;line-height:40px;">
+									<td class="item-label" style="width:100px;">合约交易方向 :</td>
+									<td style="width:200px;">
+									    <if condition="$info.hyzd eq 1">
+						                    <span style="color:#0ecb81;">买涨</span>
+						                <elseif condition="$info.hyzd eq 2" />
+						                    <span style="color:#f5465c;">买跌</span>
+						                </if>
+									</td>
+								</tr>
+								
+								<tr class="controls" style="height: 40px;line-height:40px;">
+									<td class="item-label" style="width:100px;">委托额度 :</td>
+									<td style="width:200px;">
+									    <span>{$info.num}USDT</span>
+									</td>
+								</tr>
+								
+								<tr class="controls"  style="height: 40px;line-height:40px;">
+									<td class="item-label" style="width:100px;">合约状态 :</td>
+									<td style="width:200px;">
+									    <if condition="$info.status eq 1">
+						                    <span style="color:#707A8A;">待结算</span>
+						                <elseif condition="$info.status eq 2" />
+						                    <span style="color:#0ecb81;">已完成</span>
+						                <elseif condition="$info.status eq 3" />
+						                    <span style="color:#f5465c;">无效</span>
+						                </if>
+									</td>
+								</tr>
+								
+								<tr class="controls"  style="height: 40px;line-height:40px;">
+									<td class="item-label" style="width:100px;">建仓单价 :</td>
+									<td style="width:200px;">
+									    <span>{$info.buyprice}</span>
+									</td>
+								</tr>
+								<tr class="controls"  style="height: 40px;line-height:40px;">
+									<td class="item-label" style="width:100px;">建仓时间 :</td>
+									<td style="width:200px;">
+									    <span>{$info.buytime}</span>
+									</td>
+								</tr>
+								<tr class="controls"  style="height: 40px;line-height:40px;">
+									<td class="item-label" style="width:100px;">平仓单价 :</td>
+									<td style="width:200px;">
+									    <if condition="$info.is_win eq 0">
+						                    <span style="color:#707A8A;">{$info.sellprice}</span>    
+						                <elseif condition="$info.is_win eq 1" />  
+						                    <span style="color:#0ecb81;">{$info.sellprice}</span>
+						                <elseif condition="$info.is_win eq 2" />
+						                    <span style="color:#f5465c;">{$info.sellprice}</span>
+						                </if>
+									</td>
+								</tr>
+								<tr class="controls"  style="height: 40px;line-height:40px;">
+									<td class="item-label" style="width:100px;">平仓时间 :</td>
+									<td style="width:200px;">
+									    <span>{$info.selltime}</span>
+									</td>
+								</tr>
+								
+								<tr class="controls"  style="height: 40px;line-height:40px;">
+									<td class="item-label" style="width:100px;">盈亏额度 :</td>
+									<td style="width:200px;">
+									    <if condition="$info.is_win eq 0">
+						                    <span style="color:#707A8A;">{$info.ploss}</span>    
+						                <elseif condition="$info.is_win eq 1" />  
+						                    <span style="color:#0ecb81;">+{$info.ploss}</span>
+						                <elseif condition="$info.is_win eq 2" />
+						                    <span style="color:#f5465c;">-{$info.ploss}</span>
+						                </if>
+									</td>
+								</tr>
+
+								<tr class="controls">
+									<td class="item-label"></td>
+									<td>
+										<div class="form-item cf">
+											<a class="btn btn-return" href="{$Think.server.HTTP_REFERER}">返 回</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				<script type="text/javascript">
+					//提交表单
+					$('#submit').click(function(){
+						$('#form').submit();
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+<include file="Public:footer" />
+<block name="script">
+	<script type="text/javascript" charset="utf-8">
+		//导航高亮
+		highlight_subnav("{:U('Trade/tyorder')}");
+	</script>
+</block>

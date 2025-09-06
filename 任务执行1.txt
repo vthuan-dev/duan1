@@ -1,0 +1,15 @@
+﻿https://你的域名/home/autoexe/setwl                             计划任务A                  5-10秒执 
+https://你的域名/home/autoexe/setwl_ty                         计划任务B                  5-10秒执 
+https://你的域名/home/autoexe/autokjsy                        独资矿机自动收益        每天00：00
+https://你的域名/home/autoexe/releasedjprofit              释放冻结的矿机收益币  每天00：00
+https://你的域名/home/autoexe/autoxjtade                    委托订单自动交易         5-10秒
+https://你的域名/home/autoexe/authsharesjsy                共享矿机自动结算收益   每天00：00
+https://你的域名/home/autoexe/releaseissue                  自动释放冻结的认购币   每天00：00
+https://你的域名/home/autoexe/hycarryout_ty               自动结算体验合约订单   5-10秒
+https://你的域名/home/autoexe/hycarryout                   自动结算合约订单          5-10秒
+https://你的域名/home/autoexe/rengoubimoneyup      认购币每日增长              每天00：00
+https://你的域名/home/autoexe/rengoubijiesuan          认购币满X天，将增长的利益转到余额账户  每天00：00
+https://你的域名/home/autoexe/rengoubifafang           发放认购币波动利润 （未到余额）  设置每天00：00分执行一次
+https://你的域名/home/Queue/fortrade                         系统币种计算交易    每天一次
+https://你的域名/home/Queue/chart                              系统币行情计算     每天一次
+https://你的域名/home/autoexe/recharge_jiankong      充值自动到账监控   每分钟访问一次

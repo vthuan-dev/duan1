@@ -1,0 +1,876 @@
+<include file="Public:header"/>
+<style>
+	.hoh td.item-label,.hoh td.item-note{
+		height:80px;line-height:80px;
+	}
+	.gezibg {
+		padding:5px;width:168px;background:url('/Public/Admin/ecshe_img/imgbg.png');
+	}
+</style>
+
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">网站基本配置</span>
+		</div>
+		<div class="tab-wrap">
+			<div class="tab-content">
+				<form id="form" action="{:U('Config/edit')}" method="post" class="form-horizontal" enctype="multipart/form-data">
+					<div id="tab" class="tab-pane in tab">
+						<div class="form-item cf">
+							<table>
+
+								<tr class="controls">
+									<td class="item-label">网站名称 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="webname" value="{$data['webname']}">
+									</td>
+									<td class="item-note"></td>
+								</tr>
+								<tr class="controls">
+									<td class="item-label">网站标题 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="webtitle" value="{$data['webtitle']}">
+									</td>
+									<td class="item-note"></td>
+								</tr>
+								
+								
+								<tr class="controls hoh">
+									<td class="item-label">手机端Logo图片 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.weblogo">
+												<img id="up_img" onclick="getElementById('weblogo_box').click()" style="cursor:pointer;max-height:62px;" title="手机端Logo图片" alt="点击添加图片" src="/Upload/public/{$data.weblogo}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img" onclick="getElementById('weblogo_box').click()" style="cursor:pointer;max-height:62px;" title="手机端Logo图片" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="weblogo_deputy" name="weblogo" value="{$data.weblogo}">
+											<input type="file" id="weblogo_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 200*200px</td>
+								</tr>
+								
+								
+								<tr class="controls hoh">
+									<td class="item-label">PC端logo图片 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.waplogo">
+												<img id="up_img_waplogobox" onclick="getElementById('waplogo_box').click()" style="cursor:pointer;max-height:62px;" title="PC端logo图片" alt="点击添加图片" src="/Upload/public/{$data.waplogo}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_waplogobox" onclick="getElementById('waplogo_box').click()" style="cursor:pointer;max-height:62px;" title="PC端logo图片" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="waplogo_deputy" name="waplogo" value="{$data.waplogo}">
+											<input type="file" id="waplogo_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 200*200px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">手机端轮播图1 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.websildea">
+												<img id="up_img_websildea" onclick="getElementById('websildea_box').click()" style="cursor:pointer;max-height:62px;" title="手机端轮播图1" alt="点击添加图片" src="/Upload/public/{$data.websildea}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_websildea" onclick="getElementById('websildea_box').click()" style="cursor:pointer;max-height:62px;" title="手机端轮播图1" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="websildea_deputy" name="websildea" value="{$data.websildea}">
+											<input type="file" id="websildea_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">手机端轮播图2 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.websildeb">
+												<img id="up_img_websildeb" onclick="getElementById('websildeb_box').click()" style="cursor:pointer;max-height:62px;" title="手机端轮播图2" alt="点击添加图片" src="/Upload/public/{$data.websildeb}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_websildeb" onclick="getElementById('websildeb_box').click()" style="cursor:pointer;max-height:62px;" title="手机端轮播图2" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="websildeb_deputy" name="websildeb" value="{$data.websildeb}">
+											<input type="file" id="websildeb_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">手机端轮播图3 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.websildec">
+												<img id="up_img_websildec" onclick="getElementById('websildec_box').click()" style="cursor:pointer;max-height:62px;" title="手机端轮播图3" alt="点击添加图片" src="/Upload/public/{$data.websildec}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_websildec" onclick="getElementById('websildec_box').click()" style="cursor:pointer;max-height:62px;" title="手机端轮播图3" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="websildec_deputy" name="websildec" value="{$data.websildec}">
+											<input type="file" id="websildec_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">手机端新币认购图片 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.webissue">
+												<img id="up_img_webissue" onclick="getElementById('webissue_box').click()" style="cursor:pointer;max-height:62px;" title="手机端新币认购图片" alt="点击添加图片" src="/Upload/public/{$data.webissue}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_webissue" onclick="getElementById('webissue_box').click()" style="cursor:pointer;max-height:62px;" title="手机端新币认购图片" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="webissue_deputy" name="webissue" value="{$data.webissue}">
+											<input type="file" id="webissue_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">手机端矿机首页图片 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.webkj">
+												<img id="up_img_webkj" onclick="getElementById('webkj_box').click()" style="cursor:pointer;max-height:62px;" title="手机端矿机首页图片" alt="点击添加图片" src="/Upload/public/{$data.webkj}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_webkj" onclick="getElementById('webkj_box').click()" style="cursor:pointer;max-height:62px;" title="手机端矿机首页图片" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="webkj_deputy" name="webkj" value="{$data.webkj}">
+											<input type="file" id="webkj_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">PC端轮播图1 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.wapsildea">
+												<img id="up_img_wapsildea" onclick="getElementById('wapsildea_box').click()" style="cursor:pointer;max-height:62px;" title="PC端轮播图1" alt="点击添加图片" src="/Upload/public/{$data.wapsildea}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_wapsildea" onclick="getElementById('wapsildea_box').click()" style="cursor:pointer;max-height:62px;" title="PC端轮播图1" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="wapsildea_deputy" name="wapsildea" value="{$data.wapsildea}">
+											<input type="file" id="wapsildea_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">PC端轮播图2 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.wapsildeb">
+												<img id="up_img_wapsildeb" onclick="getElementById('wapsildeb_box').click()" style="cursor:pointer;max-height:62px;" title="PC端轮播图2" alt="点击添加图片" src="/Upload/public/{$data.wapsildeb}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_wapsildeb" onclick="getElementById('wapsildeb_box').click()" style="cursor:pointer;max-height:62px;" title="PC端轮播图2" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="wapsildeb_deputy" name="wapsildeb" value="{$data.wapsildeb}">
+											<input type="file" id="wapsildeb_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">PC端轮播图3 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.wapsildec">
+												<img id="up_img_wapsildec" onclick="getElementById('wapsildec_box').click()" style="cursor:pointer;max-height:62px;" title="PC端轮播图3" alt="点击添加图片" src="/Upload/public/{$data.wapsildec}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_wapsildec" onclick="getElementById('wapsildec_box').click()" style="cursor:pointer;max-height:62px;" title="PC端轮播图3" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="wapsildec_deputy" name="wapsildec" value="{$data.wapsildec}">
+											<input type="file" id="wapsildec_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">PC端轮播图4 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.wapsilded">
+												<img id="up_img_wapsilded" onclick="getElementById('wapsilded_box').click()" style="cursor:pointer;max-height:62px;" title="PC端轮播图3" alt="点击添加图片" src="/Upload/public/{$data.wapsilded}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_wapsilded" onclick="getElementById('wapsilded_box').click()" style="cursor:pointer;max-height:62px;" title="PC端轮播图3" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="wapsilded_deputy" name="wapsilded" value="{$data.wapsilded}">
+											<input type="file" id="wapsilded_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">PC端新币认购图片 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.wapissue">
+												<img id="up_img_wapissue" onclick="getElementById('wapissue_box').click()" style="cursor:pointer;max-height:62px;" title="PC端新币认购图片" alt="点击添加图片" src="/Upload/public/{$data.wapissue}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_wapissue" onclick="getElementById('wapissue_box').click()" style="cursor:pointer;max-height:62px;" title="PC端新币认购图片" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="wapissue_deputy" name="wapissue" value="{$data.wapissue}">
+											<input type="file" id="wapissue_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">PC端矿机首页图片 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.wapkj">
+												<img id="up_img_wapkj" onclick="getElementById('wapkj_box').click()" style="cursor:pointer;max-height:62px;" title="PC端矿机首页图片" alt="点击添加图片" src="/Upload/public/{$data.wapkj}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_wapkj" onclick="getElementById('wapkj_box').click()" style="cursor:pointer;max-height:62px;" title="PC端矿机首页图片" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="wapkj_deputy" name="wapkj" value="{$data.wapkj}">
+											<input type="file" id="wapkj_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 700*350px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">手机端推荐页面logo图片 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.webtjimgs">
+												<img id="up_img_webtjimgs" onclick="getElementById('webtjimgs_box').click()" style="cursor:pointer;max-height:62px;" title="手机端推荐页面logo图片" alt="点击添加图片" src="/Upload/public/{$data.webtjimgs}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_webtjimgs" onclick="getElementById('webtjimgs_box').click()" style="cursor:pointer;max-height:62px;" title="手机端推荐页面logo图片" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="webtjimgs_deputy" name="webtjimgs" value="{$data.webtjimgs}">
+											<input type="file" id="webtjimgs_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 200*200px</td>
+								</tr>
+								
+								<tr class="controls hoh">
+									<td class="item-label">手机端推荐页面logo图片 :</td>
+									<td>
+										<div id="addpicContainer" class="gezibg">
+											<notempty name="data.waptjimgs">
+												<img id="up_img_waptjimgs" onclick="getElementById('waptjimgs_box').click()" style="cursor:pointer;max-height:62px;" title="手机端推荐页面logo图片" alt="点击添加图片" src="/Upload/public/{$data.waptjimgs}">
+											<else/>
+												<!--没有图片显示默认图片-->
+												<img id="up_img_waptjimgs" onclick="getElementById('waptjimgs_box').click()" style="cursor:pointer;max-height:62px;" title="手机端推荐页面logo图片" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="waptjimgs_deputy" name="waptjimgs" value="{$data.waptjimgs}">
+											<input type="file" id="waptjimgs_box" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note" style="color:red;">* 200*200px</td>
+								</tr>
+								
+								
+								
+								
+								<tr class="controls">
+									<td class="item-label">网站状态 :</td>
+									<td>
+										<select name="webswitch" class="form-control  input-10x">
+											<option value="1" <eq name="data['web_close']" value="1">selected</eq>>正常</option>
+											<option value="2" <eq name="data['web_close']" value="0">selected</eq>>禁止访问</option>
+										</select>
+									</td>
+									<td class="item-note"></td>
+								</tr>
+
+								<tr class="controls">
+									<td class="item-label"></td>
+									<td>
+										<div class="form-item cf">
+											<button class="btn submit-btn ajax-post" target-form="form-horizontal" id="submit" type="submit">提交</button>
+											<a class="btn btn-return" href="{$Think.server.HTTP_REFERER}">返 回</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</form>
+				<script type="text/javascript">
+					//提交表单
+					$('#submit').click(function () {
+						$('#form').submit();
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script charset="utf-8" src="__PUBLIC__/kindeditorv4/kindeditor-all-min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/kindeditorv4//lang/zh-CN.js"></script>
+<script type="text/javascript">
+    /** PC端推荐页面logo图片 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#waptjimgs_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#waptjimgs_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_waptjimgs').attr("src", '/Upload/public/' + $.trim(data));
+						$('#waptjimgs_deputy').val($.trim(data));
+						$('#up_img_waptjimgs').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+    /** 手机端推荐页面logo图片 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#webtjimgs_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#webtjimgs_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_webtjimgs').attr("src", '/Upload/public/' + $.trim(data));
+						$('#webtjimgs_deputy').val($.trim(data));
+						$('#up_img_webtjimgs').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+    /** PC端矿机首页图片 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#wapkj_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#wapkj_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_wapkj').attr("src", '/Upload/public/' + $.trim(data));
+						$('#wapkj_deputy').val($.trim(data));
+						$('#up_img_wapkj').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+    /** PC端新币认购图片 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#wapissue_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#wapissue_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_wapissue').attr("src", '/Upload/public/' + $.trim(data));
+						$('#wapissue_deputy').val($.trim(data));
+						$('#up_img_wapissue').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+	
+	    /** PC端轮播图4 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#wapsilded_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#wapsilded_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_wapsilded').attr("src", '/Upload/public/' + $.trim(data));
+						$('#wapsilded_deputy').val($.trim(data));
+						$('#up_img_wapsilded').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+	
+    /** PC端轮播图3 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#wapsildec_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#wapsildec_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_wapsildec').attr("src", '/Upload/public/' + $.trim(data));
+						$('#wapsildec_deputy').val($.trim(data));
+						$('#up_img_wapsildec').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+     /** PC端轮播图2 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#wapsildeb_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#wapsildeb_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_wapsildeb').attr("src", '/Upload/public/' + $.trim(data));
+						$('#wapsildeb_deputy').val($.trim(data));
+						$('#up_img_wapsildeb').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+     /** PC端轮播图1 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#wapsildea_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#wapsildea_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_wapsildea').attr("src", '/Upload/public/' + $.trim(data));
+						$('#wapsildea_deputy').val($.trim(data));
+						$('#up_img_wapsildea').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+    /** 手机端矿机首页图片 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#webkj_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#webkj_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_webkj').attr("src", '/Upload/public/' + $.trim(data));
+						$('#webkj_deputy').val($.trim(data));
+						$('#up_img_webkj').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+    /** 手机端新币认购图片 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#webissue_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#webissue_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_webissue').attr("src", '/Upload/public/' + $.trim(data));
+						$('#webissue_deputy').val($.trim(data));
+						$('#up_img_webissue').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+    /** 手机端轮播图3上传 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#websildec_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#websildec_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_websildec').attr("src", '/Upload/public/' + $.trim(data));
+						$('#websildec_deputy').val($.trim(data));
+						$('#up_img_websildec').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+    /** 手机端轮播图2上传 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#websildeb_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#websildeb_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_websildeb').attr("src", '/Upload/public/' + $.trim(data));
+						$('#websildeb_deputy').val($.trim(data));
+						$('#up_img_websildeb').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	})
+    /** 手机端轮播图1上传 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#websildea_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#websildea_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_websildea').attr("src", '/Upload/public/' + $.trim(data));
+						$('#websildea_deputy').val($.trim(data));
+						$('#up_img_websildea').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	});
+
+    /** PC端网站logo上传 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#waplogo_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#waplogo_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img_waplogobox').attr("src", '/Upload/public/' + $.trim(data));
+						$('#waplogo_deputy').val($.trim(data));
+						$('#up_img_waplogobox').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	});
+	
+	/** 手机端网站logo上传 **/
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#weblogo_box").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#weblogo_box')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+			//发送数据
+			$.ajax({
+				url: '/Admin/Config/image',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img').attr("src", '/Upload/public/' + $.trim(data));
+						$('#weblogo_deputy').val($.trim(data));
+						$('#up_img').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide();	//加载失败移除加载图片
+				}
+			});
+
+		});
+	});
+
+</script>
+
+<script type="text/javascript">
+    // KindEditor.ready(function(K) {
+    //     window.editor = K.create('#web_reg');
+    // });
+	var editor;
+	KindEditor.ready(function (K) {
+		editor = K.create('textarea[name="web_reg"]', {
+			width: '500px',
+			height: '100px',
+			allowImageUpload: true,
+			items: [
+				'source', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+				'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+				'insertunorderedlist', '|', 'emoticons', 'link', 'fullscreen'],
+			afterBlur: function () {
+
+                editor.sync();
+			}
+		});
+		editors = K.create('textarea[name="en_web_reg"]', {
+			width: '500px',
+			height: '100px',
+			allowPreviewEmoticons: false,
+			allowImageUpload: true,
+			items: [
+				'source', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+				'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+				'insertunorderedlist', '|', 'emoticons', 'link', 'fullscreen'],
+			afterBlur: function () {
+				this.sync();
+			}
+		});
+	});
+</script>
+<include file="Public:footer"/>

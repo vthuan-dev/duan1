@@ -1,0 +1,180 @@
+<include file="Public:header" />
+<style>
+	.input_12{width:400px;}
+</style>
+
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+  <div id="main" class="main">
+    <div class="main-title-h"> 
+    	<span class="h1-title"><a href="{:U('Config/coin')}">币种配置</a> &gt;&gt;</span> 
+    	<span class="h1-title"><empty name="data">新增币种<else/>编辑币种</empty></span>
+	</div>
+    <div class="tab-wrap">
+      <div class="tab-content">
+        <form id="form" action="{:U('Config/coinEdit')}" method="post" class="form-horizontal" enctype="multipart/form-data">
+          <div id="tab" class="tab-pane in tab">
+            <div class="form-item cf">
+              <table>
+
+                <tr class="controls">
+					<td class="item-label">币种名称 :</td>
+					<empty name="data['name']">
+						<td><input type="text" class="form-control input_12" name="name" value=""></td>
+					<else/>
+						<input type="hidden" class="form-control input_12" name="name" value="{$data.name}">
+						<td>{$data.name}</td>
+					</empty>
+                </tr>
+                <tr class="controls">
+					<td class="item-label">中文名称 :</td>
+					<td><input type="text" class="form-control input_12" name="title" value="{$data['title']}"></td>
+                </tr>
+                <tr class="controls">
+					<td class="item-label">币种类型:</td>
+					<td>
+						<select name="type" class="form-control input_12">
+							<option value="1" <eq name="data.type" value="1">selected</eq>>钱包币</option>
+							<option value="2" <eq name="data.type" value="2">selected</eq>>平台币</option>
+							<option value="3" <eq name="data.type" value="3">selected</eq>>认购币</option>
+						</select>
+					</td>
+					<td class="item-note"></td>
+                </tr>
+                
+                
+                <tr class="controls" id="erc_token_hy">
+					<td class="item-label">充值网络 :</td>
+					<td><input type="text" class="form-control input_12" name="czline" value="{$data['czline']}" autocomplete="off" aria-autocomplete="none"></td>
+					<td class="item-note"></td>
+                </tr>
+
+                <tr class="controls" id="erc_token_hy">
+					<td class="item-label">合约地址 :</td>
+					<td><input type="text" class="form-control input_12" name="czaddress" value="{$data['czaddress']}" autocomplete="off" aria-autocomplete="none"></td>
+					<td class="item-note"></td>
+                </tr>
+
+                <tr class="controls">
+					<td class="item-label">充币状态 :</td>
+					<td>
+						<select name="czstatus" class="form-control input_12" >
+							<option value="1" <eq name="data['czstatus']" value="1">selected</eq>>正常充币</option>
+							<option value="2" <eq name="data['czstatus']" value="2">selected</eq>>禁止充币</option>
+						</select>
+					</td>
+					<td class="item-note"></td>
+                </tr>
+                
+                <tr class="controls">
+					<td class="item-label">最小充值额度 :</td>
+					<td><input type="text" class="form-control input_12" placeholder="最小充值额度" name="czminnum" value="{$data['czminnum']}"></td>
+                </tr>
+                
+                <tr class="controls">
+					<td class="item-label">手续费类型 :</td>
+					<td>
+						<select name="sxftype" class="form-control input_12" >
+							<option value="1" <eq name="data['sxftype']" value="1">selected</eq>>按百分比扣除</option>
+							<option value="2" <eq name="data['sxftype']" value="2">selected</eq>>按数量扣除</option>
+						</select>
+					</td>
+					<td class="item-note"></td>
+                </tr>
+                
+                <tr class="controls">
+					<td class="item-label">按百分比 :</td>
+					<td><input type="text" class="form-control input_12" placeholder="% (填写0.01-100 任意数字)" name="txsxf" value="{$data['txsxf']}"></td>
+                </tr>
+                
+                <tr class="controls">
+					<td class="item-label">按数量 :</td>
+					<td><input type="text" class="form-control input_12" placeholder="填写0.01-100 任意数字" name="txsxf_n" value="{$data['txsxf_n']}"></td>
+                </tr>
+
+                <tr class="controls">
+                	<td class="item-label">最小提币数量 :</td>
+                	<td><input type="text" class="form-control input_12" placeholder="正数且大于0.01" name="txminnum" value="{$data['txminnum']}"></td>
+                </tr>
+                <tr class="controls">
+                	<td class="item-label">最大提币数量 :</td>
+                	<td><input type="text" class="form-control input_12" placeholder="正数且大于10000" name="txmaxnum" value="{$data['txmaxnum']}"></td>
+                </tr>
+                <tr class="controls">
+                	<td class="item-label">提币状态 :</td>
+					<td>
+						<select name="txstatus" class="form-control input_12">
+							<option value="1" <eq name="data['txstatus']" value="1">selected</eq>>正常提币</option>
+							<option value="2" <eq name="data['txstatus']" value="2">selected</eq>>禁止提币</option>
+						</select>
+					</td>
+					<td class="item-note"></td>
+                </tr>
+                
+                <tr class="controls">
+                	<td class="item-label">币种状态 :</td>
+					<td>
+						<select name="status" class="form-control input_12">
+							<option value="1" <eq name="data['status']" value="1">selected</eq>>可用</option>
+							<option value="2" <eq name="data['status']" value="2">selected</eq>>禁止</option>
+						</select>
+					</td>
+					<td class="item-note"></td>
+                </tr>
+                
+                <tr class="controls">
+					<td class="item-label">币币交易手续费 :</td>
+					<td><input type="text" class="form-control input_12" placeholder="% (填写0.01-100 任意数字)" name="bbsxf" value="{$data['bbsxf']}"></td>
+                </tr>
+                
+                <tr class="controls">
+					<td class="item-label">合约交易手续费 :</td>
+					<td><input type="text" class="form-control input_12" placeholder="% (填写0.01-100 任意数字)" name="hysxf" value="{$data['hysxf']}"></td>
+                </tr>
+
+                
+				<tr class="controls">
+					<td class="item-label">排序 :</td>
+					<td><input type="text" class="form-control input_12" name="sort" value="{$data.sort}"></td>
+					<td class="item-note"></td>
+				</tr>
+
+                <tr class="controls">
+					<td class="item-label"></td>
+					<td>
+						<div class="form-item cf">
+							<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">提交</button>
+							<a class="btn btn-return" href="{$Think.server.HTTP_REFERER}">返 回</a>
+							<notempty name="data.id">
+								<input type="hidden" name="id" value="{$data.id}"/>
+							</notempty>
+						</div>
+                    </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </form>
+        <script type="text/javascript">
+		//提交表单
+		$('#submit').click(function () {
+			$('#form').submit();
+		});
+		</script> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/kindeditor/kindeditor-min.js"></script> 
+ 
+<include file="Public:footer"/>
+<block name="script"> 
+<script type="text/javascript" charset="utf-8">
+	//导航高亮
+	highlight_subnav("{:U('Config/coin')}");
+</script>
+</block>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html   >
+<head>
+    <meta charset="UTF-8">
+    <title>{$webname}</title>
+    <link rel="stylesheet" href="/Public/Home/login/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+    <link rel="stylesheet" href="/Public/Home/static/css/style.css">
+    <style>
+        body {
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+
+<include file="Public:header"/>
+
+<!-- partial:index.partial.html -->
+<div class="starfield">
+    <div class="static"></div>
+    <div class="moving-1"></div>
+    <div class="moving-2"></div>
+    <div class="moving-3"></div>
+</div>
+
+<!-- partial -->
+
+<!-- partial:index.partial.html -->
+<div class="container">
+
+
+
+    <!-- code here -->
+    <div class="card">
+        <form class="card-form" onclick="return false">
+
+            <div class="margin-topbox-px-10">
+                <div data-bn-type="text" class="css-1g5tc38  tcc fch f36 fw">{:L('欢迎来到 ')}<span class="fbaseblue">{:L('Bitwise ')}</span></div>
+            </div>
+
+
+            <div class="input">
+                <input type="text" class="input-field" name="email" id="email" value="" required/>
+                <label class="input-label">{:L('邮箱')}</label>
+            </div>
+            <div class="input">
+                <input type="password" class="input-field"  name="lpwd" id="lpwd" value="" required/>
+                <label class="input-label">{:L('密码')}</label>
+            </div>
+
+            <div class="input">
+                <input type="text" class="input-field"  name="vcode" id="vcode" value="" required style="width: 60%" />
+                <label class="input-label">{:L('验证码')}</label>
+                <div class="action-button login-send-button">
+                    <img style="width:100%;height:50px;border-radius:5px;" src="{:U('Verify/code')}" onclick="this.src=this.src+'?t='+Math.random()" title="{:L('换一张')}">
+                </div>
+            </div>
+            <div class="action">
+                <button class="action-button" onclick="uplogin()">{:L('登录')}</button>
+            </div>
+        </form>
+        <div class="login-reg tcr">
+            <a href="{:U('Login/findpwd')}"  class="css-s84t59 floginbr" >{:L('忘记密码')}？</a>
+            <a href="{:U('Login/register')}"  class="css-utqtyo floginbr">{:L('立即注册')}</a>
+        </div>
+    </div>
+</div>
+<!-- partial -->
+
+</body>
+
+
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
+<script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+
+<script type="text/javascript">
+    function uplogin(){
+        var email = $("#email").val();
+        var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+        if(email=='' || email == null){
+            layer.msg("{:L('请输入邮箱')}");return false;
+        }
+        if(!reg.test(email)){
+            layer.msg("{:L('邮箱格式不正确')}");return false;
+        }
+        var vcode = $("#vcode").val();
+        if(vcode == ''){
+            layer.msg("{:L('请输入图形验证码')}");return false;
+        }
+        var lpwd = $("#lpwd").val();
+        if(lpwd == ''){
+            layer.msg("{:L('请输入密码')}");return false;
+        }
+
+        $.post("{:U('Login/loginsubmit')}",
+            {'email' : email, 'vcode' : vcode, 'lpwd' : lpwd},
+            function(data){
+                if(data.code){
+                    layer.msg(data.info);
+                    setTimeout(function(){
+                        window.location.href="{:U('Index/index')}";
+                    },2000);
+                }else{
+                    layer.msg(data.info);return false;
+                }
+            });
+
+    }
+</script>
+
+<script type="text/javascript">
+    $("#nav").slide({
+        type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+        titCell:".nLi", //鼠标触发对象
+        targetCell:".sub", //titCell里面包含的要显示/消失的对象
+        effect:"slideDown", //targetCell下拉效果
+        delayTime:300 , //效果时间
+        triggerTime:0, //鼠标延迟触发时间（默认150）
+        returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+    });
+</script>
+
+
+</html>

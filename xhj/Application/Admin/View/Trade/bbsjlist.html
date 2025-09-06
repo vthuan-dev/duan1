@@ -1,0 +1,149 @@
+<include file="Public:header"/>
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">币币交易市价交易订单</span>
+			<a class="btn btn-warning" onClick="location.href='{:U('Trade/bbsjlist')}'">初始化搜索</a>
+		</div>
+		<div class="cf">
+			<div class="search-form fr cf" style="43px;float: none !important;">
+				<div class="sleft">
+					<form name="formSearch" id="formSearch" method="get" name="form1">
+						<select style="width: 120px; float: left; margin-right: 10px;" name="type" class="form-control">
+							<option value=""
+							<empty name="Think.get.type">selected</empty>
+							>全部类型</option>
+							<option value="1"
+							<eq name="Think.get.type" value="1">selected</eq>
+							>购买</option>
+							<option value="2"
+							<eq name="Think.get.type" value="2">selected</eq>
+							>出售</option>
+						</select>
+						
+						<select style="width: 120px; float: left; margin-right: 10px;" name="status" class="form-control">
+							<option value=""
+							<empty name="Think.get.status">selected</empty>
+							>交易状态</option>
+							<option value="1"
+							<eq name="Think.get.status" value="1">selected</eq>
+							>委托中</option>
+							<option value="2"
+							<eq name="Think.get.status" value="2">selected</eq>
+							>已完成</option>
+						</select>
+
+						<input type="text" name="username" class="search-input form-control" value="" placeholder="请输入用户名" />
+						<a class="sch-btn" href="javascript:;" id="search"> <i class="btn-search"></i> </a>
+					</form>
+					<script>
+						//搜索功能
+						$(function () {
+							$('#search').click(function () {
+								$('#formSearch').submit();
+							});
+						});
+						//回车搜索
+						$(".search-input").keyup(function (e) {
+							if (e.keyCode === 13) {
+								$("#search").click();
+								return false;
+							}
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+		<div class="data-table table-striped">
+			<table class="">
+				<thead>
+				<tr>
+					<th class="">ID</th>
+					<th class="">会员账号</th>
+					<th class="">交易对</th>
+					<th class="">方向</th>
+					<th class="">状态</th>
+					<th class="">交易额度</th>
+					<th class="">USDT额度</th>
+					<th class="">交易价格</th>
+					<th class="">委托时间</th>
+					<th class="">交易时间</th>
+					<th class="">手续费比例</th>
+					<th class="">手续费</th>
+				</tr>
+				</thead>
+				<tbody>
+                    <notempty name="list">
+                    <volist name="list" id="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.account}</td>
+						<td>{$vo.symbol}</td>
+						<td>
+						    <if condition="$vo.type eq 1">
+						        <span style="color:#0ecb81;">购买</span>
+						    <elseif condition="$vo.type eq 2" />
+						        <span style="color:#f5465c;">出售</span>
+						    </if>
+						</td>
+						<td>
+						    <if condition="$vo.status eq 1">
+						        <span style="color:#707A8A;">委托中</span>
+						    <elseif condition="$vo.status eq 2" />
+						        <span style="color:#0ecb81;">已交易</span>
+						    </if>
+						</td>
+						<td>{$vo.coinnum}</td>
+						<td>{$vo.usdtnum}</td>
+						<td>{$vo.price}</td>
+						<td>{$vo.addtime}</td>
+						<td>{$vo.tradetime}</td>
+						<td><?php echo ($vo['sxfbl'] / 100);?>%</td>
+						<td>{$vo.fee}</td>
+					</tr>
+					</volist>
+                    <else/>
+					<td colspan="12" class="text-center empty-info">
+					    <i class="glyphicon glyphicon-exclamation-sign"></i>暂无数据
+					</td>
+					</notempty>
+				</tbody>
+			</table>
+			<div class="page">
+				<div>{$page}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    function setwinloss(id){
+        var id  = id;
+        var kongyk = $("#kongyk").val();
+        $.post("{:U('Trade/setwinloss')}",
+        {'id':id,'kongyk':kongyk},
+        function(data){
+            if(data.code == 1){
+                alert(data.info);
+                setTimeout(function(){
+                    window.location.reload();
+                },2000);
+            }else{
+                alert(data.info);
+                setTimeout(function(){
+                    window.location.reload();
+                },2000);
+            }
+        });
+    }
+</script>
+<include file="Public:footer"/>
+<block name="script">
+	<script type="text/javascript" charset="utf-8">
+		//导航高亮
+		highlight_subnav("{:U('Trade/bbsjlist')}");
+	</script>
+</block>

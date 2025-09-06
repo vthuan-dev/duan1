@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <title>{$webname}</title>
+        <style>
+            .css-ogtd7z {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                transition: all 1s ease 0s;
+                -webkit-box-pack: center;
+                justify-content: center;
+                background-color: rgb(254, 241, 242);
+            }
+            .css-jrzkh7 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                background-color: rgb(24, 26, 32);
+            }
+            .css-1aac2e {
+                box-sizing: border-box;
+                margin: 0px auto;
+                min-width: 0px;
+                padding-left: 24px;
+                padding-right: 24px;
+                max-width: 1248px;
+                background-color: rgb(254, 241, 242);
+            }
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0%;
+            }
+            .css-1ay57iv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                background-color: rgb(250, 250, 250);
+                flex: 1 1 0%;
+                flex-direction: column;
+            }
+            .css-8hzjvg {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                padding: 24px 16px;
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            .css-1eklhqk {
+                box-sizing: border-box;
+                min-width: 0px;
+                width: 100%;
+                max-width: 1200px;
+                margin: 0px auto;
+            }
+            .css-190uhut {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+            }
+            .css-11y6cix {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                flex: 1 1 0%;
+            }
+            .css-146agw4 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                color: currentcolor;
+                font-size: 24px;
+                fill: currentcolor;
+                cursor: pointer;
+                width: 32px;
+                height: 32px;
+                font-size: 32px;
+                margin-left: -48px;
+            }
+            .css-1djsyd6 {
+                box-sizing: border-box;
+                margin: 0px 0px 0px 16px;
+                min-width: 0px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            .css-1dihobw {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                flex: 1 1 0%;
+                background-color: rgb(255, 255, 255);
+                border-radius: 40px 40px 0px 0px;
+                padding: 24px 16px;
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            .css-1eklhqk {
+                box-sizing: border-box;
+                min-width: 0px;
+                width: 100%;
+                max-width: 1200px;
+                margin: 0px auto;
+            }
+            .css-tu2ioc {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                flex-flow: column wrap;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                flex-direction: row;
+            }
+            .css-1ekpz1z {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                order: 1;
+                flex: 1 1 0%;
+            }
+            .czbox{width:100%;height:80px;margin-bottom:20px;}
+            .czbox_1{width:30%;height:80px;float:left;}
+            .czbox_2{width:70%;height:80px;float:right;}
+            .czbox_3{width:100%;height:20px;line-height:20px;}
+            .czbox_4{width:100%;height:50px;line-height:50px;margin-top:5px;border:1px solid #f5f5f5;padding-left:15px;}
+            .czbox_4:hover{border:1px solid #FCD535;}
+            .czbox_5{width:100%;height:100%;border:1px solid #fff;background-color:#fff;color:#000;font-size:14px;}
+            .czbox_5:hover{border:1px solid #fff;background-color:#fff;}
+            input:focus{border:1px solid #fff;background-color:#fff;}
+            .layui-upload-file {
+                display: none!important;
+                opacity: .01;
+            }
+            .czbox_6{width:100%;height:50px;line-height:50px;margin-top:5px;}
+        </style>
+	</head>
+	<body>
+	    <div class="App">
+	        <div class="css-tq0shg">
+	            <include file="Public:header"/>
+	            
+	            <div class="css-ogtd7z">
+	                <div class="css-jrzkh7">
+	                    <div id="header_global_js_wxgy34nj" class="css-1aac2e"></div>
+	                </div>
+	           </div>
+	           
+	           <main class="css-1wr4jig">
+	               <main class="css-xry4yv">
+	                  
+	                  <div class="css-1ay57iv">
+	                      <div class="css-8hzjvg">
+	                          <div class="css-1eklhqk">
+	                              <div class="css-190uhut">
+	                                  <div class="css-11y6cix"  onclick="goback();">
+	                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-146agw4"><path d="M16.414 18.586L15 20l-8-8 8-8 1.414 1.414L9.828 12l6.586 6.586z" fill="#76808F"></path>
+	                                        </svg>
+	                                        <div data-bn-type="text" class="css-1djsyd6">{:L('数字货币提币')}</div>
+	                                    </div>
+	                              </div>
+	                          </div>
+	                      </div>
+	                      
+	                      <div class="css-1dihobw">
+	                          <div class="css-1eklhqk">
+	                              <div class="css-tu2ioc" style="width:60%;float:left;">
+	                                  <div class="css-1ekpz1z">
+	                                      <div class="czbox">
+	                                          <div class="czbox_1">
+	                                              <span class="fch f16">{:L('选择币种')}</span>
+	                                          </div>
+	                                          <div class="czbox_2">
+	                                              <div class="czbox_3">
+	                                                  <span class="fch f12">{:L('币种')}</span>
+	                                              </div>
+	                                              <div class="czbox_4">
+	                                                  <span class="fch f14"><?php echo strtoupper($info['name']);?></span>
+	                                              </div>
+	                                          </div>
+	                                      </div>
+	                                      
+	                                      <div class="czbox" style="margin-bottom:0px;">
+	                                          <div class="czbox_1">
+	                                              <span class="fch f16">{:L('提币网络')}</span>
+	                                          </div>
+	                                          <div class="czbox_2">
+	                                              <div  class="czbox_3">
+	                                                  <span class="fch f12">{:L('网络')}</span>
+	                                              </div>
+	                                              <div class="czbox_4">
+	                                                  <span class="fch f14">{$info.czline}</span>
+	                                              </div>
+	                                          </div>
+	                                      </div>
+	                                      
+	                                      <div class="czbox"  style="margin-top:20px;">
+	                                          <div class="czbox_1">
+	                                              <span class="fch f16">{:L('提币地址')}</span>
+	                                          </div>
+	                                          <div class="czbox_2">
+	                                              <div  class="czbox_3">
+	                                                  <span class="fch f12">{:L('地址')}</span>
+	                                              </div>
+	                                              <div class="czbox_6">
+	                                                  <input class="czbox_5" type="text" id="address" name="address" style="border: 1px solid #f5f5f5;padding:0px;padding-left: 15px;" />
+	                                              </div>
+	                                          </div>
+	                                      </div>
+
+	                                      
+	                                      <div class="czbox" style="margin-top:20px;">
+	                                          <div class="czbox_1">
+	                                              <span class="fch f16">{:L('提币数量')}</span>
+	                                          </div>
+	                                          <div class="czbox_2">
+	                                              <div class="czbox_3">
+	                                                  <span class="fch f12">{:L('数量')}</span>
+	                                                  <span class="f12 fcy">{:L('可用')}&nbsp;&nbsp;</span>
+		                                              <span class="f12 fcy">{$money}</span>
+		                                              <span class="f12 fcy"><?php echo strtoupper($info['name']);?></span>
+	                                              </div>
+	                                              <div class="czbox_6" style="padding:0px;">
+	                                                  <input class="czbox_5" type="text" id="tbnum" onblur="changenum();" name="tbnum" style="border: 1px solid #f5f5f5;padding:0px;padding-left: 15px;" autocomplete="off" step="1"  min="0" onkeyup="this.value= this.value.match(/\d+(\.\d{0,2})?/) ? this.value.match(/\d+(\.\d{0,2})?/)[0] : ''"  />
+	                                                  <span class="f12 fcy">{:L('实际到账')}</span>
+	                                                  <span class="f12 fcy" id="tmoney">0.000000</span>
+		                                              <span class="f12 fcy">&nbsp;&nbsp;<?php echo strtoupper($info['name']);?></span>
+	                                              </div>
+	                                          </div>
+	                                      </div>
+	                                      
+	                                    <input type="hidden" id="usermoney" value="{$money}" />
+		                                <input type="hidden" id="txminnum" value="{$info.txminnum}" />
+		                                <input type="hidden" id="txsxf" value="{$info.txsxf}" />
+		                                <input type="hidden" id="txsxf_n" value="{$info.txsxf_n}" />
+		                                <input type="hidden" id="sxftype" value="{$info.sxftype}" />
+		                                
+		                                <input type="hidden" id="tbid" value="{$info.id}" />
+		                                <input type="hidden" id="tbaddre" value="{$adrinfo.addr}" />
+
+		                                <input type="hidden" id="flag" value="1" />
+	                                      <div class="czbox">
+	                                          <div class="czbox_2">
+	                                              <div class="czbox_3"></div>
+	                                              <div id="sumbtn" class="czbox_4" style="background: linear-gradient(to left,#eeb80d,#ffe35b);text-align:center;cursor:pointer;">
+	                                                  <span class="fch f14">{:L('提交')}</span>
+	                                              </div>
+	                                          </div>
+	                                      </div>
+	                                      
+	                                  </div>
+	                              </div>
+	                              <div style="width:35%;height:600px;float:right;padding:10px;">
+	                                  <div style="width:100%;height:60px;line-height:60px;">
+	                                      <span>{:L('温馨提示')}</span>
+	                                  </div>
+	                                  <div style="width:100%;min-height:180px;padding:10px;">
+	                                       <span class="f14" style="color:red;">{:L('最小提币数量')}：<?php echo strtoupper($info['txminnum']);?><?php echo strtoupper($info['name']);?>，{:L('小于最小金额的提币将不会到账且无法退回')}</span>
+	                                       <br />
+	                                       <br />
+		        <span class="f14 fch">{:L('为保障资金安全，当您账户安全策略变更，密码修改，我们会对提币进行人工审核，请耐心等待工作人员电话或邮件联系.')}</span><br /><br />
+		        <span class="f14 fch">{:L('请务必确认电脑及浏览器安全，防止信息被篡改或泄露')}</span><br /><br />
+
+	                                  </div>
+	                              </div>
+	                          </div>
+	                      </div>
+	                      
+	                      
+	                  </div>
+	                  
+	               </main>
+	           </main>
+
+	            <include file="Public:footer"/>
+	        </div>   
+	    </div>
+	    
+	</body>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
+    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/layui/layui.js"></script>
+    <script type="text/javascript">
+        function changenum(){
+            var tbnum = parseFloat($("#tbnum").val());
+            if(tbnum <= 0){
+                layer.msg("{:L('请输入正确的数量')}");return false;
+            }
+            var txminnum = parseFloat($("#txminnum").val());
+            if(tbnum < txminnum){
+                layer.msg("{:L('不能低于最小提币值')}");return false;
+            }
+            
+            var sxftype = $("#sxftype").val();
+            var txsxf = $("#txsxf").val();
+            var txsxf_n = $("#txsxf_n").val();
+            if(sxftype == 1){
+                var tmoney = tbnum - tbnum * txsxf / 100;
+            }else if(sxftype == 2){
+                var tmoney = tbnum - txsxf_n;
+            }
+            
+            $("#tmoney").text(tmoney);
+      
+        }
+    </script>
+    <script type="text/javascript">
+        $("#sumbtn").click(function(){
+            var flag = $("#flag").val();
+            if(flag == 2){
+                return false;
+            }
+            var address = $("#address").val();
+            var num = parseFloat($("#tbnum").val());
+            var txminnum = parseFloat($("#txminnum").val());
+            var id = $("#tbid").val();
+            if(id <= 0){
+                layer.msg("{:L('参数错误')}");return false;
+            }
+            if(address == '' || address == null){
+                layer.msg("{:L('请输入提币地址')}");return false;
+            }
+            if(num <= 0){
+                layer.msg("{:L('请输入正确的数量')}");return false;
+            }
+            if(num < txminnum){
+                layer.msg("{:L('不能低于最小提币值')}");return false;
+            }
+            $("#flag").val(2);
+            $.post("{:U('Finance/tbhandle')}",
+            {'address':address,'num':num,'id':id},
+            function(data){
+                if(data.code == 1){
+                    layer.msg(data.info);
+                    setTimeout(function(){
+                        window.location.href = "{:U('Finance/index')}";
+                    },2000);
+                }else{
+                    layer.msg(data.info);return false;
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function goback(){
+            self.location=document.referrer;
+        }
+    </script>
+    <script type="text/javascript">
+		$("#nav").slide({ 
+			type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell:".nLi", //鼠标触发对象
+			targetCell:".sub", //titCell里面包含的要显示/消失的对象
+			effect:"slideDown", //targetCell下拉效果
+			delayTime:300 , //效果时间
+			triggerTime:0, //鼠标延迟触发时间（默认150）
+			returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+
+    
+</html>

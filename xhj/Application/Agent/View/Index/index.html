@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>代理中心</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/base.css" media="all">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/common.css" media="all">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/module.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/default_color.css" media="all">
+	<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/flat-ui.css">
+	<script src="__PUBLIC__/Admin/js/flat-ui.min.js"></script>
+	<script src="__PUBLIC__/Admin/js/application.js"></script>
+</head>
+<body style="margin:0px;padding:0px; margin-top:100px;">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="navbar-header" style="background-color:#3c434d;">
+		<a class="navbar-brand" style="width:200px;text-align:center;background-color:#3c434d;" href="{:U('Agent/Index/index')}">
+		    <span>代理系统</span>	
+		</a>
+	</div>
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li class="active"> 
+			    <a href="{:U('Agent/Index/index')}">会员列表</a>
+			</li>
+			
+			<li> 
+				<a href="{:U('Agent/Index/jclist')}">合约建仓订单</a>
+			</li>
+			
+			<li>
+			    <a href="{:U('Agent/Index/pclist')}">合约平仓订单</a>
+			</li>
+			
+						<li>
+			    <a href="{:U('Agent/Index/recharge')}">充值列表</a>
+			</li>
+			
+			<li>
+			    <a href="{:U('Agent/Index/withdraw')}">提现列表</a>
+			</li>
+			
+			<li>
+			    <a href="{:U('Agent/Index/property')}">用户财产</a>
+			</li>
+		</ul>
+		
+		<ul class="nav navbar-nav navbar-rights" style="margin-right:10px;">
+			<li>
+				<a class="dropdown-toggle" title="{:L('退出')}" href="{:U('Agent/Login/loginout')}" target="_blank">
+					<span class="glyphicon glyphicon-share" aria-hidden="true"></span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">{:L('警告内容')}</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">{:L('会员管理')}</span>
+			<a class="btn btn-warning" onClick="location.href='{:U('Agent/Index/index')}'">{:L('初始化搜索')}</a>
+		</div>
+		
+		<div class="cf">
+		    <div class="fl">
+				<a class="btn btn-success  " href="{:U('Index/edit')}">新 增</a>
+			</div>
+		    
+			<div class="search-form cf">
+				<div class="sleft">
+					<form name="formSearch" id="formSearch" method="get" name="form1">
+						<select style="width:120px;float:left;margin-right:10px;" name="field" class="form-control">
+							<option value="username"
+							<empty name="Think.get.field">selected</empty>
+							>{:L('邮箱账号')}</option>
+						</select>
+
+						<script type="text/javascript" src="/Public/layer/laydate/laydate.js"></script>
+
+						<input type="text" name="name" class="search-input form-control" value="{$Think.get.name}" placeholder="{:L('请输入邮箱账号')}" style="width: 380px;">
+						<a class="sch-btn" href="javascript:;" id="search"> <i class="btn-search"></i> </a>
+					</form>
+					<script>
+						//搜索功能
+						$(function () {
+							$('#search').click(function () {
+								$('#formSearch').submit();
+							});
+						});
+						//回车搜索
+						$(".search-input").keyup(function (e) {
+							if (e.keyCode === 13) {
+								$("#search").click();
+								return false;
+							}
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+		
+		<div class="data-table table-striped">
+			<table class="">
+				<thead>
+				<tr>
+					<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+					<th>ID</th>
+					<th>{:L('会员账号')}</th>
+					<th>{:L('登陆')}</th>
+					<th>{:L('注册IP')}/{:L('时间')}</th>
+					<th>{:L('地址')}</th>
+					<th>{:L('推荐人')}</th>
+					<th>{:L('认证状态')}</th>
+					<th>{:L('邀请码')}</th>
+					<th>操作</th>
+				</tr>
+				</thead>
+				<tbody>
+                    <notempty name="list">
+                    <volist name="list" id="vo">
+							<tr>
+								<td>
+									<input class="ids" type="checkbox" name="id[]" value="{$vo.id}"/>
+								</td>
+								<td>{$vo.id}</td>
+								<td title="登录该用户">{$vo.username}</td>
+								<td><span>{$vo.logins}</span>次</td>
+								<td>
+								    <span>IP：{$vo.addip}</span><br />
+								    <span>时间：<?php echo date("Y-m-d H:i:s",$vo['addtime']);?></span>
+								</td>
+								<td><span>{$vo.addr}</span></td>
+                                <td>
+									<neq name="vo.invit_1">1代：{$vo['invit_1']}<br/></neq>
+									<neq name="vo.invit_2">2代：{$vo['invit_2']}<br/></neq>
+									<neq name="vo.invit_3">3代：{$vo['invit_3']}<br/></neq>
+								</td>
+								
+								<td>
+								    <eq name="vo.rzstatus" value="0">未提交</eq>
+								    <eq name="vo.rzstatus" value="1"><span style="color:blue;">待审核</span></eq>
+								    <eq name="vo.rzstatus" value="2"><span style="color:green;">认证成功</span></eq>
+								    <eq name="vo.rzstatus" value="3"><span style="color:red;">认证驳回</span></eq>
+								    
+								    
+								</td>
+
+                                <td><span>{$vo.invit}</span></td>
+                                
+                                <td>
+						            <a class="btn btn-primary btn-xs" href="{:U('Index/edit')}?id={$vo.id}">编辑</a>
+						             <eq name="vo.rzstatus" value="1">
+						            <a class="btn btn-primary btn-xs" href="{:U('Index/authrz')}?id={$vo.id}">审核认证</a>
+						            </eq>
+						        </td>
+							</tr>
+						</volist>
+                    <else/>
+					<td colspan="12" class="text-center empty-info">
+					    <i class="glyphicon glyphicon-exclamation-sign"></i>暂无数据
+					</td>
+					</notempty>
+				</tbody>
+			</table>
+			<div class="page">
+				<div>{$page}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/common.js"></script>
+<script type="text/javascript">
+    $(function(){
+        setInterval("tzfc()",2000);
+    });
+    
+    function tzfc(){
+        var st = 1;
+        $.post("{:U('Admin/Trade/gethyorder')}",
+        {'st':st},
+        function(data){
+            if(data.code == 1){
+                layer.confirm('有新的合约订单', {
+                  btn: ['知道了'] //按钮
+                }, function(){
+                    
+                    $.post("{:U('Admin/Trade/settzstatus')}",
+                    function(data){
+                        if(data.code == 1){
+                            window.location.reload();  
+                        } 
+                    });
+                });
+            }   
+        });
+    }
+</script>
+
+
+

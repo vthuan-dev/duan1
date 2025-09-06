@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <title>{$webname}</title>
+	    <style>
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+            }
+            .css-1odg5z2 {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                height: 260px;
+                background-color: #1E2329;
+                position: -webkit-sticky;
+                position: sticky;
+                top: -256px;
+                z-index: 1;
+                padding: 0;
+            }
+            .css-1odg5z2::before {
+                content: "";
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(/Public/Home/static/imgs/bannerissue.png);
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+            }
+            .css-1xrgo9z {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                font-size: 26px;
+                color: white;
+                z-index: 1;
+                height: 100%;
+                padding-bottom: 48px;
+            }.css-1xrgo9z {
+                -webkit-box-pack: start;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                font-size: 40px;
+                padding-bottom: 64px;
+            }
+            .css-1xrgo9z {
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+            .css-uliqdc {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+            .progress-bar {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -ms-flex-pack: center;
+                justify-content: center;
+                overflow: hidden;
+                color: #fff;
+                text-align: center;
+                white-space: nowrap;
+                background-color: #007bff;
+                transition: width .6s ease;
+            }
+            .progress-bar {
+                color: #000;
+                background-color: #f3c420;
+            }
+            ::-webkit-input-placeholder {color: #b5b5b5;font-size: 12px;}
+	        ::-moz-placeholder {color: #b5b5b5;font-size: 12px;}
+	        input:focus{background:#f5f5f5;outline: 1px solid #f5f5f5;}
+	        .allbtn {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                background: #ccc;
+                border-radius: 5px;
+                background: linear-gradient(to left,#eeb80d,#ffe35b);
+                margin-top: 20px;
+            }
+            .css-bhso1m {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: inline-block;
+                border-radius: 4px;
+                padding-left: 8px;
+                padding-right: 8px;
+                font-size: 14px;
+                background-color: rgba(240, 185, 11, 0.19);
+                color: rgb(240, 185, 11);
+            }
+            .css-1ax9bc0 {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                background: rgba(255,255,255,0.08);
+                box-shadow: inset 0px 1px 0px rgb(255 255 255 / 8%);
+                margin-top: -64px;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                z-index: 2;
+            }
+            .css-6mr8u2 {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                width: 100%;
+                margin: 0 auto;
+                max-width: 1200px;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .css-abpumn {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                overflow-y: auto;
+                font-weight: 500;
+            }
+            .css-1m3syfi {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                flex-shrink: 0;
+                cursor: pointer;
+                text-align: center;
+                border-color: rgb(240, 185, 11);
+                border-bottom-style: solid;
+                border-bottom-width: 2px;
+                background: rgba(255, 255, 255, 0.1);
+                padding: 14px 16px;
+                line-height: 20px;
+                font-size: 14px;
+                text-decoration: none !important;
+            }
+            .css-1m3syfi {
+                border-bottom-width: 4px;
+            }
+            .css-1m3syfi {
+                padding: 20px 24px;
+                font-size: 20px;
+            }
+            .css-cbipbt {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                color: #f5f5f5;
+            }
+            .css-lk1png {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                flex-shrink: 0;
+                cursor: pointer;
+                text-align: center;
+                border-color: rgb(240, 185, 11);
+                border-bottom-style: solid;
+                border-bottom-width: 0px;
+                padding: 14px 16px;
+                line-height: 20px;
+                font-size: 14px;
+                text-decoration: none !important;
+            }
+            .css-lk1png {
+                padding: 20px 24px;
+                font-size: 20px;
+            }
+
+	    </style>
+	</head>
+	<body>
+	    <div class="App">
+	        <div class="css-tq0shg">
+	            <include file="Public:header"/>
+	            <div class="css-ogtd7z">
+	                <div class="css-jrzkh7">
+	                    <div id="header_global_js_wxgy34nj" class="css-1aac2e"></div>
+	                 </div>
+	            </div>
+	            <main class="css-1wr4jig" style="background: #fff;">
+                    <div class="css-1odg5z2">
+                        <div class="css-1xrgo9z">{:L('矿机商城')}</div>
+                    </div>
+                    <div class="css-1ax9bc0">
+                        <div class="css-6mr8u2">
+                            <div class="css-abpumn">
+                                <span data-bn-type="text" id="allminbtn" class="css-1m3syfi">
+                                    <div class="css-cbipbt">{:L('总览')}</div>
+                                </span>
+                                <span data-bn-type="text" id="dzminbtn" class="css-lk1png">
+                                    <div class="css-cbipbt">{:L('独资')}</div>
+                                </span>
+                                <span data-bn-type="text" id="gxminbtn" class="css-lk1png">
+                                    <div class="css-cbipbt">{:L('共享')}</div>
+                                </span>
+                                <span data-bn-type="text" id="myminbtn" class="css-lk1png">
+                                    <div class="css-cbipbt">{:L('我的矿机')}</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="css-uliqdc">
+                        
+                        <!--我的矿机开始-->
+                        <div id="myminerbox" style="width:100%;min-height:500px;background:#f5f5f5;padding:20px 50px;display:none;">
+                            <empty name="mylist">
+	                        <div style="width:100%;height:400px;line-height:400px;text-align:center;">
+	                            <svg style="height:100px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" class="mirror css-1lzksdc"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 8H26v80h58V28L64 8zM36 37h38v4H36v-4zm0 9h38v4H36v-4zm38 9H36v4h38v-4z" fill="url(#not-found-data-light_svg__paint0_linear)"></path><path d="M62 71l4-4 4 4-4 4-4-4z" fill="#fff"></path><path d="M86 50l3-3 3 3-3 3-3-3zM47 21l3-3 3 3-3 3-3-3zM84 28H64V8l20 20z" fill="#E6E8EA"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4.171 73.171l14.5-14.5 5.657 5.658-14.5 14.5-5.657-5.657z" fill="url(#not-found-data-light_svg__paint1_linear)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M51 48c0-8.837-7.163-16-16-16s-16 7.163-16 16 7.163 16 16 16 16-7.163 16-16zm4 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z" fill="url(#not-found-data-light_svg__paint2_linear)"></path><defs><linearGradient id="not-found-data-light_svg__paint0_linear" x1="84" y1="10.162" x2="84" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#F5F5F5"></stop><stop offset="1" stop-color="#E6E8EA"></stop></linearGradient><linearGradient id="not-found-data-light_svg__paint1_linear" x1="4.171" y1="68.75" x2="24.328" y2="68.75" gradientUnits="userSpaceOnUse"><stop stop-color="#929AA5"></stop><stop offset="1" stop-color="#76808F"></stop></linearGradient><linearGradient id="not-found-data-light_svg__paint2_linear" x1="15" y1="48" x2="55" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#929AA5"></stop><stop offset="1" stop-color="#76808F"></stop></linearGradient></defs></svg>
+	                         </div>
+	                         <else />
+                            <foreach name="mylist" item="vo">
+                            <div style="width:100%;height:250px;background:#fff;margin-bottom:20px;box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);border-radius:5px;">
+                                <div style="width:100%;height:240px;">
+                                    <div style="width:50%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;background:#fff;">
+                                            <div style="width:100%;height:230px;">
+                                                <div style="width:25%;heigth:230px;line-height:150px;text-align:center;float:left;">
+                                                    <img src="/Upload/public/{$vo.imgs}" style="width:60%;">
+                                                </div>
+                                                <div style="width:75%;padding:10px 0px 10px 10px;float:right;">
+                                                    <div style="width:100%;min-height:30px;">
+                                                        <span class="f16 fch">{$vo.title}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('购买时间')}：{$vo.addtime}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('产出币种')}：<?php echo strtoupper($vo['outcoin']);?></span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('矿机类型')}：
+                                                        <if condition="$vo.type eq 1">
+                                                            <span class="f16 fcy fw">{:L('独资机型')}</span>
+                                                        <elseif condition="$vo.type eq 2" />    
+                                                            <span class="f16 fcy fw">{:L('共享机型')}</span>
+                                                        </if>
+                                                        </span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('收益类型')}：
+                                                        <if condition="$vo.type eq 1">
+                                                            {:L('按产值')}
+                                                        <elseif condition="$vo.type eq 2" />    
+                                                            {:L('按产量')}
+                                                        </if>
+                                                        </span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('收益方式')}：{:L('自动收益')}</span>
+                                                    </div>
+                                                    <if condition="$vo.type eq 2"></if>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('份额占比')}：{$vo.sharebl}%</span>
+                                                    </div>
+                                                       
+                                                    </if>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                
+                                    <div style="width:40%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;">
+                                            <div style="width:100%;height:240px;padding:10px 0px 10px 10px;">
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f16 fch">{:L('矿机详情')}</span>
+                                                </div>
+                                                
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('收益次数')} ：
+                                                    {$vo.synum} {:L('次')}
+                                                    </span>
+                                                </div>
+  
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('产出说明')} ：
+                                                    <if condition="$vo.outtype eq 1">
+				                                    {:L('按产值')}：{$vo.outusdt}USDT
+				                                    <elseif condition="$vo.outtype eq 2" />
+				                                    {:L('按币量')}：{$vo.outnum} <?php echo strtoupper($vo['outcoin']);?>
+				                                    </if>
+                                                    </span>
+                                                </div>
+
+                                                
+                                                <div style="width:100%;min-height:30px;marin-top:30px;">
+                                                    <if condition="$vo.status eq 1">
+                                                    <span style="background:#0ecb81;padding:5px 10px;border-radius: 5px;color:#fff;">{:L('正常')}</span>
+                                                    <elseif condition="$vo.status eq 2" />
+                                                    <span style="background:#f5465c;padding:5px 10px;border-radius: 5px;color:#fff;">{:L('停止')}</span>
+                                                    <elseif condition="$vo.status eq 3" />
+                                                    <span style="background:#f5465c;padding:5px 10px;border-radius: 5px;color:#fff;">{:L('过期')}</span>
+                                                    </if>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="width:10%;height:240px;float:left;padding:5px;">
+                                        <a href="{:U('Orepool/profitlist')}" style="text-decoration:none;">
+                                        <div style="width:100%;height:240px;line-height:240px;cursor:pointer;">
+                                            <span class="f14 fcy fw">{:L('收益账单')}</span>
+                                            <i class="bi bi-chevron-right fcy fw" style="font-size:18px;"></i>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                       
+                        </foreach>
+                        </empty>
+                        </div>
+                        <!------------------全部共享矿机结束------------------------>
+                        
+                        <!--共享矿机开始-->
+                        <div id="gxminerbox" style="width:100%;min-height:500px;background:#f5f5f5;padding:20px 50px;display:block;">
+                            <empty name="clist">
+	                        <div style="width:100%;height:400px;line-height:400px;text-align:center;">
+	                            <svg style="height:100px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" class="mirror css-1lzksdc"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 8H26v80h58V28L64 8zM36 37h38v4H36v-4zm0 9h38v4H36v-4zm38 9H36v4h38v-4z" fill="url(#not-found-data-light_svg__paint0_linear)"></path><path d="M62 71l4-4 4 4-4 4-4-4z" fill="#fff"></path><path d="M86 50l3-3 3 3-3 3-3-3zM47 21l3-3 3 3-3 3-3-3zM84 28H64V8l20 20z" fill="#E6E8EA"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4.171 73.171l14.5-14.5 5.657 5.658-14.5 14.5-5.657-5.657z" fill="url(#not-found-data-light_svg__paint1_linear)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M51 48c0-8.837-7.163-16-16-16s-16 7.163-16 16 7.163 16 16 16 16-7.163 16-16zm4 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z" fill="url(#not-found-data-light_svg__paint2_linear)"></path><defs><linearGradient id="not-found-data-light_svg__paint0_linear" x1="84" y1="10.162" x2="84" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#F5F5F5"></stop><stop offset="1" stop-color="#E6E8EA"></stop></linearGradient><linearGradient id="not-found-data-light_svg__paint1_linear" x1="4.171" y1="68.75" x2="24.328" y2="68.75" gradientUnits="userSpaceOnUse"><stop stop-color="#929AA5"></stop><stop offset="1" stop-color="#76808F"></stop></linearGradient><linearGradient id="not-found-data-light_svg__paint2_linear" x1="15" y1="48" x2="55" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#929AA5"></stop><stop offset="1" stop-color="#76808F"></stop></linearGradient></defs></svg>
+	                         </div>
+	                         <else />
+                            <foreach name="clist" item="vo">
+                            <div style="width:100%;height:290px;background:#fff;margin-bottom:20px;box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);border-radius:5px;">
+                                <div style="width:100%;height:240px;">
+                                    <div style="width:50%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;background:#fff;">
+                                            <div style="width:100%;height:230px;">
+                                                <div style="width:25%;heigth:230px;line-height:150px;text-align:center;float:left;">
+                                                    <img src="/Upload/public/{$vo.imgs}" style="width:60%;">
+                                                </div>
+                                                <div style="width:75%;padding:10px 0px 10px 10px;float:right;">
+                                                    <div style="width:100%;min-height:30px;">
+                                                        <span class="f16 fch">{$vo.title}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('上市时间')}：{$vo.addtime}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('产出币种')}：<?php echo strtoupper($vo['outcoin']);?></span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('矿机类型')}：
+                                                        <if condition="$vo.type eq 1">
+                                                            <span class="f16 fcy fw">{:L('独资机型')}</span>
+                                                        <elseif condition="$vo.type eq 2" />    
+                                                            <span class="f16 fcy fw">{:L('共享机型')}</span>
+                                                        </if>
+                                                        </span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('收益类型')}：
+                                                        <if condition="$vo.type eq 1">
+                                                            {:L('按产值')}
+                                                        <elseif condition="$vo.type eq 2" />    
+                                                            {:L('按产量')}
+                                                        </if>
+                                                        </span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('收益方式')}：{:L('自动收益')}</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                
+                                    <div style="width:50%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;">
+                                            <div style="width:100%;height:240px;padding:10px 0px 10px 10px;">
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f16 fch">{:L('矿机详情')}</span>
+                                                </div>
+                                                
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('矿机单价')} ：
+                                                    {$vo.pricenum} <?php echo strtoupper($vo['pricecoin']);?>
+                                                    </span>
+                                                </div>
+                                                
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('产出说明')} ：
+                                                    <if condition="$vo.outtype eq 1">
+				                                    {:L('按产值')}：{$vo.dayoutnum}USDT
+				                                    <elseif condition="$vo.outtype eq 2" />
+				                                    {:L('按币量')}：{$vo.dayoutnum} <?php echo strtoupper($vo['outcoin']);?>
+				                                    </if>
+                                                    </span>
+                                                </div>
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('购买条件')} ：
+                                                    <if condition="$vo.buyask eq 1">
+                                                    {:L('最低持仓')}：{$vo.asknum}{:L('平台币')}    
+                                                    <elseif condition="$vo.buyask eq 2" /> 
+                                                    {:L('要求直推')}{$vo.asknum}{:L('人')}
+                                                    </if>
+                                                    </span>
+                                                </div>
+
+                                                <div style="width:100%;min-height:30px;">
+                                                    <span class="f14 fcc">{$vo.content}</span>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="width:100%;height:50px;margin-top:10px;padding:0px 20px;">
+                                    <div style="width:80%;height:40px;float:left;">
+                                        <div class="progress">
+					  			    		<?php if(strtotime($vo['starttime']) <= time()){?>
+					                        <div class="progress-bar" role="progressbar" style="width:<?php echo ($vo['ycnum'] + $vo['sellnum']) / $vo['allnum'] * 100;?>%;" aria-valuenow="<?php echo ($vo['ycnum'] + $vo['sellnum']) / $vo['allnum'] * 100;?>" aria-valuemin="0" aria-valuemax="100"><?php echo ($vo['ycnum'] + $vo['sellnum']) / $vo['allnum'] * 100;?>%</div>
+					                        <?php }elseif(strtotime($vo['starttime']) > time()){?>
+					                        <div class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+					                           <?php }?>
+					                    </div>
+                                    </div>
+                                    <div style="width:20%;height:40px;float:left;">
+                                        <div style="width:100%;height:40px;text-align:center;">
+                                            <a href="{:U('Orepool/kjinfo')}?id={$vo.id}" class="css-bhso1m" style="padding:5px 15px;	        ">{:L('立即购买')}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        </foreach>
+                        </empty>
+                        </div>
+                        <!------------------全部共享矿机结束------------------------>
+                        
+                        
+                        <!--独资矿机开始-->
+                        <div id="dzminerbox" style="width:100%;min-height:500px;background:#f5f5f5;padding:20px 50px;display:none;">
+                            <empty name="blist">
+	                        <div style="width:100%;height:400px;line-height:400px;text-align:center;">
+	                            <svg style="height:100px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" class="mirror css-1lzksdc"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 8H26v80h58V28L64 8zM36 37h38v4H36v-4zm0 9h38v4H36v-4zm38 9H36v4h38v-4z" fill="url(#not-found-data-light_svg__paint0_linear)"></path><path d="M62 71l4-4 4 4-4 4-4-4z" fill="#fff"></path><path d="M86 50l3-3 3 3-3 3-3-3zM47 21l3-3 3 3-3 3-3-3zM84 28H64V8l20 20z" fill="#E6E8EA"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4.171 73.171l14.5-14.5 5.657 5.658-14.5 14.5-5.657-5.657z" fill="url(#not-found-data-light_svg__paint1_linear)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M51 48c0-8.837-7.163-16-16-16s-16 7.163-16 16 7.163 16 16 16 16-7.163 16-16zm4 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z" fill="url(#not-found-data-light_svg__paint2_linear)"></path><defs><linearGradient id="not-found-data-light_svg__paint0_linear" x1="84" y1="10.162" x2="84" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#F5F5F5"></stop><stop offset="1" stop-color="#E6E8EA"></stop></linearGradient><linearGradient id="not-found-data-light_svg__paint1_linear" x1="4.171" y1="68.75" x2="24.328" y2="68.75" gradientUnits="userSpaceOnUse"><stop stop-color="#929AA5"></stop><stop offset="1" stop-color="#76808F"></stop></linearGradient><linearGradient id="not-found-data-light_svg__paint2_linear" x1="15" y1="48" x2="55" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#929AA5"></stop><stop offset="1" stop-color="#76808F"></stop></linearGradient></defs></svg>
+	                         </div>
+	                         <else />
+                            <foreach name="blist" item="vo">
+                            <div style="width:100%;height:290px;background:#fff;margin-bottom:20px;box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);border-radius:5px;">
+                                <div style="width:100%;height:240px;">
+                                    <div style="width:50%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;background:#fff;">
+                                            <div style="width:100%;height:230px;">
+                                                <div style="width:25%;heigth:230px;line-height:150px;text-align:center;float:left;">
+                                                    <img src="/Upload/public/{$vo.imgs}" style="width:60%;">
+                                                </div>
+                                                <div style="width:75%;padding:10px 0px 10px 10px;float:right;">
+                                                    <div style="width:100%;min-height:30px;">
+                                                        <span class="f16 fch">{$vo.title}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('上市时间')}：{$vo.addtime}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('产出币种')}：<?php echo strtoupper($vo['outcoin']);?></span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('矿机类型')}：
+                                                        <if condition="$vo.type eq 1">
+                                                            <span class="f16 fcy fw">{:L('独资机型')}</span>
+                                                        <elseif condition="$vo.type eq 2" />    
+                                                            <span class="f16 fcy fw">{:L('共享机型')}</span>
+                                                        </if>
+                                                        </span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('收益类型')}：
+                                                        <if condition="$vo.type eq 1">
+                                                            {:L('按产值')}
+                                                        <elseif condition="$vo.type eq 2" />    
+                                                            {:L('按产量')}
+                                                        </if>
+                                                        </span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('收益方式')}：{:L('自动收益')}</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                
+                                    <div style="width:50%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;">
+                                            <div style="width:100%;height:240px;padding:10px 0px 10px 10px;">
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f16 fch">{:L('矿机详情')}</span>
+                                                </div>
+                                                
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('矿机单价')} ：
+                                                    {$vo.pricenum} <?php echo strtoupper($vo['pricecoin']);?>
+                                                    </span>
+                                                </div>
+                                                
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('产出说明')} ：
+                                                    <if condition="$vo.outtype eq 1">
+				                                    {:L('按产值')}：{$vo.dayoutnum}USDT
+				                                    <elseif condition="$vo.outtype eq 2" />
+				                                    {:L('按币量')}：{$vo.dayoutnum} <?php echo strtoupper($vo['outcoin']);?>
+				                                    </if>
+                                                    </span>
+                                                </div>
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('购买条件')} ：
+                                                    <if condition="$vo.buyask eq 1">
+                                                    {:L('最低持仓')}：{$vo.asknum}{:L('平台币')}    
+                                                    <elseif condition="$vo.buyask eq 2" /> 
+                                                    {:L('要求直推')}{$vo.asknum}{:L('人')}
+                                                    </if>
+                                                    </span>
+                                                </div>
+
+                                                <div style="width:100%;min-height:30px;">
+                                                    <span class="f14 fcc">{$vo.content}</span>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="width:100%;height:50px;margin-top:10px;padding:0px 20px;">
+                                    <div style="width:80%;height:40px;float:left;">
+                                        <div class="progress">
+					  			    		<?php if(strtotime($vo['starttime']) <= time()){?>
+					                        <div class="progress-bar" role="progressbar" style="width:<?php echo ($vo['ycnum'] + $vo['sellnum']) / $vo['allnum'] * 100;?>%;" aria-valuenow="<?php echo ($vo['ycnum'] + $vo['sellnum']) / $vo['allnum'] * 100;?>" aria-valuemin="0" aria-valuemax="100"><?php echo ($vo['ycnum'] + $vo['sellnum']) / $vo['allnum'] * 100;?>%</div>
+					                        <?php }elseif(strtotime($vo['starttime']) > time()){?>
+					                        <div class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+					                           <?php }?>
+					                    </div>
+                                    </div>
+                                    <div style="width:20%;height:40px;float:left;">
+                                        <div style="width:100%;height:40px;text-align:center;">
+                                            <a href="{:U('Orepool/kjinfo')}?id={$vo.id}" class="css-bhso1m" style="padding:5px 15px;	        ">{:L('立即购买')}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        </foreach>
+                        </empty>
+                        </div>
+                        <!------------------全部独资矿机结束------------------------>
+                        
+                        
+                        
+                        <!--全部的矿机-->
+                        <div id="allminerbox" style="width:100%;min-height:500px;background:#f5f5f5;padding:20px 50px;display:none;">
+                            <empty name="alist">
+	                        <div style="width:100%;height:400px;line-height:400px;text-align:center;">
+	                            <svg style="height:100px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" class="mirror css-1lzksdc"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 8H26v80h58V28L64 8zM36 37h38v4H36v-4zm0 9h38v4H36v-4zm38 9H36v4h38v-4z" fill="url(#not-found-data-light_svg__paint0_linear)"></path><path d="M62 71l4-4 4 4-4 4-4-4z" fill="#fff"></path><path d="M86 50l3-3 3 3-3 3-3-3zM47 21l3-3 3 3-3 3-3-3zM84 28H64V8l20 20z" fill="#E6E8EA"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4.171 73.171l14.5-14.5 5.657 5.658-14.5 14.5-5.657-5.657z" fill="url(#not-found-data-light_svg__paint1_linear)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M51 48c0-8.837-7.163-16-16-16s-16 7.163-16 16 7.163 16 16 16 16-7.163 16-16zm4 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z" fill="url(#not-found-data-light_svg__paint2_linear)"></path><defs><linearGradient id="not-found-data-light_svg__paint0_linear" x1="84" y1="10.162" x2="84" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#F5F5F5"></stop><stop offset="1" stop-color="#E6E8EA"></stop></linearGradient><linearGradient id="not-found-data-light_svg__paint1_linear" x1="4.171" y1="68.75" x2="24.328" y2="68.75" gradientUnits="userSpaceOnUse"><stop stop-color="#929AA5"></stop><stop offset="1" stop-color="#76808F"></stop></linearGradient><linearGradient id="not-found-data-light_svg__paint2_linear" x1="15" y1="48" x2="55" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#929AA5"></stop><stop offset="1" stop-color="#76808F"></stop></linearGradient></defs></svg>
+	                         </div>
+	                         <else />
+                            <foreach name="alist" item="vo">
+                            <div style="width:100%;height:290px;background:#fff;margin-bottom:20px;box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);border-radius:5px;">
+                                <div style="width:100%;height:240px;">
+                                    <div style="width:50%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;background:#fff;">
+                                            <div style="width:100%;height:230px;">
+                                                <div style="width:25%;heigth:230px;line-height:150px;text-align:center;float:left;">
+                                                    <img src="/Upload/public/{$vo.imgs}" style="width:60%;">
+                                                </div>
+                                                <div style="width:75%;padding:10px 0px 10px 10px;float:right;">
+                                                    <div style="width:100%;min-height:30px;">
+                                                        <span class="f16 fch">{$vo.title}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('上市时间')}：{$vo.addtime}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('产出币种')}：<?php echo strtoupper($vo['outcoin']);?></span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('矿机类型')}：
+                                                        <if condition="$vo.type eq 1">
+                                                            <span class="f16 fcy fw">{:L('独资机型')}</span>
+                                                        <elseif condition="$vo.type eq 2" />    
+                                                            <span class="f16 fcy fw">{:L('共享机型')}</span>
+                                                        </if>
+                                                        </span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('收益类型')}：
+                                                        <if condition="$vo.type eq 1">
+                                                            {:L('按产值')}
+                                                        <elseif condition="$vo.type eq 2" />    
+                                                            {:L('按产量')}
+                                                        </if>
+                                                        </span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('收益方式')}：{:L('自动收益')}</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                
+                                    <div style="width:50%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;">
+                                            <div style="width:100%;height:240px;padding:10px 0px 10px 10px;">
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f16 fch">{:L('矿机详情')}</span>
+                                                </div>
+                                                
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('矿机单价')} ：
+                                                    {$vo.pricenum} <?php echo strtoupper($vo['pricecoin']);?>
+                                                    </span>
+                                                </div>
+                                                
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('产出说明')} ：
+                                                    <if condition="$vo.outtype eq 1">
+				                                    {:L('按产值')}：{$vo.dayoutnum}USDT
+				                                    <elseif condition="$vo.outtype eq 2" />
+				                                    {:L('按币量')}：{$vo.dayoutnum} <?php echo strtoupper($vo['outcoin']);?>
+				                                    </if>
+                                                    </span>
+                                                </div>
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('购买条件')} ：
+                                                    <if condition="$vo.buyask eq 1">
+                                                    {:L('最低持仓')}：{$vo.asknum}{:L('平台币')}    
+                                                    <elseif condition="$vo.buyask eq 2" /> 
+                                                    {:L('要求直推')}{$vo.asknum}{:L('人')}
+                                                    </if>
+                                                    </span>
+                                                </div>
+
+                                                <div style="width:100%;min-height:30px;">
+                                                    <span class="f14 fcc">{$vo.content}</span>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="width:100%;height:50px;margin-top:10px;padding:0px 20px;">
+                                    <div style="width:80%;height:40px;float:left;">
+                                        <div class="progress">
+					  			    		<?php if(strtotime($vo['starttime']) <= time()){?>
+					                        <div class="progress-bar" role="progressbar" style="width:<?php echo ($vo['ycnum'] + $vo['sellnum']) / $vo['allnum'] * 100;?>%;" aria-valuenow="<?php echo ($vo['ycnum'] + $vo['sellnum']) / $vo['allnum'] * 100;?>" aria-valuemin="0" aria-valuemax="100"><?php echo ($vo['ycnum'] + $vo['sellnum']) / $vo['allnum'] * 100;?>%</div>
+					                        <?php }elseif(strtotime($vo['starttime']) > time()){?>
+					                        <div class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+					                           <?php }?>
+					                    </div>
+                                    </div>
+                                    <div style="width:20%;height:40px;float:left;">
+                                        <div style="width:100%;height:40px;text-align:center;">
+                                            <a href="{:U('Orepool/kjinfo')}?id={$vo.id}" class="css-bhso1m" style="padding:5px 15px;	        ">{:L('立即购买')}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        </foreach>
+                        </empty>
+                        </div>
+                        <!------------------全部矿机总览结束------------------------>
+                        
+                        
+                        
+                    </div>
+	            </main>
+
+	            <include file="Public:footer"/>
+	        </div>   
+	    </div>
+	    
+	</body>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
+    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript">
+    	$("#allminbtn").click(function(){
+    		$("#allminbtn").addClass("css-1m3syfi");
+    		$("#allminbtn").removeClass("css-lk1png");
+    		
+    		$("#dzminbtn").addClass("css-lk1png");
+    		$("#dzminbtn").removeClass("css-1m3syfi");
+
+    		$("#gxminbtn").addClass("css-lk1png");
+    		$("#gxminbtn").removeClass("css-1m3syfi");
+
+    		$("#myminbtn").addClass("css-lk1png");
+    		$("#myminbtn").removeClass("css-1m3syfi");
+    		
+    		$("#allminerbox").show();
+    		$("#dzminerbox").hide();
+    		$("#gxminerbox").hide();
+    		$("#myminerbox").hide();
+
+    	});
+    	$("#dzminbtn").click(function(){
+    		$("#dzminbtn").addClass("css-1m3syfi");
+    		$("#dzminbtn").removeClass("css-lk1png");
+    		
+    		
+    		$("#allminbtn").addClass("css-lk1png");
+    		$("#allminbtn").removeClass("css-1m3syfi");
+
+    		$("#gxminbtn").addClass("css-lk1png");
+    		$("#gxminbtn").removeClass("css-1m3syfi");
+
+    		$("#myminbtn").addClass("css-lk1png");
+    		$("#myminbtn").removeClass("css-1m3syfi");
+    		
+    		$("#allminerbox").hide();
+    		$("#dzminerbox").show();
+    		$("#gxminerbox").hide();
+    		$("#myminerbox").hide();
+    	});
+    	$("#gxminbtn").click(function(){
+    		$("#gxminbtn").addClass("css-1m3syfi");
+    		$("#gxminbtn").removeClass("css-lk1png");
+    		
+    		
+    		$("#allminbtn").addClass("css-lk1png");
+    		$("#allminbtn").removeClass("css-1m3syfi");
+
+    		$("#dzminbtn").addClass("css-lk1png");
+    		$("#dzminbtn").removeClass("css-1m3syfi");
+
+    		$("#myminbtn").addClass("css-lk1png");
+    		$("#myminbtn").removeClass("css-1m3syfi");
+    		
+    		$("#allminerbox").hide();
+    		$("#dzminerbox").hide();
+    		$("#gxminerbox").show();
+    		$("#myminerbox").hide();
+    	});
+    	$("#myminbtn").click(function(){
+    		$("#myminbtn").addClass("css-1m3syfi");
+    		$("#myminbtn").removeClass("css-lk1png");
+    		
+    		$("#allminbtn").addClass("css-lk1png");
+    		$("#allminbtn").removeClass("css-1m3syfi");
+
+    		$("#dzminbtn").addClass("css-lk1png");
+    		$("#dzminbtn").removeClass("css-1m3syfi");
+
+    		$("#gxminbtn").addClass("css-lk1png");
+    		$("#gxminbtn").removeClass("css-1m3syfi");
+    		
+    		$("#allminerbox").hide();
+    		$("#dzminerbox").hide();
+    		$("#gxminerbox").hide();
+    		$("#myminerbox").show();
+    	});
+    </script>
+    <script type="text/javascript">
+		$("#nav").slide({ 
+			type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell:".nLi", //鼠标触发对象
+			targetCell:".sub", //titCell里面包含的要显示/消失的对象
+			effect:"slideDown", //targetCell下拉效果
+			delayTime:300 , //效果时间
+			triggerTime:0, //鼠标延迟触发时间（默认150）
+			returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+
+    
+</html>

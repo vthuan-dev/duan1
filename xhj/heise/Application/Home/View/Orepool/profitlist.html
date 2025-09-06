@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <title>{$webname}</title>
+        <style>
+            .css-ogtd7z {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                transition: all 1s ease 0s;
+                -webkit-box-pack: center;
+                justify-content: center;
+                background-color: rgb(254, 241, 242);
+            }
+            .css-jrzkh7 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                background-color: rgb(24, 26, 32);
+            }
+            .css-1aac2e {
+                box-sizing: border-box;
+                margin: 0px auto;
+                min-width: 0px;
+                padding-left: 24px;
+                padding-right: 24px;
+                max-width: 1248px;
+                background-color: rgb(254, 241, 242);
+            }
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0%;
+            }
+            .css-xry4yv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                min-height: 600px;
+                flex: 1 1 0%;
+                flex-direction: column;
+            }
+            .css-xry4yv {
+                flex-direction: row;
+            }
+            .css-foka8b {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 8%) 0px 0px 4px;
+                position: relative;
+                z-index: 1;
+                flex-direction: column;
+                width: 200px;
+                background: #ffffff;
+            }
+            .css-160vccy {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                flex: 1 1 0%;
+                background-color: rgb(250, 250, 250);
+            }
+            .css-z87e9z {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                text-decoration: none;
+                color: rgb(201, 148, 0);
+                border-left: 4px solid rgb(240, 185, 11);
+                height: 48px;
+                background-color: rgb(245, 245, 245);
+                font-weight: 500;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+            }
+            .css-10j588g {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+            .css-iizq59 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: break-word;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+                color: rgb(33, 40, 51);
+            }
+            .css-14thuu2 {
+                box-sizing: border-box;
+                margin: 0px 8px;
+                min-width: 0px;
+                color: rgb(240, 185, 11);
+                font-size: 24px;
+                fill: rgb(240, 185, 11);
+                width: 1em;
+                flex-shrink: 0;
+            }
+            .css-6ijtmk {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                text-decoration: none;
+                color: rgb(201, 148, 0);
+                border-left: 4px solid transparent;
+                height: 48px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                background:#fff;
+            }
+            .css-hd27fe {
+                box-sizing: border-box;
+                margin: 0px 8px;
+                min-width: 0px;
+                color: rgb(132, 142, 156);
+                font-size: 24px;
+                fill: rgb(132, 142, 156);
+                width: 1em;
+                flex-shrink: 0;
+            }
+            .css-1n0484q {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: break-word;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+                color: rgb(33, 40, 51);
+            }
+            
+            .css-1s52m11 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+                color: rgb(30, 35, 41);
+                flex-direction: column;
+                background-color: rgb(250, 250, 250);
+            }
+            .css-b80wxf {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                box-shadow: none;
+                background-color: rgb(255, 255, 255);
+                padding: 16px;
+                flex-wrap: wrap;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                position: relative;
+                box-shadow: rgb(0 0 0 / 8%) 0px 0px 4px;
+                padding: 24px;
+            }
+            .css-1s8q8od {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                -webkit-box-align: center;
+                align-items: center;
+                display: flex;
+            }
+            .css-u95vxr {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-size: 32px;
+                color: rgb(30, 35, 41);
+            }
+            .css-1k0kvxy {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                height: 16px;
+                width: 100%;
+                display: none;
+            }
+            .css-wfexmv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                width: auto;
+                flex-direction: row;
+                overflow: auto;
+                padding-bottom: 0px;
+            }
+            .css-4cffwv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+            }
+            .css-klzfmn {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                color: rgb(201, 148, 0);
+                flex: 1 1 auto;
+                display: inline-block;
+                text-decoration: none !important;
+            }
+            a {
+                background-color: transparent;
+            }
+            .css-z7v3zq {
+                margin: 0px;
+                min-width: 0px;
+                appearance: none;
+                user-select: none;
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                box-sizing: border-box;
+                font-family: inherit;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: keep-all;
+                color: rgb(33, 40, 51);
+                border-radius: 4px;
+                padding: 4px 8px;
+                min-height: 24px;
+                border: none;
+                background-image: linear-gradient(rgb(248, 209, 47) 0%, rgb(240, 185, 11) 100%);
+            }
+            .css-wfexmv button {
+                font-weight: 500;
+                font-size: 14px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            .css-11mfxxz {
+                box-sizing: border-box;
+                margin: 0px 16px;
+                min-width: 0px;
+                color: rgb(201, 148, 0);
+                flex: 1 1 auto;
+                display: inline-block;
+                text-decoration: none !important;
+            }
+            .css-1tz9k8l {
+                margin: 0px;
+                min-width: 0px;
+                appearance: none;
+                user-select: none;
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                box-sizing: border-box;
+                font-family: inherit;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: keep-all;
+                color: rgb(33, 40, 51);
+                border-radius: 4px;
+                padding: 4px 8px;
+                min-height: 24px;
+                border: none;
+                background-color: transparent;
+                box-shadow: rgb(234 236 239) 0px 0px 0px 1px inset;
+            }
+            .css-wfexmv button {
+                font-weight: 500;
+                font-size: 14px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            .css-11ag26e {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                height: 0px;
+                box-shadow: none;
+                height: 24px;
+            }
+            .css-1imiysb {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                background-color: rgb(255, 255, 255);
+                padding: 8px 16px;
+                border-radius: 4px;
+                box-shadow: rgb(0 0 0 / 8%) 0px 0px 4px;
+                padding-left: 24px;
+                padding-right: 24px;
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+            .css-87c5r {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-flow: row wrap;
+                flex: 1 1 0%;
+                flex-direction: row;
+            }
+            .css-1n7u5cf {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: row;
+            }
+            .css-661iov {
+                box-sizing: border-box;
+                margin: 8px 8px 8px 0px;
+                min-width: auto;
+                -webkit-box-flex: 1;
+                flex-grow: 1;
+                margin-right: 32px;
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+            .css-10nf7hq {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+            .css-oorpkh {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgb(30, 35, 41);
+            }
+            .css-10kvebh {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: none;
+            }
+            .css-1iivh6i {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: flex-end;
+            }
+            .css-d9plw {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                color: rgb(30, 35, 41);
+                font-size: 32px;
+                line-height: 42px;
+            }
+            .css-1qujath {
+                box-sizing: border-box;
+                margin: 0px 0px 0px 4px;
+                min-width: 0px;
+                font-size: 14px;
+                line-height: 28px;
+                color: rgb(71, 77, 87);
+            }
+            .css-w37o3p {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                height: 24px;
+                background-color: transparent;
+                box-shadow: none;
+            }
+            .css-9cxewd {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                flex: 1 1 0%;
+                background-color: rgb(255, 255, 255);
+                padding: 0px;
+                border-radius: 4px;
+                box-shadow: rgb(0 0 0 / 8%) 0px 0px 4px;
+                margin-left: 24px;
+                margin-right: 24px;
+                margin-bottom: 24px;
+                padding: 24px;
+                height: 1090px;
+            }
+            .css-1inwbdu {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                padding: 0px;
+            }
+            .css-1ammkwy {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+            }
+            .coinbox{width:100%;height:400px;margin-top:20px;}
+            .cointitle{width:100%;height:40px;background-color:#f5f5f5;}
+            .titleop{height:40px;line-height:40px;text-align:left;float:left;padding-left:15px;overflow:hidden;}
+            .coincontent{width:100%;height:50px;background-color:#fff;border-bottom:1px solid #f5f5f5;}
+            .contentop{height:50px;line-height:50px;text-align:left;float:left;padding-left:15px;overflow:hidden;}
+            .contentop a:hover{color:#00b897;}
+        </style>
+	</head>
+	<body>
+	    <div class="App">
+	        <div class="css-tq0shg">
+	            <include file="Public:header"/>
+	            
+	            <div class="css-ogtd7z">
+	                <div class="css-jrzkh7">
+	                    <div id="header_global_js_wxgy34nj" class="css-1aac2e"></div>
+	                </div>
+	           </div>
+	           
+	           <main class="css-1wr4jig">
+	               <main class="css-xry4yv">
+	                   <!--左边-->
+	                   <div class="css-foka8b">
+	                       <a data-bn-type="link" href="{:U('Finance/index')}" class="css-6ijtmk" style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-hd27fe"><path d="M6.093 8.889c-.567 0-1.031-.438-1.031-.972 0-.535.464-.973 1.03-.973h12.846V5H6.093C4.38 5 3 6.303 3 7.917v8.166C3 17.697 4.381 19 6.093 19H21V8.889H6.093zm12.845 8.167H6.093c-.567 0-1.031-.438-1.031-.973v-5.415c.33.107.68.165 1.03.165h12.846v6.223z" fill="currentColor"></path><path d="M15.845 12.573l-1.453 1.371 1.453 1.38 1.464-1.38-1.464-1.37z" fill="currentColor"></path></svg>
+	                               <div data-bn-type="text" class="css-iizq59">{:L('钱包总览')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('Finance/czlist')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-hd27fe"><g clip-path="url(#sidebar-payment-s24_svg__clip0)" fill="currentColor"><path d="M12.589 11.251v-1.88a2.17 2.17 0 011.15.688l.031.032 1.126-1.024-.024-.032a3.208 3.208 0 00-2.14-1.065V6.858h-1.42V7.97c-1.486.184-2.332 1.008-2.332 2.273 0 1.208.806 1.968 2.483 2.32v2.05a2.724 2.724 0 01-1.589-.873l-.032-.024-1.086.992-.032.024.032.032a3.781 3.781 0 002.555 1.249V17.1h1.421v-1.136a2.448 2.448 0 001.624-.765 2.457 2.457 0 00.668-1.668c0-1.185-.75-1.889-2.435-2.28zm.734 2.417a.938.938 0 01-.734.912v-1.76c.654.216.734.584.734.848zm-1.86-2.673c-.559-.168-.783-.392-.783-.8 0-.456.256-.728.783-.848v1.648z"></path><path d="M11.973 5.6c1.263 0 2.497.376 3.547 1.079a6.397 6.397 0 012.352 2.872 6.413 6.413 0 01-1.384 6.974 6.38 6.38 0 01-6.958 1.387 6.388 6.388 0 01-2.866-2.357A6.41 6.41 0 015.588 12 6.414 6.414 0 017.46 7.477 6.385 6.385 0 0111.973 5.6zm0-1.6a7.97 7.97 0 00-4.435 1.348 7.996 7.996 0 00-2.94 3.59 8.017 8.017 0 001.73 8.719 7.965 7.965 0 008.699 1.734 7.985 7.985 0 003.583-2.946 8.013 8.013 0 00-.993-10.102A7.98 7.98 0 0011.973 4z"></path></g><defs><clipPath id="sidebar-payment-s24_svg__clip0"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></svg>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('充币记录')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('Finance/txlist')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-hd27fe"><g clip-path="url(#sidebar-payment-s24_svg__clip0)" fill="currentColor"><path d="M12.589 11.251v-1.88a2.17 2.17 0 011.15.688l.031.032 1.126-1.024-.024-.032a3.208 3.208 0 00-2.14-1.065V6.858h-1.42V7.97c-1.486.184-2.332 1.008-2.332 2.273 0 1.208.806 1.968 2.483 2.32v2.05a2.724 2.724 0 01-1.589-.873l-.032-.024-1.086.992-.032.024.032.032a3.781 3.781 0 002.555 1.249V17.1h1.421v-1.136a2.448 2.448 0 001.624-.765 2.457 2.457 0 00.668-1.668c0-1.185-.75-1.889-2.435-2.28zm.734 2.417a.938.938 0 01-.734.912v-1.76c.654.216.734.584.734.848zm-1.86-2.673c-.559-.168-.783-.392-.783-.8 0-.456.256-.728.783-.848v1.648z"></path><path d="M11.973 5.6c1.263 0 2.497.376 3.547 1.079a6.397 6.397 0 012.352 2.872 6.413 6.413 0 01-1.384 6.974 6.38 6.38 0 01-6.958 1.387 6.388 6.388 0 01-2.866-2.357A6.41 6.41 0 015.588 12 6.414 6.414 0 017.46 7.477 6.385 6.385 0 0111.973 5.6zm0-1.6a7.97 7.97 0 00-4.435 1.348 7.996 7.996 0 00-2.94 3.59 8.017 8.017 0 001.73 8.719 7.965 7.965 0 008.699 1.734 7.985 7.985 0 003.583-2.946 8.013 8.013 0 00-.993-10.102A7.98 7.98 0 0011.973 4z"></path></g><defs><clipPath id="sidebar-payment-s24_svg__clip0"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></svg>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('提币记录')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('Orepool/profitlist')}" class="css-z87e9z"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-14thuu2"><g clip-path="url(#sidebar-payment-s24_svg__clip0)" fill="currentColor"><path d="M12.589 11.251v-1.88a2.17 2.17 0 011.15.688l.031.032 1.126-1.024-.024-.032a3.208 3.208 0 00-2.14-1.065V6.858h-1.42V7.97c-1.486.184-2.332 1.008-2.332 2.273 0 1.208.806 1.968 2.483 2.32v2.05a2.724 2.724 0 01-1.589-.873l-.032-.024-1.086.992-.032.024.032.032a3.781 3.781 0 002.555 1.249V17.1h1.421v-1.136a2.448 2.448 0 001.624-.765 2.457 2.457 0 00.668-1.668c0-1.185-.75-1.889-2.435-2.28zm.734 2.417a.938.938 0 01-.734.912v-1.76c.654.216.734.584.734.848zm-1.86-2.673c-.559-.168-.783-.392-.783-.8 0-.456.256-.728.783-.848v1.648z"></path><path d="M11.973 5.6c1.263 0 2.497.376 3.547 1.079a6.397 6.397 0 012.352 2.872 6.413 6.413 0 01-1.384 6.974 6.38 6.38 0 01-6.958 1.387 6.388 6.388 0 01-2.866-2.357A6.41 6.41 0 015.588 12 6.414 6.414 0 017.46 7.477 6.385 6.385 0 0111.973 5.6zm0-1.6a7.97 7.97 0 00-4.435 1.348 7.996 7.996 0 00-2.94 3.59 8.017 8.017 0 001.73 8.719 7.965 7.965 0 008.699 1.734 7.985 7.985 0 003.583-2.946 8.013 8.013 0 00-.993-10.102A7.98 7.98 0 0011.973 4z"></path></g><defs><clipPath id="sidebar-payment-s24_svg__clip0"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></svg>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('矿机收益')}</div>
+	                           </div>
+	                       </a>
+ 
+	                   </div>
+	                   
+	                   <!--右边-->
+	                   <div class="css-1wr4jig">
+                            <div class="css-1s52m11">
+                                <div class="css-1lu4p3l">
+                                    <div class="css-b80wxf">
+                                        <div class="css-1s8q8od">
+                                            <div data-bn-type="text" class="css-u95vxr">{:L('矿机收益记录')}</div>
+                                        </div>
+                                        <div class="css-1k0kvxy"></div>
+                                        <div class="css-wfexmv">
+                                            <div class="css-4cffwv">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="css-11ag26e"></div>
+
+                                    <div class="css-9cxewd">
+                                        <div class="css-1inwbdu">
+                                            <a  class="css-9wsvyu">{:L('矿机收益记录')}</a>
+                                        </div>
+                                        <div class="css-1ammkwy">
+                                            <div class="coinbox">
+                                                <div class="cointitle">
+                                                    <div class="titleop" style="width:40%;">
+                                                        <span class="f14 fch">{:L('矿机名称')}</span>
+                                                    </div>
+                                                    <div class="titleop" style="width:15%;">
+                                                        <span class="f14 fch">{:L('收益币种')}</span>
+                                                    </div>
+                                                    <div class="titleop" style="width:15%;">
+                                                        <span class="f14 fch">{:L('收益金额')}</span>
+                                                    </div>
+                                                    <div class="titleop" style="width:15%;">
+                                                        <span class="f14 fch">{:L('收益日期')}</span>
+                                                    </div>
+                                                    <div class="titleop" style="width:15%;">
+                                                        <span class="f14 fch">{:L('释放状态')}</span>
+                                                    </div>
+
+                                                </div>
+                                                
+                                                <foreach name="list" item="vo">
+                                                <div class="coincontent">
+                                                    <div class="contentop" style="width:40%;">
+                                                        <span class="f14 fch">{$vo.ktitle}</span>
+                                                    </div>
+                                                    <div class="contentop" style="width:15%;">
+                                                        <span class="f14 fch"><?php echo strtoupper($vo['coin']);?></span>
+                                                    </div>
+                                                    <div class="contentop" style="width:15%;">
+                                                        <span class="f14 fch">{$vo.num}</span>
+                                                    </div>
+                                                    <div class="contentop" style="width:15%;">
+                                                        <span class="f14 fch fw">{$vo.addtime}</span>
+                                                    </div>
+                                                    <div class="contentop" style="width:15%;">
+                                                        <if condition="$vo.status eq 1">
+                                                        <span class="f14 fgreen fw">{:L('已释放')}</span>
+                                                        <elseif condition="$vo.status eq 2" />
+                                                        <span class="f14 fred fw">{:L('未释放')}</span>
+                                                        </if>
+                                                    </div>
+
+                                                </div>
+                                                </foreach>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+	                   </div>
+	                   
+	               </main>
+	           </main>
+
+	            <include file="Public:footer"/>
+	        </div>   
+	    </div>
+	    
+	</body>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
+    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+    
+    <script type="text/javascript">
+		$("#nav").slide({ 
+			type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell:".nLi", //鼠标触发对象
+			targetCell:".sub", //titCell里面包含的要显示/消失的对象
+			effect:"slideDown", //targetCell下拉效果
+			delayTime:300 , //效果时间
+			triggerTime:0, //鼠标延迟触发时间（默认150）
+			returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+
+    
+</html>

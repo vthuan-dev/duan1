@@ -1,0 +1,261 @@
+<include file="Public:header" />
+<script type="text/javascript" src="__PUBLIC__/layer/laydate/laydate.js"></script>
+
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main" style="margin-top:30px;">
+		<div class="main-title-h"> 
+			<span class="h1-title"><a href="{:U('Orepool/index')}">矿池配置</a> &gt;</span> 
+			<span class="h1-title">新增矿池项目</span> 
+		</div>
+		<div class="tab-wrap">
+			<div class="tab-content">
+				<form id="form" action="{:U('Orepool/orepoolsave')}" method="post" class="form-horizontal">
+					<div id="tab" class="tab-pane in tab">
+
+						<div class="form-item cf">
+							<table>
+							
+								<tr class="controls">
+									<td class="item-label">矿池名称 :</td>
+									<td><input type="text" class=" form-control input-4x" placeholder="请输入矿池名称"  name="oretitle" value=""></td>
+									<td class="item-note">* 必须输入矿池名称</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">项目LOGO :</td>
+									<td>
+										<div class="upload-box" style="text-align: center;height:80px;">
+											<div class="imgs">
+												<img id="up_img_idimg1" onclick="getElementById('idimg1').click()" style="width: 30%;" src="__PUBLIC__/Home/images/up.png">
+											</div>
+											<input type="hidden" id="idimg1" name="idimg1" value="">
+											<input type="file" id="file_idimg1"accept="image/gif, image/jpeg, image/jpg, image/png" value="" style="position:relative;top:-60px;width:200px;height:60px;opacity: 0;"/>
+										</div>
+									</td>
+								</tr>
+								
+								
+								
+								<tr class="controls">
+									<td class="item-label">参与币种 :</td>
+									<td><input type="text" name="coinname" class="form-control input-4x" placeholder="请输入参与矿池的币种" value=""></td>
+										<!--<empty name="data">
+											<select name="coinname" class="input-small  input-4x" style="height: 36px;border-radius: 5px;">
+												<volist name="C['coin_list']" id="v"> 
+													<option value="{$v['name']}" <eq name="data['coinname']" value="$v['name']">selected</eq>>{$v['title']}</option>
+												</volist>
+											</select>
+										<else />
+											{$data['coinname']} 
+										</empty>-->
+									</td>
+									<td class="item-note">* 必填(可填写多币种),按此格式填写USDT|BTC|，（当前可填写币种<volist name="C['coin_list']" id="v">{$v['name']},</volist>）</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">释放币种 :</td>
+									<td>
+										<empty name="data">
+											<select name="cc_coin" class="input-small  input-4x" style="height: 36px;border-radius: 5px;">
+												<volist name="C['coin_list']" id="v"> 
+													<option value="{$v['name']}" <eq name="data['cc_coin']" value="$v['name']">selected</eq>>{$v['title']}</option>
+												</volist>
+											</select>
+										<else />
+											{$data['cc_coin']} 
+										</empty>
+									</td>
+									<td class="item-note">* 矿池释放的币种</td>
+								</tr>
+
+
+								<tr class="controls">
+									<td class="item-label">矿池总价值 :</td>
+									<td><input type="number"  name="summoney" class="form-control input-4x"  placeholder="请输入矿池总价值"  value=""></td>
+									<td class="item-note">* 必填，矿池总价值</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">模拟参与额度 :</td>
+									<td><input type="number"  name="fmoney"  class="form-control input-4x" placeholder="请输入模拟参与额度" value="" /></td>
+									<td class="item-note">* 非必填，填写后会减少可投资额度</td>
+								</tr>
+								<tr class="controls">
+									<td class="item-label">单次最低额度 :</td>
+									<td><input type="number"  name="minmoney" class="form-control input-4x" placeholder="请输入单次最低额度" value=""></td>
+									<td class="item-note">* 必填，单次最低买入金额</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">单次最高额度 :</td>
+									<td><input type="number" name="maxmoney" class="form-control input-4x" placeholder="请输入单次最高额度" value=""></td>
+									<td class="item-note">* 必填，单次最高买入金额</td>
+								</tr>
+
+
+								<tr class="controls">
+									<td class="item-label">币释放规则 :</td>
+									<td>
+										<select name="rtype" class="input-small  input-4x" style="height: 36px;border-radius: 5px;">
+											<option value="1">按固定比例释放</option>
+											<option value="2">按固定额度释放</option>
+											<option value="3">按固定额度比例释放</option>
+										</select>
+									</td>
+									<td class="item-note">* 必须选择币释放方式，选择后则按设置方式释放</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">固定比例释放 :</td>
+									<td><input type="number" name="sfbl"  class="form-control input-4x" placeholder="请输入固定释放比例" value=""></td>
+									<td class="item-note">* 必填，按设置的固定比例释放，10%，写成10。</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">固定额度释放 :</td>
+									<td><input type="number" name="gdnum"  class="form-control input-4x" placeholder="请输入固定释放额度" value=""></td>
+									<td class="item-note">* 必填，按固定额度释放，固定数量，如1000</td>
+								</tr>
+								<tr class="controls">
+									<td class="item-label">固定额度比例释放 :</td>
+									<td><input type="text" name="gdbl" class="form-control input-4x" placeholder="请输入固定额度比例额度" value=""></td>
+									<td class="item-note">* 必填，按固定数量比例释放额度，固定数量比例，比如1000的 10% 写成1000|10</td>
+								</tr>
+								<tr class="controls">
+									<td class="item-label">单用户参与次数 :</td>
+									<td><input type="text" name="buynum" class="form-control input-4x" placeholder="请输入固定额度比例额度" value=""></td>
+									<td class="item-note">* 必填，单个用户最多能够参与的次料</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">释放方法 :</td>
+									<td>
+										<select name="rway" class="input-small  input-4x" style="height: 36px;border-radius: 5px;">
+											<option value="1">每天自动释放</option>
+											<option value="2">后台手动释放</option>
+										</select>
+									</td>
+									<td class="item-note">* 必须选择释放方法</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">购买方式 :</td>
+									<td>
+										<select name="buytype" id="buytype"   onchange="func()" class="input-small  input-4x" style="height: 36px;border-radius: 5px;">
+											<option value="1">自由输入金额</option>
+											<option value="2">下拉框选择金额</option>
+										</select>
+									</td>
+									<td class="item-note">* 购买方式选择</td>
+								</tr>
+								<tr class="controls" id="selectid" style="display:none;">
+									<td class="item-label">购买金额 :</td>
+									<td><input type="text"  name="arrmoney"   class="form-control input-4x"placeholder="请输入用于选择的购买金额"   value=""></td>
+									<td class="item-note">* 必须填写，请参照此格式填写 100|200|300|400|</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">排序 :</td>
+									<td><input type="number"  name="sort"   class="form-control input-4x"placeholder="请输入排序编号"   value=""></td>
+									<td class="item-note">* 必须填写，数字越小，排序越靠前</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">状态 :</td>
+									<td>
+										<select name="status" class="input-small   input-4x"  style="height: 36px;border-radius: 5px;">
+											<option value="1" <eq name="data.status" value="1">selected</eq>>可用</option>
+											<option value="2" <eq name="data.status" value="0">selected</eq>>禁用</option>
+										</select>
+									</td>
+									<td class="item-note">* 必选</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label"></td>
+									<td>
+										<div class="form-item cf">
+											<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">提交</button>
+											<a class="btn btn-return" href="{$Think.server.HTTP_REFERER}">返 回</a>
+											<notempty name="data.id">
+												<input type="hidden" name="id" value="{$data.id}" />
+											</notempty>
+										</div>
+									</td>
+								</tr>
+								
+							</table>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function func(){
+		var id = $("#buytype").val();
+		if(id == 2){
+			$("#selectid").fadeIn();
+		}
+		if(id == 1){
+			$("#selectid").hide();
+		}
+	}
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+	//响应文件添加成功事件
+	$("#file_idimg1").change(function () {
+		//创建FormData对象
+		var data = new FormData();
+		//为FormData对象添加数据
+		$.each($('#file_idimg1')[0].files, function (i, file) {
+			data.append('upload_file' + i, file);
+		});
+
+		//发送数据
+		$.ajax({
+			url: '/Home/Ajax/upimgs',
+			type: 'POST',
+			data: data,
+			cache: false,
+			contentType: false, //不可缺参数
+			processData: false, //不可缺参数
+			success: function (data) {
+				if (data) {
+					$('#up_img_idimg1').attr("src", '/Upload/payimg/' + $.trim(data));
+					$('#idimg1').val($.trim(data));
+					$('#up_img_idimg1').show();
+				}
+			},
+			error: function () {
+				alert('上传出错');
+				$(".loading").hide(); //加载失败移除加载图片
+			}
+		});
+
+	});
+});
+</script>
+
+<script type="text/javascript">
+//提交表单
+$('#submit').click(function(){
+	$('#form').submit();
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+	//主导航高亮
+	$('.Money-box').addClass('current');
+	//边导航高亮
+	$('.Money-index').addClass('current');
+});
+</script> 
+<include file="Public:footer" />

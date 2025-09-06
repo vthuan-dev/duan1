@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <title>{$webname}</title>
+        <style>
+            .css-ogtd7z {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                transition: all 1s ease 0s;
+                -webkit-box-pack: center;
+                justify-content: center;
+                background-color: rgb(254, 241, 242);
+            }
+            .css-jrzkh7 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                background-color: rgb(24, 26, 32);
+            }
+            .css-1aac2e {
+                box-sizing: border-box;
+                margin: 0px auto;
+                min-width: 0px;
+                padding-left: 24px;
+                padding-right: 24px;
+                max-width: 1248px;
+                background-color: rgb(254, 241, 242);
+            }
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0%;
+            }
+            .css-xry4yv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                min-height: 600px;
+                flex: 1 1 0%;
+                flex-direction: column;
+            }
+            .css-xry4yv {
+                flex-direction: row;
+            }
+            .css-foka8b {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 8%) 0px 0px 4px;
+                position: relative;
+                z-index: 1;
+                flex-direction: column;
+                width: 200px;
+                background: #ffffff;
+            }
+            .css-160vccy {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                flex: 1 1 0%;
+                background-color: rgb(250, 250, 250);
+            }
+            .css-z87e9z {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                text-decoration: none;
+                color: rgb(201, 148, 0);
+                border-left: 4px solid rgb(240, 185, 11);
+                height: 48px;
+                background-color: rgb(245, 245, 245);
+                font-weight: 500;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+            }
+            .css-10j588g {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+            .css-iizq59 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: break-word;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+                color: rgb(33, 40, 51);
+            }
+            .css-14thuu2 {
+                box-sizing: border-box;
+                margin: 0px 8px;
+                min-width: 0px;
+                color: rgb(240, 185, 11);
+                font-size: 24px;
+                fill: rgb(240, 185, 11);
+                width: 1em;
+                flex-shrink: 0;
+            }
+            .css-6ijtmk {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                text-decoration: none;
+                color: rgb(201, 148, 0);
+                border-left: 4px solid transparent;
+                height: 48px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                background:#fff;
+            }
+            .css-hd27fe {
+                box-sizing: border-box;
+                margin: 0px 8px;
+                min-width: 0px;
+                color: rgb(132, 142, 156);
+                font-size: 24px;
+                fill: rgb(132, 142, 156);
+                width: 1em;
+                flex-shrink: 0;
+            }
+            .css-1n0484q {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: break-word;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+                color: rgb(33, 40, 51);
+            }
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0%;
+                background:#fff;
+            }
+            .css-1u0m1fa {
+                margin: 0px;
+                min-width: 0px;
+                box-sizing: border-box;
+                padding-left: 24px;
+                padding-right: 24px;
+                display: block;
+                
+            }
+            .css-fhl5lc {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                height: 48px;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+            .css-1cdfkn6 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                text-decoration: none;
+                color: rgb(112, 122, 138);
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 400;
+                transition: color 0.2s ease 0s;
+                pointer-events: auto;
+            }
+            .css-1bbywci {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                flex: 1 1 0%;
+                flex-direction: column;
+                width: 100%;
+                padding: 32px;
+            }
+            .css-1pl31wt {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                overflow: unset;
+                margin-top: -15px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .css-k2y2sp {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center;
+                flex-direction: row;
+            }
+            .css-1868gi1 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .css-x5jwjg {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                align-items: flex-end;
+                margin-top: 0px;
+            }
+            .css-3kuzxc {
+                margin: 0px;
+                appearance: none;
+                user-select: none;
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                box-sizing: border-box;
+                font-family: inherit;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                font-weight: 500;
+                line-height: 20px;
+                word-break: keep-all;
+                color: rgb(33, 40, 51);
+                border-radius: 6px;
+                padding: 6px 16px;
+                min-height: 24px;
+                border: none;
+                background-image: none;
+                background-color: rgb(252, 213, 53);
+                min-width: 52px;
+                height: 40px;
+                font-size: 14px;
+            }
+            .css-1cdfkn6:hover,.css-1cdfkn6:active,.css-1cdfkn6:visited{
+                color: rgb(252, 213, 53);
+                text-decoration: none;
+            }
+            .css-z32tht {
+                box-sizing: border-box;
+                margin: 24px 0px;
+                min-width: 0px;
+            }
+            
+            .css-joa6mv {
+                box-sizing: border-box;
+                margin: 24px 0px;
+                min-width: 0px;
+                background: #f5f5f5;
+                padding: 10px;
+            }
+            .css-1op9i22 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: relative;
+            }
+            .rc-table {
+                font-size: 12px;
+                color: rgb(102, 102, 102);
+                transition: opacity 0.3s ease 0s;
+                position: relative;
+                line-height: 1.5;
+                overflow: hidden;
+            }
+            .css-xdf65a {
+                color: rgb(30, 35, 41);
+            }
+            .css-3tfm4c {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                height: 24px;
+            }
+            .css-vurnku {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+            }
+            .css-154a57d {
+                box-sizing: border-box;
+                margin: 24px 0px 0px;
+                min-width: 0px;
+                display: inline-flex;
+                position: relative;
+                -webkit-box-align: center;
+                align-items: center;
+                line-height: 1.6;
+                border: 1px solid rgb(234, 236, 239);
+                border-radius: 4px;
+                width: 100%;
+                height: 48px;
+            }
+            .css-16fg16t {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                width: 100%;
+                height: 100%;
+                padding: 0px;
+                outline: none;
+                border: none;
+                background-color: inherit;
+                opacity: 1;
+            }
+            .css-154a57d input {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            .css-154a57d input {
+                color: rgb(30, 35, 41);
+                font-size: 14px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            .css-154a57d .bn-input-label {
+                font-size: 12px;
+            }
+            .css-154a57d:hover{
+                border-color: rgb(240, 185, 11);
+            }
+            .css-5vzups {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: absolute;
+                top: -24px;
+                left: 0px;
+                line-height: 24px;
+                transition-property: top, font-size;
+                transition-duration: 0.3s;
+                transition-timing-function: ease;
+                z-index: 1;
+                cursor: text;
+                color: rgb(71, 77, 87);
+                font-size: 14px;
+            }
+            .css-kiaw5d {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .layui-upload-file{display: none!important;opacity: .01;}
+        </style>
+	</head>
+	<body>
+	    <div class="App">
+	        <div class="css-tq0shg">
+	            <include file="Public:header"/>
+	            
+	            <div class="css-ogtd7z">
+	                <div class="css-jrzkh7">
+	                    <div id="header_global_js_wxgy34nj" class="css-1aac2e"></div>
+	                </div>
+	           </div>
+	           
+	           <main class="css-1wr4jig">
+	               <main class="css-xry4yv">
+	                   <!--左边-->
+	                   <div class="css-foka8b">
+	                       <a data-bn-type="link" href="{:U('User/index')}" class="css-6ijtmk" style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-person-fill css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-iizq59">{:L('总览')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/addresslist')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-journal-text css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('地址管理')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/authrz')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-shield-check css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('实名认证')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/respwd')}" class="css-z87e9z"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-gear css-14thuu2"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('修改密码')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/tgcode')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-person-plus css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('推荐返佣')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/notice')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-bell css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('我的通知')}</div>
+	                           </div>
+	                       </a>
+	                        <a data-bn-type="link" href="{:U('User/online')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-headset css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('联系客服')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/mybill')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-card-list css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('我的账单')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       
+	                   </div>
+	                   
+	                   <!--右边-->
+	                    <div class="css-1wr4jig">
+	                        <div class="css-1u0m1fa">
+                                <div class="css-fhl5lc">
+                                    <a class="css-1cdfkn6" href="##">{:L('修改密码')}</a>
+                                </div>
+                            </div>
+                            
+                            <div class="css-1bbywci">
+                                <div class="css-1pl31wt">
+                                    <div class="css-k2y2sp">
+                                        <div data-bn-type="text" class="css-1868gi1">{:L('修改登陆密码')}</div>
+                                        <div class="css-x5jwjg"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="css-z32tht">
+                                    <div class="css-joa6mv">
+                                        <span class="f12 fcy">*{:L('为了您的资金安全，登陆密码修改后24小时以内不允许提现')}</span>
+                                    </div>
+                                    
+                                    <div class="css-1op9i22">
+                                        <div style="width:400px;min-height: 400px;">
+                                            <div class="css-vurnku">
+	                                            <div class="css-154a57d">
+	                                                <input type="password" id="oldpwd" placeholder="{:L('请输入旧密码')}" class="css-16fg16t" value="">
+	                                                <label class="bn-input-label css-5vzups">
+	                                                    <div data-bn-type="text" class="css-kiaw5d">{:L('旧密码')}</div>
+	                                                </label>
+	                                            </div>
+	                                        </div>
+	                                        <div style="width:100%;height:30px;"></div>
+                                            <div class="css-vurnku">
+	                                            <div class="css-154a57d">
+	                                                <input type="password" id="newpwd" placeholder="{:L('请输入新密码')}" class="css-16fg16t" value="">
+	                                                <label class="bn-input-label css-5vzups">
+	                                                    <div data-bn-type="text" class="css-kiaw5d">{:L('新密码')}</div>
+	                                                </label>
+	                                            </div>
+	                                        </div>
+	                                        <div style="width:100%;height:30px;"></div>
+                                            <div class="css-vurnku">
+	                                            <div class="css-154a57d">
+	                                                <input type="password" id="renewpwd" placeholder="{:L('请输入确认密码')}" class="css-16fg16t" value="">
+	                                                <label class="bn-input-label css-5vzups">
+	                                                    <div data-bn-type="text" class="css-kiaw5d">{:L('确认密码')}</div>
+	                                                </label>
+	                                            </div>
+	                                        </div>
+	                                        <input type="hidden" id="flag" value="1" />
+	                                        <div style="width:100%;height:30px;"></div>
+	                                        <div class="css-x5jwjg">
+                                                <button data-bn-type="button" id="mo_submit"  class="css-3kuzxc" style="padding: 6px 50px;">{:L('提交')}</button>
+                                            </div>
+ 
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+	                    </div>
+                        
+                        
+                        
+	               </main>
+	           </main>
+
+	            <include file="Public:footer"/>
+	        </div>   
+	    </div>
+	    
+	</body>
+ 
+
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/layui/layui.js"></script>
+    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript">
+    	$("#mo_submit").click(function(){
+    		var oldpwd = $("#oldpwd").val();
+    		var newpwd = $("#newpwd").val();
+    		var renewpwd = $("#renewpwd").val();
+    		if(oldpwd == ''){
+    			layer.msg("{:L('请输入旧密码')}");return false;
+    		}
+    		if(newpwd == ''){
+    			layer.msg("{:L('请输入新密码')}");return false;
+    		}
+    		if(renewpwd == ''){
+    			layer.msg("{:L('请输入确认密码')}");return false;
+    		}
+    		if(newpwd != renewpwd){
+    			layer.msg("{:L('两次输入的密码不一致')}");return false;
+    		}
+    		$.post("{:U('User/sub_respwd')}",
+    		{'oldpwd' : oldpwd, 'newpwd' : newpwd},
+    		function(data){
+    			if(data.code == 1){
+    				layer.msg(data.info);
+    				setTimeout(function(){
+    					window.location.href = "{:U('User/index')}";
+    				},2000);
+    			}else{
+    				layer.msg(data.info); return false;
+    			}
+    		});
+    	});
+    </script>
+
+    <script type="text/javascript">
+		$("#nav").slide({ 
+			type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell:".nLi", //鼠标触发对象
+			targetCell:".sub", //titCell里面包含的要显示/消失的对象
+			effect:"slideDown", //targetCell下拉效果
+			delayTime:300 , //效果时间
+			triggerTime:0, //鼠标延迟触发时间（默认150）
+			returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+
+    
+</html>

@@ -1,0 +1,109 @@
+<include file="Public:header"/>
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">代理管理</span>
+		</div>
+
+		<div class="data-table table-striped">
+			<form id="form"  method="post" class="form-horizontal">
+				<table class="">
+					<thead>
+					<tr>
+						<th class="row-selected row-selected">
+							<input class="check-all" type="checkbox"/>
+						</th>
+						<th class="">ID</th>
+						<th class="">代理账号</th>
+						<th class="">注册IP/时间</th>
+						<th class="">三代总人数</th>
+						<th class="">一代人数</th>
+						<th class="">二代人数</th>
+						<th class="">三代人数</th>
+						<th class="">邀请码</th>
+						<th class="">操作</th>
+					</tr>
+					</thead>
+					<tbody>
+					<notempty name="list">
+						<volist name="list" id="vo">
+							<tr>
+								<td>
+									<input class="ids" type="checkbox" name="id[]" value="{$vo.id}"/>
+								</td>
+								<td>{$vo.id}</td>
+								<td>{$vo.username}</a></td>
+								<td>
+								    <span>IP：{$vo.addip}</span><br />
+								    <span>时间：<?php echo date("Y-m-d H:i:s",$vo['addtime']);?></span>
+								</td>
+                                <td>{$vo.all}人</td>
+                                <td>{$vo.one}人</td>
+                                <td>{$vo.two}人</td>
+                                <td>{$vo.three}人</td>
+                                <td>{$vo.invit}</td>
+                                <td>
+						            <input type="button" class="ajax-get btn btn-danger btn-xs" value="取消代理" onclick="cancelagent('{$vo['id']}');"/>
+						            </eq>
+						        </td>
+							</tr>
+						</volist>
+						<else/>
+						<td colspan="12" class="text-center empty-info"><i class="glyphicon glyphicon-exclamation-sign"></i>暂无数据</td>
+					</notempty>
+					</tbody>
+				</table>
+			</form>
+			<div class="page">
+				<div>{$page}</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<include file="Public:footer" />
+<script type="text/javascript">
+    function cancelagent(id) {
+        var uid = parseInt(id);
+        if (uid == "" || uid == null || uid <=0) {
+            layer.alert('参数错误！');
+            return false;
+        }
+        layer.load(0, {shade: [0.5,'#8F8F8F']});
+        $.post("{:U('User/cancelagent')}", {
+            id: uid
+        }, function (data) {
+            setTimeout("closetanchu()",2000);
+            if (data.status == 1) {
+                layer.msg(data.info, {
+                    icon: 1
+                });
+                setTimeout("shuaxin()",1000);
+            } else {
+                layer.msg(data.info, {
+                    icon: 2
+                });
+            }
+        }, "json");
+    }
+</script>
+<script type="text/javascript">
+    function closetanchu(){
+        layer.closeAll('loading');
+    }
+    function shuaxin(){
+        window.location.href=window.location.href;
+    }
+</script>
+<block name="script">
+	<script type="text/javascript" charset="utf-8">
+		//导航高亮
+		highlight_subnav("{:U('User/agent')}");
+	</script>
+</block>
+
+

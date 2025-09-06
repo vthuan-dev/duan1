@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise</title>
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/vant@2/lib/index.css"/>
+    <link rel="stylesheet" href="/Public/Mobile/app/css/1.css">
+    <style>
+        #lang span {
+            color: #8c9fae !important;
+        }
+        #vidoe {
+            width: 100%;
+            height: 57%;
+        }
+
+
+
+    </style>
+
+
+    <link rel="alternate" type="application/json+oembed" href="https://fast.wistia.com/oembed.json?url=https://fast.wistia.com/embed/iframe/3dlubtrrwp" title="One Thing to Know About Crypto_Regulatory Winds Shifting">
+    <link rel="alternate" type="application/json+oembed" href="https://fast.wistia.com/oembed.xml?url=https://fast.wistia.com/embed/iframe/3dlubtrrwp" title="One Thing to Know About Crypto_Regulatory Winds Shifting">
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@wistia">
+    <meta name="twitter:title" content="One Thing to Know About Crypto_Regulatory Winds Shifting">
+    <meta name="twitter:url" content="https://fast.wistia.net/embed/iframe/3dlubtrrwp?twitter=true">
+    <meta name="twitter:description" content="30 sec video">
+    <meta name="twitter:image" content="https://embed-ssl.wistia.com/deliveries/5f04da3ebb86217405b266b8bdbe2414/file.">
+    <meta name="twitter:player" content="https://fast.wistia.net/embed/iframe/3dlubtrrwp?twitter=true">
+    <meta name="twitter:player:width" content="435">
+    <meta name="twitter:player:height" content="245">
+    <style>
+        html, body {margin:0;padding:0;height:100%;}
+        object {border:0;}
+        #wistia_video {height:100%;width:100%;}
+    </style>
+
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <div id="login">
+        <div class="top">
+
+
+            <div class="logo">
+                <img src="/Public/Mobile/app/images/logo.png" alt=""/><span style="margin-left: 0px;">{:L('title')}</span>
+                <div  style="position: absolute;right: 0px;">
+				    <span style="margin-right: 25px;font-size: 16px;" @click="handleShow()">{:L('Text')}
+           <img src="/Public/Mobile/app/images/select.svg" alt="" style="vertical-align: middle;width: 16px;height: 16px;"></span>
+                    <van-action-sheet id="lang" v-model="show" :actions="actions" @select="onSelect"/>
+                </div>
+            </div>
+
+
+
+            <div class="title">
+                <p>{:L('message.title')}</p>
+                <p>{:L('message.title1')}</p>
+            </div>
+            <div class="money">
+                <p>$380,761,116,887</p>
+                <p>{:L('message.hour')}</p>
+            </div>
+            <div class="btn">
+                <div class="input van-cell van-cell--large van-field">
+                    <div class="van-cell__value van-cell__value--alone van-field__value">
+                        <div class="van-field__body">
+                            <input type="text" :placeholder="$t('message.placeholder')" class="van-field__control">
+                        </div>
+                    </div>
+                </div>
+                <a href="./register.html">
+                    <button class="van-button van-button--primary van-button--large" style="margin-top: 20px">{:L('message.register')}</button>
+                </a>
+
+
+            </div>
+            <div class="down">
+                <p>随时随地交易</p>
+                <p>下載 Bitwise 應用程序</p>
+                <img src="/Public/Mobile/app/images/a.svg" alt=""  class="down_img">
+                <img src="/Public/Mobile/app/images/ios.svg" alt=""  class="down_img">
+                <p style="color:#07c160;">搭建联系TG：@kefuyafei 谨防被骗</p>
+            </div>
+
+        </div>
+        <div class="bottom">
+
+
+            <!-- list start -->
+            <div id="list_content" >
+                <p>Backed By Leading Institutions and Individuals</p>
+            </div>
+
+            <div class="list_box">
+                <div class="list_box_item">
+                    <img src="/Public/Mobile/app/picture/image1.png" class="header_img">
+                </div>
+                <div class="list_box_item">
+                    <img src="/Public/Mobile/app/picture/image2.png" class="header_img">
+                </div>
+                <div class="list_box_item">
+                    <img src="/Public/Mobile/app/picture/image3.png" class="header_img">
+                </div>
+
+                <div class="list_box_item">
+                    <img src="/Public/Mobile/app/picture/image4.png" class="header_img">
+                </div>
+                <div class="list_box_item">
+                    <img src="/Public/Mobile/app/picture/image5.png" class="header_img">
+                </div>
+                <div class="list_box_item">
+                    <img src="/Public/Mobile/app/picture/image6.png" class="header_img">
+                </div>
+
+                <div class="list_box_item">
+                    <img src="/Public/Mobile/app/picture/image7.png" class="header_img">
+                </div>
+                <div class="list_box_item">
+                    <img src="/Public/Mobile/app/picture/image8.png" class="header_img">
+                </div>
+                <div class="list_box_item">
+                    <img src="/Public/Mobile/app/picture/image9.png" class="header_img">
+                </div>
+
+            </div>
+
+            <!-- list end -->
+
+
+            <!-- VIDEO start -->
+            <div id="vidoe">
+                <div class='wistia_embed' id='wistia_video'>
+
+                </div>
+            </div>
+            <!-- VIDEO end -->
+
+
+
+            <!--head start-->
+            <div class="head_content">
+                <h6 class="head_content_h6">Expert Coverage</h6>
+                <h2 class="head_content_h2">A dedicated team of 23 professionals, serving you.</h2>
+            </div>
+            <div class="head">
+                <div class="head_box">
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image11.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image12.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image13.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image18.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image15.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image16.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image11.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image19.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image20.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image21.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image22.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image23.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image24.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image25.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image26.png" class="header_img">
+                    </div>
+                    <div class="head_box_item">
+                        <img src="/Public/Mobile/app/picture/image27.png" class="header_img">
+                    </div>
+                </div>
+            </div>
+            <!--head end-->
+
+
+            <!-- MSB 证书-->
+            <div id="list_content" >
+                <p>MSB 证书</p>
+            </div>
+
+            <div class="crt_box">
+                <div class="crt_box_item">
+                    <img src="/Public/Mobile/app/img/1.jpeg" class="header_img">
+                </div>
+                <div class="crt_box_item">
+                    <img src="/Public/Mobile/app/img/2.jpeg" class="header_img">
+                </div>
+            </div>
+
+            <!-- MSB end-->
+
+            <!-- footer start -->
+            <div class="footer_box" >
+                <div class="footer_box_items">
+                    <div class="footer_items">
+                        <h2>{:L('title')}</h2>
+                        <div class="footer_img">
+                            <div class="footer_img_items">
+                                <img src="/Public/Mobile/app/images/24.png" width="20">
+                                <span>Kraken</span>
+                            </div>
+                            <div class="footer_img_items">
+                                <img src="/Public/Mobile/app/images/89.png" width="20">
+                                <span>Coinbase</span>
+                            </div>
+                            <div class="footer_img_items">
+                                <img src="/Public/Mobile/app/images/270.png" width="20">
+                                <span>Binance</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="footer_box_items">
+                    <div class="footer_items">
+                        <h2>我们</h2>
+                        <div class="footer_img">
+                            <div class="footer_img_items">
+                                <span>关于我们</span>
+                            </div>
+                            <div class="footer_img_items">
+                                <span>服务条款</span>
+                            </div>
+                            <div class="footer_img_items">
+                                <span>隐私政策申明</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_box_items">
+                    <div class="footer_items">
+                        <div class="footer_img">
+                            <div class="footer_p">
+                                <p>此類風險因素、投資目標、費用、支出和其他重要信息可在每個基金的私募備忘錄中找到，該備忘錄可從 Bitwise Asset Management, Inc. 及其附屬公司（統稱“Bitwise”）和戰略手冊中獲得，可以通過參與的註冊投資顧問獲得。對於 Bitwise 10 加密指數基金（OTCQX：BITW）（“BITW 基金”），其股票根據經修訂的 1934 年證券交易法第 12(g) 條在證券交易委員會註冊，並在 OTCQX 上引用，公開文件和披露可以在證券交易委員會的網站 www.sec.gov 上找到。
+
+                                    所有產品均為投機性投資，涉及高度風險和不確定性。某些產品可能僅限於能夠承受全部投資損失的合格投資者的投資。概不保證任何產品將達到其投資目標。
+
+                                    對於擁有可在 OTCQX 最佳市場交易的股票的 BITW 基金，無法保證在該二級市場上交易的股票價值將反映 BITW 基金的淨資產價值。在此類二級市場上交易的任何基金的股票可能以相對於基金淨資產價值的大幅溢價或大幅折讓的價格進行交易，因為除其他因素外，此類基金目前沒有實施贖回計劃，並且因為，除其他因素外，此類基金的股份在最初發行時須遵守《證券法》第 144 條規定的持有期。由於這些因素，沒有套利機制使股票價格與基金的淨資產價值密切相關，從而與基金的業績掛鉤' s 股票的表現可能與基金的每股資產淨值（“NAV”）有很大差異。概不保證任何基金將達到其投資目標。
+
+                                    某些 Bitwise 產品可能會面臨與投資加密資產（包括加密貨幣和加密代幣）相關的風險。由於加密資產是一項歷史有限的新技術創新，因此它們是一種高度投機性的資產。未來的監管行動或政策可能會限制出售、交換或使用加密資產的能力。加密資產的價格可能會受到該加密資產的少數持有者的交易的影響。加密資產的受歡迎程度、接受度或使用率可能會下降，這可能會影響其價格。不可替代的代幣（“NFT”）是一種非常新的藝術和文化現象，對此類藝術品的興趣可能會減弱。如果對 NFT 藝術品的需求減少，NFT 物品的價格可能會受到負面影響。NFT 市場可能會受到交易量淺、囤積嚴重、流動性低和破產風險高的影響。NFT 還面臨與知識產權和欺詐相關的風險和挑戰。
+
+                                    在就任何產品做出任何投資決定之前，每位投資者必須自行對產品進行獨立審查和調查，包括投資於產品的優點和風險，並且必鬚根據其投資決定，包括確定產品是否適合投資者進行此類檢查和調查，並且不得依賴 Bitwise 或產品做出此類投資決定。準投資者不得將本網站的內容解釋為法律、稅務、投資或其他建議。敦促每位潛在投資者就法律、稅務、監管、財務、會計和投資任何產品的類似後果諮詢其自己的顧問，
+
+                                    本網站包含每個產品條款的概述摘要。本網站既不是出售要約，也不是招攬購買任何產品的單位或股份。任何此類要約或招攬將僅通過確定的最終要約文件進行，該文件將包含有關每個產品的投資目標和投資條款和條件的信息，還可能描述與其中投資相關的風險和稅務信息，並且將完全符合本網站上列出的信息。本網站上列出的摘要並不完整，並且通過參考與每個產品相關的最終發售文件對其整體進行了限定。不要過分依賴本網站。
+
+                                    任何基金的股份未經證券交易委員會批准或不批准，未根據 1933 年證券法（“證券法”）、1940 年投資公司法（“投資公司法”）進行登記，或任何州證券委員會或其他監管機構。Bitwise 未根據 1940 年《投資顧問法》（“顧問法”）註冊為投資顧問，也未根據《商品交易法》（“商品交易法”）註冊為商品池運營商或商品交易顧問。
+
+                                    根據《證券法》第 4(a)(2) 條和根據該法令頒布的條例 D 第 506 條規定的登記豁免以及其他類似進口的豁免，可私募配售的任何基金的股份發行的州和司法管轄區，並且僅由基金直接發行和出售給合格的投資者。因此，每隻此類基金的股份在最初出售時受到限制，並受到轉讓和轉售的重大限制。
+
+                                    任何基金的潛在投資者在做出任何投資決定之前都應非常仔細地考慮此類風險，包括如果基金的股票在二級市場交易，某些基金可能不會提供贖回計劃。在 OTCQX 最佳市場公開報價的基金份額是根據《證券法》第 144 條已成為“不受限制”的份額（儘管關聯公司和內部人士持有的股票將受到額外的轉售限制，包括數量限制）可在任何三個月內轉售的股份數量）。在法定持有期之後變得不受限制的股票可以在 OTCQX 最佳市場上報價，並且可以在整個交易日通過任何可以進入該市場的經紀賬戶進行買賣。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>CopyRight © 2017 - 2022 Bitwise. All Rights Reserved.</p>
+            </div>
+
+
+
+            <!-- footer end-->
+            <!--<div class="footer">-->
+            <!--	<p>-->
+            <!--		Copyright C 2018-2022 Robit Ltd All Rights Reserved-->
+            <!--		Email:service@newsparkex com-->
+            <!--	</p>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://fastly.jsdelivr.net/npm/vue@2"></script>
+<script src="https://fastly.jsdelivr.net/npm/vant@2/lib/vant.min.js"></script>
+<script src="https://unpkg.com/vue-i18n@8"></script>
+<script src="/Public/Mobile/app/js/language.js"></script>
+<script>
+
+
+
+</script>
+
+<script>
+    var swatchEnabled;
+    var swatchPreference = /w_swatchEnabled=true/.test(document.referrer) || false;
+    if (swatchPreference != null) {
+        swatchEnabled = swatchPreference;
+    } else {
+        swatchEnabled = true;
+    }
+    if (swatchEnabled) {
+        document.getElementById('wistia_video').innerHTML = '<div class="wistia_swatch" style="height:100%;left:0;opacity:0;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.net/embed/medias/3dlubtrrwp/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div>';
+    }
+</script>
+<script>
+    function addWindowListener (type, callback) {
+        if (window.addEventListener) {
+            window.addEventListener(type, callback, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('on' + type, callback);
+        }
+    }
+
+    window.wistiaPostMessageQueue = [];
+    addWindowListener('message', function (event) {
+        if (!window._wistiaHasInitialized) {
+            wistiaPostMessageQueue.push(event);
+        }
+    });
+</script>
+<link as='script' href='https://fast.wistia.net/assets/external/insideIframe.js' rel='preload'>
+<script async="" src='/Public/Mobile/app/js/E-v1.js'></script>
+<script>
+    window._wq = window._wq || [];
+    window._wq.push(function (W) {
+        W.iframeInit({"assets":[{"type":"original","slug":"original","display_name":"Original file","details":{},"width":1920,"height":1080,"size":49521347,"bitrate":12883,"public":true,"status":2,"progress":1.0,"metadata":{"served_by_media_api":1},"url":"https://embed-ssl.wistia.com/deliveries/b85515fd94fe8c2ec54de8e7c5fff3d2.bin","created_at":1652709287},{"type":"iphone_video","slug":"mp4_h264_452k","display_name":"360p","details":{},"container":"mp4","codec":"h264","width":640,"height":360,"ext":"mp4","size":1740010,"bitrate":452,"public":true,"status":2,"progress":1.0,"metadata":{"max_bitrate":"628504","average_bitrate":"463446","early_max_bitrate":"576048","av_stream_metadata":"{\"Audio\":{\"Codec ID\":\"mp4a-40-2\",\"frameRate\":43.066,\"sampleRate\":44100},\"Video\":{\"Codec ID\":\"avc1\",\"frameRate\":23.976,\"frameRateMode\":\"CFR\"}}"},"url":"https://embed-ssl.wistia.com/deliveries/4c98726f3f4065ab171501bba5def492c3489edf.bin","created_at":1652709287,"segment_duration":3,"opt_vbitrate":1200},{"type":"mp4_video","slug":"mp4_h264_275k","display_name":"224p","details":{},"container":"mp4","codec":"h264","width":400,"height":224,"ext":"mp4","size":1058009,"bitrate":275,"public":true,"status":2,"progress":1.0,"metadata":{"max_bitrate":"340840","average_bitrate":"281797","early_max_bitrate":"316264","av_stream_metadata":"{\"Audio\":{\"Codec ID\":\"mp4a-40-2\",\"frameRate\":43.066,\"sampleRate\":44100},\"Video\":{\"Codec ID\":\"avc1\",\"frameRate\":23.976,\"frameRateMode\":\"CFR\"}}"},"url":"https://embed-ssl.wistia.com/deliveries/f94e24ead11e6f0924ce0d2bb9535a4f95777445.bin","created_at":1652709287,"segment_duration":3,"opt_vbitrate":300},{"type":"md_mp4_video","slug":"mp4_h264_714k","display_name":"540p","details":{},"container":"mp4","codec":"h264","width":960,"height":540,"ext":"mp4","size":2745784,"bitrate":714,"public":true,"status":2,"progress":1.0,"metadata":{"max_bitrate":"1071864","average_bitrate":"731331","early_max_bitrate":"941960","av_stream_metadata":"{\"Audio\":{\"Codec ID\":\"mp4a-40-2\",\"frameRate\":43.066,\"sampleRate\":44100},\"Video\":{\"Codec ID\":\"avc1\",\"frameRate\":23.976,\"frameRateMode\":\"CFR\"}}"},"url":"https://embed-ssl.wistia.com/deliveries/57496884709fc9ede9769055a1d63b488187b246.bin","created_at":1652709287,"segment_duration":3,"opt_vbitrate":1800},{"type":"hd_mp4_video","slug":"mp4_h264_1056k","display_name":"720p","details":{},"container":"mp4","codec":"h264","width":1280,"height":720,"ext":"mp4","size":4061754,"bitrate":1056,"public":true,"status":2,"progress":1.0,"metadata":{"max_bitrate":"1643728","average_bitrate":"1081836","early_max_bitrate":"1426560","av_stream_metadata":"{\"Audio\":{\"Codec ID\":\"mp4a-40-2\",\"frameRate\":43.066,\"sampleRate\":44100},\"Video\":{\"Codec ID\":\"avc1\",\"frameRate\":23.976,\"frameRateMode\":\"CFR\"}}"},"url":"https://embed-ssl.wistia.com/deliveries/aab83a02404d6e4a9ddec2da2d3876ef3b1fda10.bin","created_at":1652709287,"segment_duration":3,"opt_vbitrate":3750},{"type":"hd_mp4_video","slug":"mp4_h264_2040k","display_name":"1080p","details":{},"container":"mp4","codec":"h264","width":1920,"height":1080,"ext":"mp4","size":7842380,"bitrate":2040,"public":true,"status":2,"progress":1.0,"metadata":{"max_bitrate":"3313544","average_bitrate":"2088794","early_max_bitrate":"2464080","av_stream_metadata":"{\"Audio\":{\"Codec ID\":\"mp4a-40-2\",\"frameRate\":43.066,\"sampleRate\":44100},\"Video\":{\"Codec ID\":\"avc1\",\"frameRate\":23.976,\"frameRateMode\":\"CFR\"}}"},"url":"https://embed-ssl.wistia.com/deliveries/febb14a526787a4ee6e88c51b611a37f72ab524d.bin","created_at":1652709287,"segment_duration":3,"opt_vbitrate":5625},{"type":"storyboard","slug":"storyboard_2000x678","display_name":"Storyboard","details":{},"width":2000,"height":678,"ext":"jpg","size":1843801,"bitrate":0,"public":true,"status":2,"progress":1.0,"metadata":{"frame_count":"60","aspect_ratio":"1.7777777777777777","frame_height":"113","frame_width":"200"},"url":"https://embed-ssl.wistia.com/deliveries/cb82379e98c7bb993b6121b37c16f52263a9d54c.bin","created_at":1652709287},{"type":"still_image","slug":"still_image_1920x1080","display_name":"Image","details":{},"width":1920,"height":1080,"size":2229102,"bitrate":0,"public":true,"status":2,"progress":1.0,"metadata":{"served_by_media_api":1},"url":"https://embed-ssl.wistia.com/deliveries/5f04da3ebb86217405b266b8bdbe2414.bin","created_at":1652712607}],"distilleryUrl":"https://distillery.wistia.com/x","accountKey":"wistia-production_859815","mediaKey":"wistia-production_90338324","type":"Video","mediaType":"Video","progress":1.0,"status":2,"name":"One Thing to Know About Crypto_Regulatory Winds Shifting","duration":30.03,"hashedId":"3dlubtrrwp","branding":false,"enableCustomerLogo":true,"seoDescription":"an One Thing to Know: Bitwise Website Folder video","preloadPreference":null,"flashPlayerUrl":"https://embed-ssl.wistia.com/flash/embed_player_v2.0.swf?2017-04-20","showAbout":true,"createdAt":1652709287,"firstEmbedForAccount":false,"firstShareForAccount":false,"keyframeAlign":true,"m3u8UrlPlayback":true,"useMediaDataHostLogic":true,"projectId":7348795,"stats":{"loadCount":88,"playCount":63,"uniqueLoadCount":61,"uniquePlayCount":52,"averageEngagement":0.594994},"trackingTransmitInterval":10,"integrations":{"google_ads":true},"embed_options":{"volumeControl":"true","fullscreenButton":"true","controlsVisibleOnLoad":"true","playerColor":"2c2c2c","bpbTime":"false","plugin":{"googleAds":{"on":true,"legacy":false,"webPropertyId":"UA-107365751-1","customMap":{"dimension2":"Video Hashed Id","dimension3":"Channel Hashed Id"}}},"vulcan":true,"videoQuality":"","branding":"false","showCustomerLogo":"false","unalteredStillImageAsset":{"url":"https://embed-ssl.wistia.com/deliveries/5f04da3ebb86217405b266b8bdbe2414.png","width":"1920","height":"1080"},"thumbnailAltText":"Regulatory Winds Shifting","autoPlay":"true","endVideoBehavior":"reset","playbackRateControl":"true","qualityControl":"true","playsinline":true}}, {});
+        window._wistiaHasInitialized = true;
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <title>{$webname}</title>
+	    <style>
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+            }
+            .css-1odg5z2 {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                height: 260px;
+                background-color: #1E2329;
+                position: -webkit-sticky;
+                position: sticky;
+                top: -256px;
+                z-index: 1;
+                padding: 0;
+            }
+            .css-1odg5z2::before {
+                content: "";
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(/Public/Home/static/imgs/bannerissue.png);
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+            }
+            .css-1xrgo9z {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                font-size: 26px;
+                color: white;
+                z-index: 1;
+                height: 100%;
+                padding-bottom: 48px;
+            }.css-1xrgo9z {
+                -webkit-box-pack: start;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                font-size: 40px;
+                padding-bottom: 64px;
+            }
+            .css-1xrgo9z {
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+            .css-uliqdc {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+            .progress-bar {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -ms-flex-pack: center;
+                justify-content: center;
+                overflow: hidden;
+                color: #fff;
+                text-align: center;
+                white-space: nowrap;
+                background-color: #007bff;
+                transition: width .6s ease;
+            }
+            .progress-bar {
+                color: #000;
+                background-color: #f3c420;
+            }
+            ::-webkit-input-placeholder {color: #b5b5b5;font-size: 12px;}
+	        ::-moz-placeholder {color: #b5b5b5;font-size: 12px;}
+	        input:focus{background:#f5f5f5;outline: 1px solid #f5f5f5;}
+	        a:hover,a:link,a:visited,a:active{color:rgb(240, 185, 11);text-decoration:none;}
+	        .allbtn {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                background: #ccc;
+                border-radius: 5px;
+                background: linear-gradient(to left,#eeb80d,#ffe35b);
+                margin-top: 20px;
+            }
+            .css-bhso1m {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: inline-block;
+                border-radius: 4px;
+                padding-left: 8px;
+                padding-right: 8px;
+                font-size: 14px;
+                background-color: rgba(240, 185, 11, 0.19);
+                color: rgb(240, 185, 11);
+            }
+            .css-6ul7zn {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+                flex-direction: column;
+                width: 100%;
+                padding: 32px;
+            }
+            .css-joa6mv {
+                box-sizing: border-box;
+                margin: 0px 0px 24px;
+                min-width: 0px;
+            }
+            .css-1868gi1 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .css-1h690ep {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+            }
+            .css-jjjwcg {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .css-15owl46 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: relative;
+            }
+            .btitle{width:100%;height:40px;background:#f5f5f5;}
+            .btitleop{height:40px;line-height:40px;text-align:center;float:left;}
+            .bcontentop{height:60px;line-height:60px;text-align:center;float:left;}
+            .css-1lzksdc {
+                box-sizing: border-box;
+                min-width: 0px;
+                color: rgb(132, 142, 156);
+                fill: rgb(132, 142, 156);
+                margin: 16px;
+                width: 96px;
+                height: 96px;
+                font-size: 96px;
+            }
+            
+	    </style>
+	</head>
+	<body>
+	    <div class="App">
+	        <div class="css-tq0shg">
+	            <include file="Public:header"/>
+	            <div class="css-ogtd7z">
+	                <div class="css-jrzkh7">
+	                    <div id="header_global_js_wxgy34nj" class="css-1aac2e"></div>
+	                 </div>
+	            </div>
+	            <main class="css-1wr4jig" style="background: #fff;">
+                    <div class="css-1odg5z2">
+                        <div class="css-1xrgo9z">{:L('新币认购')}</div>
+                    </div>
+                    <div class="css-uliqdc">
+                        <div style="width:100%;min-height:min-600px;background:#f5f5f5;padding:20px 50px;">
+                            <div style="width:100%;height:600px;background:#fff;margin-bottom:20px;box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);border-radius:5px;">
+                                <div style="width:100%;height:240px;">
+                                    <div style="width:50%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;background:#fff;">
+                                            <div style="width:100%;height:230px;">
+                                                <div style="width:25%;heigth:230px;line-height:150px;text-align:center;float:left;">
+                                                    <img src="/Upload/public/{$info.imgs}" style="width:60%;">
+                                                </div>
+                                                <div style="width:75%;padding:10px 0px 10px 10px;float:right;">
+                                                    <div style="width:100%;min-height:30px;">
+                                                        <span class="f16 fch">{$info.name}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('认购币种')}：<?php echo strtoupper($info['coinname']);?></span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('开始时间')}：{$info.starttime}</span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('结束时间')}：<?php echo strtoupper($info['finishtime']);?></span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('发行总量')}：{$info.num} <?php echo strtoupper($info['coinname']);?></span>
+                                                    </div>
+                                                    <div style="width:100%;height:30px;">
+                                                        <span class="f14 fcc">{:L('参与数量')}：{$info.ysnum} <?php echo strtoupper($info['coinname']);?></span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                
+                                    <div style="width:50%;height:240px;float:left;padding:5px;">
+                                        <div style="width:100%;height:240px;">
+                                            <div style="width:100%;height:240px;padding:10px 0px 10px 10px;">
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f16 fch">{:L('项目说明')}</span>
+                                                </div>
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('认购上限')} ：{$info.allmax}</span>
+                                                </div>
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('单次最低')} ：{$info.ysnum}</span>
+                                                </div>
+                                                <div style="width:100%;height:30px;">
+                                                    <span class="f14 fcc">{:L('认购上限')} ：{$info.min}</span>
+                                                </div>
+                                                <div style="width:100%;min-height:30px;">
+                                                    <span class="f14 fcc">{$info.content}</span>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="width:100%;min-height:300px;margin-top:10px;padding:0px 20px;">
+                                    
+                                    <div style="width:100%;min-height:300px;border-bottom:1px solid #f5f5f5;">
+                                        <div style="width:100%;height:60px;line-height:60px;">
+                                            <span class="fcy f18 fw">{:L('我要参与')}</span>
+                                        </div>
+                                        <div style="width:50%;height:50px;background:#f5f5f5;border-radius:5px;margin-bottom:10px;padding:0px 15px;margin-bottom:15px;">
+				                            <div style="width:70%;height:50px;float:left;">
+				                                <input type="number" oninput="tatolcoin();" id="buynum" placeholder="{:L('请输入认购数量')}" style="padding:5 15px;background:#f5f5f5;border:none;margin-top:12px;" <input type="text" name="price" placeholder="请输入价格" autocomplete="off" step="1"  min="0" onkeyup="this.value= this.value.match(/\d+(\.\d{0,2})?/) ? this.value.match(/\d+(\.\d{0,2})?/)[0] : ''" />
+				                            </div>
+				                            <div style="width:30%;height:50px;line-height:50px;float:left;text-align:center;">
+				                                <span class="f14 fcc"><?php echo strtoupper($info['coinname']);?></span>
+				                            </div>
+				                        </div>
+				                        
+				                        <div style="width:50%;height:50px;background:#f5f5f5;border-radius:5px;padding:0px 15px;">
+				                            <div style="width:70%;height:50px;line-height:50px;float:left;">
+				                                <span class="f14 fcc">{:L('需要支付')}：</span>
+				                                <span class="f14 fcc" id="paynum">0.00</span>
+				                            </div>
+				                            <div style="width:30%;height:50px;line-height:50px;float:left;text-align:center;">
+				                                <span class="f14 fcc"><?php echo strtoupper($info['buycoin']);?></span>
+				                            </div>
+				                        </div>
+				                        <div style="width:100%;height:40px;border-radius:5px;padding:0px 15px;">
+				                            <div style="width:70%;height:40px;line-height:40px;float:left;">
+				                                <span class="f14 fcc">{:L('可用')}<?php echo strtoupper($info['buycoin']);?>：</span>
+				                                <span class="f14 fcc">{$money}</span>
+				                            </div>
+				                        </div>
+				                        
+				                        <input type="hidden" name="price" id="pricebox" value="{$info.price}" />
+				                        <input type="hidden" name="min" id="minbox" value="{$info.min}" />
+				                        <input type="hidden" name="max" id="maxbox" value="{$info.max}" />
+				                        <input type="hidden" id="flag" value="1" />
+				                        <if condition="$uid elt 0">
+				                        <div class="allbtn" onclick="gologin();" style="height:40px;line-height:50px;margin-top:5px;width:50%;    cursor: pointer;">
+				                            <span class="fzmm fch">{:L('请先登陆')}</span>
+				                        </div>
+				                        <else />
+				                        <div class="allbtn" id="sumbtn" onclick="buyissue({$info.id})" style="height:50px;line-height:50px;margin-top:5px;width:50%;    cursor: pointer;">
+				                            <span class="fzmm fch">{:L('立即参与')}</span>
+				                        </div>
+				                        </if>
+
+                                    </div>
+                                </div>
+ 
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+	            </main>
+
+	            <include file="Public:footer"/>
+	        </div>   
+	    </div>
+	    
+	</body>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
+    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript">
+        function buyissue(id){
+            
+            var flag = $("#flag").val();
+            if(flag == 2){
+                return false;
+            }
+            var pid = id;
+            var buynum = $("#buynum").val();
+            var min = parseFloat($("#minbox").val());
+            var max = parseFloat($("#maxbox").val());
+            if(buynum == '' || buynum == 0 || buynum == null){
+                layer.msg("{:L('请输入认购数量')}");return false;
+            }
+            if(buynum < min){
+                layer.msg("{:L('不能小于最低认购量')}");return false;
+            }
+            if(buynum > max){
+                layer.msg("{:L('不能高于最高认购量')}");return false;
+            }
+            $("#flag").val(2);
+            $.post("{:U('Issue/upbuynum')}",
+            {'pid':pid,'num':buynum},
+            function(data){
+                if(data.code ==1){
+                    layer.msg(data.info);
+                    setTimeout(function(args){
+                        window.location.href = "{:U('Issue/normalissue')}";
+                    },2000);
+                }else{
+                    layer.msg(data.info);return false;
+                }
+            });
+        }
+    </script>
+    
+    <script type="text/javascript">
+        function tatolcoin(){
+            var buynum = parseFloat($("#buynum").val());
+    
+            var price = parseFloat($("#pricebox").val());
+            var paynum = buynum * price;
+            $("#paynum").html(paynum);
+            
+        }
+    </script>
+    <script type="text/javascript">
+		$("#nav").slide({ 
+			type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell:".nLi", //鼠标触发对象
+			targetCell:".sub", //titCell里面包含的要显示/消失的对象
+			effect:"slideDown", //targetCell下拉效果
+			delayTime:300 , //效果时间
+			triggerTime:0, //鼠标延迟触发时间（默认150）
+			returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+
+    
+</html>

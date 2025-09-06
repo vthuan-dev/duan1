@@ -1,0 +1,533 @@
+[ 2022-08-05T00:09:07+08:00 ] 8.142.165.189 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001961s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007367s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0246s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-08-05T00:09:08+08:00 ] 8.142.165.189 /Trade/tradelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004828s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0048s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0043s ]
+SQL: SELECT `websildea`,`websildeb`,`websildec` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tw_content` [ RunTime:0.0049s ]
+SQL: SELECT `title`,`id` FROM `tw_content` WHERE `status` = 1 ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `tw_ctmarket` [ RunTime:0.0038s ]
+SQL: SELECT `coinname`,`id`,`logo` FROM `tw_ctmarket` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tw_content` WHERE `status` = 1 ORDER BY id desc LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+INFO: 
+INFO: 
+INFO: 
+
+[ 2022-08-05T00:09:08+08:00 ] 8.142.165.189 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002399s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0044s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T00:09:09+08:00 ] 8.142.165.189 /Trade/tradelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003416s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0063s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `websildea`,`websildeb`,`websildec` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tw_content` [ RunTime:0.0029s ]
+SQL: SELECT `title`,`id` FROM `tw_content` WHERE `status` = 1 ORDER BY id desc  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tw_ctmarket` [ RunTime:0.0030s ]
+SQL: SELECT `coinname`,`id`,`logo` FROM `tw_ctmarket` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tw_content` WHERE `status` = 1 ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000496s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/jiaoyisuo.tg-ceshi.store/heise/ThinkPHP/Common/functions.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2022-08-05T19:09:30+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004122s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0036s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:09:32+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002180s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0042s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2022-08-05T19:09:34+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003485s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0050s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0024s ]
+
+[ 2022-08-05T19:09:37+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003919s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0055s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2022-08-05T19:09:38+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_bch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006598s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0042s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-08-05T19:09:40+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001981s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0039s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:09:40+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004237s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0038s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:09:41+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002175s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0034s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:09:42+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_fil
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002989s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0031s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:09:42+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005719s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0040s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:09:43+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002792s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0035s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2022-08-05T19:09:44+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003151s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0041s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2022-08-05T19:09:44+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_jst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003947s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0066s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2022-08-05T19:09:46+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008057s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0036s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:09:47+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_doge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004707s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0034s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-08-05T19:09:47+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_ltc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002698s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0067s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2022-08-05T19:09:48+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_ltc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002292s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0046s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2022-08-05T19:09:48+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003232s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0041s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2022-08-05T19:09:49+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_bch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.029911s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004449s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0026s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:09:49+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002584s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0035s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2022-08-05T19:09:54+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_itc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004533s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0046s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2022-08-05T19:09:58+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007007s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0042s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2022-08-05T19:09:59+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002637s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0031s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2022-08-05T19:10:00+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_ht
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002451s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005907s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0036s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:10:01+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_flow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003775s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0095s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0028s ]
+
+[ 2022-08-05T19:10:04+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_iota
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003253s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0042s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2022-08-05T19:10:05+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_doge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002987s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0032s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2022-08-05T19:10:06+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004481s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0036s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0075s ]
+
+[ 2022-08-05T19:10:07+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003086s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0164s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2022-08-05T19:10:10+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003837s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0062s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-08-05T19:10:16+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002482s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0042s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-08-05T19:10:17+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002689s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0036s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:10:17+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002777s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0031s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2022-08-05T19:10:18+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_eos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002436s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0056s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2022-08-05T19:10:18+08:00 ] 185.213.149.152 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009491s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0042s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2022-08-05T19:10:18+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.043548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007783s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0031s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-08-05T19:10:22+08:00 ] 185.213.149.152 /Ajaxtrade/obtain_doge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003430s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0046s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+

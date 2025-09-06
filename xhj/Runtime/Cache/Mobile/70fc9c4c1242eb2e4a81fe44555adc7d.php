@@ -1,0 +1,181 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-CN" style="background:#fff;">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="/Public/Static/css/base2.css" />
+	<link rel="stylesheet" type="text/css" href="/Public/Static/css/nologed.css" />
+	<link rel="stylesheet" href="/Public/Static/Icoinfont/iconfont.css">
+	<script src="/Public/Static/Icoinfont/iconfont.js"></script>
+	<title><?php echo ($webname); ?></title>
+	<style>
+	    ::-webkit-input-placeholder {color: #b5b5b5;font-size: 12px;}
+	    ::-moz-placeholder {color: #b5b5b5;font-size: 12px;}
+	    input:focus{background:#f5f5f5;outline: 1px solid #f5f5f5;}
+	    a:hover,a:link,a:visited,a:active{color:#000000;text-decoration:none;}
+	    .no_header{position: fixed;z-index: 9999;padding:0px 10px;top:0px;line-height: 50px;background:#f5f5f5;}
+	    .contentbox{width:100%;margin-top:45px;}
+	    .contentbox_top{width:100%;height:50px;line-height:50px;text-align:left;padding:0px 15px;}
+        .listbox{width:100%;height:100px;background:#fff;padding:5px 15px;}
+        .listbox_title{width:100%;height:30px;line-height:30px;}
+        .listbox_title_l{width:50%;height:30px;float:left;text-align:left;}
+        .listbox_title_r{width:50%;height:30px;float:right;text-align:right;}
+        .titlebox{width:29%;height:50px;line-height:50px;float:left;}
+        .xztitile{color:#000;font-size:22px;font-weight:bold;}
+        .notitile{color:#000000;font-size:20px;font-weight:500px;}
+        .listbox{width:100%;background:#fff;margin-top:120px;}
+        .tlistbox{width:100%;clear:both;padding:10px 0px;}
+	    .tlistbox_1{width:100%;}
+	    .tlistbox_2{width:100%;height:30px;}
+	    .tlistbox_3{width:80%;height:30px;line-height:30px;}
+	    .tlistbox_4{width:20%;height:30px;line-height:30px;}
+	    .tlistbox_5{padding:5px 10px;background:#fcfcfc;border-radius:5px;}
+	    .tlistbox_6{width:100%;height:60px;}
+	    .tlistbox_7{width:33.33%;height:60px;}
+	    .tlistbox_8{width:100%;height:30px;line-height:30px;}
+	    .tlistbox_9{width:100%;height:30px;line-height:20px;}
+	    .tl{text-align:left;}
+	    .tr{text-align:right;}
+	    .tc{text-align:center;}
+	    .fl{float:left;}
+	    .fr{float:right;}
+	    .red{color:#f5465c;}
+        .bghc{background:#f5f5f5;}
+        .green{color:#0ecb81;}
+        .emptybox{width:100%;height:80px;line-height:80px;text-align:center;}
+	</style>
+</head>
+<body style="background:#fff;">
+	<div class="container-fluid " style="padding:0px;width:100vw;">
+        <div class="no_header"  style="background:#fff;">
+			<div class="fl allhg txtl">
+				<i class="bi bi-arrow-left fcc fw" onclick="goback()" style="font-size: 24px;"></i>
+			</div>
+			<div class="fr allhg txtr" style="line-height:50px;width:10%;"></div>
+		</div>
+		<div class="contentbox">
+		    <div class="contentbox_top" style="position: fixed;top: 50px;background:#fff;">
+		        <div class="titlebox">
+		            <span class="xztitile" id="wtlistbtn"><?php echo L('交易详情');?></span>
+		        </div>
+		    </div>
+		    
+		    <!---成交记录-->
+		    <div class="listbox" id="finishbox" style="display:block;">
+                <div class="tlistbox">
+		            <div class="tlistbox_1">
+		                <div class="tlistbox_2">
+		                    <div class="tlistbox_3 fl">
+		                        <?php if($info["type"] == 1): ?><span class="fzmmm green"><?php echo L('购买');?></span>
+		                        <?php elseif($info["type"] == 2): ?>
+		                        <span class="fzmmm red"><?php echo L('出售');?></span><?php endif; ?>
+		                        <span class="fzmmm fch" style="font-weight:bold;"><?php echo ($info["symbol"]); ?></span>
+		                    </div>
+		                </div>
+		                
+		                <div class="tlistbox_6">
+		                    <div class="tlistbox_7 fl">
+		                        <div class="tlistbox_8 tl">
+		                            <span class="fzm fcc"><?php echo L('时间');?></span>
+		                        </div>
+		                        <div class="tlistbox_9 tl">
+		                            <span class="fzmm fch"><?php echo date("m-d H:i",strtotime($info['tradetime']));?></span>
+		                        </div>
+		                    </div>
+		                    <div class="tlistbox_7 fl">
+		                        <div class="tlistbox_8 tc">
+		                            <span class="fzm fcc"><?php echo L('委托价');?>(USDT)</span>
+		                        </div>
+		                        <div class="tlistbox_9 tc">
+		                            <span class="fzmm fch"><?php echo ($info["xjprice"]); ?></span>
+		                        </div>
+		                    </div>
+
+		                    
+		                    <div class="tlistbox_7 fl">
+		                        <div class="tlistbox_8 tr">
+		                            <span class="fzm fcc"><?php echo L('交易额');?>(USDT)</span>
+		                        </div>
+		                        <div class="tlistbox_9 tr">
+		                            <span class="fzmm fch"><?php echo ($info["usdtnum"]); ?></span>
+		                        </div>
+		                    </div>
+		                </div>
+		                
+		                <div class="tlistbox_6">
+		                    <div class="tlistbox_7 fl">
+		                        <div class="tlistbox_8 tl">
+		                            <span class="fzm fcc"><?php echo L('成交总价');?>(USDT)</span>
+		                        </div>
+		                        <div class="tlistbox_9 tl">
+		                            <span class="fzmm fch"><?php echo ($info["usdtnum"]); ?></span>
+		                        </div>
+		                    </div>
+
+		                    <div class="tlistbox_7 fl">
+		                        <div class="tlistbox_8 tc">
+		                            <span class="fzm fcc"><?php echo L('成交均价');?>(USDT)</span>
+		                        </div>
+		                        <div class="tlistbox_9 tc">
+		                            <span class="fzmm fch"><?php echo ($info["price"]); ?></span>
+		                        </div>
+		                    </div>
+
+		                    <div class="tlistbox_7 fl">
+		                        <div class="tlistbox_8 tr">
+		                            <span class="fzm fcc"><?php echo L('成交量');?>(<?php echo ($info["coin"]); ?>)</span>
+		                        </div>
+		                        <div class="tlistbox_9 tr">
+		                            <span class="fzmm fch"><?php echo ($info["coinnum"]); ?></span>
+		                        </div>
+		                    </div>
+		                </div>
+		                
+		                <div class="tlistbox_6">
+		                    <div class="tlistbox_7 fl">
+		                        <div class="tlistbox_8 tl">
+		                            <?php if($info["type"] == 1): ?><span class="fzm fcc"><?php echo L('手续费');?>(<?php echo ($info["coin"]); ?>)</span>
+		                            <?php elseif($info["type"] == 2): ?>
+		                            <span class="fzm fcc"><?php echo L('手续费');?>(USDT)</span><?php endif; ?>
+		                        </div>
+		                        <div class="tlistbox_9 tl">
+		                            <span class="fzmm fch"><?php echo ($info["fee"]); ?></span>
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="tlistbox_7 fl">
+		                        <div class="tlistbox_8 tc">
+		                            <span class="fzm fcc"><?php echo L('手续费比例');?></span>
+		                        </div>
+		                        <div class="tlistbox_9 tc">
+		                            <span class="fzmm fch"><?php echo ($info["sxfbl"]); ?>%</span>
+		                        </div>
+		                    </div>
+
+		                </div>
+
+		            </div>
+		        </div>
+
+		    </div>
+		    
+
+
+		    <div style="width:100%;height:80px;"></div>
+   
+		</div>
+
+	</div>	
+</body>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/Static/js/layer/layer.js" ></script>
+
+<script type="text/javascript">
+    function goback(){
+        window.history.go(-1);
+    }
+</script>
+</html>

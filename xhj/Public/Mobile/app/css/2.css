@@ -1,0 +1,88 @@
+[v-cloak] {
+    display: none;
+}
+.van-cell {
+    border-radius: 3px;
+}
+
+#register {
+    padding: 0 20px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>span>img {
+    width: 16px;
+    height: 16px;
+}
+
+.content .title p {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.content p:nth-child(1) {
+    font-weight: 700;
+}
+
+.content .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(235, 231, 231);
+}
+
+.content .btn input {
+    outline: none;
+    border: none;
+    flex: 1;
+}
+
+.content {
+    padding: 10px;
+}
+
+
+input {
+    display: none;
+}
+label {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #07c160;
+    position: relative;
+    cursor: pointer;
+}
+label::before {
+    display: inline-block;
+    content: " ";
+    width: 12px;
+    border: 2px solid #fff;
+    height: 4px;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    top: 5px;
+    left: 3px;
+    position: absolute;
+    opacity: 0;
+}
+input:checked+label {
+    background: #07c160;
+}
+input:checked+label::before{
+    opacity: 1;
+    transform: all 0.5s;
+}

@@ -1,0 +1,22 @@
+/* General styles 
+更多精品模板请访问：http://www.bootstrapmb.com
+*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background: #fff;
+    color: #6d7c82;
+}
+
+#page-container {
+    max-width: 90em;
+    margin: 0 auto;
+}
+
+.all-dela-presets-container {
+    display: flex;
+    flex-direction: column;
+}

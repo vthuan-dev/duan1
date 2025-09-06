@@ -1,0 +1,89 @@
+<include file="Public:header"/>
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">矿机管理</span>
+			<span class="h2-title">>><a href="{:U('Kuangm/index')}">矿机列表</a></span>
+		</div>
+		<div class="cf">
+			<div class="fl">
+				<a class="btn btn-success " href="{:U('Kuangm/addkuangj')}">新 增</a>
+				<button class="btn ajax-post btn-info " url="{:U('Kuangm/kuangjStatus',array('type'=>'1','mobile'=>'Admin'))}" target-form="ids">启 用</button>
+				<button class="btn ajax-post btn-warning " url="{:U('Kuangm/kuangjStatus',array('type'=>'2','mobile'=>'Admin'))}" target-form="ids">禁 用</button>
+				<button class="btn ajax-post confirm btn-danger " confirm-msg="批量删除不可恢复,确定删除?" url="{:U('Kuangm/kuangjStatus',array('type'=>'3','mobile'=>'Admin'))}" target-form="ids">删 除</button>
+			</div>
+
+		</div>
+		<div class="data-table table-striped">
+			<table class="">
+				<thead>
+				<tr>
+					<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+					<th class="">ID</th>
+					<th class="">类型</th>
+					<th class="">购买类型</th>
+					<th class="">矿机标题</th>
+					<th class="">矿机图片</th>
+					<th class="">矿机产出</th>
+					<th class="">购买单价</th>
+					<th class="">购买上限</th>
+					<th class="">周期</th>
+					<th class="">状态</th>
+					<th class="">添加时间</th>
+					<th class="">操作</th>
+				</tr>
+				</thead>
+				<tbody>
+				<notempty name="list">
+					<volist name="list" id="vo">
+						<tr>
+							<td><input class="ids" type="checkbox" name="id[]" value="{$vo.id}"/></td>
+							<td>{$vo.id}</td>
+							<td><if condition="$vo.type eq 1">独资<elseif condition="$vo.type eq 2" />共享</if></td>
+							<td>
+							    <if condition="$vo.rtype eq 1">
+							        <span style="color:green;">购买</span>
+							    <elseif condition="$vo.rtype eq 2" />
+							        <span style="color:red;">赠送</span>
+							    </if>
+							</td>
+							<td>{$vo.title}</td>
+							<td><img src="/Upload/public/{$vo.imgs}" style="height:50px;"></td>
+							<td>
+							    <span>产出类型：<if condition="$vo.outtype eq 1">按产值<elseif condition="$vo.outtype eq 2" />按币量</if></span>
+							    <br />
+							    <span>日产量：{$vo.dayoutnum}<if condition="$vo.outtype eq 1">USDT<elseif condition="$vo.outtype eq 2" />{$vo.outcoin}</if></span>
+							</td>
+							
+							<td>{$vo.pricenum}{$vo.pricecoin}</td>
+							<td>{$vo.buymax}台</td>
+							<td>{$vo.cycle}天</td>
+							<td><if condition="$vo.status eq 1">正常<elseif condition="$vo.status eq 2" />禁用</if></td>
+							<td>{$vo.addtime}</td>
+							<td>
+								<a href="{:U('Kuangm/addkuangj?id='.$vo['id'])}" class="btn btn-primary btn-xs">编辑</a>
+							</td>
+						</tr>
+					</volist>
+					<else/>
+					<td colspan="12" class="text-center empty-info"><i class="glyphicon glyphicon-exclamation-sign"></i>暂无数据</td>
+				</notempty>
+				</tbody>
+			</table>
+			<div class="page">
+				<div>{$page}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Public:footer"/>
+<block name="script">
+	<script type="text/javascript" charset="utf-8">
+		//导航高亮
+		highlight_subnav("{:U('Kuangm/index')}");
+	</script>
+</block>

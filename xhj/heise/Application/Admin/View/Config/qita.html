@@ -1,0 +1,132 @@
+<include file="Public:header" />
+
+<div id="main-content">
+
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">系统参数设置</span>
+		</div>
+
+		<div class="tab-wrap">
+			<div class="tab-content">
+				<form id="form" action="{:U('Config/qitaEdit')}" method="post" class="form-horizontal" >
+					<div id="tab" class="tab-pane in tab">
+						<div class="form-item cf">
+							<table>
+								<tr class="controls">
+									<td class="item-label">短信发送邮箱 :</td>
+									<td><input type="text" class="form-control input-10x" name="smsemail" value="{$data['smsemail']}"></td>
+									<td class="item-note" style="color:red;">*发送邮箱验证码的邮箱账号</td>
+								</tr>
+								<tr class="controls">
+									<td class="item-label">邮箱授权码 :</td>
+									<td><input type="text" class="form-control input-10x" name="emailcode" value="{$data['emailcode']}"></td>
+									<td class="item-note" style="color:red;">*发送邮箱验证码的邮箱授权码</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">短信验证码模板 :</td>
+									<td><input type="text" class="form-control input-10x" name="smstemple" value="{$data['smstemple']}"></td>
+									<td class="item-note" style="color:red;">*短信验证码模板</td>
+								</tr>
+
+ 								<tr class="controls">
+									<td class="item-label">推荐页面推广语 :</td>
+									<td><input type="text" class="form-control input-10x" name="tgtext" value="{$data['tgtext']}"></td>
+									<td class="item-note" style="color:red;">*推荐页面的推广语，不要多于40个字</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">官方客服邮箱 :</td>
+									<td><input type="text" class="form-control input-10x" name="gfemail" value="{$data['gfemail']}"></td>
+									<td class="item-note" style="color:red;">*官方客服邮箱</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">PC端下方文字 :</td>
+									<td><input type="text" class="form-control input-10x" name="footertext" value="{$data['footertext']}"></td>
+									<td class="item-note" style="color:red;">*显示在PC端LOGO下的文字</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">注册赠送体验金 :</td>
+									<td><input type="text" class="form-control input-10x" name="tymoney" value="{$data['tymoney']}"></td>
+									<td class="item-note" style="color:red;">*注册赠送的合约体验金</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">网站注册开关 :</td>
+									<td>
+										<select name="regswitch" class="form-control  input-10x">
+											<option value="1" <eq name="data['regswitch']" value="1">selected</eq>>开放</option>
+											<option value="2" <eq name="data['regswitch']" value="2">selected</eq>>关闭</option>
+										</select>
+									</td>
+									<td class="item-note" style="color:red;">*关闭时禁止注册</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">提币总开关 :</td>
+									<td>
+										<select name="tbswitch" class="form-control  input-10x">
+											<option value="1" <eq name="data['tbswitch']" value="1">selected</eq>>开放</option>
+											<option value="2" <eq name="data['tbswitch']" value="2">selected</eq>>禁止</option>
+										</select>
+									</td>
+									<td class="item-note" style="color:red;">*关闭时禁止所有币种提币</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">注册是否赠送体验矿机 :</td>
+									<td>
+										<select name="regjl" class="form-control  input-10x">
+											<option value="1" <eq name="data['regjl']" value="1">selected</eq>>赠送</option>
+											<option value="2" <eq name="data['regjl']" value="2">selected</eq>>不送</option>
+										</select>
+									</td>
+									<td class="item-note" style="color:red;">*关闭时禁止所有币种提币</td>
+								</tr>
+
+
+								<tr class="controls">
+									<td class="item-label"></td>
+									<td>
+										<div class="form-item cf">
+											<button class= "btn submit-btn ajax-post"  target-form="form-horizontal" id="submit" type="submit">提交</button>
+											<a class="btn btn-return" href="{$Think.server.HTTP_REFERER}">返 回</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</form>
+
+				<script type="text/javascript">
+					//提交表单
+					$('#submit').click(function(){
+						$('#form').submit();
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/kindeditor/kindeditor-min.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		//主导航高亮
+		$('.config-box').addClass('current');
+		//边导航高亮
+		$('.config-contact').addClass('current');
+	});
+</script>
+
+<include file="Public:footer" />

@@ -1,0 +1,24 @@
+[ 2022-07-02T16:52:13+08:00 ] 36.161.109.145 /
+ERR: Call to undefined function mysql_escape_string()
+
+[ 2022-07-02T16:52:39+08:00 ] 36.161.109.145 /
+ERR: Call to undefined function mysql_escape_string()
+
+[ 2022-07-02T16:54:28+08:00 ] 36.161.109.145 /
+ERR: Call to undefined function mysql_escape_string()
+
+[ 2022-07-02T16:54:34+08:00 ] 20.70.128.103 /.env
+ERR: Call to undefined function mysql_escape_string()
+
+[ 2022-07-02T18:21:38+08:00 ] 36.161.109.145 /Admin/Trade/gethyorder
+ERR: Call to undefined function mysql_escape_string()
+
+[ 2022-07-02T18:21:39+08:00 ] 36.161.109.145 /Admin/User/index
+ERR: Call to undefined function mysql_escape_string()
+
+[ 2022-07-02T18:29:39+08:00 ] 36.161.109.145 /User/czpage?id=4
+ERR: Call to undefined function mysql_escape_string()
+
+[ 2022-07-02T18:29:42+08:00 ] 36.161.109.145 /User/czpage?id=4
+ERR: Call to undefined function mysql_escape_string()
+

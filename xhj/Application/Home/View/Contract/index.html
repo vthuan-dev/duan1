@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <title>{$webname}</title>
+	    <style>
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                /*display: -webkit-box;*/
+                /*display: -webkit-flex;*/
+                /*display: -ms-flexbox;*/
+                /*display: flex;*/
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+            }
+            .css-wp2li4 {
+               box-sizing: border-box;
+               margin: 0;
+               min-width: 0;
+               display: -webkit-box;
+               display: -webkit-flex;
+               display: -ms-flexbox;
+               display: flex;
+               overflow-x: hidden;
+               -webkit-flex-direction: column;
+               -ms-flex-direction: column;
+               flex-direction: column;
+            }
+            .css-19zx9ks {
+               box-sizing: border-box;
+               margin: 0;
+               min-width: 0;
+               display: -webkit-box;
+               display: -webkit-flex;
+               display: -ms-flexbox;
+               display: flex;
+               -webkit-align-items: center;
+               -webkit-box-align: center;
+               -ms-flex-align: center;
+               align-items: center;
+               height: 48px;
+               font-size: 12px;
+               color: #474D57;
+               display: -webkit-box;
+               display: -webkit-flex;
+               display: -ms-flexbox;
+               display: flex;
+               min-height: 48px;
+               height: -webkit-fit-content;
+               height: -moz-fit-content;
+               height: fit-content;
+               -webkit-flex-wrap: wrap;
+               -ms-flex-wrap: wrap;
+               flex-wrap: wrap;
+               z-index: 99;
+               padding-top: 16px;
+               padding-bottom: 10px;
+               padding-left: 17%;
+               padding-right: 17%;
+               line-height: 1.25;
+               box-shadow: 0px 2px 4px rgb(0 0 0 / 4%);
+            }
+            .css-o4bcl2 {
+               box-sizing: border-box;
+               margin: 0;
+               min-width: 0;
+               color: #00b897;
+               -webkit-text-decoration: none;
+               text-decoration: none;
+               color: #000000;
+            }
+            .css-19zx9ks a {
+               -webkit-flex-wrap: nowrap;
+               -ms-flex-wrap: nowrap;
+               flex-wrap: nowrap;
+               -webkit-flex-shrink: 0;
+               -ms-flex-negative: 0;
+               flex-shrink: 0;
+               margin-bottom: 6px;
+            }
+            .css-19zx9ks a:hover {
+               color: #C99400;
+               -webkit-text-decoration: underline;
+               text-decoration: underline;
+            }
+            .css-wl17qh {
+               box-sizing: border-box;
+               margin: 100%px;
+               min-width: 0px;
+               display: flex;
+               height: fit-content;
+               min-height: 349px;
+            }
+            .css-1s5qj1n {
+               box-sizing: border-box;
+               margin: 0;
+               min-width: 0;
+               position: relative;
+               margin-bottom: 32px;
+               padding-top: 40px;
+               padding-right: 24px;
+               padding-left: 17%;
+               width: 69%;
+            }
+            .css-101kg5g {
+               box-sizing: border-box;
+               margin: 0;
+               min-width: 0;
+               font-size: 40px;
+               color: #1E2329;
+               font-weight: 700;
+            }
+            .css-vurnku {
+               box-sizing: border-box;
+               margin: 0;
+               min-width: 0;
+            }
+            .css-wmvdm0 {
+               box-sizing: border-box;
+               margin: 0;
+               min-width: 0;
+               display: -webkit-box;
+               display: -webkit-flex;
+               display: -ms-flexbox;
+               display: flex;
+               -webkit-align-items: center;
+               -webkit-box-align: center;
+               -ms-flex-align: center;
+               align-items: center;
+               margin-top: 44px;
+               margin-bottom: 11px;
+            }
+            .css-ktxhrn {
+               box-sizing: border-box;
+               margin: 0;
+               min-width: 0;
+               margin-bottom: 32px;
+            }
+            .css-qinc3w {
+               box-sizing: border-box;
+               margin: 0;
+               min-width: 0;
+               color: #00b897;
+               display: block;
+               margin-bottom: 16px;
+               width: -webkit-fit-content;
+               width: -moz-fit-content;
+               width: fit-content;
+               max-width: 100%;
+               overflow: hidden;
+               text-overflow: ellipsis;
+               white-space: nowrap;
+               color: #474D57;
+               font-size: 14px;
+               -webkit-text-decoration: none;
+               text-decoration: none;
+            }
+            .css-6f91y1 {
+               box-sizing: border-box;
+               margin: 0;
+               min-width: 0;
+               margin-left: 48px;
+            }
+            .css-qinc3w:hover {
+               color: #C99400;
+               -webkit-text-decoration: underline;
+               text-decoration: underline;
+            }
+            .css-ogtd7z {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-transition: all 1s;
+                transition: all 1s;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                background-color: #FEF1F2;
+            }
+            .css-jrzkh7 {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                background-color: #181A20;
+            }
+            .css-1aac2e {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 24px;
+                padding-right: 24px;
+                max-width: 1248px;
+                background-color: #FEF1F2;
+            }
+            .css-pnjgxq {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                height: 219px;
+                background-color: #181A20;
+            }
+            .css-163lzuo {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                font-weight: 700;
+                font-size: 36px;
+                color: #EAECEF;
+            }
+            .css-8pdsjp {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                display: -webkit-inline-box;
+                display: -webkit-inline-flex;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                position: relative;
+                height: 32px;
+                margin-top: 4px;
+                margin-bottom: 0px;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                line-height: 1.6;
+                border: 1px solid transparent;
+                border-color: #EAECEF;
+                border-radius: 4px;
+                margin-top: 0;
+                margin-bottom: 0;
+                width: 327px;
+                height: 32px;
+                padding-left: 11px;
+                padding-right: 6px;
+                border-radius: 4px;
+                background-color: #2B3139;
+                border: none;
+            }
+            .css-8pdsjp {
+                width: 610px;
+                height: 48px;
+                padding-left: 16px;
+                padding-right: 12.5px;
+            }
+            .css-16fg16t {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                outline: none;
+                border: none;
+                background-color: inherit;
+                opacity: 1;
+            }
+            .css-8pdsjp input {
+                color: #1E2329;
+                font-size: 14px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            .css-8pdsjp input {
+                padding-left: 0;
+                font-size: 12px;
+                color: #EAECEF;
+                border-radius: 10px;
+            }
+            .css-8pdsjp .bn-input-suffix {
+                -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                margin-left: 4px;
+                margin-right: 4px;
+                font-size: 14px;
+            }
+            .css-1qppfsi {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                color: #EAECEF;
+                width: 24px;
+                height: 24px;
+                font-size: 24px;
+                fill: #1E2329;
+                fill: #EAECEF;
+                width: 1em;
+                height: 1em;
+                vertical-align: bottom;
+            }
+            ::-webkit-input-placeholder { /* WebKit browsers */
+              color: #474d57;
+              font-size: 14px;
+            }
+    
+            ::-moz-placeholder { /* Mozilla Firefox 19+ */
+              color: #474d57;
+              font-size: 14px;
+            }
+            input:focus{background:#2B3139;outline: 1px solid #2B3139;}
+            .klinebox{width:100%;height:550px;margin-top:55px;}
+	        .klinetitle{width:100%;height:50px;background:#fff;padding:0px 20px;}
+	        .klinetitle_l{width:20%;height:50px;float:left;}
+	        .klinetitle_r{width:60%;height:50px;float:left;}
+	        .newpricebox{height:28px;line-height:30px;margin-bottom:0px;color:#2ebd85;font-size:14px;text-align: left;}
+	        .changebox{height:20px;line-height:20px;margin-bottom:0px;color:#2ebd85;text-align: left;}
+	        .klr3_box{width:100%;height:30px;}
+	        .klr2_box{width:100%;height:25px;}
+	        .klr3_box_dl{width:100%;height:40px;line-height:60px;float:left;}
+	        .klr3_box_dr{width:100%;height:40px;line-height:40px;float:right;}
+	        .klr2_box_dl{width:45%;height:25px;line-height:25px;float:left;text-align:left;}
+	        .klr2_box_dr{width:55%;height:25px;line-height:25px;float:right;text-align:right;}
+	        .dongbox{position:fixed;z-index:9999;display:none;top:0px;width:100%;height:100vh;background:rgba(0,0,0,0.2);}
+	        .dong_con{width:30%;height:86vh;background:#fff;margin-top:80px;border-top-right-radius:20px;border-bottom-right-radius:20px;padding:20px 15px 10px 20px;float:left;}
+	        .dong_title{width:100%;height:40px;line-height:40px;}
+	        .dong_title_span{font-size:18px;font-weight:500;}
+	        .dong_find_box{width:100%;height:30px;background:#f5f5f5;border-radius:10px;}
+	        .dong_find_box_img{width:20%;height:30px;line-height:30px;float:left;text-align:center;}
+	        .dong_input_box{width:80%;height:30px;float:left;}
+	        .dong_symbox{width:90%;height:20px;border:none;background:#f5f5f5;margin-top:5px;}
+	        .dong_sel_box{width:100%;height:30px;border-bottom:1px solid #f5f5f5;}
+	        .dong_sel_span{display:block;width:35px;height:30px;line-height:30px;border-bottom:2px solid #FCD535;font-size:14px;text-align:center;font-size:14px;}
+	        .symbol_list{width:100%;height:450px;margin-top:10px;}
+	        .sy_list_box{width:100%;height:30px;}
+	        .sy_list_boxl{width:35%;height:30px;line-height:30px;float:left;text-align:left;}
+	        .sy_list_boxr{width:30%;height:30px;line-height:30px;float:right;text-align:right;}
+	        .btnbox{width:100%;height:60px;padding:10px 20px;}
+	        .btnbox_l{width:45%;height:40px;line-height:40px;float:left;text-align:center;border-radius:10px;background:#0ecb81;}
+	        .btnbox_r{width:45%;height:40px;line-height:40px;float:right;text-align:center;border-radius:10px;background:#f5465c;}
+	        .dong_order_c{width:100%;height:550px;background:#fff;margin:0;padding:0px 10px;line-height: 0px;}
+	        .dong_order_x{width:100%;height:20px;line-height:20px;text-align:right;}
+	        .dong_order_title{width:100%;height:30px;line-height:20px;text-align:center;border-bottom: 1px solid #f5f5f5;}
+	        .dong_order_option{width:100%;min-height:110px;overflow: hidden;margin-top:25px;max-height: 180px;}
+	        .dong_order_option_list{width:100px;height:80px;background:#f5f5f5;float:left;margin-right:10px;border-radius:10px;padding:5px;cursor: pointer;margin-top: 10px;}
+	        .option_list_active{border:1px solid #FCD535;}
+	        .dong_order_p{
+                width: 100%;
+                margin-top: 5px;
+                padding-left: 5px;
+                height: 20px;
+                line-height: 30px;
+            }
+	        .dong_money_list{width:100%;min-height:60px;}
+	        .dong_money_list_box{width:70%;max-height:100px;float:left;overflow: hidden;cursor: pointer;}
+	        .dong_money_list_box_l{height:40px;}
+	        .dong_money_list_box_option{width:70px;height:40px;line-height:40px;background:#f5f5f5;float:left;margin-right:5px;border-radius:5px;text-align:center;margin-top: 5px;}
+	        .green{color:#0ecb81;}
+            .red{color:#f5465c;}
+            input:focus{background:#f5f5f5;outline: 1px solid #f5f5f5;}
+
+
+            .left-border-css {
+                border-left:10px solid #f5f5f5;
+            }
+
+            .right-border-css {
+                border-right:10px solid #f5f5f5;
+            }
+	    </style>
+	</head>
+	<body>
+	    <div class="App">
+	        <div class="css-tq0shg">
+	            <include file="Public:header"/>
+	            <div class="css-ogtd7z">
+	                <div class="css-jrzkh7">
+	                    <div id="header_global_js_wxgy34nj" class="css-1aac2e"></div>
+	                 </div>
+	            </div>
+	            <main class="css-1wr4jig" style="background: #f5f5f5;border-top: 10px solid #f5f5f5;">
+                    <div style="width:20%;min-height:650px;float:left;padding:0px 10px 0px 0px;">
+                        <div style="width:100%;min-height:680px;background:#fff;">
+                            <div style="width:100%;height:100%;padding:0px;padding:0px 10px;">
+                                <div style="width:100%;top:0px;">
+
+
+                                    <div class="dong_sel_box">
+                                        <span class="fcc dong_sel_span">{:L('USDT')}</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="symbol_list" id="smybolbox">
+                                    <div class="usdt-shadow">
+                                        <a href="javascript:void(0)">
+                                            <div class="sy_list_box">
+                                                <div class="sy_list_boxl">
+                                                    <span  class="f14 tcbh">{:L('币种')}</span>
+                                                    </div>
+                                                <div class="sy_list_boxl tcbh f14 tcc"  style="text-align: center"  >{:L('24小时交易量')}</div>
+                                                <div class="sy_list_boxr tcbh f14" >{:L('24h涨跌')}</div>
+                                                </div>
+                                        </a>
+                                    </div>
+
+                                    <div style="width:100%;height:100px;line-height:100px;text-align:center;">
+                                        <span class="f14 fcc">{:L('没有获取数据')}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div style="width:80%;height:550px;line-height:550px;text-align:center;float:left;cursor:pointer;min-height: 650px;">
+                        <div style="width:100%;height:50px;box-shadow: 0 2px 10px 0 rgb(0 0 0 / 5%);">
+                            <div class="right-border-css" style="width:65%;height:50px;float:left;">
+                                <div class="right-border-css" style="width:70%;height:50px;float:left;padding-right: 0px;border: none;">
+                                <div class="klinetitle">
+                                    <div class="klinetitle_l">
+                                        <p class="newpricebox fw f14 fch" >{$upmarket}</p>
+                                        <p class="changebox fw f14 fch" >{:L('秒合约')}</p>
+                                    </div>
+                                    <div class="klinetitle_l">
+                                        <p class="newpricebox fw" id="newpricebox">--</p>
+                                        <p class="changebox fw"  id="changebox">--</p>
+                                    </div>
+                                    <div class="klinetitle_r">
+                                        <div class="col-4 klinetitle-s-box">
+                                            <div class="newpricebox f14 tcbh">
+                                                {:L('最低')}
+                                            </div>
+                                            <div class="changebox f14 tcbh" id="minmoney">
+                                                --
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4 klinetitle-s-box">
+                                            <div class="newpricebox f14 tcbh">
+                                                {:L('最高')}
+                                            </div>
+                                            <div class="changebox f14 tcbh" id="maxmoney">
+                                                --
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4 klinetitle-s-box">
+                                            <div class="newpricebox f14 tcbh">
+                                                24h{:L('量')}
+                                            </div>
+                                            <div class="changebox f14 tcbh" id="allvol">
+                                                --
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                </div>
+                                <div class="right-border-css" style="width:30%;height:50px;float:left;background: #fff;padding-left: 0px;border: none;">
+                                </div>
+                            </div>
+
+                            <div  style="width:35%;height:50px;line-height:100px;float:left;padding-left:15px; background: #fff;">
+                                <div class="tcl" style="width:100%;height:40px;line-height:50px;">
+                                    <div class="newpricebox fw f14 tcbh" style="color:#000;">{$upmarket}</div>
+                                    <div class="changebox fw f14 tcbh">{:L('合约建仓')}</div>
+                                    <input type="hidden"  id="symbolbox" value="{$upmarket}">
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div style="width:100%;min-height:630px;background: #fff">
+                            <div style="width:100%;min-height:550px;border-top: 2px solid #f5f5f5;">
+
+                                <div style="width:100%;min-height:550px;float:left;">
+                                    <div  class="right-border-css" style="width:65%;height:630px;float:left;">
+                                        <input type="hidden" id="coinname" value="{$smybol}" />
+                                        <div style="width:100%;height:600px;">
+                                            <iframe id="iframeid" width="100%" scrolling="no" height="600" src="/Trade/ordinary?market={$market}"  noresize="noresize" frameborder="0" >{:L('不支持IFRAME，请升级')}</iframe>
+                                        </div>
+                                    </div>
+                                    <div class="" style="width:35%;height:550px;float:left;">
+                                        <div style="width:100%;height:550px;padding:0px 10px;">
+                                            <div class="dong_order_c">
+                                                <p class="dong_order_p tcl fch f14">{:L('订单类型')}</p>
+                                                <div class="dong_order_option">
+
+                                                    <div style="">
+                                                        <foreach name="cd" item="vo">
+                                                            <div class="dong_order_option_list" id="time_{$vo.sort}" onclick="xztime({$vo.sort},{$vo.time},{$vo.ykbl});">
+
+                                                                <div style="width:100%;height:20px;line-height:20px;text-align:center;margin-top:5px;">
+                                                                    <span class="fch f12 vo-time" id="vo-time-{$vo.sort}">{$vo.time}{:L('s')}</span>
+                                                                </div>
+                                                                <div style="width:100%;height:20px;line-height:20px;text-align:center;margin-top:5px;">
+                                                                    <span class="fch f12 vo-ykbl " id="vo-ykbl-{$vo.sort}">{$vo.ykbl}%</span>
+                                                                </div>
+                                                            </div>
+                                                        </foreach>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <p class="dong_order_p tcl fcc fch f14">{:L('选择投资金额')}</p>
+                                                <div class="dong_money_list">
+                                                    <div  style="width:100%;height:40px;text-align:center;" id="custommoney">
+                                                        <input type="text" id="tzmoney" onblur="settzmoney();" value="" placeholder="{:L('请输入金额')}" style="width:98%;margin:auto;height:35px;line-height:35px;background:#f5f5f5;padding-left:15px;border:none;margin-top:2px;" />
+                                                    </div>
+                                                </div>
+
+                                                <!--                                        <p class="dong_order_p f14">{:L('投资金额')}(USDT)</p>-->
+                                                <div class="dong_money_list">
+                                                    <div class="dong_money_list_box" style="width:100%;">
+                                                        <div class="dong_money_list_box_l" style="height:60px;">
+                                                            <foreach name="ed" item="v">
+                                                                <if condition="$v.tzed != 0">
+                                                                    <div class="dong_money_list_box_option moveclass" id="tzed_{$v.sort}" onclick="xztzed({$v.sort},{$v.tzed});">
+                                                                        <span class="fzm f12">{$v.tzed} </span>
+                                                                    </div>
+                                                                </if>
+                                                            </foreach>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tcl" style="width:100%;height:40px;line-height:30px;margin-top: 80px;">
+                                                    <if condition="$uid elt 0">
+                                                        <span class="dong_order_p f12 fcc" style="margin-bottom:5px;">{:L('账户余额')}：- - USDT</span>
+                                                    <else />
+                                                        <span class="dong_order_p f12 fcc" style="margin-bottom:5px;">{:L('账户余额')}：{$eusdt_blan} USDT</span>
+                                                    </if>
+                                                </div>
+
+                                                <div class="tcc" style="width:100%;height:40px;line-height:30px; margin-top: 35px;">
+                                                    <if condition="$uid elt 0">
+<a href="{:U('Login/index')}">
+                                                        <div  class="ks_buy_up" style="width:45%;height:40px;line-height:40px;text-align:center;border-radius:10px;cursor:pointer;float:left;">
+                                                            <span class="f12 ks_buy " >{:L('登录')}</span>
+                                                        </div>
+</a>
+<a href="{:U('Login/index')}">                                                      <div  class="ks_buy_down" style="width:45%;height:40px;line-height:40px;text-align:center;border-radius:10px;cursor:pointer;float:right;">
+                                                            <span class="f12 ks_buy" >{:L('登录')}</span>
+                                                        </div>
+</a>
+
+                                                    <else />
+                                                        <div  class="ks_buy_up" style="width:45%;height:40px;line-height:40px;text-align:center;border-radius:10px;cursor:pointer;float:left;" onclick="show_dongbox(1)" >
+                                                            <span class="f12 ks_buy "  >{:L('买涨')}</span>
+                                                        </div>
+
+                                                        <div  class="ks_buy_down" style="width:45%;height:40px;line-height:40px;text-align:center;border-radius:10px;cursor:pointer;float:right;" onclick="show_dongbox(2)">
+                                                            <span class="f12 ks_buy" >{:L('买跌')}</span>
+                                                        </div>
+                                                    </if>
+                                                </div>
+
+
+                                                <input type="hidden" id="ctime" value="" />
+                                                <input type="hidden" id="ctzed" value="" />
+                                                <input type="hidden" id="ccoinname" value="{$upmarket}" />
+                                                <input type="hidden" id="ctzfx" value="1" />
+                                                <input type="hidden" id="cykbl" value="" />
+                                                <input type="hidden" id="hymin" value="{$hymin}" />
+
+                                                <input type="hidden" id="flag" value="1" />
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width:100%;min-height:200px;float:left;min-height: 360px;margin-top: 10px;border-top: 1px solid #f5f5f5;background: #fff">
+
+                        <div class="order-top">
+                            <div class="order-top-span order-top-current order-top-select" onclick="order_top_select_action(1)">
+                                {:L('全部委托')}
+                            </div>
+                            <div class="order-top-span order-top-history " onclick="order_top_select_action(2)">
+                                {:L('历史记录')}
+                            </div>
+                            <div class="refresh-icon">
+                                <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42 8V24" stroke="#303131" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 24L6 40" stroke="#303131" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 24C6 33.9411 14.0589 42 24 42C28.8556 42 33.2622 40.0774 36.5 36.9519" stroke="#303131" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M42.0007 24C42.0007 14.0589 33.9418 6 24.0007 6C18.9152 6 14.3223 8.10896 11.0488 11.5" stroke="#303131" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+                            </div>
+
+                        </div>
+
+                        <div class="order-main">
+                            <if condition="$uid elt 0">
+                                <table class="table tcc order-main-table order-main-table-current">
+                                </table>
+                                <else />
+                                <div class="table-box order-main-table-current" >
+                                    <table class="table tcc order-main-table ">
+
+                                        <thead>
+                                        <tr  class="tcbh">
+                                            <td>ID</td>
+                                            <td>{:L('交易对')}</td>
+                                            <td>{:L('方向')}</td>
+                                            <td>{:L('状态')}</td>
+                                            <td>{:L('委托额度')}</td>
+                                            <td>{:L('建仓单价')}</td>
+                                            <td>{:L('建仓时间')}</td>
+                                            <td>{:L('倒计时')}</td>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody id="tbody-current">
+
+                                        </tbody>
+                                    </table>
+                                    <a href="{:U('Contract/contractjc')}">
+                                        <div id="more-box">
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="table-box order-main-table-history">
+
+                                    <table class="table tcc order-main-table ">
+                                        <thead>
+                                        <tr class="tcbh">
+                                            <td>{:L('交易对')}</td>
+                                            <td>{:L('方向')}</td>
+                                            <td>{:L('状态')}</td>
+                                            <td>{:L('委托额度')}</td>
+                                            <td>{:L('交易限价')}</td>
+                                            <td>{:L('成交单价')}</td>
+                                            <td>{:L('建仓时间')}</td>
+                                            <td>{:L('平仓时间')}</td>
+                                            <td>{:L('盈亏金额')}</td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <foreach name="list" item="vo">
+                                            <tr class="fch f12">
+                                                <td>{$vo.coinname}</td>
+
+
+                                                <if condition="$vo.hyzd eq 1">
+                                                    <td class="f14 fw fgreen">{:L('买涨')}</td>
+                                                    <elseif condition="$vo.hyzd eq 2" />
+                                                    <td class="f14 fw fred">{:L('买跌')}</td>
+                                                </if>
+
+
+                                                <div class="bcontentop" style="width:8%">
+                                                    <if condition="$vo.status eq 1">
+                                                        <td>{:L('待结算')}</td>
+                                                        <elseif condition="$vo.status eq 2" />
+                                                        <td>{:L('已结算')}</td>
+                                                        <elseif condition="$vo.status eq 3" />
+                                                        <td>{:L('无效单')}</td>
+                                                    </if>
+                                                </div>
+
+                                                <td>{$vo.num}</td>
+                                                <td>{$vo.buyprice}</td>
+                                                <td>{$vo.sellprice}</td>
+                                                <td>{$vo.buytime}</td>
+                                                <td>{$vo.selltime}</td>
+                                                <div class="btitleop" style="width:10%;">
+                                                    <if condition="$vo.is_win eq 1">
+                                                        <td class="fch f14 fgreen"> +{$vo.ploss}</td>
+                                                        <elseif condition="$vo.is_win eq 2" />
+                                                        <td class="fch f14 fred"> -{$vo.ploss}</td>
+                                                    </if>
+                                                </div>
+
+                                            </tr>
+                                        </foreach>
+                                        </tbody>
+                                    </table>
+                                    <div class="table-history-more">
+                                    <empty name="list">
+                                        <img src="/Public/Home/static/imgs/empty.e90e5075.svg" class="empty-svg" >
+                                        <p class="tcc"> {:L('暂无订单')}</p>
+                                        <else />
+                                        <a href="{:U('Contract/contractpc')}">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"viewBox="0 0 384 512"fill="#e6ecf2"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+                                            <span class="tcc"> {:L('查看更多')}</span>
+                                        </a>
+                                    </empty>
+                                    </div>
+                                </div>
+                            </if>
+                        </div>
+                    </div>
+
+                
+	            </main>
+
+	            <include file="Public:footer"/>
+	        </div>   
+	    </div>
+
+	<!---------交易选择弹窗---------->
+	<div class="dongbox"  id="showdong">
+	    <div class="dong_con">
+	        <div style="width:100%;position:relative;z-index:9999999;top:0px;">
+	            <div class="dong_title">
+	                <span class="dong_title_span">{:L('秒合约')}</span>
+	            </div>
+
+	            <div class="dong_sel_box">
+	                <span class="fcc dong_sel_span">{:L('全部')}</span>
+	            </div>
+	        </div>
+	        
+	        
+	        <div class="symbol_list" id="smybolbox-b">
+	            <div style="width:100%;height:100px;line-height:100px;text-align:center;">
+                    <span class="fzmm fcc">{:L('没有获取数据')}</span>
+                </div>
+	        </div>
+	    </div>
+	    
+	    <div style="width:70%;height:100vh;float:left;" id="hidedong"></div>
+	</div>
+    <!--    购买弹框-->
+    <div class="buy-box" id="buy-box" style="display: none">
+        <div class="pop-content">
+            <div class="pop-content-desc" style="color: #2c3e50 !important;">
+                <table class="table tcc">
+
+                    <tbody>
+                    <tr>
+                        <td>{:L('账户余额')}</td>
+                        <td><span class="fch f14">{$eusdt_blan} USDT</span></td>
+                    </tr>
+                    <tr>
+                        <td>{:L('交易对')}</td>
+                        <td><span class="fch f14">{$upmarket}</span></td>
+                    </tr>
+                    <tr>
+                        <td>{:L('方向')}</td>
+                        <td><span class="fgreen f14" id="fxtext">{:L('买涨')}</span></td>
+                    </tr>
+                    <tr>
+                        <td>{:L('现价')}</td>
+                        <td ><span class="fch f14" style="color:#f5465c;" id="ordernewprice">--</span></td>
+                    </tr>
+                    <tr>
+                        <td>{:L('金额')}</td>
+                        <td><span class="fch f14"><span id="ttzed">10</span> USDT</span></td>
+                    </tr>
+                    <tr>
+                        <td>{:L('预计盈利')}</td>
+                        <td><span class="fch f14"><span id="yl">0</span> USDT</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <if condition="$uid elt 0">
+                    <div style="width: 60%;height:40px;line-height:40px;text-align:center;margin-top:15px;background: linear-gradient(to left,#eeb80d,#ffe35b);border-radius:10px;cursor:pointer;margin-left:20%">
+                        <span class="fch f12">{:L('请先登陆')}</span>
+                    </div>
+                    <else />
+                    <div id="subbtn" style="width: 60%;height:40px;line-height:40px;text-align:center;margin-top:15px;background: linear-gradient(to left,#eeb80d,#ffe35b);border-radius:10px;cursor:pointer;margin-left:20%">
+                        <span class="fch f12">{:L('确认下单')}</span>
+                    </div>
+                </if>
+
+            </div>
+        </div>
+    </div>
+
+	    
+	</body>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
+    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript">
+        let pct = 0;
+        let usdtnum = 0;
+        function settzmoney(){
+            var hymin = parseFloat($("#hymin").val());
+            var tzmoney = parseFloat($("#tzmoney").val());
+            if(tzmoney < hymin){
+                layer.msg("{:L('不能小于最低投资额度')}");return false;
+            }
+            
+            $("#ctzed").val(tzmoney);
+            $("#ttzed").html(tzmoney);
+            
+        }
+    </script>
+    <script type="text/javascript">
+        $("#custommoney").click(function(){
+            $(".moveclass").removeClass("option_list_active");
+            $("#custommoney").addClass("option_list_active");
+        });
+    </script>
+    <script type="text/javascript">
+        $("#tyj_subbtn").click(function(){
+            
+            var flag = $("#flag").val();
+            if(flag == 2){
+                return false;
+            }
+            
+            var ctime = $("#ctime").val();
+            var ctzed = $("#ctzed").val();
+            var ccoinname = $("#ccoinname").val();
+            var ctzfx = $("#ctzfx").val();
+            var cykbl = $("#cykbl").val();
+            if(ctime <= 0 || ctime ==''){
+                layer.msg("{:L('请选择结算时间')}");return false;
+            }
+            if(ctzed <= 0 || ctzed==''){
+                layer.msg("{:L('请选择投入金额')}");return false;
+            }
+            if(ccoinname == '' || ccoinname == null){
+                layer.msg("{:L('缺少重要参数')}");return false;
+            }
+            if(ctzfx <= 0 || ctzfx ==''){
+                layer.msg("{:L('缺少重要参数')}");return false;
+            }
+            if(cykbl <= 0 || cykbl ==''){
+                layer.msg("{:L('缺少重要参数')}");return false;
+            }
+            
+            $("#flag").val(2);
+            ctime = ctime / 60;
+            $.post("{:U('Contract/ty_creatorder')}",
+            {'ctime':ctime,'ctzed':ctzed,'ccoinname':ccoinname,'ctzfx':ctzfx,'cykbl':cykbl},
+            function(data){
+                if(data.code == 1){
+                    layer.msg(data.msg);
+                    setTimeout(function(){
+                        window.location.reload();
+                    },2000);
+                }else{
+                    layer.msg(data.msg);return false;
+                }
+            });
+        });
+    
+        $("#subbtn").click(function(){
+            
+            var flag = $("#flag").val();
+            if(flag == 2){
+                return false;
+            }
+            
+            var ctime = $("#ctime").val();
+            var ctzed = $("#ctzed").val();
+            var ccoinname = $("#ccoinname").val();
+            var ctzfx = $("#ctzfx").val();
+            var cykbl = $("#cykbl").val();
+            if(ctime <= 0 || ctime ==''){
+                layer.msg("{:L('请选择结算时间')}");return false;
+            }
+            if(ctzed <= 0 || ctzed==''){
+                layer.msg("{:L('请选择投入金额')}");return false;
+            }
+            if(ccoinname == '' || ccoinname == null){
+                layer.msg("{:L('缺少重要参数')}");return false;
+            }
+            if(ctzfx <= 0 || ctzfx ==''){
+                layer.msg("{:L('缺少重要参数')}");return false;
+            }
+            if(cykbl <= 0 || cykbl ==''){
+                layer.msg("{:L('缺少重要参数')}");return false;
+            }
+            
+            $("#flag").val(2);
+            ctime = ctime / 60;
+            $.post("{:U('Contract/creatorder')}",
+            {'ctime':ctime,'ctzed':ctzed,'ccoinname':ccoinname,'ctzfx':ctzfx,'cykbl':cykbl},
+            function(data){
+                if(data.code == 1){
+                    layer.msg(data.msg);
+                    setTimeout(function(){
+                        window.location.reload();
+                    },2000);
+                }else{
+                    layer.msg(data.msg);return false;
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+
+        function xztime(sort,time,ykbl){
+            var sort = sort;
+            var time = time;
+            var ykbl = ykbl;
+            var idtxt = "#time_"+sort;
+            usdtnum = ykbl;
+
+            ylnumf();
+
+            $('.vo-ykbl').css('color', '#000');
+            $('#vo-ykbl-'+sort).css('color', '#fff');
+            $('.vo-time').css('color', '#000');
+            $('#vo-time-'+sort).css('color', '#fff');
+            $('.vo-ykbl').css('color', '#000');
+            $('#vo-ykbl-'+sort).css('color', '#fff');
+
+
+            $('.dong_order_option_list').css('background', '#f5f5f5')
+            $('#time_'+sort).css('background', '#f5465c')
+            // #f5f5f5
+            $("#ctime").val(time);
+            $("#cykbl").val(ykbl);
+            $(idtxt).addClass("option_list_active");
+            $(idtxt).siblings().removeClass("option_list_active");
+        }
+        
+        function ylnumf() {
+            if (pct != 0 && usdtnum != 0) {
+                ylnum = pct * usdtnum / 100;
+                $('#yl').html(ylnum)
+            }
+        }
+
+        function xztzed(sort,tzed){
+            var sort = sort;
+            var tzed = tzed;
+            var idtxt = "#tzed_"+sort;
+            pct = tzed
+            ylnumf();
+
+            $('.dong_money_list_box_option').css('background', '#f5f5f5');
+            $('.dong_money_list_box_option').css('color', '#000');
+            $('#tzed_'+sort).css('background', 'rgb(245, 70, 92)');
+            $('#tzed_'+sort).css('color', '#fff');
+
+            $("#ctzed").val(tzed);
+            $("#ttzed").html(tzed);
+            $("#tzmoney").val(tzed);
+            $(idtxt).addClass("option_list_active");
+            $(idtxt).siblings().removeClass("option_list_active");
+            $("#custommoney").removeClass("option_list_active");
+        }
+    </script>
+    <script type="text/javascript">
+        function getcoin_data(){
+            var coinname = $("#coinname").val();
+            $.post("{:U('Ajaxtrade/getcoin_data')}",
+            {'coinname':coinname},
+            function(data){
+                if(data.code == 1){
+                    $("#newpricebox").html(data.close);
+                    $("#ordernewprice").html(data.close);
+                    $("#changebox").html(data.change);
+                    $("#minmoney").html(data.low);
+                    $("#maxmoney").html(data.high);
+                    $("#allvol").html(data.amount);
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript">
+          $(function(){
+              getcoin_data();
+              setInterval("getcoin_data()",2000); 
+          });
+    </script>
+    <script type="text/javascript">
+        function getallsmybol(){
+            $.post("{:U('Ajaxtrade/getallcoin')}",
+            function(data){
+                if(data.code == 1){
+                    $("#smybolbox").empty();
+                    var html = '';
+                    if(data.data == '' || data.data == null){
+                        html = '<div style="width:100%;height:100px;line-height:100px;text-align:center;">'+ 
+                               '<span class="fzmm fcc">' + "{:L('没有获取数据')}" + '</span>'+
+                               '</div>';
+                        $("#smybolbox").append(html);
+                        
+                    }else{
+                        $.each(data.data,function(key,val){
+                            html += '<a href="/Contract/index.html?coin='+ val.symbol +'">'+
+                                    '<div class="sy_list_box">'+
+                                    '<div class="sy_list_boxl">'+
+                                    '<span  class="f12 fch">'+ val.cname +'</span>'+
+                                    '</div>'+
+                                    '<div class="sy_list_boxl" style="text-align:center;">' + val.open + '</div>'+
+                                    '<div class="sy_list_boxr">' + val.change +'</div>'+
+                                    '</div>'+
+                                    '</a>';
+                        });
+                        $("#smybolbox").append(html);
+                    }
+                }else{
+                    html =  '<div style="width:100%;height:100px;line-height:100px;text-align:center;">'+ 
+                            '<span class="fzmm fcc">' + "{:L('没有获取数据')}" + '</span>'+
+                            '</div>';
+                    $("#smybolbox").append(html);
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        function show_dongbox(num){
+            var n = num;
+            if(n == 1){
+                $("#ctzfx").val(n);
+                $("#fxtext").text("{:L('买涨')}");
+                $("#fxtext").css('color','#0ecb81');
+            }else if(n == 2){
+                $("#ctzfx").val(n);
+                $("#fxtext").text("{:L('买跌')}");
+                $("#fxtext").css('color','#f5465c');
+            }
+
+            buy_box_func()
+        }
+        $("#x_dongbox").click(function(){
+            $("#dongbox").hide();
+        });
+    </script>
+    <script type="text/javascript">
+        $("#hidedong").click(function(){
+            $("#showdong").fadeOut("slow");
+        });
+        $("#centerbox").click(function(){
+            getallsmybol();
+            $("#showdong").fadeIn("slow");
+        });
+    </script>
+    <script type="text/javascript">
+		$("#nav").slide({ 
+			type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell:".nLi", //鼠标触发对象
+			targetCell:".sub", //titCell里面包含的要显示/消失的对象
+			effect:"slideDown", //targetCell下拉效果
+			delayTime:300 , //效果时间
+			triggerTime:0, //鼠标延迟触发时间（默认150）
+			returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+
+
+    <script type="text/javascript">
+        function getallsmybol(){
+            $.post("{:U('Ajaxtrade/getallcoin')}",
+                function(data){
+                    if(data.code == 1){
+                        $("#smybolbox").empty();
+                        var html = '';
+                        if(data.data == '' || data.data == null){
+                            html = '<div style="width:100%;height:100px;line-height:100px;text-align:center;">'+
+                                '<span class="f14 fcc">' + "{:L('没有获取数据')}" + '</span>'+
+                                '</div>';
+                            $("#smybolbox").append(html);
+
+                        }else{
+                            html += '<div class="usdt-shadow"><a href="javascript:void(0)">'+
+                                '<div class="sy_list_box">'+
+                                '<div class="sy_list_boxl">'+
+                                '<span  class="f14 tcbh">{:L('币种')}</span>'+
+                                '</div>'+
+                                '<div class="sy_list_boxl tcbh f14 tcc" style="text-align: center" >{:L('24小时交易量')}</div>'+
+                                '<div class="sy_list_boxr tcbh f14" >{:L('24h涨跌')}</div>'+
+                                '</div>'+
+                                '</a></div>';
+                            $.each(data.data,function(key,val){
+                                html += '<div class="usdt-shadow"><a  href="/Contract/index.html?coin='+ val.symbol +'">'+
+                                    '<div class="sy_list_box">'+
+                                    '<div class="sy_list_boxl">'+
+                                    '<span  class="f12 fch">'+ val.cname +'</span>'+
+                                    '</div>'+
+                                    '<div class="sy_list_boxl f12 tcc"  style="text-align: center"  >' + val.open + '</div>'+
+                                    '<div class="sy_list_boxr f12" >' + val.change +'</div>'+
+                                    '</div>'+
+                                    '</a></div>';
+                            });
+
+                            $("#smybolbox").append(html);
+                        }
+                    }else{
+                        html =  '<div style="width:100%;height:100px;line-height:100px;text-align:center;">'+
+                            '<span class="f14 fcc">' + "{:L('没有获取数据')}" + '</span>'+
+                            '</div>';
+                        $("#smybolbox").append(html);
+                    }
+                });
+        }
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            getallsmybol();
+            gettradbuy();
+            gettradsell();
+            setInterval("getallsmybol()",3000);
+            setInterval("gettradbuy()",2000);
+            setInterval("gettradsell()",2000);
+        });
+    </script>
+    <script type="text/javascript">
+        function gettradsell(){
+            var symbol = $("#symbolbox").val();
+            $.post("{:U('Ajaxtrade/gettradsellten')}",
+                {'symbol':symbol},
+                function(data){
+                    if(data.code == 1){
+                        $("#tradebuybox").empty();
+                        var html = '';
+                        if(data.data == '' || data.data == null){
+                            html = '<div style="width:100%;height:100px;line-height:100px;text-align:center;">'+
+                                '<span class="f14 fcc">' + "{:L('没有获取数据')}" + '</span>'+
+                                '</div>';
+                            $("#tradebuybox").append(html);
+
+                        }else{
+                            $.each(data.data,function(key,val){
+                                html += '<div style="width:100%;height:30px;">'+
+                                    '<div class="trade_list tl">'+
+                                    '<span class="red f12">'+ val.price +'</span>'+
+                                    '</div>'+
+                                    '<div class="trade_list tr">'+
+                                    '<span class="red f12">'+ val.amount +'</span>'+
+                                    '</div>'+
+                                    '</div>';
+                            });
+                            $("#tradebuybox").append(html);
+                        }
+                    }
+                });
+        }
+    </script>
+    <script type="text/javascript">
+        function gettradbuy(){
+            var symbol = $("#symbolbox").val();
+            $.post("{:U('Ajaxtrade/gettradbuyten')}",
+                {'symbol':symbol},
+                function(data){
+                    if(data.code == 1){
+                        $("#tradesellbox").empty();
+                        var html = '';
+                        if(data.data == '' || data.data == null){
+                            html = '<div style="width:100%;height:100px;line-height:100px;text-align:center;">'+
+                                '<span class="f14 fcc">' + "{:L('没有获取数据')}" + '</span>'+
+                                '</div>';
+                            $("#tradesellbox").append(html);
+
+                        }else{
+                            $.each(data.data,function(key,val){
+                                html += '<div style="width:100%;height:30px;">'+
+                                    '<div class="trade_list tl">'+
+                                    '<span class="green f12">'+ val.price +'</span>'+
+                                    '</div>'+
+                                    '<div class="trade_list tr">'+
+                                    '<span class="green f12">'+ val.amount +'</span>'+
+                                    '</div>'+
+                                    '</div>';
+                            });
+                            $("#tradesellbox").append(html);
+                        }
+                    }
+                });
+        }
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            getcoinprice();
+            setInterval("getcoinprice()",2000);
+        });
+    </script>
+    <script type="text/javascript">
+        function getcoinprice(){
+            var symbol = $("#symbolbox").val();
+            $.post("{:U('Ajaxtrade/getcoinprice')}",
+                {'symbol':symbol},
+                function(data){
+                    if(data.code == 1){
+                        $("#changebox").html(data.change);
+                        $(".closeprice").html(data.price);
+                        $("#minmoney").html(data.low);
+                        $("#maxmoney").html(data.high);
+                        $("#allvol").html(data.amount);
+                    }else{
+                        // console.log("{:L('未获取数据')}");
+                    }
+                });
+        }
+    </script>
+
+    <script>
+        $('.usdt-shadow').hover(
+            function () {
+                $(this).css('background-color', '#FEF1F2');
+            },
+            function () {
+                $(this).css('background-color', '#fff');
+            }
+        )
+
+
+        function order_top_select_action(type){
+            $('.order-top-span').removeClass('order-top-select');
+
+            if (type == 1) {
+                $('.order-top-current').addClass('order-top-select');
+                $('.order-main-table-current').show();
+                $('.order-main-table-history').hide();
+            }
+
+            if (type == 2) {
+                $('.order-top-history').addClass('order-top-select');
+                $('.order-main-table-current').hide();
+                $('.order-main-table-history').show();
+            }
+
+        }
+
+        $(function(){
+            gethyorder();
+            setInterval("gethyorder()",1000);
+        });
+        function gethyorder(){
+            $.post("{:U('Contract/gethyorder?limit=5')}",
+                function(data){
+                    if(data.code == 1){
+                        $("#tbody-current").empty();
+                        var html = '';
+                        if(data.data == '' || data.data == null){
+                            $('.order-main-table-current').empty()
+                            html += '<div class="table-history-more"><img src="/Public/Home/static/imgs/empty.e90e5075.svg" class="empty-svg" >\n' +
+                                '                                                    <p class="tcc"> 暂无订单</p></div>';
+                            $('.order-main-table-current').append(html)
+                        }else{
+                            $.each(data.data,function(key,val){
+                                html += '<tr class="fch f12">\n' +
+                                    '<td>'+ val.id +'</td>\n' +
+                                    '<td>'+ val.coinanme +'</td>\n' +
+                                    '<td>'+ val.hyzdstr +'</td>\n' +
+                                    '<td>'+ val.statusstr +'</td>\n' +
+                                    '<td>'+ val.num +'</td>\n' +
+                                    '<td>'+ val.buyprice +'</td>\n' +
+                                    '<td>'+ val.buytime +'</td>\n' +
+                                    '<td>'+ val.t +'</td>\n' +
+                                    '</tr>';
+                            });
+                            $("#tbody-current").append(html);
+                            if (data.data.length > 5) {
+                                $("#more-box").empty();
+                                more = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"viewBox="0 0 384 512"fill="#e6ecf2"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg><span class="tcc"> 查看更多</span>';
+                                $("#more-box").html(more);
+                            }
+
+                        }
+                    }
+
+                });
+        }
+
+        $('.refresh-icon').on('click', function () {
+            window.location.reload()
+        })
+
+
+    </script>
+
+    <script>
+        function buy_box_func(){
+            layer.open({
+                type: 1,
+                area: ['30%', '550px'],
+                shadeClose: true,
+                title: 'Buy',
+                content: $('#buy-box') //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+            });
+        }
+    </script>
+
+    
+</html>

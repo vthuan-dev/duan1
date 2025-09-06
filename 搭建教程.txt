@@ -1,0 +1,35 @@
+﻿Nginx 1.20.2
+MySQL 5.6
+PHP-5.6.40
+Redis 7.0.0
+
+推荐环境
+nginx+php5.6+mysql5.6
+
+创建站点上传xhj.ZIP压缩包解压，导入数据库。部署SSL数字证书，打开index.php修改数据库信息
+
+   k线中国大陆打不开，连vpn就能看的到
+
+站点提交伪静态
+
+location / {
+	if (!-e $request_filename){
+		rewrite  ^(.*)$  /index.php?s=$1  last;   break;
+	}
+}
+
+
+
+添加任务执行。（2个版本1与2根据自身需求选择）
+
+后台地址/admin
+
+
+ 密码不知道的直接用下面这个替换 密码123456
+
+   e10adc3949ba59abbe56e057f20f883e
+
+
+
+
+

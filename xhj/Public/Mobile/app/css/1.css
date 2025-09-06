@@ -1,0 +1,281 @@
+[v-cloak] {
+    display: none;
+}
+.van-cell {
+    border-radius: 3px;
+}
+.van-cell-group {
+    background-color: rgba(0, 0, 0, 0);
+}
+html,
+body,
+#login {
+    width: 100%;
+    height: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#login .top {
+    color: #fff;
+    width: 100%;
+    height: 550px;
+    background: #07145f url("./images/bg.svg") no-repeat 50%;
+    
+    border-bottom: 5px  solid #808080;
+}
+
+#login .top .logo {
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 50px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+#login .top .logo img {
+    width: 40px;
+    border-radius: 100%;
+    vertical-align: bottom;
+}
+#login .top .logo span {
+    margin-left: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#login .top .title {
+    margin-top: 25px;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#login .top .title p {
+    padding: 0;
+    margin: 0;
+}
+
+#login .top .money {
+    margin-top: 8%;
+    padding-left: 20%;
+}
+#login .top .money p {
+    padding: 0;
+    margin: 0;
+}
+#login .top .money p:nth-child(2) {
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+#login .top .btn {
+    padding: 20px 30px;
+}
+#login .top .btn .input {
+    width: 100%;
+    height: 45px;
+}
+
+#login .bottom {
+    width: 100%;
+    height: calc(100vh - 450px);
+    position: relative;
+}
+#login .bottom .b-top {
+    color: #8c9fae;
+    display: flex;
+    justify-content: space-between;
+}
+#login .bottom .b-top img {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+#login .bottom .footer {
+    color: #8c9fae;
+    position: absolute;
+    bottom: 0;
+}
+#login .bottom .footer p {
+    text-align: center;
+}
+
+
+.head_content {
+    margin: 0px 10%;
+    text-align: center;
+}
+
+.head {
+    width: 100%;
+    height: 400PX;
+    
+}
+
+
+.head_box_left {
+    float:left;
+}
+
+.head_box_right {
+    float:right;
+}
+
+.header_img {
+    width: 80%;
+    margin:10%;
+}
+
+.head_content_h6 {
+    font-size: 0.875rem;
+    font-family: Neue Haas Unica Pro, apple-system, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.175em;
+    line-height: 1;
+}
+
+.head_content_h2 {
+    font-size: 2rem;
+    font-family: Hoefler Text A, serif;
+    font-weight: 400;
+    line-height: 1.125;
+}
+
+.list_box {
+    width: 90%;
+    margin: 10px 5%;
+    height: 180px;
+}
+
+#list_content {
+    height: 40px;
+    margin: 0px 10%;
+    text-align: center;
+    color: hsl(0deg 1% 65%);
+}
+
+
+.list_box_item {
+    float: left;
+    width: 30%;
+    height: 48px;
+    margin: 0px 1.5%;
+    /*background: red;*/
+}
+
+.head_box_item {
+    float: left;
+    width: 23%;
+    margin: 0px 1%;
+    
+}
+
+
+.crt_box {
+    width: 90%;
+    margin: 0px 5% 10px 5%;
+    height: 230px;
+    /*background: hsl(0deg 1% 65%);*/
+    border: 1px solid hsl(0deg 1% 65%);
+}
+
+.crt_box_item {
+    float: left;
+    width: 45%;
+    margin: 0px 2%;
+    
+}
+
+.footer_box {
+    background: #000;
+    height: 830px;
+    color: #fff;
+}
+
+
+.down {
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.down_img {
+    width: 40%;
+    vertical-align: middle;
+}
+
+
+
+.footer_box_items {
+   height: 120px; 
+   margin: 0px 5%;
+   padding: 5px;
+}
+
+.footer_img_items img {
+    margin-top : 5px;
+}
+
+.footer_img_items {
+    float: left;
+    padding-right: 20px;
+    color: hsl(0deg 1% 65%);
+    height: 30px;
+    line-height: 30px;
+}
+
+.footer_p {
+    font-size: 8px;
+    text-indent: 24px;
+    color: hsl(0deg 1% 65%);
+}
+
+.copyright {
+    background: #000;
+    padding: 0 5%;
+    border-top: 1px solid hsl(0deg 1% 65%);
+    color: hsl(0deg 1% 65%);
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 415px) {
+   #vidoe {
+       width: 100% !important;
+       height: 232px !important;
+   }
+   
+}
+
+@media screen and (max-width: 390px) {
+   #vidoe {
+       width: 100% !important;
+       height: 225px !important;
+   }
+   
+}
+
+
+@media screen and (max-width: 376px) {
+   #vidoe {
+       width: 100% !important;
+       height: 213px !important;
+   }
+   
+}
+
+#logo {
+    position: fixed;
+    top: 0px;
+    background: blue;
+    width: 100%;
+}
+

@@ -1,0 +1,99 @@
+<include file="Public:header" />
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h"> <span class="h1-title">认购记录</span> </div>
+		<div class="cf">
+			<div class="search-form fl cf">
+				<div class="sleft">
+					<form name="formSearch" id="formSearch" method="get" name="form1">
+						<select style="width:160px;float:left;margin-right:10px;" name="field" class="form-control">
+							<option value="username" <eq name="Think.get.field" value="username">selected</eq>>用户名</option>
+						</select>
+						<input type="text" name="name" class="search-input form-control" value="{$Think.get.name}" placeholder="请输入查询内容" style="">
+						<a class="sch-btn" href="javascript:;" id="search"> <i class="btn-search"></i> </a>
+					</form>
+					<script>
+						//搜索功能
+						$(function(){
+							$('#search').click(function(){
+								$('#formSearch').submit();
+							});
+						});
+						//回车搜索
+						$(".search-input").keyup(function(e){
+							if(e.keyCode===13){
+								$("#search").click();
+								return false;
+							}
+						});
+					</script> 
+				</div>
+			</div>
+		</div>
+   
+		<div class="data-table table-striped">
+			<table class="">
+				<thead>
+					<tr>
+						<th class="row-selected row-selected"><input class="check-all" type="checkbox" /></th>
+						<th class="">ID</th>
+						<th class="">会员账号</th>
+						<th class="">项目名称</th>
+						<th class="">认购</th>
+						<th class="">支付</th>
+						<th class="">时间</th>
+						<th class="">状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<notempty name="list">
+						<volist name="list" id="vo">
+							<tr>
+								<td><input class="ids" type="checkbox" name="id[]" value="{$vo.id}" /></td>
+								<td>{$vo.id}</td>
+								<td>{$vo.account}</td>
+								<td>{$vo.name}</td>
+								<td>
+								    <span>认购币种：<?php echo strtoupper($vo['coinname']);?></span><br />
+								    <span>认购数量：{$vo.num}</span>
+								</td>
+								<td>
+								    <span>支付币种：<?php echo strtoupper($vo['buycoin']);?></span><br />
+								    <span>认购数量：{$vo.mum}</span>
+								</td>
+								<td>
+								    <span>认购日期：{$vo.addtime}<br />
+								    <span>解冻时间：{$vo.endtime}</span>
+								</td>
+								
+								<td>
+								    <eq name="vo.status" value="1">
+								    <span style="color:red;">冻结中</span>
+								    <else />
+								    <span style="color:green;">已解冻</span>
+								    </eq>
+								</td>
+							</tr>
+						</volist>
+					<else />
+						<td colspan="15" class="text-center empty-info"><i class="glyphicon glyphicon-exclamation-sign"></i>暂无数据</td>
+					</notempty>
+				</tbody>
+			</table>
+			<div class="page">
+				<div>{$page}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Public:footer" />
+<block name="script"> 
+	<script type="text/javascript" charset="utf-8">
+		//导航高亮
+		highlight_subnav("{:U('Issue/log')}");
+	</script> 
+</block>

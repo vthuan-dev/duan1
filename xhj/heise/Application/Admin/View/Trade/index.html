@@ -1,0 +1,167 @@
+<include file="Public:header"/>
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">合约订单列表</span>
+			<a class="btn btn-warning" onClick="location.href='{:U('Trade/index')}'">初始化搜索</a>
+			<span class="h1-title" style="color:red;">如果用户ID被指定盈亏,不受单控影响</span>
+		</div>
+		<div class="cf">
+			<div class="search-form fr cf" style="43px;float: none !important;">
+				<div class="sleft">
+					<form name="formSearch" id="formSearch" method="get" name="form1">
+						<select style="width: 120px; float: left; margin-right: 10px;" name="hyzd" class="form-control">
+							<option value=""
+							<empty name="Think.get.hyzd">selected</empty>
+							>全部类型</option>
+							<option value="1"
+							<eq name="Think.get.hyzd" value="1">selected</eq>
+							>买涨</option>
+							<option value="2"
+							<eq name="Think.get.hyzd" value="2">selected</eq>
+							>买跌</option>
+						</select>
+
+						<input type="text" name="username" class="search-input form-control" value="" placeholder="请输入用户名" />
+						<a class="sch-btn" href="javascript:;" id="search"> <i class="btn-search"></i> </a>
+					</form>
+					<script>
+						//搜索功能
+						$(function () {
+							$('#search').click(function () {
+								$('#formSearch').submit();
+							});
+						});
+						//回车搜索
+						$(".search-input").keyup(function (e) {
+							if (e.keyCode === 13) {
+								$("#search").click();
+								return false;
+							}
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+		<div class="data-table table-striped">
+			<table class="">
+				<thead>
+				<tr>
+					<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+					<th class="">ID</th>
+					<th class="">会员账号</th>
+					<th class="">交易对</th>
+					<th class="">方向</th>
+					<th class="">状态</th>
+					<th class="">委托额度</th>
+					<th class="">建仓单价</th>
+					<th class="">平仓单价</th>
+					<th class="">建仓时间</th>
+					<th class="">盈亏金额</th>
+					<th class="">单控操作</th>
+					<th class="">详情</th>
+				</tr>
+				</thead>
+				<tbody>
+                    <notempty name="list">
+                    <volist name="list" id="vo">
+					<tr>
+						<td><input class="ids" type="checkbox" name="id[]" value="{$vo.id}"/></td>
+						<td>{$vo.id}</td>
+						<td>{$vo.username}</td>
+						<td>{$vo.coinname}</td>
+						<td>
+						    <if condition="$vo.hyzd eq 1">
+						        <span style="color:#0ecb81;">买涨</span>
+						    <elseif condition="$vo.hyzd eq 2" />
+						        <span style="color:#f5465c;">买跌</span>
+						    </if>
+						</td>
+						<td>
+						    <if condition="$vo.status eq 1">
+						        <span style="color:#707A8A;">待结算</span>
+						    <elseif condition="$vo.status eq 2" />
+						        <span style="color:#0ecb81;">已完成</span>
+						    <elseif condition="$vo.status eq 3" />
+						        <span style="color:#f5465c;">无效</span>
+						    </if>
+						</td>
+						<td>{$vo.num}</td>
+						<td>{$vo.buyprice}</td>
+						<td>
+						    <if condition="$vo.is_win eq 0">
+						        <span style="color:#707A8A;">{$vo.sellprice}</span>    
+						    <elseif condition="$vo.is_win eq 1" />  
+						        <span style="color:#0ecb81;">{$vo.sellprice}</span>
+						    <elseif condition="$vo.is_win eq 2" />
+						        <span style="color:#f5465c;">{$vo.sellprice}</span>
+						    </if>
+						</td>
+						
+						<td>{$vo.buytime}</td>
+						<td>
+						    <if condition="$vo.is_win eq 0">
+						        <span style="color:#707A8A;">{$vo.ploss}</span>    
+						    <elseif condition="$vo.is_win eq 1" />  
+						        <span style="color:#0ecb81;">+{$vo.ploss}</span>
+						    <elseif condition="$vo.is_win eq 2" />
+						        <span style="color:#f5465c;">-{$vo.ploss}</span>
+						    </if>
+						</td>
+						<td>
+						    <select name="kongyk" id="kongyk" style="width:60px;" onchange="setwinloss({$vo.id});">
+						        <option value="0" <?php if($vo['kongyk'] == 0){?>selected<?php }?>>正常</option>
+						        <option value="1" <?php if($vo['kongyk'] == 1){?>selected<?php }?>>盈利</option>
+						        <option value="2" <?php if($vo['kongyk'] == 2){?>selected<?php }?>>亏损</option>
+						    </select>
+						</td>
+						<td>
+						    <a href="{:U('Trade/orderinfo')}?id={$vo.id}">查看</a>
+						</td>
+					</tr>
+					</volist>
+                    <else/>
+					<td colspan="12" class="text-center empty-info">
+					    <i class="glyphicon glyphicon-exclamation-sign"></i>暂无数据
+					</td>
+					</notempty>
+				</tbody>
+			</table>
+			<div class="page">
+				<div>{$page}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    function setwinloss(id){
+        var id  = id;
+        var kongyk = $("#kongyk").val();
+        $.post("{:U('Trade/setwinloss')}",
+        {'id':id,'kongyk':kongyk},
+        function(data){
+            if(data.code == 1){
+                alert(data.info);
+                setTimeout(function(){
+                    //window.location.reload();
+                },2000);
+            }else{
+                alert(data.info);
+                setTimeout(function(){
+                    //window.location.reload();
+                },2000);
+            }
+        });
+    }
+</script>
+<include file="Public:footer"/>
+<block name="script">
+	<script type="text/javascript" charset="utf-8">
+		//导航高亮
+		highlight_subnav("{:U('Trade/index')}");
+	</script>
+</block>

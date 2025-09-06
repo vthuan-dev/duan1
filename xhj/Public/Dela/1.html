@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Forms</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="demo/demo.css">
+    <link rel="stylesheet" href="template/dela-template.css">
+</head>
+<body>
+    <div id="page-container">
+        <div class="all-dela-presets-container">
+            <!-- Preset Begin-->
+            <div class="dela-presets-container-2">
+               
+                <div class="dela-preset-container">
+                    <form class="dela-preset-2-2" action="?" method="get">
+                        <p class="dela-form__title">Registration</p>
+                        <input type="text" name="name" placeholder="Name" required autocomplete="name">
+                        <input type="email" name="email" placeholder="E-mail" required autocomplete="email">
+                        <input type="password" name="password" id="pass-2" placeholder="Password" required>
+                        <input type="password" name="repeat" placeholder="Repeat Password" oninput="this.setCustomValidity(this.value != document.getElementById('pass-'+2).value ? 'Passwords are not the same.' : '')" required>
+                        <label class="dela-form__checkbox">
+                            I agree to the Privacy Policy
+                            <input type="checkbox" name="policy" value="1" required><span></span>
+                        </label>
+                        <input type="submit" name="submit" value="Registration">
+                    </form>
+                </div>
+                <div class="dela-preset-container">
+                    <form class="dela-preset-2-3" action="?" method="get">
+                        <p class="dela-form__title">Call Back</p>
+                        <input type="text" name="name" placeholder="Name" required autocomplete="name">
+                        <input type="tel" name="tel" placeholder="Phone Number" pattern="[0-9]{10}" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Phone format must be 1234567890.')" required autocomplete="tel">
+                        <div class="dela-form__time-container">
+                            Time
+                            <div class="dela-form__time">
+                                <input type="number" name="hours" placeholder="00" min="0" max="23" step="1" required><span>:</span>
+                                <input type="number" name="minutes" placeholder="00" min="0" max="59" step="1" required>
+                            </div>
+                        </div>
+                        <input type="submit" name="submit" value="Call Back"><span class="dela-form__note">In the timeout field specify the time convenient for you</span>
+                    </form>
+                </div>
+                <div class="dela-preset-container">
+                    <form class="dela-preset-2-4" action="?" method="get">
+                        <p class="dela-form__title">Checkout</p>
+                        <input type="text" name="ccname" placeholder="Cardholder Name" list="cardholders-2" required autocomplete="cc-name">
+                        <datalist id="cardholders-2">
+                            <option value="Visa"></option>
+                            <option value="Mastercard"></option>
+                            <option value="American Express"></option>
+                        </datalist>
+                        <input type="text" name="cardnumber" placeholder="Card Number" pattern="[0-9]{16}" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Card number format must be 1234123412341234.')" required autocomplete="cc-number">
+                        <div class="dela-form__card-data-cvc">
+                            <label class="dela-form__card-date">
+                                <span>00 / 00</span>
+                                <input type="date" name="date" oninput="let v = this.value; this.previousElementSibling.innerHTML = v[5]+v[6]+' / '+v[8]+v[9]; this.parentNode.classList.add('valid');" required autocomplete="cc-exp">
+                            </label>
+                            <label class="dela-form__card-cvc">
+                                <input type="text" name="cvc" placeholder="CVC" pattern="[0-9]{3}" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'CVC format must be 123.')" required autocomplete="cc-csc">
+                            </label>
+                        </div>
+                        <input type="submit" name="submit" value="Pay Now">
+                    </form>
+                </div>
+                <div class="dela-preset-container">
+                    <form class="dela-preset-2-5" action="?" method="get">
+                        <p class="dela-form__title">Book Visit</p>
+                        <input type="text" name="name" placeholder="Name" required autocomplete="name">
+                        <input type="tel" name="tel" placeholder="Phone Number" pattern="[0-9]{10}" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Phone format must be 1234567890.');" required autocomplete="tel">
+                        <label class="dela-form__select">
+                            <select name="service" required>
+                                <option selected disabled value="">Choose Service</option>
+                                <option value="Massage">Massage</option>
+                                <option value="Spa">Spa</option>
+                                <option value="Tipping">Tipping</option>
+                            </select>
+                        </label>
+                        <label class="dela-form__select">
+                            <select name="specialist" required>
+                                <option selected disabled value="">Choose Specialist</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Professional">Professional</option>
+                                <option value="https://previews.customer.envatousercontent.com/files/262010243/V.I.P">V.I.P</option>
+                            </select>
+                        </label>
+                        <div class="dela-form__book-container">
+                            <label class="dela-form__book-date">
+                                <span>Date</span>
+                                <input type="date" name="date" oninput="let v = this.value; this.previousElementSibling.innerHTML = v[5]+v[6]+' / '+v[8]+v[9]; this.parentNode.classList.add('valid');" required>
+                            </label>
+                            <label class="dela-form__book-time">
+                                <span>Time</span>
+                                <input type="time" name="time" onmouseout="if(!this.value) this.previousElementSibling.innerHTML='Time'; else{this.parentNode.classList.add('dela-form__book-time-input');}" required>
+                            </label>
+                        </div>
+                        <input type="submit" name="submit" value="Book Now">
+                    </form>
+                </div>
+                <div class="dela-preset-container">
+                    <form class="dela-preset-2-6" action="?" method="get">
+                        <p class="dela-form__title">Support Request</p>
+                        <div class="form-content">
+                            <input type="text" name="name" placeholder="Name" required autocomplete="name">
+                            <label class="dela-form__select">
+                                <select name="category" required>
+                                    <option selected disabled value="">Choose Category</option>
+                                    <option value="Sales">Sales</option>
+                                    <option value=" Server">Server</option>
+                                    <option value="VPN">VPN</option>
+                                </select>
+                            </label>
+                            <label class="dela-form__select">
+                                <select name="theme" required>
+                                    <option selected disabled value="">Choose Theme</option>
+                                    <option value="Lunch Problems">Lunch Problems</option>
+                                    <option value="Bugs">Bugs</option>
+                                    <option value="Access Problems">Access Problems</option>
+                                </select>
+                            </label>
+                            <textarea name="message" placeholder="Message" required></textarea>
+                            <div class="dela-form__book">
+                                <p>How to contact you?</p>
+                                <input class="dela-form__radio-button-email" checked="checked" id="tab1-2" type="radio" name="radio">
+                                <input class="dela-form__radio-button-tel" id="tab2-2" type="radio" name="radio">
+                                <nav>
+                                    <label class="dela-form__label-email" for="tab1-2">Email<span></span></label>
+                                    <label class="dela-form__label-tel" for="tab2-2">Phone<span></span></label>
+                                </nav>
+                                <section>
+                                    <input class="dela-form__input-email" type="email" name="email" placeholder="Write your email" required autocomplete="email">
+                                    <input class="dela-form__input-tel" type="tel" name="tel" placeholder="Write your phone" pattern="[0-9]{10}" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Phone format must be 1234567890.');" required autocomplete="tel">
+                                </section>
+                            </div>
+                            <input type="submit" name="submit" value="Send Request">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Preset End-->
+            <!--这行代码可以删除-->
+            <a style="display:none" href="http://www.bootstrapmb.com">bootstrap模板库</a>
+
+        </div>
+    </div>
+</body>
+</html>

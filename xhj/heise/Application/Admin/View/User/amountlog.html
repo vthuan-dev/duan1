@@ -1,0 +1,121 @@
+<include file="Public:header"/>
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title">资金变更日志</span>
+			<div class="fr">
+				<button class="btn btn-warning" onClick="location.href='{:U('User/amountlog')}'">初始化搜索</button>
+			</div>
+		</div>
+		<div>
+			<div class="cf">
+			    <div class="fl">
+				<button class="btn ajax-post confirm btn-danger " url="{:U('User/billdel',array('type'=>'1'))}" target-form="ids">删 除</button>
+			    </div>
+				<div class="search-form fr cf" style="float: none !important;">
+					<div class="sleft">
+						<form name="formSearch" id="formSearch" method="get" name="form1">
+							<!-- 类型 -->
+							<select style="width: 80px; float: left; margin-right: 10px;" name="st" class="form-control">
+								<option value="all"
+								<eq name="Think.get.st" value="">selected</eq>
+								>加/减</option>
+								<option value="1"
+								<eq name="Think.get.st" value="1">selected</eq>
+								>增加</option>
+								<option value="2"
+								<eq name="Think.get.st" value="2">selected</eq>
+								>减少</option>
+							</select>
+							<!-- 全部资金类型 -->
+							<select style="width: 120px; float: left; margin-right: 10px;" name="coinname" class="form-control">
+								<option value=""
+								>全部币种</option>
+								<volist name="coinlist" id="vos" >
+									<option value="{$vos.name}"
+									<?php if($_GET['cointype']==$vos['name']){ echo "selected";}?>
+									>{$vos.name|strtoupper}</option>
+								</volist>
+							</select>
+
+							<input type="text" name="username" class="search-input form-control  " value="{$Think.get.username}" placeholder="请输入查询内容" style="">
+							<a class="sch-btn" href="javascript:;" id="search"> <i class="btn-search"></i> </a>
+						</form>
+						<script>
+							//搜索功能
+							$(function () {
+								$('#search').click(function () {
+									$('#formSearch').submit();
+								});
+							});
+							//回车搜索
+							$(".search-input").keyup(function (e) {
+								if (e.keyCode === 13) {
+									$("#search").click();
+									return false;
+								}
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="data-table table-striped">
+			<table class="">
+				<thead>
+				<tr>
+				    <th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+					<th class="">ID</th>
+					<th class="">会员账号</th>
+					<th class="">币种</th>
+					<th class="">变动金额</th>
+					<th class="">变动后金额</th>
+					<th class="">操作类型</th>
+					<th class="">时间</th>
+					<th class="">备注</th>
+					
+				</tr>
+				</thead>
+				<tbody>
+				<notempty name="list">
+					<volist name="list" id="vo">
+						<tr>
+						    <td><input class="ids" type="checkbox" name="id[]" value="{$vo.id}"/></td>
+							<td>{$vo.id}</td>
+							<td>{$vo['username']}</td>
+							<td><?php echo strtoupper($vo['coinname']);?></td>
+                            <td>
+                                <if condition="$vo.st eq 1">
+                                <span style="color:green;">+{$vo.num}</span>
+                                <elseif condition="$vo.st eq 2" />
+                                <span style="color:red;">-{$vo.num}</span>
+                                </if>
+                            </td>
+                            <td>{$vo.afternum}</td>
+                            <td><?php echo gettype_info($vo['type']);?></td>
+                            <td>{$vo.addtime}</td>
+                            <td>{$vo.remark}</td>
+						</tr>
+					</volist>
+					<else/>
+					<td colspan="12" class="text-center empty-info"><i class="glyphicon glyphicon-exclamation-sign"></i>暂无数据</td>
+				</notempty>
+				</tbody>
+			</table>
+			<div class="page">
+				<div>{$page}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Public:footer"/>
+<block name="script">
+	<script type="text/javascript" charset="utf-8">
+		//导航高亮
+		highlight_subnav("{:U('User/amountlog')}");
+	</script>
+</block>

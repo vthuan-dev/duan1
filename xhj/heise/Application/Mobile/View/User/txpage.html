@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="/Public/Static/css/base2.css" />
+	<link rel="stylesheet" type="text/css" href="/Public/Static/css/nologed.css" />
+	<link rel="stylesheet" href="/Public/Static/Icoinfont/iconfont.css">
+	<script src="/Public/Static/Icoinfont/iconfont.js"></script>
+	<title>{$webname}</title>
+	<style>
+	    ::-webkit-input-placeholder {color: #b5b5b5;font-size: 12px;}
+	    ::-moz-placeholder {color: #b5b5b5;font-size: 12px;}
+	    input:focus{background:#f5f5f5;outline: 1px solid #f5f5f5;}
+	    a:hover,a:link,a:visited,a:active{color:#000000;text-decoration:none;}
+	    .no_header{position: fixed;z-index: 9999;padding:0px 10px;top:0px;line-height: 50px;background:#f5f5f5;}
+	    .contentbox{width:100%;height:600px;margin-top:45px;padding:5px 15px;}
+	    .contentbox_top{width:100%;height:50px;line-height:50px;text-align:left;}
+	    .contentbox_line{width:100%;height:50px;background:#fff;border-radius:10px;padding:0px 10px;}
+	    .line_1{width:20%;height:50px;line-height:50px;float:left;}
+	    .line_2{width:70%;height:50px;line-height:50px;float:right;text-align:right;}
+	    .imgbox{width:100%;padding:10px;background:#fff;margin-top:15px;border-radius:10px;}
+	    .imgbox_1{width:100%;height:40px;line-height:40px;text-align:left;}
+	    .imgbox_2{width:100%;height:35px;line-height:35px;text-align:left;}
+	    .imgbox_3{width:100px;height:35px;line-height:35px;text-align:center;border:1px solid #FCD535;border-radius:5px;}
+	    .textbox{width:100%;background:#fff;margin-top:10px;border-radius:10px;padding:15px;}
+	    .tx_inputbox{width:100%;height:40px;background:#f5f5f5;border-radius:10px;padding:0px 10px;}
+	    .tx_inputbox_l{width:80%;height:30px;margin-top:5px;float:left;}
+	    .tx_inputbox_r{width:20%;height:30px;line-height:30px;margin-top:5px;float:right;text-align:right;}
+	    .inputbox_r_l{width:50%;height:30px;line-height:30px;float:left;text-align:center;}
+	    .inputbox_r_r{width:50%;height:30px;line-height:30px;float:right;text-align:center;}
+	    .imgbox_8{width:100%;text-align:center;}
+	    .imgbox_9{width:100px;height:30px;line-height:30px;text-align:center;border-radius:5px;border:1px solid #FCD535;margin:auto;}
+	    .imgbox_10{width:100%;height:40px;line-height:40px;text-align:center;border-radius:5px;margin:auto;background: #0052fe;color: #fff;}
+	    .bottom_btn_box{width:100%;height:100px;background:#fff;position:fixed;bottom:0px;border-top-left-radius:15px;border-top-right-radius:15px;padding:15px;}
+	    .dongbox{position:fixed;z-index:9999999999;display:none;top:0px;width:100%;height:100vh;background:rgba(0,0,0,0.2);}
+        .dongbox_cbox{width:75%;height:180px;background:#fff;margin:50% auto;border-radius:15px;padding:10px;}
+        .showbtn{width:100%;height:40px;line-height:40px;background: #0052fe;color: #fff;border-radius:5px;text-align:center;margin-top:10px;}
+        .addressinfo{width:100%;height:200px;background:#fff;margin-bottom:0px;position: fixed;bottom: 0;padding:10px 15px;border-top-right-radius:10px;border-top-left-radius:10px;}
+        .addressinfo_1{width:100%;height:30px;}
+        .addressinfo_2{width:50%;height:30px;line-height:30px;float:left;text-align:left;}
+        .addressinfo_3{width:50%;height:30px;line-height:30px;float:right;text-align:right;}
+        .addressinfo_4{width:100%;height:20px;line-height:20px;}
+        .addressinfo_5{width:100%;height:90px;background: rgb(240,185,1,0.2);margin-top:10px;border-radius:10px;border:1px solid #FCD535;padding:10px;}
+        .overflow{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;width:100%;height:35px;line-height:35px;}
+	</style>
+</head>
+<body>
+	<div class="container-fluid " style="padding:0px;width:100vw;">
+        <div class="no_header">
+			<div class="fl allhg txtl">
+				<i class="bi bi-arrow-left fcc fw" onclick="goback()" style="font-size: 24px;"></i>
+			</div>
+			
+			<a href="{:U('User/txlist')}">
+			<div class="fr allhg txtr" style="line-height:50px;width:10%;">
+				<i class="bi bi-funnel fcy fw" style="font-size:20px;"></i>
+			</div>
+			</a>
+		</div>
+		<div class="contentbox">
+		    <div class="contentbox_top">
+		        <span style="font-size:26px;font-weight:500;">{:L('提币')}</span>
+		    </div>
+
+		    <div class="contentbox_line">
+		        <div class="line_1">
+		            <span class="fzmmm fch">{:L('币种')}</span>
+		        </div>
+		        <a href="{:U('User/txcoin')}">
+		        <div class="line_2">
+		            <span class="fzmmm fcy" style="font-size:18px;font-weight:bold;"><?php echo strtoupper($info['name']);?></span>
+		            <span class="fzmmm fch">&nbsp;&nbsp;<?php echo L($info['title']);?></span>
+		            <i class="bi bi-chevron-right fzmmm fcc"></i>
+		        </div>
+		        </a>
+		    </div>
+		    
+		    <div class="imgbox">
+		        <div class="imgbox_1">
+		            <span class="fzmmm fch">{:L('提币网络')}</span>
+		        </div>
+		        <div class="imgbox_2">
+		            <div class="imgbox_3">
+		                <span class="fzmm fcy">{$info.czline}</span>
+		            </div>
+		        </div>
+		        
+		        <div class="imgbox_1" style="margin-top:10px;">
+		            <span class="fzmmm fch">{:L('提币地址')}</span>
+		        </div>
+		        
+		        <div class="tx_inputbox">
+		            <div class="tx_inputbox_l">
+		                <input type="text" id="address" name="address" placeholder="{:L('输入或长按粘贴地址')}" style="background:#f5f5f5;border:1px solid #f5f5f5;width: 100%;height:30px;" />
+		            </div>
+		            <div class="tx_inputbox_r">
+		                <i class="bi bi-journal-text fch" id="showdongbtn" style="font-size:18px;"></i>
+		            </div>
+		        </div>
+		        
+		        <div class="imgbox_1" style="margin-top:10px;">
+		            <div style="width:30%;height:40px;line-height:40px;float:left;">
+		                <span class="fzmmm fch">{:L('提币数量')}</span>
+		            </div>
+		            <div style="width:70%;height:40px;line-height:40px;float:right;text-align:right;">
+		                <span class="fzm fcc">{:L('可用')}&nbsp;&nbsp;</span>
+		                <span class="fzm fcc">{$money}</span>
+		                <span class="fzm fcc"><?php echo strtoupper($info['name']);?></span>
+		            </div>
+		        </div>
+
+
+		        <input type="hidden" id="usermoney" value="{$money}" />
+		        <input type="hidden" id="txminnum" value="{$info.txminnum}" />
+		        <input type="hidden" id="txsxf" value="{$info.txsxf}" />
+		        <input type="hidden" id="txsxf_n" value="{$info.txsxf_n}" />
+		        <input type="hidden" id="sxftype" value="{$info.sxftype}" />
+		        
+		        <input type="hidden" id="tbid" value="{$info.id}" />
+		        <input type="hidden" id="tbaddre" value="{$adrinfo.addr}" />
+		        <div class="tx_inputbox">
+		            <div class="tx_inputbox_l" style="width:65%;">
+		                <input type="text" id="tbnum" onblur="changenum();" name="tbnum" placeholder="{:L('输入提币数量')}" style="background:#f5f5f5;border:1px solid #f5f5f5;height: 30px;" autocomplete="off" step="1"  min="0" onkeyup="this.value= this.value.match(/\d+(\.\d{0,2})?/) ? this.value.match(/\d+(\.\d{0,2})?/)[0] : ''" />
+		            </div>
+		            <div class="tx_inputbox_r" style="width:35%;">
+		                <div class="inputbox_r_l">
+		                    <span class="fzmmm fcc"><?php echo strtoupper($info['name']);?></span>
+		                </div>
+		                <div class="inputbox_r_r" id="allmoneybtn">
+		                    <span class="fzmmm fcc">{:L('全部')}</span>
+		                </div>
+		            </div>
+		        </div>
+
+				<div class="imgbox_1" style="margin-top:10px;">
+					<span class="fzmmm fch">{:L('提现密码')}</span>
+				</div>
+
+				<div class="tx_inputbox">
+					<div class="tx_inputbox_l">
+						<input type="text" id="paypwd" name="paypwd" placeholder="{:L('提现密码')}" style="background:#f5f5f5;border:1px solid #f5f5f5;width: 100%;height:30px;" />
+					</div>
+				</div>
+
+				<input type="hidden" id="flag" value="1" />
+		        <div class="imgbox_8" style="margin-top:20px;">
+		            <div class="imgbox_10" id="sumbtn">
+		                <span class="fzmm">{:L('提交')}</span>
+		            </div>
+		        </div>
+		        
+		        <div class="imgbox_1">
+		            <div style="width:50%;height:40px;line-height:40px;float:left;">
+		                <span class="fzm fcc">{:L('实际到账')}</span>
+		            </div>
+		            <div style="width:50%;height:40px;line-height:40px;float:right;text-align:right;">
+		                <span class="fzm fcc" id="tmoney">0.000000</span>
+		                <span class="fzm fcc">&nbsp;&nbsp;<?php echo strtoupper($info['name']);?></span>
+		            </div>
+		        </div>
+		        
+
+		    </div>
+		    
+		    <div class="textbox">
+		        <p class="fzm" style="color:red;">{:L('最小提币数量')}：<?php echo strtoupper($info['txminnum']);?><?php echo strtoupper($info['name']);?>，{:L('小于最小金额的提币将不会到账且无法退回')}</p>
+		        <p class="fzm fch">{:L('为保障资金安全，当您账户安全策略变更，密码修改，我们会对提币进行人工审核，请耐心等待工作人员电话或邮件联系.')}</p>
+		        <p class="fzm fch">{:L('请务必确认电脑及浏览器安全，防止信息被篡改或泄露')}</p>
+		    </div>
+
+		    <div style="width:100%;height:30px;"></div>
+   
+		</div>
+	</div>
+	
+<!---地址弹窗--->	
+<div class="dongbox" id="addressbox" style="display:none;">
+    <div class="addressinfo">
+        <div class="addressinfo_1">
+            <div class="addressinfo_2">
+                <span class="fzmmm fch">{:L('选择')}<?php echo strtoupper($info['name']);?>{:L('地址')}</span>
+            </div>
+            <div id="hideaddress" class="addressinfo_3">
+                <span class="fzmm fcc">{:L('关闭')}</span>
+            </div>
+        </div>
+        <a href="{:U('User/txaddlist')}?id={$info.id}">
+        <div class="addressinfo_4">
+            <span class="fzm fcy">{:L('地址管理')}</span>
+            <i class="bi bi-chevron-right fcy"></i>
+        </div>
+        </a>
+        
+        <div class="addressinfo_5" id="tbadressbtn">
+            <div class="overflow">
+                <i class="bi bi-file-richtext fch fzmmm"></i>
+                <span class="fzmm fch" id="address_remark">{$adrinfo.remark}</span>
+            </div>
+            <div class="overflow">
+                <i class="bi bi-link-45deg fch fzmmm"></i>
+                <span class="fzmm fch" id="address_addr">{$adrinfo.addr}</span>
+            </div>
+        </div>
+        
+    </div>
+</div>
+	<!---提醒弹窗--->
+<div class="dongbox" id="dongbox" style="display:none;">
+    <div class="dongbox_cbox">
+        <div style="width:100%;height:50px;line-height:50px;text-align:center;">
+            <i class="bi bi-exclamation-circle-fill fcy" style="font-size:26px;"></i>
+        </div>
+        <div style="width:100%;height:50px;padding:5px 10px;">
+            <span class="fzmm fch">{:L('暂时没有已保存地址')}</span>
+        </div>
+        
+        <div style="width:100%;height:40px;line-height:40px;">
+            <div class="showbtn" id="hidebtn" style="width:45%;float:left;background:#f5f5f5;">
+                <span class="fzmm fch">{:L('取消')}</span>
+            </div>
+            <a href="{:U('User/txaddlist')}?id={$info.id}">
+            <div class="showbtn" id="add_address" style="width:45%;float:right;">
+                <span class="fzmm fch">{:L('去添加')}</span>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/Static/js/layer/layer.js" ></script>
+<script type="text/javascript">
+    function changenum(){
+        var tbnum = parseFloat($("#tbnum").val());
+        if(tbnum <= 0){
+            layer.msg("{:L('请输入正确的数量')}");return false;
+        }
+        var txminnum = parseFloat($("#txminnum").val());
+        if(tbnum < txminnum){
+            layer.msg("{:L('不能低于最小提币值')}");return false;
+        }
+        var sxftype = $("#sxftype").val();
+        var txsxf_n = $("#txsxf_n").val();
+        
+        var txsxf = $("#txsxf").val();
+        if(sxftype == 1){
+            var tmoney = tbnum - tbnum * txsxf / 100;
+        }else if(sxftype == 2){
+            var tmoney = tbnum - txsxf_n;
+        }else{
+            layer.msg("{:L('参数错误')}");return false;
+        }
+
+        $("#tmoney").text(tmoney);
+  
+    }
+</script>
+<script type="text/javascript">
+    $("#sumbtn").click(function(){
+        var flag = $("#flag").val();
+        if(flag == 2){
+            return false;
+        }
+        var address = $("#address").val();
+        var num = parseFloat($("#tbnum").val());
+        var txminnum = parseFloat($("#txminnum").val());
+        var paypwd = $("#paypwd").val();
+        var id = $("#tbid").val();
+        if(id <= 0){
+            layer.msg("{:L('参数错误')}");return false;
+        }
+        if(address == '' || address == null){
+            layer.msg("{:L('请输入提币地址')}");return false;
+        }
+		if(paypwd == '' || paypwd == null){
+			layer.msg("{:L('请输入提现密码')}");return false;
+		}
+        if(num <= 0){
+            layer.msg("{:L('请输入正确的数量')}");return false;
+        }
+        if(num < txminnum){
+            layer.msg("{:L('不能低于最小提币值')}");return false;
+        }
+        $("#flag").val(2);
+        $.post("{:U('User/tbhandle')}",
+        {'address':address,'num':num,'id':id,'paypwd':paypwd},
+        function(data){
+            if(data.code == 1){
+                layer.msg(data.info);
+                setTimeout(function(){
+                    window.location.href = "{:U('User/txlist')}";
+                },2000);
+            }else{
+                layer.msg(data.info);return false;
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+   $("#tbadressbtn").click(function(){
+       var tbaddress = $("#tbaddre").val();
+       $("#addressbox").hide();
+       $("#address").val(tbaddress);
+   });
+   $("#hideaddress").click(function(){
+       $("#addressbox").hide();
+   });
+   $("#showdongbtn").click(function(){
+       var id = $("#tbid").val();
+       $.post("{:U('User/getaddress')}",
+       {'id' : id},
+       function(data){
+           if(data.code == 1){
+               $("#addressbox").show();
+           }else{
+               $("#dongbox").show();
+           }
+       }
+       );
+   });
+
+   $("#hidebtn").click(function(){
+       $("#dongbox").hide();
+   });
+   
+   
+   
+   $("#allmoneybtn").click(function(){
+       var usermoney = parseFloat($("#usermoney").val());
+       var txsxf = $("#txsxf").val();
+       var txminnum = parseFloat($("#txminnum").val());
+       if(usermoney < txminnum){
+           layer.msg("{:L('请输入正确的数量')}");return false;
+       }
+       var tmoney = usermoney - usermoney * txsxf / 100
+       $("#tmoney").text(tmoney);
+       $("#tbnum").val(usermoney);
+   });
+</script>
+
+<script type="text/javascript">
+    function goback(){
+        window.history.go(-1);
+    }
+</script>
+</html>
+
+
+

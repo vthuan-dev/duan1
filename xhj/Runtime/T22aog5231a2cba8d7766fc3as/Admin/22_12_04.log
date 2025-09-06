@@ -1,0 +1,124 @@
+[ 2022-12-04T00:02:28+08:00 ] 203.160.86.143 /Admin/Trade/gethyorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013003s ]
+
+[ 2022-12-04T00:02:28+08:00 ] 203.160.86.143 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001881s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000792s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/104.243.34.106/ThinkPHP/Common/functions.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001891s ]
+
+[ 2022-12-04T00:03:28+08:00 ] 203.160.86.143 /Admin/Trade/gethyorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002390s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.013128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016324s ]
+
+[ 2022-12-04T00:03:28+08:00 ] 203.160.86.143 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002667s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/104.243.34.106/ThinkPHP/Common/functions.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007519s ]
+
+[ 2022-12-04T00:04:28+08:00 ] 203.160.86.143 /Admin/Trade/gethyorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001876s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015015s ]
+
+[ 2022-12-04T00:04:28+08:00 ] 203.160.86.143 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001900s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019356s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/104.243.34.106/ThinkPHP/Common/functions.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002582s ]
+
+[ 2022-12-04T00:05:28+08:00 ] 203.160.86.143 /Admin/Trade/gethyorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002678s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020001s ]
+
+[ 2022-12-04T00:05:28+08:00 ] 203.160.86.143 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001761s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012814s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004718s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/104.243.34.106/ThinkPHP/Common/functions.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006861s ]
+

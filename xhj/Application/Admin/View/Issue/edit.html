@@ -1,0 +1,288 @@
+<include file="Public:header"/>
+<script type="text/javascript" src="__PUBLIC__/layer/laydate/laydate.js"></script>
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">警告内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title-h">
+			<span class="h1-title"><a href="{:U('Issue/index')}">认购配置</a> &gt;&gt;</span>
+			<span class="h1-title"><empty name="data">添加认购<else/>编辑认购</empty></span>
+		</div>
+		<div class="tab-wrap">
+			<div class="tab-content">
+				<form id="form" action="{:U('Issue/save')}" method="post" class="form-horizontal">
+					<div id="tab" class="tab-pane in tab">
+						<div class="form-item cf">
+							<table>
+								<tr class="controls">
+									<td class="item-label">认购标题 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="name" value="{$data.name}">
+									</td>
+									<td class="item-note" style="color:red;">* 前台显示的标题</td>
+								</tr>
+								<tr class="controls">
+									<td class="item-label">认购币种 :</td>
+									<td>
+										<select name="coinname" class="form-control input-10x">
+											<volist name="clist" id="v">
+												<option value="{$v['name']}" <eq name="data['coinname']" value="$v['name']">selected</eq>>{$v['title']}</option>
+											</volist>
+										</select>
+									</td>
+									<td class="item-note" style="color:red;">* 认购的币种名称</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">发行总量 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="num" value="{$data['num']*1}">
+									</td>
+									<td class="item-note" style="color:red;">* 项目的发行总量</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">预设认购总量 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="ysnum" value="{$data['ysnum']*1}">
+									</td>
+									<td class="item-note" style="color:red;">*预设认购总量</td>
+								</tr>
+								
+								<tr class="controls" style="border-top:1px dashed #d0d0d0;">
+									<td class="item-label">支付币种 :</td>
+									<td>
+										<select name="buycoin" class="form-control input-10x">
+											<volist name="paylist" id="v">
+												<option value="{$v['name']}" <eq name="data['buycoin']" value="$v['name']">selected</eq>>{$v['title']}</option>
+											</volist>
+										</select>
+									</td>
+									<td class="item-note"  style="color:red;">* 用户购买使用的</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">认购价格 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="price" value="{$data['price']*1}">
+									</td>
+									<td class="item-note" style="color:red;">* 认购币的单价</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">认购限量 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="allmax" value="{$data.allmax}">
+									</td>
+									<td class="item-note"  style="color:red;">* 每个用户认购上限</td>
+								</tr>
+								
+								<tr class="controls" style="border-top:1px dashed #d0d0d0;">
+									<td class="item-label">单次最小数量 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="min" value="{$data['min']}">
+									</td>
+									<td class="item-note" style="color:red;">* 每次购买最小数量</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">单次最大数量 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="max" value="{$data['max']}">
+									</td>
+									<td class="item-note" style="color:red;">* 每次购买最大数量</td>
+								</tr>
+								
+								
+								<tr class="controls" style="border-top:1px dashed #d0d0d0;">
+									<td class="item-label">开启时间 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="starttime" value="{$data['starttime']}" onclick="laydate({istime:true, format:'YYYY-MM-DD hh:mm:ss'})">
+									</td>
+									<td class="item-note" style="color:red;">* 开放认购的时间 </td>
+								</tr>
+								
+								
+								<tr class="controls">
+									<td class="item-label">认购周期 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="tian" value="{$data['tian']}">
+									</td>
+									<td class="item-note"  style="color:red;"> * 认购开放至结束的时间</td>
+								</tr>
+								
+								
+								<tr class="controls">
+									<td class="item-label">冻结时间 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="lockday" value="{$data['lockday']}">
+									</td>
+									<td class="item-note"  style="color:red;"> * 认购后认购币冻结时间，到期后自动释放到可用账户</td>
+								</tr>
+
+								<tr class="controls" style="border-top:1px dashed #d0d0d0;">
+									<td class="item-label">推荐赠送币种 :</td>
+									<td>
+										<select name="jlcoin" class="form-control input-10x">
+											<volist name="alllist" id="v">
+												<option value="{$v['name']}" <eq name="data['jlcoin']" value="$v['name']">selected</eq>>{$v['title']}</option>
+											</volist>
+										</select>
+									</td>
+									<td class="item-note"  style="color:red;">*推荐人赠送的币种名称</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">一代赠送比例 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="one_jl" value="{$data['one_jl']}">
+									</td>
+									<td class="item-note"  style="color:red;">%</td>
+								</tr>
+								<tr class="controls">
+									<td class="item-label">二代赠送比例 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="two_jl" value="{$data['two_jl']}">
+									</td>
+									<td class="item-note"  style="color:red;">%</td>
+								</tr>
+								<tr class="controls">
+									<td class="item-label">三代赠送比例 :</td>
+									<td>
+										<input type="text" class="form-control input-10x" name="three_jl" value="{$data['three_jl']}">
+									</td>
+									<td class="item-note"  style="color:red;">%</td>
+								</tr>
+								
+								<tr class="controls" style="border-top:1px dashed #d0d0d0;">
+									<td class="item-label">项目缩略图 :</td>
+									<td>
+										<div id="addpicContainer">
+											<notempty name="data.imgs">
+												<img id="up_img" onclick="getElementById('inputfile').click()" style="cursor:pointer;max-width:200px;" title="点击添加图片" alt="点击添加图片" src="/Upload/public/{$data.imgs}">
+												<else/>
+												<img id="up_img" onclick="getElementById('inputfile').click()" style="cursor:pointer;max-width:200px;" title="点击添加图片" alt="点击添加图片" src="__PUBLIC__/Admin/images/addimg.png">
+											</notempty>
+											<input type="hidden" id="imgs" name="imgs" value="{$data.imgs}">
+											<input type="file" id="inputfile" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;" value=""/>
+										</div>
+									</td>
+									<td class="item-note"  style="color:red;">* 图片尺寸 200px*200px</td>
+								</tr>
+
+								<tr class="controls">
+									<td class="item-label">认购说明 :</td>
+									<td><textarea name="content" class="form-control input-10x">{$data.content}</textarea></td>
+									<td class="item-note"  style="color:red;"></td>
+								</tr>
+
+								<tr class="controls">
+									<td class="item-label">项目状态 :</td>
+									<td>
+										<select name="status" class="form-control input-10x">
+											<option value="1" <eq name="data.status" value="1">selected</eq>>显示</option>
+											<option value="2" <eq name="data.status" value="2">selected</eq>>隐藏</option>
+										</select>
+									</td>
+									<td class="item-note" style="color:red;">* 项目显示状态</td>
+								</tr>
+								
+								<tr class="controls">
+									<td class="item-label">认购状态 :</td>
+									<td>
+										<select name="state" class="form-control input-10x">
+											<option value="1" <eq name="data.state" value="1">selected</eq>>开启</option>
+											<option value="2" <eq name="data.state" value="2">selected</eq>>禁止</option>
+										</select>
+									</td>
+									<td class="item-note" style="color:red;">* 项目认购状态</td>
+								</tr>
+
+                                <input type="hidden" id="id" name="id" value="{$data.id}" />
+								<tr class="controls">
+									<td class="item-label"></td>
+									<td>
+										<div class="form-item cf">
+											<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">提交</button>
+											<a class="btn btn-return" href="{$Think.server.HTTP_REFERER}">返 回</a>
+											<notempty name="data.id"><input type="hidden" name="id" value="{$data.id}"/>
+											</notempty>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</form>
+				<script type="text/javascript">
+					//提交表单
+					$('#submit').click(function () {
+						$('#form').submit();
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/kindeditor/kindeditor-min.js"></script>
+<script type="text/javascript">
+	var editor;
+	KindEditor.ready(function (K) {
+		editor = K.create('textarea[name="content"]', {
+			width: '500px',
+			height: '250px',
+			allowPreviewEmoticons: false,
+			allowImageUpload: true,
+			items: [
+				'source', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+				'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+				'insertunorderedlist', '|', 'emoticons',  'link', 'fullscreen'],
+			afterBlur: function () {
+				this.sync();
+			}
+		});
+	});
+
+	$(document).ready(function () {
+		//响应文件添加成功事件
+		$("#inputfile").change(function () {
+			//创建FormData对象
+			var data = new FormData();
+			//为FormData对象添加数据
+			$.each($('#inputfile')[0].files, function (i, file) {
+				data.append('upload_file' + i, file);
+			});
+
+			//发送数据
+			$.ajax({
+				url: '/Admin/Issue/issueimage',
+				type: 'POST',
+				data: data,
+				cache: false,
+				contentType: false,		//不可缺参数
+				processData: false,		//不可缺参数
+				success: function (data) {
+					if (data) {
+						$('#up_img').attr("src", '/Upload/public/' + data);
+						$('#imgs').val(data);
+						$('#up_img').show();
+					}
+				},
+				error: function () {
+					alert('上传出错');
+					$(".loading").hide(); //加载失败移除加载图片
+				}
+			});
+
+		});
+	});
+</script>
+<include file="Public:footer"/>
+<block name="script">
+	<script type="text/javascript" charset="utf-8">
+		//导航高亮
+		highlight_subnav("{:U('Issue/index')}");
+	</script>
+</block>

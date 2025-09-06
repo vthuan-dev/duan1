@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="/Public/Static/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="/Public/Static/css/nologed.css" />
+	<title>{$webname}</title>
+	<style>
+		::-webkit-input-placeholder { /* WebKit browsers */
+		  color: #b5b5b5;
+		  font-size: 14px;
+		}
+
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		  color: #b5b5b5;
+		  font-size: 14px;
+		}
+		input:focus{background:#F5F5F5;outline: 1px solid #F5F5F5;}
+		a:hover,a:link,a:visited,a:active{color:#FCD535;text-decoration:none;}
+
+	</style>
+  </head>
+  <body>
+	<div class="container-fluid ctbox">
+		<div class="no_header">
+			<div class="fl bhalf allhg txtl" style="line-height:50px;">
+				<i class="bi bi-x fcc fw"  onclick="goindex()" style="font-size:36px;"></i>
+			</div>
+			<div class="fr bhalf allhg txtr" style="line-height:50px;">
+				<a href="{:U('Login/register')}" class="fzmmm fcy">{:L('注册')}</a>
+			</div>
+		</div>
+
+		<div class="no_content">
+			<div class="no_title">
+				<span class="title_txt fch">{:L('登录')}</span>
+			</div>
+
+			<div class="no_inbox">
+				<div class="inputbox">
+					<div class="input_title txtl">
+						<span class="fzmm fcc">{:L('邮箱')}</span>
+					</div>
+					<div class="input_div">
+						<input type="text" style="height:45px;" class="cinput" name="email" id="email" placeholder="{:L('请输入邮箱')}" />
+					</div>
+				</div>
+
+				<div class="inputbox">
+					<div class="input_title txtl">
+						<span class="fzmm fcc">{:L('密码')}</span>
+					</div>
+					<div class="input_div">
+						<input type="password" style="height:45px;" class="cinput" name="lpwd" id="lpwd" placeholder="{:L('请输入密码')}" />
+					</div>
+				</div>
+
+				<div class="inputbox">
+					<div class="input_title txtl">
+						<span class="fzmm fcc">{:L('验证码')}</span>
+					</div>
+					<div class="input_div" style="width:60%;float:left;" >
+						<input type="text"  style="height:45px;" class="cinput" name="vcode" id="vcode" placeholder="{:L('请输入验证码')}" />
+					</div>
+					<div style="width:35%;float:right;padding:0px;" >
+						<img style="width:100%;height:50px;border-radius:5px;" src="{:U('Verify/code')}" onclick="this.src=this.src+'?t='+Math.random()" title="{:L('换一张')}" id="verifycode">
+					</div>
+				</div>
+
+				<div class="input_title txtl">
+					<a href="{:U('Login/findpwd')}" class="fzmm fcy">{:L('忘记密码')}?</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="no_button_box">
+
+			<div class="small_hs_btn" onclick="uplogin();">
+				<i class="bi bi-arrow-right bi_right"></i>
+			</div>
+		</div>
+
+	</div>		
+</body>
+
+<body>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/Static/js/layer/layer.js" ></script>
+<script type="text/javascript">
+	function uplogin(){
+		var email = $("#email").val();
+		var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+        if(email=='' || email == null){
+            layer.msg("{:L('请输入邮箱')}");return false;       
+        }
+        if(!reg.test(email)){
+            layer.msg("{:L('邮箱格式不正确')}");return false; 
+        }
+        var vcode = $("#vcode").val();
+        if(vcode == ''){
+            layer.msg("{:L('请输入图形验证码')}");return false; 
+        }
+		var lpwd = $("#lpwd").val();
+		if(lpwd == ''){
+            layer.msg("{:L('请输入密码')}");return false; 
+        }
+
+        $.post("{:U('Login/loginsubmit')}",
+        {'email' : email, 'vcode' : vcode, 'lpwd' : lpwd},
+        function(data){
+        	if(data.code){
+        		layer.msg(data.info);
+        		setTimeout(function(){
+        			window.location.href="{:U('Index/index')}";
+        		},2000);
+        	}else{
+        		layer.msg(data.info);return false;
+        	}
+        });
+
+	}
+</script>
+
+
+<script type="text/javascript">
+    function goindex(){
+        window.location.href="{:U('Index/index')}";
+    }
+</script>
+</html>
+
+
+

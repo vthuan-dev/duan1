@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <title>{$webname}</title>
+        <style>
+            .css-ogtd7z {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                transition: all 1s ease 0s;
+                -webkit-box-pack: center;
+                justify-content: center;
+                background-color: rgb(254, 241, 242);
+            }
+            .css-jrzkh7 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                background-color: rgb(24, 26, 32);
+            }
+            .css-1aac2e {
+                box-sizing: border-box;
+                margin: 0px auto;
+                min-width: 0px;
+                padding-left: 24px;
+                padding-right: 24px;
+                max-width: 1248px;
+                background-color: rgb(254, 241, 242);
+            }
+            
+            .css-xry4yv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                min-height: 600px;
+                flex: 1 1 0%;
+                flex-direction: column;
+            }
+            .css-xry4yv {
+                flex-direction: row;
+            }
+            .css-foka8b {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 8%) 0px 0px 4px;
+                position: relative;
+                z-index: 1;
+                flex-direction: column;
+                width: 200px;
+            }
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0%;
+            }
+            .css-6ijtmk {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                text-decoration: none;
+                color: rgb(201, 148, 0);
+                border-left: 4px solid transparent;
+                height: 48px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                border-bottom: 1px solid #f5f5f5;
+            }
+            .css-6ijtmk:hover {
+                background-color: rgb(245, 245, 245);
+                text-decoration: none;
+            }
+            .css-6ijtmk:active {
+                background-color: rgb(245, 245, 245);
+                text-decoration: none;
+            }
+            .css-10j588g {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+            .css-hd27fe {
+                box-sizing: border-box;
+                margin: 0px 8px;
+                min-width: 0px;
+                color: rgb(132, 142, 156);
+                font-size: 24px;
+                fill: rgb(132, 142, 156);
+                width: 1em;
+                flex-shrink: 0;
+            }
+            .css-1n0484q {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: break-word;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+                color: rgb(33, 40, 51);
+            }
+            a{text-decoration:none;}
+            .css-6ul7zn {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+                flex-direction: column;
+                width: 100%;
+                padding: 32px;
+            }
+            .css-joa6mv {
+                box-sizing: border-box;
+                margin: 0px 0px 24px;
+                min-width: 0px;
+            }
+            .css-1868gi1 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .css-1h690ep {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+            }
+            .css-jjjwcg {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .css-15owl46 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: relative;
+            }
+            .btitle{width:100%;height:40px;background:#f5f5f5;}
+            .btitleop{height:40px;line-height:40px;text-align:center;float:left;}
+            .bcontentop{height:60px;line-height:60px;text-align:center;float:left;}
+            .css-1lzksdc {
+                box-sizing: border-box;
+                min-width: 0px;
+                color: rgb(132, 142, 156);
+                fill: rgb(132, 142, 156);
+                margin: 16px;
+                width: 96px;
+                height: 96px;
+                font-size: 96px;
+            }
+            
+        </style>
+	</head>
+	<body>
+	    <div class="App">
+	        <div class="css-tq0shg">
+	            <include file="Public:header"/>
+	            
+	            <div class="css-ogtd7z">
+	                <div class="css-jrzkh7">
+	                    <div id="header_global_js_wxgy34nj" class="css-1aac2e"></div>
+	                </div>
+	           </div>
+	           
+	           <main class="css-1wr4jig">
+	               <main class="css-xry4yv">
+	                   <!--左边-->
+	                   <div class="css-foka8b" style="background:#fff;">
+	                        <a data-bn-type="link" href="{:U('Trade/bborder')}" class="css-6ijtmk">
+	                            <div class="css-10j588g">
+	                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-hd27fe"><path d="M6.093 8.889c-.567 0-1.031-.438-1.031-.972 0-.535.464-.973 1.03-.973h12.846V5H6.093C4.38 5 3 6.303 3 7.917v8.166C3 17.697 4.381 19 6.093 19H21V8.889H6.093zm12.845 8.167H6.093c-.567 0-1.031-.438-1.031-.973v-5.415c.33.107.68.165 1.03.165h12.846v6.223z" fill="currentColor"></path><path d="M15.845 12.573l-1.453 1.371 1.453 1.38 1.464-1.38-1.464-1.37z" fill="currentColor"></path></svg>
+	                                <div data-bn-type="text" class="css-1n0484q">{:L('币币全部委托')}</div>
+	                           </div>
+	                        </a>
+	                        <a data-bn-type="link" href="{:U('Trade/bbhistoryorder')}" class="css-6ijtmk">
+	                            <div class="css-10j588g">
+	                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-hd27fe"><path d="M6.093 8.889c-.567 0-1.031-.438-1.031-.972 0-.535.464-.973 1.03-.973h12.846V5H6.093C4.38 5 3 6.303 3 7.917v8.166C3 17.697 4.381 19 6.093 19H21V8.889H6.093zm12.845 8.167H6.093c-.567 0-1.031-.438-1.031-.973v-5.415c.33.107.68.165 1.03.165h12.846v6.223z" fill="currentColor"></path><path d="M15.845 12.573l-1.453 1.371 1.453 1.38 1.464-1.38-1.464-1.37z" fill="currentColor"></path></svg>
+	                                <div data-bn-type="text" class="css-1n0484q">{:L('币币历史记录')}</div>
+	                           </div>
+	                        </a>
+	                        
+	                        <a data-bn-type="link" href="{:U('Contract/contract_ty')}" class="css-6ijtmk">
+	                            <div class="css-10j588g">
+	                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-hd27fe"><path d="M20 5v6.87h-2V8.42L6.42 20 5 18.58 16.58 7h-3.43V5H20z" fill="currentColor"></path><path d="M8.17 5.02c-1.72-.01-3.12 1.39-3.13 3.11-.01 1.72 1.39 3.12 3.11 3.13 1.72.01 3.12-1.39 3.13-3.11v-.02c0-1.72-1.39-3.11-3.11-3.11zm.02 4.24c-.62.01-1.12-.49-1.13-1.11v-.02c0-.61.5-1.11 1.11-1.11.62-.01 1.12.49 1.13 1.11.01.62-.49 1.12-1.11 1.13zM19.09 14.65c-.57-.56-1.34-.9-2.2-.91-1.72 0-3.11 1.39-3.11 3.11s1.39 3.11 3.11 3.11S20 18.57 20 16.85c0-.86-.35-1.64-.91-2.2zm-2.22 3.31c-.61-.01-1.1-.5-1.1-1.11 0-.61.5-1.11 1.11-1.11h.01c.61.01 1.11.51 1.1 1.12-.01.61-.51 1.11-1.12 1.1z" fill="currentColor"></path></svg>
+	                                <div data-bn-type="text" class="css-1n0484q">{:L('合约体验订单')}</div>
+	                           </div>
+	                        </a>
+
+	                        <a data-bn-type="link" href="{:U('Contract/contractjc')}" class="css-6ijtmk">
+	                            <div class="css-10j588g">
+	                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-hd27fe"><path d="M20 5v6.87h-2V8.42L6.42 20 5 18.58 16.58 7h-3.43V5H20z" fill="currentColor"></path><path d="M8.17 5.02c-1.72-.01-3.12 1.39-3.13 3.11-.01 1.72 1.39 3.12 3.11 3.13 1.72.01 3.12-1.39 3.13-3.11v-.02c0-1.72-1.39-3.11-3.11-3.11zm.02 4.24c-.62.01-1.12-.49-1.13-1.11v-.02c0-.61.5-1.11 1.11-1.11.62-.01 1.12.49 1.13 1.11.01.62-.49 1.12-1.11 1.13zM19.09 14.65c-.57-.56-1.34-.9-2.2-.91-1.72 0-3.11 1.39-3.11 3.11s1.39 3.11 3.11 3.11S20 18.57 20 16.85c0-.86-.35-1.64-.91-2.2zm-2.22 3.31c-.61-.01-1.1-.5-1.1-1.11 0-.61.5-1.11 1.11-1.11h.01c.61.01 1.11.51 1.1 1.12-.01.61-.51 1.11-1.12 1.1z" fill="currentColor"></path></svg>
+	                                <div data-bn-type="text" class="css-1n0484q">{:L('合约建仓订单')}</div>
+	                           </div>
+	                        </a>
+	                        <a data-bn-type="link" href="{:U('Contract/contractpc')}" class="css-6ijtmk">
+	                            <div class="css-10j588g">
+	                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-hd27fe"><path d="M20 5v6.87h-2V8.42L6.42 20 5 18.58 16.58 7h-3.43V5H20z" fill="currentColor"></path><path d="M8.17 5.02c-1.72-.01-3.12 1.39-3.13 3.11-.01 1.72 1.39 3.12 3.11 3.13 1.72.01 3.12-1.39 3.13-3.11v-.02c0-1.72-1.39-3.11-3.11-3.11zm.02 4.24c-.62.01-1.12-.49-1.13-1.11v-.02c0-.61.5-1.11 1.11-1.11.62-.01 1.12.49 1.13 1.11.01.62-.49 1.12-1.11 1.13zM19.09 14.65c-.57-.56-1.34-.9-2.2-.91-1.72 0-3.11 1.39-3.11 3.11s1.39 3.11 3.11 3.11S20 18.57 20 16.85c0-.86-.35-1.64-.91-2.2zm-2.22 3.31c-.61-.01-1.1-.5-1.1-1.11 0-.61.5-1.11 1.11-1.11h.01c.61.01 1.11.51 1.1 1.12-.01.61-.51 1.11-1.12 1.1z" fill="currentColor"></path></svg>
+	                                <div data-bn-type="text" class="css-1n0484q">{:L('合约平仓订单')}</div>
+	                           </div>
+	                        </a>
+	                        <a data-bn-type="link" href="{:U('Orepool/normalmin')}" class="css-6ijtmk">
+	                            <div class="css-10j588g">
+	                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="icon" class="css-hd27fe"><path d="M3.7 15.3c.1.1.1.3.2.4-.1-.1-.2-.2-.2-.4z" fill="icon"></path><path d="M20.4 11.8c0 4.8-3.9 8.8-8.8 8.8-3.1 0-6-1.7-7.6-4.4-.1-.2-.2-.3-.3-.5.1-.1 0-.2 0-.4-.2-.4-.3-.8-.4-1.2l1.9-.5.3.9c.1.2.2.4.2.5 1.1 2.2 3.4 3.6 6 3.6 3.7 0 6.8-3 6.8-6.8 0-3.7-3-6.8-6.8-6.8V3c4.8.1 8.7 4 8.7 8.8zM3 11.9c0-.8.1-1.5.3-2.3l1.9.5c-.1.6-.2 1.1-.2 1.7l-2 .1zM5.8 8.5l-1.7-1c.4-.7.8-1.3 1.4-1.8l1.4 1.4c-.4.4-.8.9-1.1 1.4zM8.3 6l-1-1.7c.7-.4 1.4-.7 2.1-.9l.5 1.9c-.5.2-1.1.4-1.6.7z" fill="icon"></path><path d="M11 17.5v-1.2c-1.3-.1-2.2-.6-2.8-1.3l1.2-1.1c.5.5 1.1.9 1.8 1v-2.3c-1.9-.4-2.7-1.2-2.7-2.5s.9-2.2 2.5-2.4V6.4h1.5v1.2c1 .1 1.8.5 2.3 1.2l-1.1 1c-.3-.3-.7-.6-1.3-.8v2.1c1.8.4 2.7 1.1 2.7 2.5 0 1.3-.8 2.3-2.5 2.6v1.2H11v.1zm.2-6.6V9c-.7.1-.9.5-.9 1s.3.8.9.9zm1.1 1.9v2c.6-.2.9-.6.9-1.1 0-.3-.1-.7-.9-.9z" fill="icon"></path></svg>
+	                                <div data-bn-type="text" class="css-1n0484q">{:L('正常矿机订单')}</div>
+	                           </div>
+	                        </a>
+	                        <a data-bn-type="link" href="{:U('Orepool/overduemin')}" class="css-6ijtmk">
+	                            <div class="css-10j588g">
+	                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="icon" class="css-hd27fe"><path d="M3.7 15.3c.1.1.1.3.2.4-.1-.1-.2-.2-.2-.4z" fill="icon"></path><path d="M20.4 11.8c0 4.8-3.9 8.8-8.8 8.8-3.1 0-6-1.7-7.6-4.4-.1-.2-.2-.3-.3-.5.1-.1 0-.2 0-.4-.2-.4-.3-.8-.4-1.2l1.9-.5.3.9c.1.2.2.4.2.5 1.1 2.2 3.4 3.6 6 3.6 3.7 0 6.8-3 6.8-6.8 0-3.7-3-6.8-6.8-6.8V3c4.8.1 8.7 4 8.7 8.8zM3 11.9c0-.8.1-1.5.3-2.3l1.9.5c-.1.6-.2 1.1-.2 1.7l-2 .1zM5.8 8.5l-1.7-1c.4-.7.8-1.3 1.4-1.8l1.4 1.4c-.4.4-.8.9-1.1 1.4zM8.3 6l-1-1.7c.7-.4 1.4-.7 2.1-.9l.5 1.9c-.5.2-1.1.4-1.6.7z" fill="icon"></path><path d="M11 17.5v-1.2c-1.3-.1-2.2-.6-2.8-1.3l1.2-1.1c.5.5 1.1.9 1.8 1v-2.3c-1.9-.4-2.7-1.2-2.7-2.5s.9-2.2 2.5-2.4V6.4h1.5v1.2c1 .1 1.8.5 2.3 1.2l-1.1 1c-.3-.3-.7-.6-1.3-.8v2.1c1.8.4 2.7 1.1 2.7 2.5 0 1.3-.8 2.3-2.5 2.6v1.2H11v.1zm.2-6.6V9c-.7.1-.9.5-.9 1s.3.8.9.9zm1.1 1.9v2c.6-.2.9-.6.9-1.1 0-.3-.1-.7-.9-.9z" fill="icon"></path></svg>
+	                                <div data-bn-type="text" class="css-1n0484q">{:L('过期矿机订单')}</div>
+	                           </div>
+	                        </a>
+	                        <a data-bn-type="link" href="{:U('Issue/normalissue')}" class="css-6ijtmk" style="background:#f5f5f5;">
+	                            <div class="css-10j588g">
+	                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-hd27fe" style="color:#00b897;"><path d="M18.731 13.827a1.741 1.741 0 011.456.518c.68.68.792 1.823.305 2.758-1.266 2.438-4.209 4.667-8.034 4.878-3.062.17-6.148-.807-9.24-2.902l1.008-1.486c2.782 1.887 5.488 2.743 8.133 2.597 3.135-.174 5.547-2.001 6.541-3.914.143-.274.114-.568.018-.664-.041-.04-.182-.026-.581.337-2.667 2.498-6.129 3.072-10.251 1.75l.547-1.71c1.279.41 2.458.612 3.545.607-2.398-1.845-5.124-1.907-8.335-.195L3 14.818c.463-.249.94-.471 1.427-.668a8.242 8.242 0 01-1.005-3.962C3.422 5.667 7.037 2 11.496 2s8.074 3.667 8.074 8.188a8.245 8.245 0 01-.839 3.639zm-12.549-.229c2.97-.666 5.668.126 8.01 2.369 2.14-1.036 3.584-3.257 3.584-5.778 0-3.538-2.817-6.395-6.28-6.395s-6.28 2.858-6.28 6.394c0 1.23.34 2.403.966 3.41z" fill="currentColor"></path><path d="M9.5 9.5l2-2 2 2-2 2-2-2z" fill="currentColor"></path></svg>
+	                                <div data-bn-type="text" class="css-1n0484q">{:L('认购冻结订单')}</div>
+	                           </div>
+	                        </a>
+	                        <a data-bn-type="link" href="{:U('Issue/overdueissue')}" class="css-6ijtmk">
+	                            <div class="css-10j588g">
+	                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-hd27fe"><path d="M18.731 13.827a1.741 1.741 0 011.456.518c.68.68.792 1.823.305 2.758-1.266 2.438-4.209 4.667-8.034 4.878-3.062.17-6.148-.807-9.24-2.902l1.008-1.486c2.782 1.887 5.488 2.743 8.133 2.597 3.135-.174 5.547-2.001 6.541-3.914.143-.274.114-.568.018-.664-.041-.04-.182-.026-.581.337-2.667 2.498-6.129 3.072-10.251 1.75l.547-1.71c1.279.41 2.458.612 3.545.607-2.398-1.845-5.124-1.907-8.335-.195L3 14.818c.463-.249.94-.471 1.427-.668a8.242 8.242 0 01-1.005-3.962C3.422 5.667 7.037 2 11.496 2s8.074 3.667 8.074 8.188a8.245 8.245 0 01-.839 3.639zm-12.549-.229c2.97-.666 5.668.126 8.01 2.369 2.14-1.036 3.584-3.257 3.584-5.778 0-3.538-2.817-6.395-6.28-6.395s-6.28 2.858-6.28 6.394c0 1.23.34 2.403.966 3.41z" fill="currentColor"></path><path d="M9.5 9.5l2-2 2 2-2 2-2-2z" fill="currentColor"></path></svg>
+	                                <div data-bn-type="text" class="css-1n0484q">{:L('认购解冻订单')}</div>
+	                           </div>
+	                        </a>
+	                   </div>
+	                   
+	                   <!--右边-->
+	                   <div class="css-1wr4jig" style="background:#fff;">
+	                       <div class="css-6ul7zn">
+	                           <div class="css-joa6mv">
+	                               <div data-bn-type="text" class="css-1868gi1">{:L('认购记录')}<span class="fcy f14">({:L('冻结中')})</span></div>
+	                           </div>
+	                           <div class="css-1h690ep">
+	                               <div class="css-jjjwcg">
+	                                   <div class="css-15owl46">
+	                                       <div class="btitle">
+	                                           <div class="btitleop" style="width:25%;">
+	                                               <span class="fch f14">{:L('项目名称')}</span>
+	                                           </div>
+	                                           <div class="btitleop" style="width:10%;">
+	                                               <span class="fch f14">{:L('币种')}</span>
+	                                           </div>
+	                                           <div class="btitleop" style="width:15%">
+	                                               <span class="fch f14">{:L('单价')}</span>
+	                                           </div>
+	                                           <div class="btitleop" style="width:10%;">
+	                                               <span class="fch f14">{:L('认购数量')}</span>
+	                                           </div>
+	                                           <div class="btitleop" style="width:15%;">
+	                                               <span class="fch f14">{:L('支付金额')}</span>
+	                                           </div>
+	                                           <div class="btitleop" style="width:10%;">
+	                                               <span class="fch f14">{:L('冻结周期')}</span>
+	                                           </div>
+	                                           <div class="btitleop" style="width:15%;">
+	                                               <span class="fch f14">{:L('认购时间')}</span>
+	                                           </div>
+	                                       </div>
+	                                       <div style="width:100%;height:400px;overflow: auto;">
+	                                           <empty name="list">
+	                                           <div style="width:100%;height:400px;line-height:400px;text-align:center;">
+	                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" class="mirror css-1lzksdc"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 8H26v80h58V28L64 8zM36 37h38v4H36v-4zm0 9h38v4H36v-4zm38 9H36v4h38v-4z" fill="url(#not-found-data-light_svg__paint0_linear)"></path><path d="M62 71l4-4 4 4-4 4-4-4z" fill="#fff"></path><path d="M86 50l3-3 3 3-3 3-3-3zM47 21l3-3 3 3-3 3-3-3zM84 28H64V8l20 20z" fill="#E6E8EA"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4.171 73.171l14.5-14.5 5.657 5.658-14.5 14.5-5.657-5.657z" fill="url(#not-found-data-light_svg__paint1_linear)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M51 48c0-8.837-7.163-16-16-16s-16 7.163-16 16 7.163 16 16 16 16-7.163 16-16zm4 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z" fill="url(#not-found-data-light_svg__paint2_linear)"></path><defs><linearGradient id="not-found-data-light_svg__paint0_linear" x1="84" y1="10.162" x2="84" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#F5F5F5"></stop><stop offset="1" stop-color="#E6E8EA"></stop></linearGradient><linearGradient id="not-found-data-light_svg__paint1_linear" x1="4.171" y1="68.75" x2="24.328" y2="68.75" gradientUnits="userSpaceOnUse"><stop stop-color="#929AA5"></stop><stop offset="1" stop-color="#76808F"></stop></linearGradient><linearGradient id="not-found-data-light_svg__paint2_linear" x1="15" y1="48" x2="55" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#929AA5"></stop><stop offset="1" stop-color="#76808F"></stop></linearGradient></defs></svg>
+	                                           </div>
+	                                           <else />
+	                                           <foreach name="list" item="vo">
+	                                           <div style="width:100%;height:60px;background:#fff;border-bottom:1px solid #f5f5f5;">
+	                                                <div class="bcontentop" style="width:25%;">
+	                                                    <span class="fch f14">{$vo.name}</span>
+	                                                </div>
+	                                                <div class="bcontentop" style="width:10%;">
+	                                                   <span class="fch f14"><?php echo strtoupper($vo['coinname']);?></span>
+	
+	                                                </div>
+	                                                <div class="bcontentop" style="width:15%">
+	                                                    <span class="fch f14">{$vo.price}<?php echo strtoupper($vo['buycoin']);?></span>
+	                                                </div>
+	                                                <div class="bcontentop" style="width:10%;">
+	                                                    <span class="fch f14">{$vo.num}</span>
+	                                                </div>
+	                                                <div class="bcontentop" style="width:15%;">
+	                                                    <span class="fch f14">{$vo.mum}</span>
+	                                                </div>
+	                                                <div class="bcontentop" style="width:10%;">
+	                                                    <span class="fch f14">{$vo.lockday}{:L('天')}</span>
+	                                                </div>
+	                                                <div class="bcontentop" style="width:15%;">
+	                                                    <span class="fch f14">{$vo.addtime}</span>
+	                                                </div>
+	                                            </div>
+	                                            </foreach>
+	                                            </empty>
+	                                           
+	                                           
+	                                       </div>
+	                                   </div>
+	                               </div>
+	                           </div>
+	                       </div>
+	                   </div>
+	               </main>
+	           </main>
+
+	            <include file="Public:footer"/>
+	        </div>   
+	    </div>
+	    
+	</body>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
+    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript">
+        function clearorder(id){
+            var oid = id;
+            $.post("{:U('Trade/clearorder')}",
+            {"oid":oid},
+            function(data){
+                if(data.code == 1){
+                    layer.msg(data.info);
+                    setTimeout(function(args){
+                        window.location.reload();
+                    },2000);
+                }else{
+                    layer.msg(data.info);return false;
+                }    
+            });
+        }
+    </script>
+ 
+    <script type="text/javascript">
+		$("#nav").slide({ 
+			type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell:".nLi", //鼠标触发对象
+			targetCell:".sub", //titCell里面包含的要显示/消失的对象
+			effect:"slideDown", //targetCell下拉效果
+			delayTime:300 , //效果时间
+			triggerTime:0, //鼠标延迟触发时间（默认150）
+			returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+
+    
+</html>

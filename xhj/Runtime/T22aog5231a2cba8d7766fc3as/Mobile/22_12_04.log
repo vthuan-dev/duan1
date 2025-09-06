@@ -1,0 +1,705 @@
+[ 2022-12-04T00:02:15+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004035s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021641s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0080s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-12-04T00:02:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_jst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008443s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019915s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0077s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:02:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_flow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006592s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.029582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037415s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0035s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-12-04T00:02:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_ltc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002702s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015348s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0035s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:02:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_eos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001893s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.014974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017443s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0042s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:02:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_itc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006735s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019692s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0034s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:02:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_bch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001718s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018960s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0089s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-12-04T00:02:17+08:00 ] 203.160.86.143 /Ajaxtrade/get_market_one
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002700s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021220s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0035s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0046s ]
+
+[ 2022-12-04T00:02:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_doge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001769s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.027908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030211s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0034s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:02:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_iota
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001712s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012468s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0043s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:02:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_fil
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013359s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0041s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2022-12-04T00:02:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001854s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020194s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0034s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:02:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_usdz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001790s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013263s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0043s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tw_market` [ RunTime:0.0080s ]
+SQL: SELECT `new_price`,`min_price`,`max_price`,`faxingjia`,`volume` FROM `tw_market` WHERE `name` = 'usdz_usdt' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: cname /www/wwwroot/104.243.34.106/Application/Mobile/Controller/AjaxtradeController.class.php 第 697 行.
+
+[ 2022-12-04T00:02:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_ht
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002484s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008612s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0032s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-12-04T00:02:28+08:00 ] 203.160.86.143 /Ajaxtrade/getcoin_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005924s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017150s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0036s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:02:52+08:00 ] 203.160.86.209 /Ajaxtrade/getcoin_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006479s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013781s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0035s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2022-12-04T00:03:15+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.013349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017894s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0112s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0108s ]
+
+[ 2022-12-04T00:03:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_doge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001895s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.028638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031114s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0047s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:03:16+08:00 ] 203.160.86.143 /Ajaxtrade/get_market_one
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022888s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0044s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-12-04T00:03:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_usdz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007951s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019614s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0034s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tw_market` [ RunTime:0.0083s ]
+SQL: SELECT `new_price`,`min_price`,`max_price`,`faxingjia`,`volume` FROM `tw_market` WHERE `name` = 'usdz_usdt' LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: cname /www/wwwroot/104.243.34.106/Application/Mobile/Controller/AjaxtradeController.class.php 第 697 行.
+
+[ 2022-12-04T00:03:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_ht
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.039352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041769s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0033s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:03:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_eos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.043184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006162s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.031406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038433s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0041s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:03:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_jst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.049519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006459s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.024624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031695s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0091s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2022-12-04T00:03:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_bch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015769s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0039s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:03:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_ltc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002415s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014526s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0088s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2022-12-04T00:03:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_iota
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001773s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013197s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0040s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2022-12-04T00:03:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007559s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017398s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0042s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2022-12-04T00:03:19+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_fil
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006244s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017444s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0088s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2022-12-04T00:03:21+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_flow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.004167s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007098s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019624s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0030s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2022-12-04T00:03:21+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_itc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024902s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037558s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0069s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-12-04T00:03:28+08:00 ] 203.160.86.143 /Ajaxtrade/getcoin_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002976s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014525s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0037s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2022-12-04T00:03:52+08:00 ] 203.160.86.209 /Ajaxtrade/getcoin_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007864s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013073s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0029s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:04:15+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006215s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019653s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0147s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0106s ]
+
+[ 2022-12-04T00:04:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_flow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002492s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.041607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.044880s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0032s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:04:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_bch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013851s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0034s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:04:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_ltc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001828s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012720s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0082s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:04:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_itc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002396s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.013284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020651s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0046s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:04:17+08:00 ] 203.160.86.143 /Ajaxtrade/get_market_one
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001863s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009859s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0042s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:04:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_eos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015630s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028472s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0046s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0049s ]
+
+[ 2022-12-04T00:04:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_doge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.044233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002459s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.022113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029226s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0048s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-12-04T00:04:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_jst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006529s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013943s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0050s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2022-12-04T00:04:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_ht
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002900s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022132s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0052s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2022-12-04T00:04:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_fil
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002853s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020214s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0050s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-12-04T00:04:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_usdz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027348s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0049s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tw_market` [ RunTime:0.0038s ]
+SQL: SELECT `new_price`,`min_price`,`max_price`,`faxingjia`,`volume` FROM `tw_market` WHERE `name` = 'usdz_usdt' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: cname /www/wwwroot/104.243.34.106/Application/Mobile/Controller/AjaxtradeController.class.php 第 697 行.
+
+[ 2022-12-04T00:04:19+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_iota
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002470s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014356s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0051s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:04:19+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001693s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015115s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0083s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2022-12-04T00:04:28+08:00 ] 203.160.86.143 /Ajaxtrade/getcoin_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014992s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032037s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0044s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2022-12-04T00:04:52+08:00 ] 203.160.86.209 /Ajaxtrade/getcoin_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001778s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017455s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0036s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2022-12-04T00:05:15+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_eth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002260s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014119s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0101s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0089s ]
+
+[ 2022-12-04T00:05:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_bch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.059266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006539s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019298s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0032s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2022-12-04T00:05:16+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_jst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027497s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041201s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0037s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:05:17+08:00 ] 203.160.86.143 /Ajaxtrade/get_market_one
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024475s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.021300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046711s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0033s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:05:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_usdz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002527s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022922s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0080s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tw_market` [ RunTime:0.0086s ]
+SQL: SELECT `new_price`,`min_price`,`max_price`,`faxingjia`,`volume` FROM `tw_market` WHERE `name` = 'usdz_usdt' LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: cname /www/wwwroot/104.243.34.106/Application/Mobile/Controller/AjaxtradeController.class.php 第 697 行.
+
+[ 2022-12-04T00:05:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_doge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001642s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014359s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0037s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2022-12-04T00:05:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_eos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006858s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019018s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0050s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2022-12-04T00:05:17+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_ltc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006577s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018701s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0036s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:05:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_iota
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001626s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019163s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0045s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2022-12-04T00:05:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_ht
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002181s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013922s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0048s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2022-12-04T00:05:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_fil
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002780s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013932s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0034s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-12-04T00:05:18+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_btc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002012s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.034904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037404s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0041s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0022s ]
+
+[ 2022-12-04T00:05:19+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_itc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006097s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016820s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0039s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2022-12-04T00:05:19+08:00 ] 203.160.86.143 /Ajaxtrade/obtain_flow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001722s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013514s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0035s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2022-12-04T00:05:28+08:00 ] 203.160.86.143 /Ajaxtrade/getcoin_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008922s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.012652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022327s ]
+SQL: SHOW COLUMNS FROM `tw_config` [ RunTime:0.0093s ]
+SQL: SELECT `webname` FROM `tw_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+

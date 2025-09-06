@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <title>{$webname}</title>
+        <style>
+            .css-ogtd7z {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                transition: all 1s ease 0s;
+                -webkit-box-pack: center;
+                justify-content: center;
+                background-color: rgb(254, 241, 242);
+            }
+            .css-jrzkh7 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                background-color: rgb(24, 26, 32);
+            }
+            .css-1aac2e {
+                box-sizing: border-box;
+                margin: 0px auto;
+                min-width: 0px;
+                padding-left: 24px;
+                padding-right: 24px;
+                max-width: 1248px;
+                background-color: rgb(254, 241, 242);
+            }
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0%;
+            }
+            .css-xry4yv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                min-height: 600px;
+                flex: 1 1 0%;
+                flex-direction: column;
+            }
+            .css-xry4yv {
+                flex-direction: row;
+            }
+            .css-foka8b {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 8%) 0px 0px 4px;
+                position: relative;
+                z-index: 1;
+                flex-direction: column;
+                width: 200px;
+                background: #ffffff;
+            }
+            .css-160vccy {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                flex: 1 1 0%;
+                background-color: rgb(250, 250, 250);
+            }
+            .css-z87e9z {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                text-decoration: none;
+                color: rgb(201, 148, 0);
+                border-left: 4px solid rgb(240, 185, 11);
+                height: 48px;
+                background-color: rgb(245, 245, 245);
+                font-weight: 500;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+            }
+            .css-10j588g {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+            .css-iizq59 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: break-word;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+                color: rgb(33, 40, 51);
+            }
+            .css-14thuu2 {
+                box-sizing: border-box;
+                margin: 0px 8px;
+                min-width: 0px;
+                color: rgb(240, 185, 11);
+                font-size: 24px;
+                fill: rgb(240, 185, 11);
+                width: 1em;
+                flex-shrink: 0;
+            }
+            .css-6ijtmk {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                text-decoration: none;
+                color: rgb(201, 148, 0);
+                border-left: 4px solid transparent;
+                height: 48px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                background:#fff;
+            }
+            .css-hd27fe {
+                box-sizing: border-box;
+                margin: 0px 8px;
+                min-width: 0px;
+                color: rgb(132, 142, 156);
+                font-size: 24px;
+                fill: rgb(132, 142, 156);
+                width: 1em;
+                flex-shrink: 0;
+            }
+            .css-1n0484q {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: break-word;
+                display: flex;
+                flex: 1 1 0%;
+                height: 100%;
+                -webkit-box-align: center;
+                align-items: center;
+                color: rgb(33, 40, 51);
+            }
+            .css-1wr4jig {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0%;
+                background:#fff;
+            }
+            .css-1u0m1fa {
+                margin: 0px;
+                min-width: 0px;
+                box-sizing: border-box;
+                padding-left: 24px;
+                padding-right: 24px;
+                display: block;
+                
+            }
+            .css-fhl5lc {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                height: 48px;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+            .css-1cdfkn6 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                text-decoration: none;
+                color: rgb(112, 122, 138);
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 400;
+                transition: color 0.2s ease 0s;
+                pointer-events: auto;
+            }
+            .css-1bbywci {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                flex: 1 1 0%;
+                flex-direction: column;
+                width: 100%;
+                padding: 32px;
+            }
+            .css-1pl31wt {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                overflow: unset;
+                margin-top: -15px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .css-k2y2sp {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center;
+                flex-direction: row;
+            }
+            .css-1868gi1 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .css-x5jwjg {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                align-items: flex-end;
+                margin-top: 0px;
+            }
+            .css-3kuzxc {
+                margin: 0px;
+                appearance: none;
+                user-select: none;
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                box-sizing: border-box;
+                font-family: inherit;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                font-weight: 500;
+                line-height: 20px;
+                word-break: keep-all;
+                color: rgb(33, 40, 51);
+                border-radius: 6px;
+                padding: 6px 16px;
+                min-height: 24px;
+                border: none;
+                background-image: none;
+                background-color: rgb(252, 213, 53);
+                min-width: 52px;
+                height: 40px;
+                font-size: 14px;
+            }
+            .css-1cdfkn6:hover,.css-1cdfkn6:active,.css-1cdfkn6:visited{
+                color: rgb(252, 213, 53);
+                text-decoration: none;
+            }
+            .css-z32tht {
+                box-sizing: border-box;
+                margin: 24px 0px;
+                min-width: 0px;
+            }
+            
+            .css-joa6mv {
+                box-sizing: border-box;
+                margin: 0px 0px 24px;
+                min-width: 0px;
+            }
+            .css-1op9i22 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: relative;
+            }
+            .rc-table {
+                font-size: 12px;
+                color: rgb(102, 102, 102);
+                transition: opacity 0.3s ease 0s;
+                position: relative;
+                line-height: 1.5;
+                overflow: hidden;
+            }
+            .css-xdf65a {
+                color: rgb(30, 35, 41);
+            }
+            .css-1op9i22 .rc-table-content {
+                min-height: 200px;
+                overflow-x: auto !important;
+            }
+            .rc-table .rc-table-content {
+                position: relative;
+            }
+            .rc-table table {
+                width: 100%;
+                border-collapse: collapse;
+                text-align: left;
+            }
+            table {
+                display: table;
+                border-collapse: separate;
+                box-sizing: border-box;
+                text-indent: initial;
+                border-spacing: 2px;
+                border-color: grey;
+            }
+            thead {
+                display: table-header-group;
+                vertical-align: middle;
+                border-color: inherit;
+            }
+            .css-1op9i22 .rc-table tr th:first-of-type {
+                width: 30px;
+                padding-left: 24px;
+            }
+            .css-1op9i22 .rc-table th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+            .css-1op9i22 .rc-table th, .css-1op9i22 .rc-table td {
+                padding: 24px 8px;
+                transition: box-shadow 0.3s ease 0s;
+            }
+            .css-xdf65a td, .css-xdf65a th {
+                vertical-align: top;
+                line-height: 20px;
+            }
+            .rc-table th, .rc-table td {
+                padding: 12px 16px;
+                white-space: nowrap;
+            }
+            .rc-table th {
+                background: rgb(249, 249, 250);
+                color: rgb(132, 142, 156);
+                font-size: 12px;
+                font-weight: normal;
+                transition: background 0.3s ease 0s;
+            }
+            th {
+                display: table-cell;
+                vertical-align: inherit;
+                font-weight: bold;
+                text-align: -internal-center;
+            }
+            tbody {
+                display: table-row-group;
+                vertical-align: middle;
+                border-color: inherit;
+            }
+            .rc-table tr {
+                transition: all 0.3s ease 0s;
+            }
+            tr {
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+            }
+            .css-1op9i22 .rc-table tr td:first-of-type {
+                padding-left: 24px;
+                position: relative;
+            }
+            .css-1op9i22 .rc-table th, .css-1op9i22 .rc-table td {
+                padding: 24px 8px;
+                transition: box-shadow 0.3s ease 0s;
+            }
+            .css-1op9i22 .rc-table-row td {
+                vertical-align: middle;
+            }
+            .css-xdf65a td, .css-xdf65a th {
+                vertical-align: top;
+                line-height: 20px;
+            }
+            .rc-table th, .rc-table td {
+                padding: 12px 16px;
+                white-space: nowrap;
+            }
+            .rc-table td {
+                border-bottom: 1px solid rgb(234, 236, 239);
+                background-color: rgb(255, 255, 255);
+                color: rgb(33, 40, 51);
+                font-size: 14px;
+            }
+            td {
+                display: table-cell;
+                vertical-align: inherit;
+            }
+            .css-15oyuc7 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: relative;
+                color: rgb(71, 77, 87);
+                padding-bottom: 0px;
+            }
+            .css-15oyuc7 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: relative;
+                color: rgb(71, 77, 87);
+                padding-bottom: 0px;
+            }
+            .css-16sm7a0 {
+                box-sizing: border-box;
+                margin: 0px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                min-width: 80px;
+            }
+            .css-1c82c04 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .css-1f9551p {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: inline-block;
+                position: relative;
+            }
+            
+            .css-vp41bv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                position: fixed;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                z-index: 1200;
+                inset: 0px;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .css-1bzqcjp {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: relative;
+                background-color: rgb(255, 255, 255);
+                animation: 0.3s ease-in-out 0s 1 normal none running animation-1wqz9z0;
+                box-shadow: rgb(0 0 0 / 10%) 0px 10px 40px;
+                border-radius: 4px;
+            }
+            .css-7m7e43 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                width: 480px;
+                height: auto;
+            }
+            .css-13r01t2 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                position: relative;
+                padding: 20px 24px;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+            .css-ip5w0j {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: rgb(30, 35, 41);
+            }
+            .css-17mum7g {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                cursor: pointer;
+            }
+            .css-f1b9tf {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                color: rgb(112, 122, 138);
+                font-size: 12px;
+                fill: rgb(112, 122, 138);
+                width: 1em;
+            }
+            .css-m0vwdv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                overflow-y: auto;
+                padding: 24px 24px 32px;
+                height: 484px;
+            }
+            .css-3tfm4c {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                height: 24px;
+            }
+            .css-16vu25q {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                width: 100%;
+            }
+            .css-7ng27 {
+                box-sizing: border-box;
+                margin: 0px 0px 4px;
+                min-width: 0px;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgb(71, 77, 87);
+            }
+            .css-1im1bnu {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                width: 100%;
+                height: 48px;
+                background-color: rgb(255, 255, 255);
+                padding-left: 12px;
+                padding-right: 12px;
+                border-radius: 4px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(234, 236, 239);
+                cursor: auto;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+            .css-1hvffwr {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-size: 14px;
+                color: rgb(183, 189, 198);
+                line-height: 20px;
+            }
+            .css-1nlwvj5 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-size: 16px;
+                fill: currentcolor;
+                transform: rotate(
+            0deg
+            );
+                color: rgb(112, 122, 138);
+                width: 1em;
+                height: 1em;
+            }
+            .css-3tfm4c {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                height: 24px;
+            }
+            .css-vurnku {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+            }
+            .css-154a57d {
+                box-sizing: border-box;
+                margin: 24px 0px 0px;
+                min-width: 0px;
+                display: inline-flex;
+                position: relative;
+                -webkit-box-align: center;
+                align-items: center;
+                line-height: 1.6;
+                border: 1px solid rgb(234, 236, 239);
+                border-radius: 4px;
+                width: 100%;
+                height: 48px;
+            }
+            .css-16fg16t {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                width: 100%;
+                height: 100%;
+                padding: 0px;
+                outline: none;
+                border: none;
+                background-color: inherit;
+                opacity: 1;
+            }
+            .css-154a57d input {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            .css-154a57d input {
+                color: rgb(30, 35, 41);
+                font-size: 14px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            .css-154a57d .bn-input-label {
+                font-size: 12px;
+            }
+            .css-5vzups {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: absolute;
+                top: -24px;
+                left: 0px;
+                line-height: 24px;
+                transition-property: top, font-size;
+                transition-duration: 0.3s;
+                transition-timing-function: ease;
+                z-index: 1;
+                cursor: text;
+                color: rgb(71, 77, 87);
+                font-size: 14px;
+            }
+            .css-kiaw5d {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .css-1q9xby6 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                padding: 16px 24px 24px;
+            }
+            .css-7y16gy {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                -webkit-box-pack: end;
+                justify-content: flex-end;
+            }
+            .css-1mo0ycr {
+                margin: 0px 8px 0px 0px;
+                appearance: none;
+                user-select: none;
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                box-sizing: border-box;
+                font-family: inherit;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: keep-all;
+                color: rgb(30, 35, 41);
+                border-radius: 4px;
+                padding: 6px 12px;
+                min-height: 24px;
+                border: none;
+                background-color: rgb(234, 236, 239);
+                min-width: 52px;
+                width: 128px;
+                height: 40px;
+            }
+            .css-p3hzj2 {
+                margin: 0px;
+                appearance: none;
+                user-select: none;
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                box-sizing: border-box;
+                font-family: inherit;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                word-break: keep-all;
+                color: rgb(33, 40, 51);
+                border-radius: 6px;
+                padding: 6px 12px;
+                min-height: 24px;
+                border: none;
+                background-image: none;
+                background-color: rgb(252, 213, 53);
+                min-width: 52px;
+                width: 128px;
+                height: 40px;
+            }
+            .css-1im1bnu:hover {
+                border-color: rgb(240, 185, 11);
+            }
+            .css-154a57d:hover {
+                border-color: rgb(240, 185, 11);
+            }
+            .css-vp41bv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                position: fixed;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                z-index: 1200;
+                inset: 0px;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .css-snh7a0 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                position: relative;
+                box-shadow: rgb(20 21 26 / 16%) 0px 8px 16px, rgb(71 77 87 / 16%) 0px 16px 32px, rgb(20 21 26 / 10%) 0px 0px 1px;
+                border-radius: 6px;
+                background-color: rgb(255, 255, 255);
+                animation: 0.3s ease-in-out 0s 1 normal none running animation-1wqz9z0;
+            }
+            .css-hp9x1w {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                background-color: rgb(255, 255, 255);
+                position: relative;
+                flex-direction: column;
+                border-radius: 6px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .css-hp9x1w > div:first-of-type {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            .css-1dcbbbv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                position: relative;
+                height: 64px;
+                -webkit-box-align: center;
+                align-items: center;
+                width: 100%;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                background: #f5f5f5;
+            }
+            .css-4cffwv {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+            }
+            .css-e6jk6i {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+            }
+            .css-1ds83c4 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+            }
+            .css-10uq0b5 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                color: rgb(112, 122, 138);
+                font-size: 24px;
+                fill: rgb(112, 122, 138);
+                width: 1em;
+            }
+            .css-1gh297f {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+            }
+            .css-1ei9e9v {
+                box-sizing: border-box;
+                margin: 8px 0px 0px;
+                min-width: 0px;
+                flex: 1 1 0%;
+                overflow-y: auto;
+            }
+            .css-i96p0j {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                height: 352px;
+            }
+            .css-1qwhk23 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            .css-hwqc42 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                cursor: pointer;
+            }
+            .css-1c0gi8w {
+                box-sizing: border-box;
+                margin: 0px 4px 0px 0px;
+                min-width: 0px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                width: 200px;
+                flex-shrink: 0;
+            }
+            .css-n2vpdm {
+                box-sizing: border-box;
+                margin: 0px 0px 0px 16px;
+                min-width: 0px;
+                display: flex;
+                flex: 1 1 0%;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .css-1c82c04 {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .css-yo3oki {
+                box-sizing: border-box;
+                margin: 0px;
+                min-width: 0px;
+                color: rgb(71, 77, 87);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        </style>
+	</head>
+	<body>
+	    <div class="App">
+	        <div class="css-tq0shg">
+	            <include file="Public:header"/>
+	            
+	            <div class="css-ogtd7z">
+	                <div class="css-jrzkh7">
+	                    <div id="header_global_js_wxgy34nj" class="css-1aac2e"></div>
+	                </div>
+	           </div>
+	           
+	           <main class="css-1wr4jig">
+	               <main class="css-xry4yv">
+	                   <!--左边-->
+	                   <div class="css-foka8b">
+	                       <a data-bn-type="link" href="{:U('User/index')}" class="css-6ijtmk" style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-person-fill css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-iizq59">{:L('总览')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/addresslist')}" class="css-z87e9z"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-journal-text css-14thuu2"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('地址管理')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/authrz')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-shield-check css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('实名认证')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/respwd')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-gear css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('修改密码')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/tgcode')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-person-plus css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('推荐返佣')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/notice')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-bell css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('我的通知')}</div>
+	                           </div>
+	                       </a>
+	                        <a data-bn-type="link" href="{:U('User/online')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-headset css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('联系客服')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       <a data-bn-type="link" href="{:U('User/mybill')}" class="css-6ijtmk"  style="text-decoration: none;">
+	                           <div class="css-10j588g">
+	                               <i class="bi bi-card-list css-hd27fe"></i>
+	                               <div data-bn-type="text" class="css-1n0484q">{:L('我的账单')}</div>
+	                           </div>
+	                       </a>
+	                       
+	                       
+	                   </div>
+	                   
+	                   <!--右边-->
+	                    <div class="css-1wr4jig">
+	                        <div class="css-1u0m1fa">
+                                <div class="css-fhl5lc">
+                                    <a class="css-1cdfkn6" href="##">{:L('提币地址管理')}</a>
+                                </div>
+                            </div>
+                            
+                            <div class="css-1bbywci">
+                                <div class="css-1pl31wt">
+                                    <div class="css-k2y2sp">
+                                        <div data-bn-type="text" class="css-1868gi1">{:L('地址管理')}</div>
+                                        <div class="css-x5jwjg">
+                                            <button data-bn-type="button" id="addbtn" class="css-3kuzxc">{:L('添加地址')}</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="css-z32tht">
+                                    <div class="css-joa6mv"></div>
+                                    <div class="css-1op9i22">
+                                        <div class="rc-table css-xdf65a rc-table-scroll-horizontal">
+                                            <div class="rc-table-container">
+                                                <div class="rc-table-content" style="overflow: auto hidden;">
+                                                    <table style="width: 970px; min-width: 100%; table-layout: auto;">
+                                                        <thead class="rc-table-thead">
+                                                            <tr>
+                                                                <th class="rc-table-cell">{:L('地址备注')}</th>
+                                                                <th class="rc-table-cell">{:L('币种')}</th>
+                                                                <th class="rc-table-cell">{:L('地址')}</th>
+                                                                <th class="rc-table-cell">{:L('转账网络')}</th>
+                                                                <th class="rc-table-cell">{:L('操作')}</th></th>
+                                                            </tr>
+                                                            
+                                                        </thead>
+                                                        <tbody class="rc-table-tbody">
+                                                            <foreach name="qblist" item="qvo">
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell">
+                                                                    <div class="css-15oyuc7">
+                                                                        <div data-bn-type="text" class="css-1c82c04">
+                                                                            <div data-bn-type="text" class="css-1c82c04">{$qvo.remark}</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="rc-table-cell">
+                                                                    <div class="css-15oyuc7">
+                                                                        <div class="css-16sm7a0">
+                                                                            <div data-bn-type="text" class="css-1c82c04"><?php echo strtoupper($qvo['name']);?></div>        
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="rc-table-cell">
+                                                                    <div class="css-15oyuc7">
+                                                                        <div class="css-1f9551p">
+                                                                            <div data-bn-type="text" class="css-1c82c04">{$qvo.addr}</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="rc-table-cell">
+                                                                    <div class="css-15oyuc7">
+                                                                        <div data-bn-type="text" class="css-1c82c04">{$qvo.czline}</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="rc-table-cell">
+                                                                    <div class="css-15oyuc7">
+                                                                        <div onclick="deladdress({$qvo.id});" data-bn-type="text" class="css-1c82c04" style="color:rgb(252, 213, 53);cursor:pointer;">{:L('删除')}</div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </foreach>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+	                    </div>
+                        
+                        
+                        
+	               </main>
+	           </main>
+
+	            <include file="Public:footer"/>
+	        </div>   
+	    </div>
+	    
+	</body>
+    
+    <!--添加地址弹窗-->
+	<div class="css-vp41bv" id="adddzbox" style="display:none">
+	    <div class="css-1bzqcjp">
+	        <div class="css-7m7e43">
+	            <div class="css-13r01t2">
+	                <div data-bn-type="text" class="css-ip5w0j">{:L('添加提现地址')}</div>
+	                <div class="css-17mum7g clockdzbox">
+	                    <i class="bi bi-x css-f1b9tf" style="font-size:24px;"></i>
+	                </div>
+	            </div>
+	            <div class="css-m0vwdv">
+	                <div class="css-vurnku">
+	                    <div class="css-154a57d">
+	                        <input data-bn-type="input" id="remark" placeholder="{:L('请输入字符的备注')}" class="css-16fg16t" value="">
+	                        <label class="bn-input-label css-5vzups">
+	                            <div data-bn-type="text" class="css-kiaw5d">{:L('地址备注')}</div>
+	                        </label>
+	                    </div>
+	                </div>
+	                <div class="css-3tfm4c"></div>
+	                <div class="css-16vu25q" id="showcoinbtn">
+	                    <div data-bn-type="text" class="css-7ng27">{:L('币种')}</div>
+	                    <div class="css-1im1bnu">
+	                        <div data-bn-type="text" id="cointxt" class="css-1hvffwr">{:L('选择币种')}</div>
+	                        <input type="hidden" id="coinid" value="" />
+	                        <input type="hidden" id="coinname" value="" />
+	                        <input type="hidden" id="czline" value="" />
+	                        <i class="bi bi-caret-down-fill css-f1b9tf"></i>
+	                    </div>
+	                </div>
+	                <div class="css-3tfm4c"></div>
+	                <div class="css-16vu25q">
+	                    <div data-bn-type="text" class="css-7ng27">{:L('网络')}</div>
+	                    <div class="css-1im1bnu">
+	                        <div data-bn-type="text" id="czlinebox" class="css-1hvffwr">{:L('固定网络')}</div>
+	                    </div>
+	                </div>
+	                <div class="css-3tfm4c"></div>
+	                <div class="css-vurnku">
+	                    <div class=" css-154a57d">
+	                        <input data-bn-type="input" id="address" placeholder="{:L('请输入提币地址')}" class="css-16fg16t" value="">
+	                        <label class="bn-input-label css-5vzups">
+	                            <div data-bn-type="text" class="css-kiaw5d">{:L('提币地址')}</div>
+	                        </label>
+	                    </div>
+	                </div>
+	                <input type="hidden" id="falg" value="1" />
+	           </div>
+	            <div class="css-1q9xby6">
+	               <div class="css-7y16gy">
+	                   <button data-bn-type="button" class=" css-1mo0ycr clockdzbox">{:L('取消')}</button>
+	                   <button data-bn-type="button" id="btnaddress" class=" css-p3hzj2">{:L('保存')}</button>
+	               </div>
+    	        </div>
+	        </div>
+	    </div>
+    </div>
+	
+	<!--选择币种弹窗-->
+	<div class="css-vp41bv" id="coinnamebox" style="display:none">
+	    <div class="css-snh7a0">
+	        <div class="css-hp9x1w">
+	            <div class="css-1dcbbbv">
+	                <div class="modaltitle css-4cffwv">
+	                    <div data-bn-type="text" class="css-e6jk6i">
+	                        <div data-bn-type="text" class="css-1ds83c4">{:L('选择币种')}</div>
+	                    </div>
+	                </div>
+	                <i class="bi bi-x css-10uq0b5" style="font-size:24px;cursor:pointer;" id="closecoinbtn"></i>
+	           </div>
+	           <div calss="css-1gh297f">
+	               <div class="css-1ei9e9v">
+	                   <div class="css-i96p0j">
+	                       <foreach name="coinlist" item="vo">
+	                       <div class="css-1qwhk23" onclick="choosecoin('{$vo.name}','{$vo.czline}',{$vo.id})" style="cursor:pointer;border-bottom: 1px solid #f5f5f5;">
+	                           <div class="css-hwqc42">
+	                               <div class="css-1c0gi8w">
+	                                   <div class="css-n2vpdm">
+	                                       <div class="css-vurnku">
+	                                           <span data-bn-type="text" class="css-1c82c04">{$vo.title}</span>
+	                                       </div>
+	                                       <div data-bn-type="text" title="1inch" class="css-yo3oki">{$vo.name}</div>
+	                                   </div>
+	                               </div>
+	                            </div>
+	                       </div>
+	                       </foreach>
+	                   </div>
+	               </div>
+	           </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
+    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript">
+        $("#btnaddress").click(function(){
+            var falg = $("#falg").val();
+            if(falg != 1){
+                return false
+            }
+            var address = $("#address").val();
+            var remark = $("#remark").val();
+            var oid = $("#coinid").val();
+            var czline = $("#czline").val();
+            if(address == ""){
+                layer.msg("请输入提币地址");return false;
+            }
+            if(remark == ''){
+                layer.msg("请输入备注");return false;
+            }
+            if(oid <= 0){
+                layer.msg("参数错误");return false;
+            }
+            $("#falg").val(2);
+            $.post("{:U('User/upplusaddress')}",
+            {'address':address,'remark':remark,'oid':oid,'czline':czline},
+            function(data){
+                if(data.code == 1){
+                    layer.msg(data.msg);
+                    setTimeout(function(){
+                        window.location.reload();
+                    },2000);
+                    
+                }else{
+                    layer.msg(data.msg);return false;
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function deladdress(id){
+            var id = id;
+            if(id <= 0){
+                layer.msg("{:L('缺少重要参数')}");return false;
+            }
+            $.post("{:U('User/deladdress')}",
+            {'aid':id},
+            function(data){
+                if(data.code == 1){
+                    layer.msg(data.info);
+                    setTimeout(function(){
+                        window.location.reload();
+                    },2000);
+                }else{
+                    layer.msg(data.info);return false;
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript">
+    
+        function choosecoin(coin,czline,id){
+            var coinname = coin;
+            var czline = czline;
+            var cid = id;
+            if(coinname == '' || coinname == null){
+                layer.msg("{:L('选择币种')}");return false;
+            }
+            $("#coinname").val(coinname);
+            $("#cointxt").html(coinname);
+            $("#czlinebox").html(czline);
+            $("#czline").val(czline);
+            $("#coinid").val(cid);
+            $("#coinnamebox").fadeOut("slow");
+        }
+        $("#addbtn").click(function(){
+            $("#adddzbox").show();
+        });
+        $(".clockdzbox").click(function(){
+            $("#adddzbox").hide();
+        });
+        $("#showcoinbtn").click(function(){
+            $("#coinnamebox").show();
+        });
+        $("#closecoinbtn").click(function(){
+            $("#coinnamebox").hide();
+        });
+        
+    </script>
+ 
+    <script type="text/javascript">
+		$("#nav").slide({ 
+			type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell:".nLi", //鼠标触发对象
+			targetCell:".sub", //titCell里面包含的要显示/消失的对象
+			effect:"slideDown", //targetCell下拉效果
+			delayTime:300 , //效果时间
+			triggerTime:0, //鼠标延迟触发时间（默认150）
+			returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+
+    
+</html>
