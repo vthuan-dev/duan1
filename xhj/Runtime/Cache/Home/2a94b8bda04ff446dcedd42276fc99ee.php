@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <link rel="stylesheet" type="text/css" href="/jiaoyi-project/xhj/Public/Home/static/css/base.css" />
+	    <link rel="stylesheet" type="text/css" href="/jiaoyi-project/xhj/Public/Home/static/css/trading-fixes.css" />
 	    <title><?php echo ($webname); ?></title>
 	    <style>
             .css-1wr4jig {
@@ -324,8 +325,8 @@
 
 
 		</style>
-		<link rel="stylesheet" href="/Public/Static/bootstrap5Slide/bootstrap.min.css">
-		<link rel="stylesheet" href="/Public/Static/bootstrap5Slide/style.css">
+		<link rel="stylesheet" href="/jiaoyi-project/xhj/Public/Static/bootstrap5Slide/bootstrap.min.css">
+		<link rel="stylesheet" href="/jiaoyi-project/xhj/Public/Static/bootstrap5Slide/style.css">
 
 
 	</head>
@@ -334,7 +335,7 @@
 	        <div class="css-tq0shg">
 	            <header class="css-jmskxt">
 	 <a href="<?php echo U('Index/index');?>" clss="css-1mvf8us">
-	     <img src="/Upload/public/<?php echo get_config('waplogo');?>" class="css-1jgk2rg" style="height:50px;width:50px;border-radius:5px;margin-left: 30px;" />
+	     <img src="/jiaoyi-project/xhj/Upload/public/<?php echo get_config('waplogo');?>" class="css-1jgk2rg" style="height:50px;width:50px;border-radius:5px;margin-left: 30px;" />
 	 </a>
 	<div class="css-1tp5kus header-title">
 		<div class="css-vurnku  f22 fw header-title"><?php echo L('PNSCX');?></div>
@@ -390,7 +391,7 @@
 					<a href="<?php echo U('Contract/index');?>">
 						<div class="optionli">
 							<svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><path d="M4 44H44" stroke="#076338" stroke-width="3" stroke-linecap="butt" stroke-linejoin="bevel"/><path d="M4 26L12 28V38H4V26Z" fill="#00b897" stroke="#076338" stroke-width="3" stroke-linejoin="bevel"/><path d="M20 24L28 20V38H20V24Z" fill="#00b897" stroke="#076338" stroke-width="3" stroke-linejoin="bevel"/><path d="M36 16L44 12V38H36V16Z" fill="#00b897" stroke="#076338" stroke-width="3" stroke-linejoin="bevel"/><path d="M4 18L12 20L44 4H34" stroke="#076338" stroke-width="3" stroke-linecap="butt" stroke-linejoin="bevel"/></svg>
-							<span class="f18" style="color:#EAECEF;"><?php echo L('秒合约');?><img src="/Public/Home/static/imgs/hot-2.svg" class="hot-2"></span>
+							<span class="f18" style="color:#EAECEF;"><?php echo L('秒合约');?><img src="/jiaoyi-project/xhj/Public/Home/static/imgs/hot-2.svg" class="hot-2"></span>
 						</div>
 					</a>
 				</li>
@@ -717,7 +718,7 @@
 									</div>
 
 									<div class="css-1xamyaw  css-xamyaw-r">
-<!--										<img src="/Public/Home/static/imgs/home_head_bg.png" class="regbtnimg" />-->
+<!--										<img src="/jiaoyi-project/xhj/Public/Home/static/imgs/home_head_bg.png" class="regbtnimg" />-->
 									</div>
 								</div>
 							</div>
@@ -758,7 +759,7 @@
 														<div class="col-md-3">
 															<div class="card">
 																<div class="card-img">
-																	<img src="/Upload/public/<?php echo get_config('wapsildea');?>" class="img-fluid">
+																	<img src="/jiaoyi-project/xhj/Upload/public/<?php echo get_config('wapsildea');?>" class="img-fluid">
 																</div>
 <!--																<div class="card-img-overlay">Slide 1</div>-->
 															</div>
@@ -768,7 +769,7 @@
 														<div class="col-md-3">
 															<div class="card">
 																<div class="card-img">
-																	<img src="/Upload/public/<?php echo get_config('wapsildeb');?>" class="img-fluid">
+																	<img src="/jiaoyi-project/xhj/Upload/public/<?php echo get_config('wapsildeb');?>" class="img-fluid">
 																</div>
 <!--																<div class="card-img-overlay">Slide 2</div>-->
 															</div>
@@ -778,7 +779,7 @@
 														<div class="col-md-3">
 															<div class="card">
 																<div class="card-img">
-																	<img src="/Upload/public/<?php echo get_config('wapsildec');?>" class="img-fluid">
+																	<img src="/jiaoyi-project/xhj/Upload/public/<?php echo get_config('wapsildec');?>" class="img-fluid">
 																</div>
 <!--																<div class="card-img-overlay">Slide 3</div>-->
 															</div>
@@ -788,7 +789,7 @@
 														<div class="col-md-3">
 															<div class="card">
 																<div class="card-img">
-																	<img src="/Upload/public/<?php echo get_config('wapsilded');?>" class="img-fluid">
+																	<img src="/jiaoyi-project/xhj/Upload/public/<?php echo get_config('wapsilded');?>" class="img-fluid">
 																</div>
 <!--																<div class="card-img-overlay">Slide 4</div>-->
 															</div>
@@ -834,7 +835,7 @@
 	                	<div class="css-194m5n4" style="padding-top:30px;">
 	                    <div class="css-1hc8c4h">
 
-	                        <div class="css-dlistbox" >
+	                        <div class="css-dlistbox trading-table" >
 	                            <div class="css-dlbbox">
 	                                <div class="listtitle tcc fl col-2">
 	                                    <span class="f12 fch"><?php echo L('名称');?></span>
@@ -849,21 +850,21 @@
 	                                    <span class="f12 fch"><?php echo L('最高');?>/<?php echo L('最低');?></span>
 	                                </div>
 	                                <div class="listtitle tcc fl col-2">
-	                                    <span class="f12 fch">24H<?php echo L('量');?></span>
+	                                    <span class="f12 fch trading-volume">24H<?php echo L('量');?></span>
 	                                </div>
 	                                <div class="listtitle tcc fl col-2">
 	                                    <span class="f12 fch"><?php echo L('操作');?></span>
 	                                </div>
 	                            </div>
 	                            
-	                            <?php if(is_array($market)): foreach($market as $key=>$vo): ?><div class="css-dlbbox2 market-div" >
-	                                <div class="listtitle2 tcl fl col-2" >
-										<img src="<?php echo ($vo["logo"]); ?>" class="cion_logo">
+	                            <?php if(is_array($market)): foreach($market as $key=>$vo): ?><div class="css-dlbbox2 market-div market-row" >
+	                                <div class="listtitle2 tcl fl col-2 trading-pair-name" >
+										<img src="/jiaoyi-project/xhj/<?php echo ($vo["logo"]); ?>" class="cion_logo">
 	                                    <span class="f14 fch fw cn_<?php echo ($vo["coinname"]); ?>"><?php echo strtoupper($vo['coinname']);?>/USDT</span>
 	                                </div>
 
 	                                <div class="listtitle2 tcc fl col-2" >
-	                                    <span class="f14 fch cpr_<?php echo ($vo["coinname"]); ?>">--:--</span>
+	                                    <span class="f14 fch cpr_<?php echo ($vo["coinname"]); ?> price-display">--:--</span>
 	                                </div>
 
 	                                <div class="listtitle2 tcc fl col-2 cch_<?php echo ($vo["coinname"]); ?>" >
@@ -874,11 +875,11 @@
 	                                    <span class="f14 fch fw hl_<?php echo ($vo["coinname"]); ?>">--.--/--.--</span>
 	                                </div>
 	                                <div class="listtitle2 tcc fl col-2" >
-	                                    <span class="f14 fch fw vol_<?php echo ($vo["coinname"]); ?>">--.--</span>
+	                                    <span class="f14 fch fw vol_<?php echo ($vo["coinname"]); ?> trading-volume">--.--</span>
 	                                </div>
 	                                <div class="listtitle2 tcc fl col-2" >
 										<div class="tcc option-box">
-	                                    <a href="<?php echo U('Trade/index');?>?type=buy&symbol=<?php echo strtoupper($vo['coinname']);?>" href="" class="f14 " style="color: #fff;text-decoration:none"><?php echo L('交易');?></a>
+	                                    <a href="<?php echo U('Trade/index');?>?type=buy&symbol=<?php echo strtoupper($vo['coinname']);?>" href="" class="f14 trade-button" style="color: #fff;text-decoration:none"><?php echo L('交易');?></a>
 										</div>
 	                                </div>
 	                            </div><?php endforeach; endif; ?>
@@ -971,19 +972,19 @@
 								<div class="css-dlistbox-top-desc css-dlistbox-sub-desc" >
 										<div class="css-dlistbox-desc-box col-4">
 											<div class="home_infoWrapper__G_KFW">
-												<img src="/Public/Home/static/imgs/icon_margin.svg" class="home_margin__qse_K" alt="">
+												<img src="/jiaoyi-project/xhj/Public/Home/static/imgs/icon_margin.svg" class="home_margin__qse_K" alt="">
 												<p>Maximize profit with leverage</p>
 											</div>
 										</div>
 										<div class="css-dlistbox-desc-box col-4">
 											<div class="home_infoWrapper__G_KFW">
-												<img src="/Public/Home/static/imgs/icon_contract.svg" class="home_margin__qse_K" alt="">
+												<img src="/jiaoyi-project/xhj/Public/Home/static/imgs/icon_contract.svg" class="home_margin__qse_K" alt="">
 												<p>Up to 125x leverage with superior spreads</p>
 											</div>
 										</div>
 										<div class="css-dlistbox-desc-box col-4">
 											<div class="home_infoWrapper__G_KFW">
-												<img src="/Public/Home/static/imgs/icon_etf.svg" class="home_margin__qse_K" alt="">
+												<img src="/jiaoyi-project/xhj/Public/Home/static/imgs/icon_etf.svg" class="home_margin__qse_K" alt="">
 												<p>Increased leverage, no liquidation risk</p>
 											</div>
 										</div>
@@ -1006,7 +1007,7 @@
 									</div>
 								</div>
 								<div class="home_mainMedia__fc9Ke">
-									<img src="/Public/Home/static/imgs/tg.webp" width="38" style="margin-right: 5px;" />
+									<img src="/jiaoyi-project/xhj/Public/Home/static/imgs/tg.webp" width="38" style="margin-right: 5px;" />
 									<span>Telegram</span>
 								</div>
 
@@ -1082,7 +1083,7 @@
 </div>
 
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-<script src="/Public/Home/static/js/layer/layer.js"></script>
+<script src="/jiaoyi-project/xhj/Public/Home/static/js/layer/layer.js"></script>
 <script>
 
     let text_obj = {
@@ -1185,8 +1186,8 @@
             "<p>11.2.3 After the termination of this agreement, the user has no right to require the IDCIex Global platform to continue to provide it with any services or perform any other obligations, including but not limited to requiring the IDCIex Global platform to retain or disclose its original IDCIex Global platform to the user Any information in the account, forward any information that has not been read or sent to the user or a third party.</p>\n" +
             "<p>11.2.4 The termination of this agreement does not affect the observant party to the breaching party to pursue liability for breach of contract.</p>\n" +
             "<p>&nbsp;</p></div>",
-        "msb" : '<img src="/Public/Home/static/imgs/1.jpeg" style="width: 45%">\n' +
-            '            <img src="/Public/Home/static/imgs/2.jpeg" style="width: 45%">',
+        "msb" : '<img src="/jiaoyi-project/xhj/Public/Home/static/imgs/1.jpeg" style="width: 45%">\n' +
+            '            <img src="/jiaoyi-project/xhj/Public/Home/static/imgs/2.jpeg" style="width: 45%">',
         "about" : "<div data-v-73cf4925=\"\"><p>&nbsp; &nbsp; &nbsp; Robitl cryptocurrency exchange is headquartered in Singapore. In addition, there are three operation centers in the United States, South Korea, and Hong Kong. The scope of services is vast and the market radiates all over the world.</p>\n" +
             "<p>&nbsp; &nbsp; &nbsp; Robitl has a professional, efficient and experienced blockchain technology and operation team with decades of experience in Internet development and services. A group of Internet experts with unique insights and foresight are committed to providing a safe, convenient, stable and low transaction cost platform for global cryptocurrency contract trading users. The main members of the team come from well-known companies such as Google, Amazon and Alibaba.</p>\n" +
             "<p>&nbsp;</p>\n" +
@@ -1262,8 +1263,8 @@
 	    
 	</body>
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
-    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+     <script type="text/javascript" src="/jiaoyi-project/xhj/Public/Home/static/js/layer/layer.js" ></script>
+     <script type="text/javascript" src="/jiaoyi-project/xhj/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
     <script type="text/javascript">
         function obtain_btc(){
             var coin = "btc";
@@ -1602,8 +1603,8 @@
 	</script>
 
 
-	<script src="/Public/Static/bootstrap5Slide/bootstrap.bundle.min.js"></script>
-	<script src="/Public/Static/bootstrap5Slide/scripts.js" type="text/javascript"></script>
+	<script src="/jiaoyi-project/xhj/Public/Static/bootstrap5Slide/bootstrap.bundle.min.js"></script>
+	<script src="/jiaoyi-project/xhj/Public/Static/bootstrap5Slide/scripts.js" type="text/javascript"></script>
 
 	<script>
 		//消息内容，可以任意长度

@@ -4,11 +4,11 @@
 	<meta charset="utf-8" />
 	<meta name="renderer" content="webkit">
 	<title>管理中心 -ADMIN EX</title>
-	<link rel="stylesheet" href="/Public/Admin/ecshe_css/login.css" />
+	<link rel="stylesheet" href="/jiaoyi-project/xhj/Public/Admin/ecshe_css/login.css" />
 </head>
 <body style="background:#f5f5f5;">
 <div style="width:100%;height:120px;margin-top:50px;text-align:center;">
-    <img src="/Public/Admin/ecshe_img/alogn.png" style="height: 120px;border-radius: 10px;"/>
+    <img src="/jiaoyi-project/xhj/Public/Admin/ecshe_img/alogn.png" style="height: 120px;border-radius: 10px;"/>
 </div>
 <div class="logsbox" style="margin-top:25px;background:#fff;">
 	<h2 class="tc" style="margin-bottom:35px;color:#8a8a8a;">网站管理中心</h2>
@@ -47,7 +47,7 @@
 	</form>
 </div>
 
-<script type="text/javascript" src="/Public/Admin/js/jquery.min.js"></script>
+<script type="text/javascript" src="/jiaoyi-project/xhj/Public/Admin/js/jquery.min.js"></script>
 <script type="text/javascript">
 	/* 登陆表单获取焦点变色 */
 	$("#forms").on("focus", "input", function () {

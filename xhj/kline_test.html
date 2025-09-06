@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kline Test</title>
+    <link rel="stylesheet" href="/jiaoyi-project/xhj/Public/Static/css/kline.css">
+</head>
+<body>
+    <h1>Testing Kline JS Files</h1>
+    <div id="test-results"></div>
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/jiaoyi-project/xhj/Public/Static/js/kline.min.js"></script>
+    <script type="text/javascript" src="/jiaoyi-project/xhj/Public/Static/js/pako.min.js"></script>
+    <script type="text/javascript" src="/jiaoyi-project/xhj/Public/Static/js/klinecharts.min.js"></script>
+    <script type="text/javascript" src="/jiaoyi-project/xhj/Public/Static/js/ws-deedfeeds.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const results = document.getElementById('test-results');
+            let html = '<h2>JS Files Loading Test:</h2>';
+            
+            // Test jQuery
+            html += '<p>jQuery: ' + (typeof $ !== 'undefined' ? '✅ Loaded' : '❌ Failed') + '</p>';
+            
+            // Test other libraries
+            html += '<p>VyKline: ' + (typeof VyKline !== 'undefined' ? '✅ Loaded' : '❌ Failed') + '</p>';
+            html += '<p>pako: ' + (typeof pako !== 'undefined' ? '✅ Loaded' : '❌ Failed') + '</p>';
+            html += '<p>klinecharts: ' + (typeof klinecharts !== 'undefined' ? '✅ Loaded' : '❌ Failed') + '</p>';
+            
+            results.innerHTML = html;
+        });
+    </script>
+</body>
+</html>

@@ -518,7 +518,7 @@ fred{color:#f5465c;}
 
 .ios-down-73beb614 {
     width: 134px;
-    background: url(/Public/Home/static/imgs/ios_down.e011cb37.svg) no-repeat;
+    background: url(/jiaoyi-project/xhj/Public/Home/static/imgs/ios_down.e011cb37.svg) no-repeat;
     background-position: 50%;
     height: 44px;
     border-radius: 5px;
@@ -530,7 +530,7 @@ fred{color:#f5465c;}
 
 .android-down-73beb614 {
     width: 150px;
-    background: url(/Public/Home/static/imgs/android_down.d99dd6cc.svg) no-repeat;
+    background: url(/jiaoyi-project/xhj/Public/Home/static/imgs/android_down.d99dd6cc.svg) no-repeat;
     background-position: 50%;
     height: 44px;
     border-radius: 5px;
@@ -542,7 +542,7 @@ fred{color:#f5465c;}
 .css-dlistbox-bg {
     width: 700px;
     height: 520px;
-    background: url(/Public/Home/static/imgs/advantage_bg.a5d6d444.png) no-repeat;
+    background: url(/jiaoyi-project/xhj/Public/Home/static/imgs/advantage_bg.a5d6d444.png) no-repeat;
     background-size: 100%;
     margin-left: 6px;
 }
@@ -550,7 +550,7 @@ fred{color:#f5465c;}
 .css-dlistbox-phone {
     width: 252px;
     height: 515px;
-    background: url(/Public/Home/static/imgs/advantage_phone.511b5ee0.png) no-repeat;
+    background: url(/jiaoyi-project/xhj/Public/Home/static/imgs/advantage_phone.511b5ee0.png) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 0;
@@ -559,7 +559,7 @@ fred{color:#f5465c;}
 
 
 .img1 {
-    background: url(/Public/Home/static/imgs/advantage_phone_ui1.7a062617.png) no-repeat;
+    background: url(/jiaoyi-project/xhj/Public/Home/static/imgs/advantage_phone_ui1.7a062617.png) no-repeat;
     background-size: 100%;
     top: 55px;
     display: block;
@@ -573,7 +573,7 @@ fred{color:#f5465c;}
 
 .img2 {
     height: 202px;
-    background: url(/Public/Home/static/imgs/advantage_phone_ui2.03eb46c4.png) no-repeat;
+    background: url(/jiaoyi-project/xhj/Public/Home/static/imgs/advantage_phone_ui2.03eb46c4.png) no-repeat;
     background-size: 100%;
     top: 255px;
     display: block;
@@ -646,7 +646,7 @@ fred{color:#f5465c;}
 
 .css-1hc8c4h-box-4 {
     border: none !important;
-    background-image: url(/Public/Home/static/imgs/community_bg.png);
+    background-image: url(/jiaoyi-project/xhj/Public/Home/static/imgs/community_bg.png);
     background-size: cover;
     background-position: 100%;
     height: 100%;
@@ -1168,7 +1168,7 @@ a.openModal:focus {
 
 
 .css-8hstpq-bg {
-    background:url("/Public/Home/static/imgs/home_head_bg.png") 50% center / 100% 100% no-repeat rgb(255, 255, 255);
+    background:url("/jiaoyi-project/xhj/Public/Home/static/imgs/home_head_bg.png") 50% center / 100% 100% no-repeat rgb(255, 255, 255);
     min-height: 394px !important;
     z-index: -1;
 }

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>kline-demo</title>
-	<link rel="stylesheet" href="/Public/Static/css/kline.css">
+	<link rel="stylesheet" href="/jiaoyi-project/xhj/Public/Static/css/kline.css">
 	<style>
 		#chart_container {
 			margin: 0 auto;
@@ -69,12 +69,19 @@
 </div>
 <div id="chart_container">
     <div class="loding" data-type="0">
-        <img src="/Public/Static/img/loading.gif" alt="" />
+        <img src="/jiaoyi-project/xhj/Public/Static/img/loading.gif" alt="" />
     </div>
 </div>
 <div id="chart_container1" style="display:none"></div>
 </body>
 <script>
+	// Định nghĩa hàm loading nếu chưa có
+	function loading() {
+	    const loadingEl = document.querySelector('.loding');
+	    if (loadingEl) {
+	        loadingEl.style.display = 'none';
+	    }
+	}
 
 	window.SYMBOL = "{$market}"
 	window.fenshi = "Time sharing"
@@ -111,39 +118,73 @@
 
 </script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript"  src="/Public/Static/js/kline.min.js"></script>
-<script type="text/javascript"  src="/Public/Static/js/pako.min.js"></script>
-<script type="text/javascript"  src="/Public/Static/js/klinecharts.min.js"></script>
-<script type="text/javascript"  src="/Public/Static/js/ws-deedfeeds.js"></script>
+<script type="text/javascript"  src="/jiaoyi-project/xhj/Public/Static/js/kline.min.js"></script>
+<script type="text/javascript"  src="/jiaoyi-project/xhj/Public/Static/js/pako.min.js"></script>
+<script type="text/javascript"  src="/jiaoyi-project/xhj/Public/Static/js/klinecharts.min.js"></script>
+<script type="text/javascript"  src="/jiaoyi-project/xhj/Public/Static/js/ws-deedfeeds.js"></script>
 <script>
 	function initOnReady() {
+	    console.log('Starting initOnReady...');
+	    
+	    // Kiểm tra các thư viện cần thiết
+	    if (typeof VyKline === 'undefined') {
+	        console.error('VyKline is not loaded');
+	        return;
+	    }
+	    
+	    if (typeof window.deedfeeds === 'undefined') {
+	        console.error('window.deedfeeds is not defined');
+	        return;
+	    }
+	    
+	    // Kiểm tra container
+	    const container = document.getElementById('chart_container1');
+	    if (!container) {
+	        console.error('chart_container1 not found');
+	        return;
+	    }
+	    
+	    console.log('All checks passed, initializing kline...');
+	    
 	    loading()
 		window.init_offset = 10
-		VyKline.bootstrap({
-			container: document.getElementById('chart_container1'), // 容器
-			deedfeeds: window.deedfeeds, // 数据反馈对象
-			showIntervalToolbar: true,
-			defaultInterval: 'm1',
-			interval: [ 'm1','m5','m15','m30','m60','h4','d1', 'w1'],
-			theme: 'light',
-			customChart: {
-				init_offset_x: window.init_offset,
-				default_rise_color: '#49C043',
-				default_fall_color: '#CC1414',
-			},
-			// customLoadingEl: customLoading,
-			onTimeIntervalChanged: interval => {
-
-				console.log("window.deedfeeds", interval);
-			}
-		})
-
-        // window.deedfeeds.intervalChanged('m5')
-		vyChart.switchChartType('KLINE')
-		console.info(window.deedfeeds)
 		
+		try {
+		    VyKline.bootstrap({
+			    container: container, // 容器
+			    deedfeeds: window.deedfeeds, // 数据反馈对象
+			    showIntervalToolbar: true,
+			    defaultInterval: 'm1',
+			    interval: [ 'm1','m5','m15','m30','m60','h4','d1', 'w1'],
+			    theme: 'light',
+			    customChart: {
+				    init_offset_x: window.init_offset,
+				    default_rise_color: '#49C043',
+				    default_fall_color: '#CC1414',
+			    },
+			    // customLoadingEl: customLoading,
+			    onTimeIntervalChanged: interval => {
+				    console.log("window.deedfeeds", interval);
+			    }
+		    })
+		    
+		    console.log('VyKline.bootstrap completed');
+		    
+		    // Kiểm tra vyChart trước khi sử dụng
+		    if (typeof vyChart !== 'undefined') {
+		        vyChart.switchChartType('KLINE')
+		        console.log('vyChart.switchChartType completed');
+		    }
+		    
+		    console.info('window.deedfeeds:', window.deedfeeds)
+		} catch (error) {
+		    console.error('Error initializing kline chart:', error);
+		}
 	}
-	window.addEventListener('DOMContentLoaded', initOnReady, false);
+	window.addEventListener('DOMContentLoaded', function() {
+	    // Delay để đảm bảo tất cả thư viện đã load
+	    setTimeout(initOnReady, 500);
+	}, false);
 </script>
 
 </html>

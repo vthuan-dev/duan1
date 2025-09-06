@@ -1,4 +1,10 @@
 <?php
 return array(
-	'TMPL_PARSE_STRING' => array('__UPLOAD__' => __ROOT__ . '/Upload', '__PUBLIC__' => __ROOT__ . '/Public', '__IMG__' => __ROOT__ . '/Public/' . MODULE_NAME . '/images', '__CSS__' => __ROOT__ . '/Public/' . MODULE_NAME . '/css', '__JS__' => __ROOT__ . '/Public/' . MODULE_NAME . '/js'),
+    'TMPL_PARSE_STRING' => array(
+        '__UPLOAD__' => '/jiaoyi-project/xhj/Upload', 
+        '__PUBLIC__' => '/jiaoyi-project/xhj/Public', 
+        '__IMG__' => '/jiaoyi-project/xhj/Public/' . MODULE_NAME . '/images', 
+        '__CSS__' => '/jiaoyi-project/xhj/Public/' . MODULE_NAME . '/css', 
+        '__JS__' => '/jiaoyi-project/xhj/Public/' . MODULE_NAME . '/js'
+    ),
 );

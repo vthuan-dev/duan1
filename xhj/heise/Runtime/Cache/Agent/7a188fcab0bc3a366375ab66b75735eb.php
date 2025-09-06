@@ -8,7 +8,7 @@
 </head>
 <body style="background:#f5f5f5;">
 <div style="width:100%;height:120px;margin-top:50px;text-align:center;">
-    <img src="/Public/Admin/ecshe_img/alogn.png" style="height: 120px;"/>
+    <img src="/jiaoyi-project/xhj/Public/Admin/ecshe_img/alogn.png" style="height: 120px;"/>
 </div>
 <div class="logsbox" style="margin-top:25px;background:#fff;">
 	<h2 class="tc" style="margin-bottom:35px;color:#8a8a8a;"><?php echo L('代理系统');?></h2>

@@ -1,0 +1,196 @@
+/* CSS Fixes for Trading Page Layout Issues */
+
+/* Fix table layout and column widths */
+.trading-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.trading-table th,
+.trading-table td {
+    padding: 8px 4px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Specific column widths */
+.trading-table th:nth-child(1),
+.trading-table td:nth-child(1) {
+    width: 20%; /* Currency name */
+}
+
+.trading-table th:nth-child(2),
+.trading-table td:nth-child(2) {
+    width: 15%; /* Price */
+}
+
+.trading-table th:nth-child(3),
+.trading-table td:nth-child(3) {
+    width: 15%; /* Rise/fall */
+}
+
+.trading-table th:nth-child(4),
+.trading-table td:nth-child(4) {
+    width: 20%; /* High/Low */
+}
+
+.trading-table th:nth-child(5),
+.trading-table td:nth-child(5) {
+    width: 20%; /* 24h volume */
+}
+
+.trading-table th:nth-child(6),
+.trading-table td:nth-child(6) {
+    width: 10%; /* Action */
+}
+
+/* Fix trading table layout issues */
+.col-2 {
+    width: 16.66666667% !important;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.listtitle {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.listtitle2 {
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.css-dlbbox {
+    width: 100%;
+    height: 30px;
+    background-color: #f3f3f3;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+.css-dlbbox2 {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    padding: 0px 10px;
+    border-bottom: 1px solid #f3f3f3;
+    overflow: hidden;
+}
+
+.css-dlistbox {
+    width: 100%;
+    min-height: 500px;
+    overflow-x: auto;
+}
+
+/* Fix text overflow issues */
+.f12, .f14 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+/* Fix sidebar layout */
+.handicap-section, .price-section {
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+/* Additional fixes for specific issues seen in screenshot */
+.market-div:hover {
+    background-color: #f8f9fa !important;
+    transform: none !important;
+}
+
+/* Fix trading volume text overflow */
+.trading-volume {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Fix 24h column width */
+.col-2:nth-child(2) {
+    min-width: 80px;
+    max-width: 100px;
+}
+
+/* Fix price display */
+.price-display {
+    font-weight: bold;
+    color: #fa5252;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Fix sidebar text cutoff */
+.sidebar-content {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Fix "No data was obtained" text */
+.no-data-text {
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.4;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+    .col-2 {
+        width: 50% !important;
+    }
+    
+    .css-dlbbox2 {
+        height: auto;
+        min-height: 50px;
+    }
+    
+    .listtitle2 {
+        height: auto;
+        line-height: 1.4;
+        padding: 5px 0;
+    }
+}
+
+/* Fix logo display */
+.cion_logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+/* Fix trading button */
+.trade-button {
+    background: #00b897;
+    color: #fff !important;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-decoration: none !important;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.trade-button:hover {
+    background: #009a7f;
+    color: #fff !important;
+}

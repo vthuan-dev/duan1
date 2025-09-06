@@ -299,7 +299,7 @@
 
 <script type="text/javascript" src="/Public/kindeditor/kindeditor-min.js"></script> 
  
-<script type="text/javascript" src="/Public/Admin/js/common.js"></script>
+<script type="text/javascript" src="//jiaoyi-project/xhj/Public/Admin/js/common.js"></script>
 <script type="text/javascript">
 	+function(){
 		//$("select").select2({dropdownCssClass: 'dropdown-inverse'});//下拉条样式

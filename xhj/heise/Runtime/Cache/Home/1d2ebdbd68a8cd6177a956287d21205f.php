@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1.0,initial-scale=1,user-scalable=no,viewport-fit=true" data-shuvi-head="true">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-	    <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/base.css" />
+	    <link rel="stylesheet" type="text/css" href="/jiaoyi-project/xhj/Public/Home/static/css/base.css" />
 	    <title><?php echo ($webname); ?></title>
 	    <style>
             .css-1wr4jig {
@@ -450,7 +450,7 @@
 					<a href="<?php echo U('Contract/index');?>">
 						<div class="optionli">
 							<svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><path d="M4 44H44" stroke="#076338" stroke-width="3" stroke-linecap="butt" stroke-linejoin="bevel"/><path d="M4 26L12 28V38H4V26Z" fill="#00b897" stroke="#076338" stroke-width="3" stroke-linejoin="bevel"/><path d="M20 24L28 20V38H20V24Z" fill="#00b897" stroke="#076338" stroke-width="3" stroke-linejoin="bevel"/><path d="M36 16L44 12V38H36V16Z" fill="#00b897" stroke="#076338" stroke-width="3" stroke-linejoin="bevel"/><path d="M4 18L12 20L44 4H34" stroke="#076338" stroke-width="3" stroke-linecap="butt" stroke-linejoin="bevel"/></svg>
-							<span class="f18" style="color:#EAECEF;"><?php echo L('秒合约');?><img src="/Public/Home/static/imgs/hot-2.svg" class="hot-2"></span>
+							<span class="f18" style="color:#EAECEF;"><?php echo L('秒合约');?><img src="/jiaoyi-project/xhj/Public/Home/static/imgs/hot-2.svg" class="hot-2"></span>
 						</div>
 					</a>
 				</li>
@@ -1045,7 +1045,7 @@
                                         </tbody>
                                     </table>
                                     <div class="table-history-more">
-                                    <?php if(empty($list)): ?><img src="/Public/Home/static/imgs/empty.e90e5075.svg" class="empty-svg" >
+                                    <?php if(empty($list)): ?><img src="/jiaoyi-project/xhj/Public/Home/static/imgs/empty.e90e5075.svg" class="empty-svg" >
                                         <p class="tcc"> 暂无订单</p>
                                         <?php else: ?>
                                         <a href="<?php echo U('Contract/contractpc');?>">
@@ -1099,7 +1099,7 @@
 </div>
 
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-<script src="/Public/Home/static/js/layer/layer.js"></script>
+<script src="/jiaoyi-project/xhj/Public/Home/static/js/layer/layer.js"></script>
 <script>
 
     let text_obj = {
@@ -1202,8 +1202,8 @@
             "<p>11.2.3 After the termination of this agreement, the user has no right to require the IDCIex Global platform to continue to provide it with any services or perform any other obligations, including but not limited to requiring the IDCIex Global platform to retain or disclose its original IDCIex Global platform to the user Any information in the account, forward any information that has not been read or sent to the user or a third party.</p>\n" +
             "<p>11.2.4 The termination of this agreement does not affect the observant party to the breaching party to pursue liability for breach of contract.</p>\n" +
             "<p>&nbsp;</p></div>",
-        "msb" : '<img src="/Public/Home/static/imgs/1.jpeg" style="width: 45%">\n' +
-            '            <img src="/Public/Home/static/imgs/2.jpeg" style="width: 45%">',
+        "msb" : '<img src="/jiaoyi-project/xhj/Public/Home/static/imgs/1.jpeg" style="width: 45%">\n' +
+            '            <img src="/jiaoyi-project/xhj/Public/Home/static/imgs/2.jpeg" style="width: 45%">',
         "about" : "<div data-v-73cf4925=\"\"><p>&nbsp; &nbsp; &nbsp; Robitl cryptocurrency exchange is headquartered in Singapore. In addition, there are three operation centers in the United States, South Korea, and Hong Kong. The scope of services is vast and the market radiates all over the world.</p>\n" +
             "<p>&nbsp; &nbsp; &nbsp; Robitl has a professional, efficient and experienced blockchain technology and operation team with decades of experience in Internet development and services. A group of Internet experts with unique insights and foresight are committed to providing a safe, convenient, stable and low transaction cost platform for global cryptocurrency contract trading users. The main members of the team come from well-known companies such as Google, Amazon and Alibaba.</p>\n" +
             "<p>&nbsp;</p>\n" +
@@ -1353,8 +1353,8 @@
 	    
 	</body>
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/Public/Home/static/js/layer/layer.js" ></script>
-    <script type="text/javascript" src="/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
+    <script type="text/javascript" src="/jiaoyi-project/xhj/Public/Home/static/js/layer/layer.js" ></script>
+    <script type="text/javascript" src="/jiaoyi-project/xhj/Public/Home/static/js/jquery.SuperSlide.2.1.1.js" ></script>
     <script type="text/javascript">
         let pct = 0;
         let usdtnum = 0;
@@ -1805,7 +1805,7 @@
                         var html = '';
                         if(data.data == '' || data.data == null){
                             $('.order-main-table-current').empty()
-                            html += '<div class="table-history-more"><img src="/Public/Home/static/imgs/empty.e90e5075.svg" class="empty-svg" >\n' +
+                            html += '<div class="table-history-more"><img src="/jiaoyi-project/xhj/Public/Home/static/imgs/empty.e90e5075.svg" class="empty-svg" >\n' +
                                 '                                                    <p class="tcc"> 暂无订单</p></div>';
                             $('.order-main-table-current').append(html)
                         }else{

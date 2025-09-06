@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Handle admin routes
+RewriteRule ^Admin/(.*)$ index.php?s=/Admin/$1 [QSA,L]
+RewriteRule ^Home/(.*)$ index.php?s=/Home/$1 [QSA,L]
+RewriteRule ^Mobile/(.*)$ index.php?s=/Mobile/$1 [QSA,L]
+
+# Handle other routes - must be last
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?s=/$1 [QSA,L]
+</IfModule>

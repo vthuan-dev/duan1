@@ -7,3 +7,1028 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
 INFO: Run Behavior\CheckLangBehavior [ RunTime:0.043225s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.043668s ]
 
+[ 2025-09-07T02:05:29+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:06:56+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:07:08+08:00 ] ::1 /jiaoyi-project/xhj/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001505s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:07:21+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:08:01+08:00 ] ::1 /jiaoyi-project/xhj/index.php?s=/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:08:31+08:00 ] 127.0.0.1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:08:35+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:09:20+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:10:33+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:10:33+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:10:37+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:10:43+08:00 ] ::1 /jiaoyi-project/xhj/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:11:25+08:00 ] ::1 /jiaoyi-project/xhj/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:11:27+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002531s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:12:26+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002285s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:15:57+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:17:56+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:18:03+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:18:09+08:00 ] ::1 /jiaoyi-project/xhj/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+
+[ 2025-09-07T02:18:29+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:19:02+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002386s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:20:32+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001991s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:20:43+08:00 ] ::1 /jiaoyi-project/xhj/Home/Index/Mobile/Index/simple.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:20:44+08:00 ] ::1 /jiaoyi-project/xhj/Home/Index/Mobile/Index/simple.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002277s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:20:44+08:00 ] ::1 /jiaoyi-project/xhj/Home/Index/Mobile/Index/simple.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003601s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:20:44+08:00 ] ::1 /jiaoyi-project/xhj/Home/Index/Mobile/Index/simple.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:20:45+08:00 ] ::1 /jiaoyi-project/xhj/Home/Index/Mobile/Index/simple.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002749s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:20:45+08:00 ] ::1 /jiaoyi-project/xhj/Home/Index/Mobile/Index/simple.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:20:50+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:20:50+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003321s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:21:07+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:21:23+08:00 ] ::1 /jiaoyi-project/xhj/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:21:51+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002336s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:21:51+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:21:51+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:21:54+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:23:46+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:12+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:14+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:15+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:15+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001922s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:15+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:16+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:16+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:16+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:16+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:17+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:17+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:23+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:24+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:24+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:24+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001983s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:24+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002338s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:25+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:25+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:25+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:25+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:26+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001319s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:27+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:24:27+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002121s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:26:26+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:08+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:08+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002999s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:09+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:09+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:09+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002195s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:09+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:21+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:40+08:00 ] ::1 /jiaoyi-project/xhj/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:42+08:00 ] ::1 /jiaoyi-project/xhj/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001779s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:42+08:00 ] ::1 /jiaoyi-project/xhj/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:27:57+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:28:01+08:00 ] ::1 /jiaoyi-project/xhj/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:31:11+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:39:27+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002089s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:41:54+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002204s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:41:55+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005390s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:41:55+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001856s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005523s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:41:55+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001411s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003641s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:42:05+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:42:11+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:42:37+08:00 ] 127.0.0.1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:42:42+08:00 ] 127.0.0.1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:42:43+08:00 ] 127.0.0.1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:43:08+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:43:52+08:00 ] ::1 /jiaoyi-project/xhj/index.php?m=Home&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:43:53+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001892s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:44:14+08:00 ] ::1 /jiaoyi-project/xhj/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:44:16+08:00 ] ::1 /jiaoyi-project/xhj/index.php?id=948fbeff-6e52-421f-aa98-116f5e99c6d5&vscodeBrowserReqId=1757184256407
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001803s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:51:37+08:00 ] ::1 /jiaoyi-project/xhj/index.php?m=Home&c=Index&a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002150s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:51:42+08:00 ] ::1 /jiaoyi-project/xhj/index.php?m=Home&c=Index&a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002461s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:51:49+08:00 ] ::1 /jiaoyi-project/xhj/index.php?m=Home&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:53:23+08:00 ] ::1 /jiaoyi-project/xhj/index.php?m=Home&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T02:53:23+08:00 ] ::1 /jiaoyi-project/xhj/index.php?m=Home&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+NOTIC: [2] PDO::__construct(): Server sent charset (255) unknown to the client. Please, report to the developers C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+
+[ 2025-09-07T03:00:06+08:00 ] ::1 /jiaoyi-project/xhj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+NOTIC: [2] file_get_contents(./404.html): failed to open stream: No such file or directory C:\xampp5-6\htdocs\jiaoyi-project\xhj\ThinkPHP\ThinkPHP.php 第 126 行.
+

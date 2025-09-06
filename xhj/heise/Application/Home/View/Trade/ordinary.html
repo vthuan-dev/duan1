@@ -111,10 +111,10 @@
 
 </script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript"  src="/Public/Static/js/kline.min.js"></script>
-<script type="text/javascript"  src="/Public/Static/js/pako.min.js"></script>
-<script type="text/javascript"  src="/Public/Static/js/klinecharts.min.js"></script>
-<script type="text/javascript"  src="/Public/Static/js/ws-deedfeeds.js"></script>
+<script type="text/javascript"  src="/jiaoyi-project/xhj/Public/Static/js/kline.min.js"></script>
+<script type="text/javascript"  src="/jiaoyi-project/xhj/Public/Static/js/pako.min.js"></script>
+<script type="text/javascript"  src="/jiaoyi-project/xhj/Public/Static/js/klinecharts.min.js"></script>
+<script type="text/javascript"  src="/jiaoyi-project/xhj/Public/Static/js/ws-deedfeeds.js"></script>
 <script>
 	function initOnReady() {
 	    loading()

@@ -5,23 +5,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>后台 | 管理中心 - ADMIN EX</title>
 	<!-- Loading Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="/Public/Admin/css/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/Public/Admin/css/base.css" media="all">
-	<link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
-	<link rel="stylesheet" type="text/css" href="/Public/Admin/css/module.css">
-	<link rel="stylesheet" type="text/css" href="/Public/Admin/css/style.css" media="all">
-	<link rel="stylesheet" type="text/css" href="/Public/Admin/css/default_color.css" media="all">
-	<script type="text/javascript" src="/Public/Admin/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/Public/layer/layer.js"></script>
-	<link rel="stylesheet" type="text/css" href="/Public/Admin/css/flat-ui.css">
-	<script src="/Public/Admin/js/flat-ui.min.js"></script>
-	<script src="/Public/Admin/js/application.js"></script>
+	<link rel="stylesheet" type="text/css" href="/jiaoyi-project/xhj/Public/Admin/css/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/jiaoyi-project/xhj/Public/Admin/css/base.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/jiaoyi-project/xhj/Public/Admin/css/common.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/jiaoyi-project/xhj/Public/Admin/css/module.css">
+	<link rel="stylesheet" type="text/css" href="/jiaoyi-project/xhj/Public/Admin/css/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/jiaoyi-project/xhj/Public/Admin/css/default_color.css" media="all">
+	<script type="text/javascript" src="/jiaoyi-project/xhj/Public/Admin/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/jiaoyi-project/xhj/Public/layer/layer.js"></script>
+	<link rel="stylesheet" type="text/css" href="/jiaoyi-project/xhj/Public/Admin/css/flat-ui.css">
+	<script src="/jiaoyi-project/xhj/Public/Admin/js/flat-ui.min.js"></script>
+	<script src="/jiaoyi-project/xhj/Public/Admin/js/application.js"></script>
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="navbar-header">
 		<a class="navbar-brand" style="width:200px;text-align:center;background-color:#3c434d;" href="<?php echo U('Index/index');?>">
-			<img src="/Public/Admin/ecshe_img/logo_text.png" />
+			<img src="/jiaoyi-project/xhj/Public/Admin/ecshe_img/logo_text.png" />
 		</a>
 	</div>
 	<div class="navbar-collapse collapse">
@@ -63,7 +63,7 @@
 				</a>
 			</li>
 			<li>
-				<a class="dropdown-toggle" title="打开前台" href="/" target="_blank">
+				<a class="dropdown-toggle" title="打开前台" href="/jiaoyi-project/xhj/" target="_blank">
 					<span class="glyphicon glyphicon-share" aria-hidden="true"></span>
 				</a>
 			</li>
@@ -131,10 +131,10 @@
 			// content.animate({paddingTop:'-=55'},200);
 		});
 	</script><?php endif; ?>
-<link href="/Public/Admin/index_css/style.css" rel="stylesheet">
-<link href="/Public/Admin/index_js/morris.js-0.4.3/morris.css" rel="stylesheet">
-<script src="/Public/Admin/index_js/morris.js-0.4.3/morris.min.js" type="text/javascript"></script>
-<script src="/Public/Admin/index_js/morris.js-0.4.3/raphael-min.js" type="text/javascript"></script>
+<link href="/jiaoyi-project/xhj/Public/Admin/index_css/style.css" rel="stylesheet">
+<link href="/jiaoyi-project/xhj/Public/Admin/index_js/morris.js-0.4.3/morris.css" rel="stylesheet">
+<script src="/jiaoyi-project/xhj/Public/Admin/index_js/morris.js-0.4.3/morris.min.js" type="text/javascript"></script>
+<script src="/jiaoyi-project/xhj/Public/Admin/index_js/morris.js-0.4.3/raphael-min.js" type="text/javascript"></script>
 <div id="main-content">
     <div id="top-alert" class="fixed alert alert-error" style="display: none;">
         <button class="close fixed" style="margin-top: 4px;">&times;</button>
@@ -361,7 +361,7 @@
 
     }();
 </script>
-<script type="text/javascript" src="/Public/Admin/js/common.js"></script>
+<script type="text/javascript" src="/jiaoyi-project/xhj/Public/Admin/js/common.js"></script>
 <script type="text/javascript">
 	+function(){
 		//$("select").select2({dropdownCssClass: 'dropdown-inverse'});//下拉条样式

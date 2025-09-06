@@ -158,7 +158,7 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="/Public/Admin/js/common.js"></script>
+<script type="text/javascript" src="//jiaoyi-project/xhj/Public/Admin/js/common.js"></script>
 <script type="text/javascript">
     $(function(){
         setInterval("tzfc()",2000);
