@@ -18,8 +18,8 @@ class AjaxtradeController extends HomeController
             $open = $mlist['min_price'];//开盘价
             $close = $mlist['new_price'] + $num;//现价
             $lowhig =  $close - $open; //涨跌
-            $high = 
-            $low = 
+            $high = $mlist['max_price'];//最高价
+            $low = $mlist['min_price'];//最低价
             
             $change = round(($lowhig / $open * 100),2); //涨跌幅
             
@@ -895,7 +895,6 @@ class AjaxtradeController extends HomeController
                 $open = $price_arr['open'];//开盘价
                 $close = $price_arr['close'];//现价
                 $change =  $close - $open; //涨跌
-dump($change);
                 if($change >= 0){
                     $change = round(($change / $open * 100),2); //涨跌幅
                     $changestr = "<span  class='fzmm bgreen' style='color:#fff;border-radius: 2px;width:70px;height:35px;line-height:35px;text-align:center;display:inline-block;'>+". $change ."%</span>";

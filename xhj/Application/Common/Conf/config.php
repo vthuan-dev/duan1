@@ -43,7 +43,7 @@ return array(
 		'__PUBLIC__' => '/jiaoyi-project/xhj/Public',
 		'__STATIC__' => '/jiaoyi-project/xhj/Public/Home/static',
 		'__CSS__' => '/jiaoyi-project/xhj/Public/Home/static/css',
-		'__JS__' => '/jiaoyi-project/xhj/Public/Home/static/js',
+		// '__JS__' => '/jiaoyi-project/xhj/Public/Home/static/js',
 		'__IMG__' => '/jiaoyi-project/xhj/Public/Home/static/img',
 	),
 	);
