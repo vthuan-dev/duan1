@@ -1,0 +1,35 @@
+# Docker Compose cho Metacrypto Site
+
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./Upload:/var/www/html/Upload
+      - ./Runtime:/var/www/html/Runtime
+    depends_on:
+      - mysql
+    environment:
+      - DB_HOST=mysql
+      - DB_NAME=jys1
+      - DB_USER=root
+      - DB_PASSWORD=password
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:5.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=jys1
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./jys1.sql:/docker-entrypoint-initdb.d/jys1.sql
+    ports:
+      - "3306:3306"
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
